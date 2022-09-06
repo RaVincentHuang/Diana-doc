@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['visitcompunit_449',['visitCompUnit',['../d8/d4f/classSysYParserBaseVisitor.html#a21d12c2fa10259c84968bf09900362ad',1,'SysYParserBaseVisitor::visitCompUnit()'],['../d1/d26/classSysYParserVisitor.html#a3377df5183a565eae10d53a59128720c',1,'SysYParserVisitor::visitCompUnit()'],['../df/d6b/classsysy_1_1SysYVisitor.html#ab682df80318ab90e69717f49679210e6',1,'sysy::SysYVisitor::visitCompUnit()']]]
+  ['getparentfuction_479',['getParentFuction',['../dd/d21/classsysy_1_1ast_1_1AstNode.html#ae15b66e4c214182789b5a8273c47efbb',1,'sysy::ast::AstNode']]]
 ];
