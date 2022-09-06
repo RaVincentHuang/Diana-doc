@@ -9,5 +9,6 @@ var classsysy_1_1mc_1_1Shift =
     [ "Shift", "db/d06/classsysy_1_1mc_1_1Shift.html#a262589d12acf831f7270b31d330772e7", null ],
     [ "Shift", "db/d06/classsysy_1_1mc_1_1Shift.html#aa73543ea0e73ffa1a81b57f58d373be3", null ],
     [ "imm", "db/d06/classsysy_1_1mc_1_1Shift.html#a07793f6d037308b76b44b1e2e92ee63d", null ],
-    [ "type", "db/d06/classsysy_1_1mc_1_1Shift.html#a6e9086057cb66db021582c27b698f9fd", null ]
+    [ "type", "db/d06/classsysy_1_1mc_1_1Shift.html#a6e9086057cb66db021582c27b698f9fd", null ],
+    [ "type_map", "db/d06/classsysy_1_1mc_1_1Shift.html#a74f947eae6cf116b7e7012e111a782cf", null ]
 ];

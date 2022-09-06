@@ -84,11 +84,15 @@ $(document).ready(function(){initNavTree('d5/d84/classsysy_1_1ir_1_1ScalarEvolut
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="../../da/df6/classsysy_1_1ir_1_1ScalarEvolution-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">sysy::ir::ScalarEvolution Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="../../d0/d8b/SCEV_8h_source.html">SCEV.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for sysy::ir::ScalarEvolution:</div>
 <div class="dyncontent">
@@ -110,47 +114,538 @@ Collaboration diagram for sysy::ir::ScalarEvolution:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa77c21818a83d9b475e3d967662190bc"><td class="memItemLeft" align="right" valign="top"><a id="aa77c21818a83d9b475e3d967662190bc"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> (<a class="el" href="../../d4/d36/classsysy_1_1ir_1_1Function.html">Function</a> *func) override</td></tr>
+<tr class="memitem:aa77c21818a83d9b475e3d967662190bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#aa77c21818a83d9b475e3d967662190bc">run</a> (<a class="el" href="../../d4/d36/classsysy_1_1ir_1_1Function.html">Function</a> *func) override</td></tr>
 <tr class="separator:aa77c21818a83d9b475e3d967662190bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e9914280a5fbbdcd8cb0ce9544ed12c"><td class="memItemLeft" align="right" valign="top"><a id="a7e9914280a5fbbdcd8cb0ce9544ed12c"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getName</b> () override</td></tr>
+<tr class="memitem:a7e9914280a5fbbdcd8cb0ce9544ed12c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#a7e9914280a5fbbdcd8cb0ce9544ed12c">getName</a> () override</td></tr>
 <tr class="separator:a7e9914280a5fbbdcd8cb0ce9544ed12c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classsysy_1_1Pass"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classsysy_1_1Pass')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d5/d01/classsysy_1_1Pass.html">sysy::Pass&lt; Opt &gt;</a></td></tr>
-<tr class="memitem:a1a239de32e6560d250de0c0c486215d2 inherit pub_methods_classsysy_1_1Pass"><td class="memItemLeft" align="right" valign="top"><a id="a1a239de32e6560d250de0c0c486215d2"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> (Opt opt)=0</td></tr>
+<tr class="memitem:abd2d30551ae94b816c3c620ac22512b2 inherit pub_methods_classsysy_1_1Pass"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d01/classsysy_1_1Pass.html#abd2d30551ae94b816c3c620ac22512b2">~Pass</a> ()</td></tr>
+<tr class="separator:abd2d30551ae94b816c3c620ac22512b2 inherit pub_methods_classsysy_1_1Pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a239de32e6560d250de0c0c486215d2 inherit pub_methods_classsysy_1_1Pass"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d01/classsysy_1_1Pass.html#a1a239de32e6560d250de0c0c486215d2">run</a> (Opt opt)=0</td></tr>
 <tr class="separator:a1a239de32e6560d250de0c0c486215d2 inherit pub_methods_classsysy_1_1Pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a173295351670ccda8884f99ce538637c inherit pub_methods_classsysy_1_1Pass"><td class="memItemLeft" align="right" valign="top"><a id="a173295351670ccda8884f99ce538637c"></a>
-std::vector&lt; <a class="el" href="../../d5/d01/classsysy_1_1Pass.html">Pass</a>&lt; Opt &gt; * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getRelated</b> ()</td></tr>
+<tr class="memitem:a173295351670ccda8884f99ce538637c inherit pub_methods_classsysy_1_1Pass"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d5/d01/classsysy_1_1Pass.html">Pass</a>&lt; Opt &gt; * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d01/classsysy_1_1Pass.html#a173295351670ccda8884f99ce538637c">getRelated</a> ()</td></tr>
 <tr class="separator:a173295351670ccda8884f99ce538637c inherit pub_methods_classsysy_1_1Pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fa8345efad5dc07e9106b89580cb976 inherit pub_methods_classsysy_1_1Pass"><td class="memItemLeft" align="right" valign="top"><a id="a9fa8345efad5dc07e9106b89580cb976"></a>
-std::vector&lt; <a class="el" href="../../d5/d01/classsysy_1_1Pass.html">Pass</a>&lt; Opt &gt; * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getFinish</b> ()</td></tr>
+<tr class="memitem:a9fa8345efad5dc07e9106b89580cb976 inherit pub_methods_classsysy_1_1Pass"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d5/d01/classsysy_1_1Pass.html">Pass</a>&lt; Opt &gt; * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d01/classsysy_1_1Pass.html#a9fa8345efad5dc07e9106b89580cb976">getFinish</a> ()</td></tr>
 <tr class="separator:a9fa8345efad5dc07e9106b89580cb976 inherit pub_methods_classsysy_1_1Pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:add6ba9c6e01df421bda290132596a2d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#add6ba9c6e01df421bda290132596a2d1">linkInstructionToSCEV</a> (<a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html">Loop</a> *loop, <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a9c902d222fd4458b67cf4a823f280d3f">BinaryInst</a> *instr)</td></tr>
+<tr class="separator:add6ba9c6e01df421bda290132596a2d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f98946c99fd079aa59c712a3212b5d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#a0f98946c99fd079aa59c712a3212b5d0">runOnLoop</a> (<a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html">Loop</a> *loop)</td></tr>
+<tr class="separator:a0f98946c99fd079aa59c712a3212b5d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac26333925ef1ce0092c71c23719e0533"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#ac26333925ef1ce0092c71c23719e0533">findAndRegisterBIV</a> (<a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html">Loop</a> *loop)</td></tr>
+<tr class="separator:ac26333925ef1ce0092c71c23719e0533"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30d85b7e712b856858226e7c3fbf23dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#a30d85b7e712b856858226e7c3fbf23dd">registerBIV</a> (<a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html">Loop</a> *loop, <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a54b15b0f11f28826cb9853c7491747da">PhiInst</a> *phi)</td></tr>
+<tr class="separator:a30d85b7e712b856858226e7c3fbf23dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeca910c337f8a40967fae41997c542e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#aeca910c337f8a40967fae41997c542e2">BIV2SCEV</a> (<a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html">Loop</a> *loop, <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a54b15b0f11f28826cb9853c7491747da">PhiInst</a> *phi, std::set&lt; <a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> * &gt; &amp;adds, std::set&lt; <a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> * &gt; &amp;subs)</td></tr>
+<tr class="separator:aeca910c337f8a40967fae41997c542e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ababacc69535d90e4f4f3ceceb77ac1fa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#ababacc69535d90e4f4f3ceceb77ac1fa">fixed</a></td></tr>
+<tr class="separator:ababacc69535d90e4f4f3ceceb77ac1fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_classsysy_1_1Pass"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classsysy_1_1Pass')"><img src="../../closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="../../d5/d01/classsysy_1_1Pass.html">sysy::Pass&lt; Opt &gt;</a></td></tr>
-<tr class="memitem:a876dcea0233148a62cff8008771a2a6a inherit pub_types_classsysy_1_1Pass"><td class="memItemLeft" align="right" valign="top"><a id="a876dcea0233148a62cff8008771a2a6a"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>DfsFunc</b> = std::function&lt; void(<a class="el" href="../../d5/d01/classsysy_1_1Pass.html">Pass</a>&lt; Opt &gt; *)&gt;</td></tr>
+<tr class="memitem:a876dcea0233148a62cff8008771a2a6a inherit pub_types_classsysy_1_1Pass"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d01/classsysy_1_1Pass.html#a876dcea0233148a62cff8008771a2a6a">DfsFunc</a> = std::function&lt; void(<a class="el" href="../../d5/d01/classsysy_1_1Pass.html">Pass</a>&lt; Opt &gt; *)&gt;</td></tr>
 <tr class="separator:a876dcea0233148a62cff8008771a2a6a inherit pub_types_classsysy_1_1Pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classsysy_1_1Pass"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classsysy_1_1Pass')"><img src="../../closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="../../d5/d01/classsysy_1_1Pass.html">sysy::Pass&lt; Opt &gt;</a></td></tr>
-<tr class="memitem:afbe59b0867e1cac38f46d977467515c6 inherit pub_static_methods_classsysy_1_1Pass"><td class="memItemLeft" align="right" valign="top"><a id="afbe59b0867e1cac38f46d977467515c6"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>relatedDfs</b> (<a class="el" href="../../d5/d01/classsysy_1_1Pass.html">Pass</a>&lt; Opt &gt; *pass, DfsFunc func)</td></tr>
+<tr class="memitem:afbe59b0867e1cac38f46d977467515c6 inherit pub_static_methods_classsysy_1_1Pass"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d01/classsysy_1_1Pass.html#afbe59b0867e1cac38f46d977467515c6">relatedDfs</a> (<a class="el" href="../../d5/d01/classsysy_1_1Pass.html">Pass</a>&lt; Opt &gt; *pass, <a class="el" href="../../d5/d01/classsysy_1_1Pass.html#a876dcea0233148a62cff8008771a2a6a">DfsFunc</a> func)</td></tr>
 <tr class="separator:afbe59b0867e1cac38f46d977467515c6 inherit pub_static_methods_classsysy_1_1Pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6d56fe3ac425806457937d491d8b600 inherit pub_static_methods_classsysy_1_1Pass"><td class="memItemLeft" align="right" valign="top"><a id="ab6d56fe3ac425806457937d491d8b600"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>finishByDfs</b> (<a class="el" href="../../d5/d01/classsysy_1_1Pass.html">Pass</a>&lt; Opt &gt; *pass, DfsFunc func)</td></tr>
+<tr class="memitem:ab6d56fe3ac425806457937d491d8b600 inherit pub_static_methods_classsysy_1_1Pass"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d01/classsysy_1_1Pass.html#ab6d56fe3ac425806457937d491d8b600">finishByDfs</a> (<a class="el" href="../../d5/d01/classsysy_1_1Pass.html">Pass</a>&lt; Opt &gt; *pass, <a class="el" href="../../d5/d01/classsysy_1_1Pass.html#a876dcea0233148a62cff8008771a2a6a">DfsFunc</a> func)</td></tr>
 <tr class="separator:ab6d56fe3ac425806457937d491d8b600 inherit pub_static_methods_classsysy_1_1Pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aeca910c337f8a40967fae41997c542e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeca910c337f8a40967fae41997c542e2">&#9670;&nbsp;</a></span>BIV2SCEV()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sysy::ir::ScalarEvolution::BIV2SCEV </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html">Loop</a> *&#160;</td>
+          <td class="paramname"><em>loop</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a54b15b0f11f28826cb9853c7491747da">PhiInst</a> *&#160;</td>
+          <td class="paramname"><em>phi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::set&lt; <a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>adds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::set&lt; <a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>subs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a44bf629ce6339af49db8a4f2dc2f9a96">sysy::ir::Instruction::Add</a>, <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a1b915129bd2ac53ea09512292870354b">sysy::ir::Type::getInt32Ty()</a>, <a class="el" href="../../da/dd0/classsysy_1_1ir_1_1PhiInstruction.html#ad7c0e4ab47f0cabddd87b4bef6a316a1">sysy::ir::PhiInstruction::getPredecessors()</a>, <a class="el" href="../../dc/d75/classsysy_1_1ir_1_1ConstantInt.html#a1b77553261b7ac4d5e4806530385ac93">sysy::ir::ConstantInt::getZero()</a>, <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#abfc5820461d6ea0eddfc4de9397435d8">sysy::ir::Loop::isLoopInvariant()</a>, <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a8e98bbaa7ff7eef397806d6dbbafc425">sysy::ir::Loop::registerSCEV()</a>, and <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a1bb6de13620c89ae8dcdfbf4ffc9cb1c">sysy::ir::Instruction::Sub</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#a30d85b7e712b856858226e7c3fbf23dd">registerBIV()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution_aeca910c337f8a40967fae41997c542e2_cgraph.png" border="0" usemap="#d5/d84/classsysy_1_1ir_1_1ScalarEvolution_aeca910c337f8a40967fae41997c542e2_cgraph" alt=""/></div>
+<map name="d5/d84/classsysy_1_1ir_1_1ScalarEvolution_aeca910c337f8a40967fae41997c542e2_cgraph" id="d5/d84/classsysy_1_1ir_1_1ScalarEvolution_aeca910c337f8a40967fae41997c542e2_cgraph">
+<area shape="rect" title=" " alt="" coords="5,129,183,171"/>
+<area shape="rect" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a1b915129bd2ac53ea09512292870354b" title=" " alt="" coords="247,13,429,39"/>
+<area shape="rect" href="../../da/dd0/classsysy_1_1ir_1_1PhiInstruction.html#ad7c0e4ab47f0cabddd87b4bef6a316a1" title=" " alt="" coords="255,64,421,105"/>
+<area shape="rect" href="../../dc/d75/classsysy_1_1ir_1_1ConstantInt.html#a1b77553261b7ac4d5e4806530385ac93" title=" " alt="" coords="263,129,413,171"/>
+<area shape="rect" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#abfc5820461d6ea0eddfc4de9397435d8" title=" " alt="" coords="231,195,445,222"/>
+<area shape="rect" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a8e98bbaa7ff7eef397806d6dbbafc425" title=" " alt="" coords="239,246,437,273"/>
+<area shape="rect" href="../../dc/d76/classsysy_1_1ir_1_1IntegerType.html#af0815a818d9f8e78f62f8e4eeac574ce" title=" " alt="" coords="507,5,659,47"/>
+<area shape="rect" href="../../dc/d02/classsysy_1_1ir_1_1Context.html#aba7555fd5267d54a604e4a5f0fdc69b2" title=" " alt="" coords="729,5,864,47"/>
+<area shape="rect" href="../../dd/d20/namespacesysy.html#a746e1eb45442547b5f49e0087727fdb3" title=" " alt="" coords="514,71,653,98"/>
+<area shape="rect" href="../../dc/d75/classsysy_1_1ir_1_1ConstantInt.html#ab879fa5399f2ecc1a3937f137b44e4b7" title=" " alt="" coords="493,137,673,163"/>
+<area shape="rect" href="../../dc/d75/classsysy_1_1ir_1_1ConstantInt.html#a3fc70f0b683fcaaf933de031d132e99e" title=" " alt="" coords="721,129,872,171"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution_aeca910c337f8a40967fae41997c542e2_icgraph.png" border="0" usemap="#d5/d84/classsysy_1_1ir_1_1ScalarEvolution_aeca910c337f8a40967fae41997c542e2_icgraph" alt=""/></div>
+<map name="d5/d84/classsysy_1_1ir_1_1ScalarEvolution_aeca910c337f8a40967fae41997c542e2_icgraph" id="d5/d84/classsysy_1_1ir_1_1ScalarEvolution_aeca910c337f8a40967fae41997c542e2_icgraph">
+<area shape="rect" title=" " alt="" coords="936,5,1113,47"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#a30d85b7e712b856858226e7c3fbf23dd" title=" " alt="" coords="711,5,888,47"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#ac26333925ef1ce0092c71c23719e0533" title=" " alt="" coords="485,5,663,47"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#a0f98946c99fd079aa59c712a3212b5d0" title=" " alt="" coords="260,5,437,47"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#aa77c21818a83d9b475e3d967662190bc" title=" " alt="" coords="5,13,212,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac26333925ef1ce0092c71c23719e0533"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac26333925ef1ce0092c71c23719e0533">&#9670;&nbsp;</a></span>findAndRegisterBIV()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sysy::ir::ScalarEvolution::findAndRegisterBIV </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html">Loop</a> *&#160;</td>
+          <td class="paramname"><em>loop</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a07f70a12e8c18d0c7e7669a97f28c715">sysy::ir::Loop::getHeader()</a>, <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#abfc5820461d6ea0eddfc4de9397435d8">sysy::ir::Loop::isLoopInvariant()</a>, and <a class="el" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#a30d85b7e712b856858226e7c3fbf23dd">registerBIV()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#a0f98946c99fd079aa59c712a3212b5d0">runOnLoop()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution_ac26333925ef1ce0092c71c23719e0533_cgraph.png" border="0" usemap="#d5/d84/classsysy_1_1ir_1_1ScalarEvolution_ac26333925ef1ce0092c71c23719e0533_cgraph" alt=""/></div>
+<map name="d5/d84/classsysy_1_1ir_1_1ScalarEvolution_ac26333925ef1ce0092c71c23719e0533_cgraph" id="d5/d84/classsysy_1_1ir_1_1ScalarEvolution_ac26333925ef1ce0092c71c23719e0533_cgraph">
+<area shape="rect" title=" " alt="" coords="5,49,183,90"/>
+<area shape="rect" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a07f70a12e8c18d0c7e7669a97f28c715" title=" " alt="" coords="231,5,413,32"/>
+<area shape="rect" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#abfc5820461d6ea0eddfc4de9397435d8" title=" " alt="" coords="687,56,901,83"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#a30d85b7e712b856858226e7c3fbf23dd" title=" " alt="" coords="233,158,411,199"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#aeca910c337f8a40967fae41997c542e2" title=" " alt="" coords="461,158,639,199"/>
+<area shape="rect" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#aade5575316fb35822e3785e543ecba69" title=" " alt="" coords="477,223,623,265"/>
+<area shape="rect" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html#a77ccc84b71f29b3dbee04f97f8056088" title=" " alt="" coords="463,289,637,316"/>
+<area shape="rect" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a1b915129bd2ac53ea09512292870354b" title=" " alt="" coords="703,107,885,133"/>
+<area shape="rect" href="../../da/dd0/classsysy_1_1ir_1_1PhiInstruction.html#ad7c0e4ab47f0cabddd87b4bef6a316a1" title=" " alt="" coords="711,158,877,199"/>
+<area shape="rect" href="../../dc/d75/classsysy_1_1ir_1_1ConstantInt.html#a1b77553261b7ac4d5e4806530385ac93" title=" " alt="" coords="719,223,869,265"/>
+<area shape="rect" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a8e98bbaa7ff7eef397806d6dbbafc425" title=" " alt="" coords="695,289,893,316"/>
+<area shape="rect" href="../../dc/d76/classsysy_1_1ir_1_1IntegerType.html#af0815a818d9f8e78f62f8e4eeac574ce" title=" " alt="" coords="963,99,1115,141"/>
+<area shape="rect" href="../../dc/d02/classsysy_1_1ir_1_1Context.html#aba7555fd5267d54a604e4a5f0fdc69b2" title=" " alt="" coords="1185,99,1320,141"/>
+<area shape="rect" href="../../dd/d20/namespacesysy.html#a746e1eb45442547b5f49e0087727fdb3" title=" " alt="" coords="970,165,1109,192"/>
+<area shape="rect" href="../../dc/d75/classsysy_1_1ir_1_1ConstantInt.html#ab879fa5399f2ecc1a3937f137b44e4b7" title=" " alt="" coords="949,231,1129,257"/>
+<area shape="rect" href="../../dc/d75/classsysy_1_1ir_1_1ConstantInt.html#a3fc70f0b683fcaaf933de031d132e99e" title=" " alt="" coords="1177,223,1328,265"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution_ac26333925ef1ce0092c71c23719e0533_icgraph.png" border="0" usemap="#d5/d84/classsysy_1_1ir_1_1ScalarEvolution_ac26333925ef1ce0092c71c23719e0533_icgraph" alt=""/></div>
+<map name="d5/d84/classsysy_1_1ir_1_1ScalarEvolution_ac26333925ef1ce0092c71c23719e0533_icgraph" id="d5/d84/classsysy_1_1ir_1_1ScalarEvolution_ac26333925ef1ce0092c71c23719e0533_icgraph">
+<area shape="rect" title=" " alt="" coords="485,5,663,47"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#a0f98946c99fd079aa59c712a3212b5d0" title=" " alt="" coords="260,5,437,47"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#aa77c21818a83d9b475e3d967662190bc" title=" " alt="" coords="5,13,212,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7e9914280a5fbbdcd8cb0ce9544ed12c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e9914280a5fbbdcd8cb0ce9544ed12c">&#9670;&nbsp;</a></span>getName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string sysy::ir::ScalarEvolution::getName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="../../d5/d01/classsysy_1_1Pass.html#ab06bbe434deae382eb35a8ab2dea0e3c">sysy::Pass&lt; Opt &gt;</a>.</p>
+
+</div>
+</div>
+<a id="add6ba9c6e01df421bda290132596a2d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add6ba9c6e01df421bda290132596a2d1">&#9670;&nbsp;</a></span>linkInstructionToSCEV()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sysy::ir::ScalarEvolution::linkInstructionToSCEV </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html">Loop</a> *&#160;</td>
+          <td class="paramname"><em>loop</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a9c902d222fd4458b67cf4a823f280d3f">BinaryInst</a> *&#160;</td>
+          <td class="paramname"><em>instr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#ababacc69535d90e4f4f3ceceb77ac1fa">fixed</a>, <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#a1b75bf99f7751b0c76f15d94652ca176">sysy::ir::Instruction::getKind()</a>, <a class="el" href="../../d9/dcc/classsysy_1_1ir_1_1BinaryInstrcution.html#a2be639f106e9dae6fcb8b5282545793b">sysy::ir::BinaryInstrcution::getLhs()</a>, <a class="el" href="../../d9/dcc/classsysy_1_1ir_1_1BinaryInstrcution.html#a3c78f6797c076d91c4d9eaa9ed0cc6db">sysy::ir::BinaryInstrcution::getRhs()</a>, <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a42a98c7dc7ae3e7f2a44b246da1ef528">sysy::ir::Loop::getSCEV()</a>, <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a02dec62b51b39a19229377c2ff143fa1">sysy::ir::Loop::hasSCEV()</a>, <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#abfc5820461d6ea0eddfc4de9397435d8">sysy::ir::Loop::isLoopInvariant()</a>, and <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a8e98bbaa7ff7eef397806d6dbbafc425">sysy::ir::Loop::registerSCEV()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#a0f98946c99fd079aa59c712a3212b5d0">runOnLoop()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution_add6ba9c6e01df421bda290132596a2d1_cgraph.png" border="0" usemap="#d5/d84/classsysy_1_1ir_1_1ScalarEvolution_add6ba9c6e01df421bda290132596a2d1_cgraph" alt=""/></div>
+<map name="d5/d84/classsysy_1_1ir_1_1ScalarEvolution_add6ba9c6e01df421bda290132596a2d1_cgraph" id="d5/d84/classsysy_1_1ir_1_1ScalarEvolution_add6ba9c6e01df421bda290132596a2d1_cgraph">
+<area shape="rect" title=" " alt="" coords="5,195,183,236"/>
+<area shape="rect" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#a1b75bf99f7751b0c76f15d94652ca176" title=" " alt="" coords="265,5,411,47"/>
+<area shape="rect" href="../../d9/dcc/classsysy_1_1ir_1_1BinaryInstrcution.html#a2be639f106e9dae6fcb8b5282545793b" title=" " alt="" coords="245,71,431,112"/>
+<area shape="rect" href="../../d9/dcc/classsysy_1_1ir_1_1BinaryInstrcution.html#a3c78f6797c076d91c4d9eaa9ed0cc6db" title=" " alt="" coords="245,136,431,177"/>
+<area shape="rect" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a42a98c7dc7ae3e7f2a44b246da1ef528" title=" " alt="" coords="253,202,423,229"/>
+<area shape="rect" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a02dec62b51b39a19229377c2ff143fa1" title=" " alt="" coords="252,253,424,279"/>
+<area shape="rect" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#abfc5820461d6ea0eddfc4de9397435d8" title=" " alt="" coords="231,303,445,330"/>
+<area shape="rect" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a8e98bbaa7ff7eef397806d6dbbafc425" title=" " alt="" coords="239,354,437,381"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution_add6ba9c6e01df421bda290132596a2d1_icgraph.png" border="0" usemap="#d5/d84/classsysy_1_1ir_1_1ScalarEvolution_add6ba9c6e01df421bda290132596a2d1_icgraph" alt=""/></div>
+<map name="d5/d84/classsysy_1_1ir_1_1ScalarEvolution_add6ba9c6e01df421bda290132596a2d1_icgraph" id="d5/d84/classsysy_1_1ir_1_1ScalarEvolution_add6ba9c6e01df421bda290132596a2d1_icgraph">
+<area shape="rect" title=" " alt="" coords="485,5,663,47"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#a0f98946c99fd079aa59c712a3212b5d0" title=" " alt="" coords="260,5,437,47"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#aa77c21818a83d9b475e3d967662190bc" title=" " alt="" coords="5,13,212,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a30d85b7e712b856858226e7c3fbf23dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30d85b7e712b856858226e7c3fbf23dd">&#9670;&nbsp;</a></span>registerBIV()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sysy::ir::ScalarEvolution::registerBIV </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html">Loop</a> *&#160;</td>
+          <td class="paramname"><em>loop</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a54b15b0f11f28826cb9853c7491747da">PhiInst</a> *&#160;</td>
+          <td class="paramname"><em>phi</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a44bf629ce6339af49db8a4f2dc2f9a96">sysy::ir::Instruction::Add</a>, <a class="el" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#aeca910c337f8a40967fae41997c542e2">BIV2SCEV()</a>, <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#aade5575316fb35822e3785e543ecba69">sysy::ir::Instruction::getBasicBlock()</a>, <a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html#a77ccc84b71f29b3dbee04f97f8056088">sysy::ir::Value::getUses()</a>, <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#abfc5820461d6ea0eddfc4de9397435d8">sysy::ir::Loop::isLoopInvariant()</a>, and <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a1bb6de13620c89ae8dcdfbf4ffc9cb1c">sysy::ir::Instruction::Sub</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#ac26333925ef1ce0092c71c23719e0533">findAndRegisterBIV()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution_a30d85b7e712b856858226e7c3fbf23dd_cgraph.png" border="0" usemap="#d5/d84/classsysy_1_1ir_1_1ScalarEvolution_a30d85b7e712b856858226e7c3fbf23dd_cgraph" alt=""/></div>
+<map name="d5/d84/classsysy_1_1ir_1_1ScalarEvolution_a30d85b7e712b856858226e7c3fbf23dd_cgraph" id="d5/d84/classsysy_1_1ir_1_1ScalarEvolution_a30d85b7e712b856858226e7c3fbf23dd_cgraph">
+<area shape="rect" title=" " alt="" coords="5,256,183,297"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#aeca910c337f8a40967fae41997c542e2" title=" " alt="" coords="231,143,408,184"/>
+<area shape="rect" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#abfc5820461d6ea0eddfc4de9397435d8" title=" " alt="" coords="456,246,671,273"/>
+<area shape="rect" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#aade5575316fb35822e3785e543ecba69" title=" " alt="" coords="247,285,392,327"/>
+<area shape="rect" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html#a77ccc84b71f29b3dbee04f97f8056088" title=" " alt="" coords="233,351,406,378"/>
+<area shape="rect" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a1b915129bd2ac53ea09512292870354b" title=" " alt="" coords="472,13,655,39"/>
+<area shape="rect" href="../../da/dd0/classsysy_1_1ir_1_1PhiInstruction.html#ad7c0e4ab47f0cabddd87b4bef6a316a1" title=" " alt="" coords="481,64,646,105"/>
+<area shape="rect" href="../../dc/d75/classsysy_1_1ir_1_1ConstantInt.html#a1b77553261b7ac4d5e4806530385ac93" title=" " alt="" coords="488,129,639,171"/>
+<area shape="rect" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a8e98bbaa7ff7eef397806d6dbbafc425" title=" " alt="" coords="464,195,663,222"/>
+<area shape="rect" href="../../dc/d76/classsysy_1_1ir_1_1IntegerType.html#af0815a818d9f8e78f62f8e4eeac574ce" title=" " alt="" coords="733,5,885,47"/>
+<area shape="rect" href="../../dc/d02/classsysy_1_1ir_1_1Context.html#aba7555fd5267d54a604e4a5f0fdc69b2" title=" " alt="" coords="955,5,1089,47"/>
+<area shape="rect" href="../../dd/d20/namespacesysy.html#a746e1eb45442547b5f49e0087727fdb3" title=" " alt="" coords="739,71,878,98"/>
+<area shape="rect" href="../../dc/d75/classsysy_1_1ir_1_1ConstantInt.html#ab879fa5399f2ecc1a3937f137b44e4b7" title=" " alt="" coords="719,137,899,163"/>
+<area shape="rect" href="../../dc/d75/classsysy_1_1ir_1_1ConstantInt.html#a3fc70f0b683fcaaf933de031d132e99e" title=" " alt="" coords="947,129,1097,171"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution_a30d85b7e712b856858226e7c3fbf23dd_icgraph.png" border="0" usemap="#d5/d84/classsysy_1_1ir_1_1ScalarEvolution_a30d85b7e712b856858226e7c3fbf23dd_icgraph" alt=""/></div>
+<map name="d5/d84/classsysy_1_1ir_1_1ScalarEvolution_a30d85b7e712b856858226e7c3fbf23dd_icgraph" id="d5/d84/classsysy_1_1ir_1_1ScalarEvolution_a30d85b7e712b856858226e7c3fbf23dd_icgraph">
+<area shape="rect" title=" " alt="" coords="711,5,888,47"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#ac26333925ef1ce0092c71c23719e0533" title=" " alt="" coords="485,5,663,47"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#a0f98946c99fd079aa59c712a3212b5d0" title=" " alt="" coords="260,5,437,47"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#aa77c21818a83d9b475e3d967662190bc" title=" " alt="" coords="5,13,212,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa77c21818a83d9b475e3d967662190bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa77c21818a83d9b475e3d967662190bc">&#9670;&nbsp;</a></span>run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sysy::ir::ScalarEvolution::run </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d36/classsysy_1_1ir_1_1Function.html">Function</a> *&#160;</td>
+          <td class="paramname"><em>func</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html#ae464b729ace674387c5cc76af167f09f">sysy::ir::Value::getName()</a>, <a class="el" href="../../d4/d36/classsysy_1_1ir_1_1Function.html#a023d5bf9fd912010ae658ce4bbd92b04">sysy::ir::Function::getTopLoops()</a>, <a class="el" href="../../db/d16/debug_8h.html#a37745edbd3941f1d8d9e78c5a53d5c2d">PrintMsg</a>, and <a class="el" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#a0f98946c99fd079aa59c712a3212b5d0">runOnLoop()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution_aa77c21818a83d9b475e3d967662190bc_cgraph.png" border="0" usemap="#d5/d84/classsysy_1_1ir_1_1ScalarEvolution_aa77c21818a83d9b475e3d967662190bc_cgraph" alt=""/></div>
+<map name="d5/d84/classsysy_1_1ir_1_1ScalarEvolution_aa77c21818a83d9b475e3d967662190bc_cgraph" id="d5/d84/classsysy_1_1ir_1_1ScalarEvolution_aa77c21818a83d9b475e3d967662190bc_cgraph">
+<area shape="rect" title=" " alt="" coords="5,324,212,351"/>
+<area shape="rect" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html#ae464b729ace674387c5cc76af167f09f" title=" " alt="" coords="260,265,440,292"/>
+<area shape="rect" href="../../d4/d36/classsysy_1_1ir_1_1Function.html#a023d5bf9fd912010ae658ce4bbd92b04" title=" " alt="" coords="285,317,415,358"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#a0f98946c99fd079aa59c712a3212b5d0" title=" " alt="" coords="261,382,439,423"/>
+<area shape="rect" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#ae31d6873670fd665271944a66f6235a7" title=" " alt="" coords="497,61,681,88"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#ac26333925ef1ce0092c71c23719e0533" title=" " alt="" coords="501,113,678,154"/>
+<area shape="rect" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#ab46b6e9f46e15db1bbcfd94194bf400d" title=" " alt="" coords="490,389,689,416"/>
+<area shape="rect" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#ae127a7b1973141cb1bf517eab2774664" title=" " alt="" coords="491,440,687,467"/>
+<area shape="rect" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a5954870f24560a728cb2e2f76059d215" title=" " alt="" coords="493,491,685,517"/>
+<area shape="rect" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#afc4815cae4ad957fbb224f93bb7091ac" title=" " alt="" coords="488,542,691,583"/>
+<area shape="rect" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a42a98c7dc7ae3e7f2a44b246da1ef528" title=" " alt="" coords="747,179,917,205"/>
+<area shape="rect" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a30adf4782a178f414d9d41e809eb2ff6" title=" " alt="" coords="490,608,689,635"/>
+<area shape="rect" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a02dec62b51b39a19229377c2ff143fa1" title=" " alt="" coords="746,528,918,555"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#add6ba9c6e01df421bda290132596a2d1" title=" " alt="" coords="501,273,678,314"/>
+<area shape="rect" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a64a403dac834e45bc1d12c4c43ae06cd" title=" " alt="" coords="491,659,687,685"/>
+<area shape="rect" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a07f70a12e8c18d0c7e7669a97f28c715" title=" " alt="" coords="741,61,923,88"/>
+<area shape="rect" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#abfc5820461d6ea0eddfc4de9397435d8" title=" " alt="" coords="1199,113,1413,140"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#a30d85b7e712b856858226e7c3fbf23dd" title=" " alt="" coords="743,113,921,154"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#aeca910c337f8a40967fae41997c542e2" title=" " alt="" coords="973,281,1151,322"/>
+<area shape="rect" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#aade5575316fb35822e3785e543ecba69" title=" " alt="" coords="989,163,1135,205"/>
+<area shape="rect" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html#a77ccc84b71f29b3dbee04f97f8056088" title=" " alt="" coords="975,61,1149,88"/>
+<area shape="rect" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a1b915129bd2ac53ea09512292870354b" title=" " alt="" coords="1215,164,1397,191"/>
+<area shape="rect" href="../../da/dd0/classsysy_1_1ir_1_1PhiInstruction.html#ad7c0e4ab47f0cabddd87b4bef6a316a1" title=" " alt="" coords="1223,215,1389,257"/>
+<area shape="rect" href="../../dc/d75/classsysy_1_1ir_1_1ConstantInt.html#a1b77553261b7ac4d5e4806530385ac93" title=" " alt="" coords="1231,281,1381,322"/>
+<area shape="rect" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a8e98bbaa7ff7eef397806d6dbbafc425" title=" " alt="" coords="1207,347,1405,373"/>
+<area shape="rect" href="../../dc/d76/classsysy_1_1ir_1_1IntegerType.html#af0815a818d9f8e78f62f8e4eeac574ce" title=" " alt="" coords="1475,157,1627,198"/>
+<area shape="rect" href="../../dc/d02/classsysy_1_1ir_1_1Context.html#aba7555fd5267d54a604e4a5f0fdc69b2" title=" " alt="" coords="1697,157,1832,198"/>
+<area shape="rect" href="../../dd/d20/namespacesysy.html#a746e1eb45442547b5f49e0087727fdb3" title=" " alt="" coords="1482,223,1621,249"/>
+<area shape="rect" href="../../dc/d75/classsysy_1_1ir_1_1ConstantInt.html#ab879fa5399f2ecc1a3937f137b44e4b7" title=" " alt="" coords="1461,288,1641,315"/>
+<area shape="rect" href="../../dc/d75/classsysy_1_1ir_1_1ConstantInt.html#a3fc70f0b683fcaaf933de031d132e99e" title=" " alt="" coords="1689,281,1840,322"/>
+<area shape="rect" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#a1b75bf99f7751b0c76f15d94652ca176" title=" " alt="" coords="759,331,905,373"/>
+<area shape="rect" href="../../d9/dcc/classsysy_1_1ir_1_1BinaryInstrcution.html#a2be639f106e9dae6fcb8b5282545793b" title=" " alt="" coords="739,397,925,438"/>
+<area shape="rect" href="../../d9/dcc/classsysy_1_1ir_1_1BinaryInstrcution.html#a3c78f6797c076d91c4d9eaa9ed0cc6db" title=" " alt="" coords="739,462,925,503"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0f98946c99fd079aa59c712a3212b5d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f98946c99fd079aa59c712a3212b5d0">&#9670;&nbsp;</a></span>runOnLoop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sysy::ir::ScalarEvolution::runOnLoop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html">Loop</a> *&#160;</td>
+          <td class="paramname"><em>loop</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#ae31d6873670fd665271944a66f6235a7">sysy::ir::Loop::cleanSCEV()</a>, <a class="el" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#ac26333925ef1ce0092c71c23719e0533">findAndRegisterBIV()</a>, <a class="el" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#ababacc69535d90e4f4f3ceceb77ac1fa">fixed</a>, <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#ab46b6e9f46e15db1bbcfd94194bf400d">sysy::ir::Loop::getICmpKind()</a>, <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#ae127a7b1973141cb1bf517eab2774664">sysy::ir::Loop::getIndexEnd()</a>, <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a5954870f24560a728cb2e2f76059d215">sysy::ir::Loop::getIndexPhi()</a>, <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#afc4815cae4ad957fbb224f93bb7091ac">sysy::ir::Loop::getLoopBasicBlocks()</a>, <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a42a98c7dc7ae3e7f2a44b246da1ef528">sysy::ir::Loop::getSCEV()</a>, <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a30adf4782a178f414d9d41e809eb2ff6">sysy::ir::Loop::getSubLoops()</a>, <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a02dec62b51b39a19229377c2ff143fa1">sysy::ir::Loop::hasSCEV()</a>, <a class="el" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#add6ba9c6e01df421bda290132596a2d1">linkInstructionToSCEV()</a>, and <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a64a403dac834e45bc1d12c4c43ae06cd">sysy::ir::Loop::setTripCount()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#aa77c21818a83d9b475e3d967662190bc">run()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution_a0f98946c99fd079aa59c712a3212b5d0_cgraph.png" border="0" usemap="#d5/d84/classsysy_1_1ir_1_1ScalarEvolution_a0f98946c99fd079aa59c712a3212b5d0_cgraph" alt=""/></div>
+<map name="d5/d84/classsysy_1_1ir_1_1ScalarEvolution_a0f98946c99fd079aa59c712a3212b5d0_cgraph" id="d5/d84/classsysy_1_1ir_1_1ScalarEvolution_a0f98946c99fd079aa59c712a3212b5d0_cgraph">
+<area shape="rect" title=" " alt="" coords="5,382,183,423"/>
+<area shape="rect" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#ae31d6873670fd665271944a66f6235a7" title=" " alt="" coords="240,61,424,88"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#ac26333925ef1ce0092c71c23719e0533" title=" " alt="" coords="243,113,421,154"/>
+<area shape="rect" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#ab46b6e9f46e15db1bbcfd94194bf400d" title=" " alt="" coords="233,389,431,416"/>
+<area shape="rect" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#ae127a7b1973141cb1bf517eab2774664" title=" " alt="" coords="234,440,430,467"/>
+<area shape="rect" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a5954870f24560a728cb2e2f76059d215" title=" " alt="" coords="236,491,428,517"/>
+<area shape="rect" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#afc4815cae4ad957fbb224f93bb7091ac" title=" " alt="" coords="231,542,433,583"/>
+<area shape="rect" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a42a98c7dc7ae3e7f2a44b246da1ef528" title=" " alt="" coords="489,179,660,205"/>
+<area shape="rect" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a30adf4782a178f414d9d41e809eb2ff6" title=" " alt="" coords="233,608,431,635"/>
+<area shape="rect" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a02dec62b51b39a19229377c2ff143fa1" title=" " alt="" coords="489,528,661,555"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#add6ba9c6e01df421bda290132596a2d1" title=" " alt="" coords="243,273,421,314"/>
+<area shape="rect" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a64a403dac834e45bc1d12c4c43ae06cd" title=" " alt="" coords="234,659,430,685"/>
+<area shape="rect" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a07f70a12e8c18d0c7e7669a97f28c715" title=" " alt="" coords="483,61,666,88"/>
+<area shape="rect" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#abfc5820461d6ea0eddfc4de9397435d8" title=" " alt="" coords="941,113,1156,140"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#a30d85b7e712b856858226e7c3fbf23dd" title=" " alt="" coords="486,113,663,154"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#aeca910c337f8a40967fae41997c542e2" title=" " alt="" coords="716,281,893,322"/>
+<area shape="rect" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#aade5575316fb35822e3785e543ecba69" title=" " alt="" coords="732,163,877,205"/>
+<area shape="rect" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html#a77ccc84b71f29b3dbee04f97f8056088" title=" " alt="" coords="718,61,891,88"/>
+<area shape="rect" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a1b915129bd2ac53ea09512292870354b" title=" " alt="" coords="957,164,1140,191"/>
+<area shape="rect" href="../../da/dd0/classsysy_1_1ir_1_1PhiInstruction.html#ad7c0e4ab47f0cabddd87b4bef6a316a1" title=" " alt="" coords="966,215,1131,257"/>
+<area shape="rect" href="../../dc/d75/classsysy_1_1ir_1_1ConstantInt.html#a1b77553261b7ac4d5e4806530385ac93" title=" " alt="" coords="973,281,1124,322"/>
+<area shape="rect" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a8e98bbaa7ff7eef397806d6dbbafc425" title=" " alt="" coords="949,347,1148,373"/>
+<area shape="rect" href="../../dc/d76/classsysy_1_1ir_1_1IntegerType.html#af0815a818d9f8e78f62f8e4eeac574ce" title=" " alt="" coords="1218,157,1370,198"/>
+<area shape="rect" href="../../dc/d02/classsysy_1_1ir_1_1Context.html#aba7555fd5267d54a604e4a5f0fdc69b2" title=" " alt="" coords="1440,157,1575,198"/>
+<area shape="rect" href="../../dd/d20/namespacesysy.html#a746e1eb45442547b5f49e0087727fdb3" title=" " alt="" coords="1225,223,1363,249"/>
+<area shape="rect" href="../../dc/d75/classsysy_1_1ir_1_1ConstantInt.html#ab879fa5399f2ecc1a3937f137b44e4b7" title=" " alt="" coords="1204,288,1384,315"/>
+<area shape="rect" href="../../dc/d75/classsysy_1_1ir_1_1ConstantInt.html#a3fc70f0b683fcaaf933de031d132e99e" title=" " alt="" coords="1432,281,1583,322"/>
+<area shape="rect" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#a1b75bf99f7751b0c76f15d94652ca176" title=" " alt="" coords="502,331,647,373"/>
+<area shape="rect" href="../../d9/dcc/classsysy_1_1ir_1_1BinaryInstrcution.html#a2be639f106e9dae6fcb8b5282545793b" title=" " alt="" coords="481,397,668,438"/>
+<area shape="rect" href="../../d9/dcc/classsysy_1_1ir_1_1BinaryInstrcution.html#a3c78f6797c076d91c4d9eaa9ed0cc6db" title=" " alt="" coords="481,462,668,503"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution_a0f98946c99fd079aa59c712a3212b5d0_icgraph.png" border="0" usemap="#d5/d84/classsysy_1_1ir_1_1ScalarEvolution_a0f98946c99fd079aa59c712a3212b5d0_icgraph" alt=""/></div>
+<map name="d5/d84/classsysy_1_1ir_1_1ScalarEvolution_a0f98946c99fd079aa59c712a3212b5d0_icgraph" id="d5/d84/classsysy_1_1ir_1_1ScalarEvolution_a0f98946c99fd079aa59c712a3212b5d0_icgraph">
+<area shape="rect" title=" " alt="" coords="260,5,437,47"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#aa77c21818a83d9b475e3d967662190bc" title=" " alt="" coords="5,13,212,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ababacc69535d90e4f4f3ceceb77ac1fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ababacc69535d90e4f4f3ceceb77ac1fa">&#9670;&nbsp;</a></span>fixed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sysy::ir::ScalarEvolution::fixed</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#add6ba9c6e01df421bda290132596a2d1">linkInstructionToSCEV()</a>, and <a class="el" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#a0f98946c99fd079aa59c712a3212b5d0">runOnLoop()</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>include/sysy/Analysis/<a class="el" href="../../d0/d8b/SCEV_8h_source.html">SCEV.h</a></li>
-<li>lib/Analysis/SCEV.cpp</li>
+<li>lib/Analysis/<a class="el" href="../../de/d50/SCEV_8cpp.html">SCEV.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>sysy</b></li><li class="navelem"><b>ir</b></li><li class="navelem"><a class="el" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html">ScalarEvolution</a></li>
+    <li class="navelem"><a class="el" href="../../dd/d20/namespacesysy.html">sysy</a></li><li class="navelem"><a class="el" href="../../d7/d19/namespacesysy_1_1ir.html">ir</a></li><li class="navelem"><a class="el" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html">ScalarEvolution</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

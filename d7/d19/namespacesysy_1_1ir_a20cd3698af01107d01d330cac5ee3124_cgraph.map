@@ -1,0 +1,10 @@
+<map id="sysy::ir::irEmit" name="sysy::ir::irEmit">
+<area shape="rect" id="node1" title=" " alt="" coords="5,103,120,130"/>
+<area shape="rect" id="node2" href="$dc/d75/classsysy_1_1ir_1_1ConstantInt.html#ab879fa5399f2ecc1a3937f137b44e4b7" title=" " alt="" coords="168,17,348,43"/>
+<area shape="rect" id="node4" href="$d0/ddd/classsysy_1_1ir_1_1ConstantFP.html#a220c527175a83958ccef9427270b17ae" title=" " alt="" coords="169,74,347,101"/>
+<area shape="rect" id="node6" href="$db/d7c/classsysy_1_1ast_1_1Immediate.html#a3be5849716fa09a1147b96f4ca9c809a" title=" " alt="" coords="179,125,337,167"/>
+<area shape="rect" id="node8" href="$db/d7c/classsysy_1_1ast_1_1Immediate.html#af1b13ba0770d9cf03b4723cf63aa1ea0" title=" " alt="" coords="179,191,337,232"/>
+<area shape="rect" id="node3" href="$dc/d75/classsysy_1_1ir_1_1ConstantInt.html#a3fc70f0b683fcaaf933de031d132e99e" title=" " alt="" coords="400,5,551,47"/>
+<area shape="rect" id="node5" href="$d0/ddd/classsysy_1_1ir_1_1ConstantFP.html#a2a7ce2c356b51597f0a4e1a9757776e9" title=" " alt="" coords="400,71,551,112"/>
+<area shape="rect" id="node7" href="$db/d7c/classsysy_1_1ast_1_1Immediate.html#acd240d6380e650be4107250abb64b966" title=" " alt="" coords="396,161,555,203"/>
+</map>

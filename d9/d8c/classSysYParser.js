@@ -20,6 +20,7 @@ var classSysYParser =
     [ "FuncFParamsContext", "d4/d63/classSysYParser_1_1FuncFParamsContext.html", "d4/d63/classSysYParser_1_1FuncFParamsContext" ],
     [ "FuncRParamsContext", "d5/dbc/classSysYParser_1_1FuncRParamsContext.html", "d5/dbc/classSysYParser_1_1FuncRParamsContext" ],
     [ "FuncTypeContext", "d1/da5/classSysYParser_1_1FuncTypeContext.html", "d1/da5/classSysYParser_1_1FuncTypeContext" ],
+    [ "Initializer", "d2/d61/structSysYParser_1_1Initializer.html", "d2/d61/structSysYParser_1_1Initializer" ],
     [ "InitValContext", "d4/ded/classSysYParser_1_1InitValContext.html", "d4/ded/classSysYParser_1_1InitValContext" ],
     [ "IntConstContext", "d9/d36/classSysYParser_1_1IntConstContext.html", "d9/d36/classSysYParser_1_1IntConstContext" ],
     [ "LAndExpContext", "d9/da3/classSysYParser_1_1LAndExpContext.html", "d9/da3/classSysYParser_1_1LAndExpContext" ],
@@ -172,5 +173,15 @@ var classSysYParser =
     [ "unaryOp", "d9/d8c/classSysYParser.html#a47c5f2fa1cffc58f28d77a952030639b", null ],
     [ "varDecl", "d9/d8c/classSysYParser.html#a009a9ab0ba5ef2896dbd6baf5102a8cc", null ],
     [ "varDecl_in", "d9/d8c/classSysYParser.html#ae8aa939fdc2b2becd0e464d98c69397f", null ],
-    [ "varDef", "d9/d8c/classSysYParser.html#a585561c2f890401122b6019187b8d311", null ]
+    [ "varDef", "d9/d8c/classSysYParser.html#a585561c2f890401122b6019187b8d311", null ],
+    [ "_atn", "d9/d8c/classSysYParser.html#a7bf58628f05b182a93260da0f665b74c", null ],
+    [ "_decisionToDFA", "d9/d8c/classSysYParser.html#ad98a69f8192a3ccb1de85bdd817ce1c1", null ],
+    [ "_init", "d9/d8c/classSysYParser.html#a48421574b776590264b85461e44c39d9", null ],
+    [ "_literalNames", "d9/d8c/classSysYParser.html#ad4b193de62d92c30a4e43d492fb55576", null ],
+    [ "_ruleNames", "d9/d8c/classSysYParser.html#afccd46cadbdc23d58a64ffc02ec1e142", null ],
+    [ "_serializedATN", "d9/d8c/classSysYParser.html#aee22c60195610356c5b1d05751914c47", null ],
+    [ "_sharedContextCache", "d9/d8c/classSysYParser.html#aaa51b19c4bcaa89075606635ff273067", null ],
+    [ "_symbolicNames", "d9/d8c/classSysYParser.html#ac3a72e552b07bb183ce9cb655b894dda", null ],
+    [ "_tokenNames", "d9/d8c/classSysYParser.html#ad330264e3d0351587a6d082dde6f2a5e", null ],
+    [ "_vocabulary", "d9/d8c/classSysYParser.html#a11605b43e3d7bab5a18e6d71196deb49", null ]
 ];

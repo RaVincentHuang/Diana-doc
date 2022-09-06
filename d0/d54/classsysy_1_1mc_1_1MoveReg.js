@@ -10,5 +10,6 @@ var classsysy_1_1mc_1_1MoveReg =
     [ "gen_asm", "d0/d54/classsysy_1_1mc_1_1MoveReg.html#af90d47ca9848d5ddd6fa01f33c4b3e24", null ],
     [ "dst", "d0/d54/classsysy_1_1mc_1_1MoveReg.html#a29a9705856340011e7671606714d796e", null ],
     [ "lhs", "d0/d54/classsysy_1_1mc_1_1MoveReg.html#a7c589904aa121940b1658b92a53958a4", null ],
-    [ "type", "d0/d54/classsysy_1_1mc_1_1MoveReg.html#a61e6442a97caac9bf2a50e1acb2028aa", null ]
+    [ "type", "d0/d54/classsysy_1_1mc_1_1MoveReg.html#a61e6442a97caac9bf2a50e1acb2028aa", null ],
+    [ "type_map", "d0/d54/classsysy_1_1mc_1_1MoveReg.html#a2cd282fbcfad3c72ed3b3ef936783b77", null ]
 ];

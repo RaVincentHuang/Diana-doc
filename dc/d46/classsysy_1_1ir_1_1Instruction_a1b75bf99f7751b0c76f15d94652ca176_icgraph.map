@@ -1,0 +1,20 @@
+<map id="sysy::ir::Instruction::getKind" name="sysy::ir::Instruction::getKind">
+<area shape="rect" id="node1" title=" " alt="" coords="807,323,952,365"/>
+<area shape="rect" id="node2" href="$d7/d19/namespacesysy_1_1ir.html#a329ba6e5fa96077cae72c190a181a5dd" title=" " alt="" coords="578,5,737,32"/>
+<area shape="rect" id="node3" href="$d7/d19/namespacesysy_1_1ir.html#a9c9783cd10d7f6d83f255f7a1a1b918a" title=" " alt="" coords="298,31,495,57"/>
+<area shape="rect" id="node4" href="$d9/dcc/classsysy_1_1ir_1_1BinaryInstrcution.html#a6d4585ea07231d50b119bf33b14901a3" title=" " alt="" coords="564,107,751,149"/>
+<area shape="rect" id="node5" href="$d1/d1e/classsysy_1_1ir_1_1UnaryInstruction.html#a081f5941c82549eda203ba72e2d16199" title=" " alt="" coords="565,173,749,214"/>
+<area shape="rect" id="node6" href="$df/d2d/classsysy_1_1ir_1_1GVN.html#a487b89cc1fb2d15fff33657194db20a2" title=" " alt="" coords="285,268,508,295"/>
+<area shape="rect" id="node7" href="$db/d19/classsysy_1_1ir_1_1LSR.html#a5b0485e4df4289f82373fcafd9535930" title=" " alt="" coords="570,355,745,397"/>
+<area shape="rect" id="node10" href="$dc/d46/classsysy_1_1ir_1_1Instruction.html#a5166425ad6cbe9bdf20f203efe3ebd06" title=" " alt="" coords="585,290,730,331"/>
+<area shape="rect" id="node11" href="$de/d41/classsysy_1_1ir_1_1CollectOccurrences.html#a0db54493aa3aa940b6a233a62d24fc6b" title=" " alt="" coords="557,421,758,462"/>
+<area shape="rect" id="node12" href="$d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#add6ba9c6e01df421bda290132596a2d1" title=" " alt="" coords="569,486,746,527"/>
+<area shape="rect" id="node15" href="$d6/d6f/classsysy_1_1ir_1_1InstructionCombine.html#ad6ba6f7f3df7be9c0380d2343cb65784" title=" " alt="" coords="556,551,759,593"/>
+<area shape="rect" id="node16" href="$d6/d6f/classsysy_1_1ir_1_1InstructionCombine.html#a2c9a84f59c447d2917fd50dd1119f994" title=" " alt="" coords="295,610,498,651"/>
+<area shape="rect" id="node18" href="$d6/d6f/classsysy_1_1ir_1_1InstructionCombine.html#ab878fcc588eb24cf1c8947b6911ebd57" title=" " alt="" coords="556,669,759,710"/>
+<area shape="rect" id="node8" href="$db/d19/classsysy_1_1ir_1_1LSR.html#a81e424a516f27acd1c75fd22c1b9b4ca" title=" " alt="" coords="307,363,486,389"/>
+<area shape="rect" id="node9" href="$db/d19/classsysy_1_1ir_1_1LSR.html#a01589b57af10a7b0e6362613a50d7a5b" title=" " alt="" coords="57,363,186,389"/>
+<area shape="rect" id="node13" href="$d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#a0f98946c99fd079aa59c712a3212b5d0" title=" " alt="" coords="308,486,485,527"/>
+<area shape="rect" id="node14" href="$d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#aa77c21818a83d9b475e3d967662190bc" title=" " alt="" coords="18,493,225,520"/>
+<area shape="rect" id="node17" href="$d6/d6f/classsysy_1_1ir_1_1InstructionCombine.html#a58d84f4b78981a1b242691da6a5b326b" title=" " alt="" coords="5,617,237,644"/>
+</map>

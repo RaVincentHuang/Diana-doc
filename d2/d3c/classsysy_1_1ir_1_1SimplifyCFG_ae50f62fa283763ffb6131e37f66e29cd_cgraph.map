@@ -1,0 +1,10 @@
+<map id="sysy::ir::SimplifyCFG::mergeBB" name="sysy::ir::SimplifyCFG::mergeBB">
+<area shape="rect" id="node1" title=" " alt="" coords="5,134,161,175"/>
+<area shape="rect" id="node2" href="$d2/d3c/classsysy_1_1ir_1_1SimplifyCFG.html#a2108f9c862eba2a3070ccb6e04235c6b" title=" " alt="" coords="211,39,367,81"/>
+<area shape="rect" id="node3" href="$df/dd2/classsysy_1_1ir_1_1BasicBlock.html#a87edb8a6b3ef522b2aa073d74737cba0" title=" " alt="" coords="416,7,563,49"/>
+<area shape="rect" id="node5" href="$df/dd2/classsysy_1_1ir_1_1BasicBlock.html#ac4ce5c07032b9dab7bbad0310860c153" title=" " alt="" coords="416,138,563,179"/>
+<area shape="rect" id="node6" href="$db/d8f/classsysy_1_1ir_1_1BrInstruction.html#a7481299de46df4dfefb5afab83b31a61" title=" " alt="" coords="209,222,368,263"/>
+<area shape="rect" id="node7" href="$df/dd2/classsysy_1_1ir_1_1BasicBlock.html#aae8b7dea1401559f1b6fae88d32f33f4" title=" " alt="" coords="215,287,362,329"/>
+<area shape="rect" id="node8" href="$d2/d3c/classsysy_1_1ir_1_1SimplifyCFG.html#a0c4431a80c2ecf147b33c1dcec01cda6" title=" " alt="" coords="211,105,367,146"/>
+<area shape="rect" id="node4" href="$df/dd2/classsysy_1_1ir_1_1BasicBlock.html#ae1910c2aa4c3a82990b0c973bbfcfb10" title=" " alt="" coords="416,73,563,114"/>
+</map>

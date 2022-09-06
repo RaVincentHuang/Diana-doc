@@ -1,0 +1,9 @@
+<map id="sysy::ir::GVN::getValueNumber" name="sysy::ir::GVN::getValueNumber">
+<area shape="rect" id="node1" title=" " alt="" coords="5,137,228,163"/>
+<area shape="rect" id="node2" href="$df/d2d/classsysy_1_1ir_1_1GVN.html#a9107711a96fb6beb28bf30c5b33ca517" title=" " alt="" coords="276,78,481,105"/>
+<area shape="rect" id="node6" href="$db/d0c/classsysy_1_1ir_1_1LoadInstruction.html#a11b01930ac20be384886b303c65adc38" title=" " alt="" coords="291,129,467,171"/>
+<area shape="rect" id="node7" href="$db/d0c/classsysy_1_1ir_1_1LoadInstruction.html#aeca041181858c6fdb314a6bec7219ae5" title=" " alt="" coords="291,195,467,236"/>
+<area shape="rect" id="node3" href="$dc/d75/classsysy_1_1ir_1_1ConstantInt.html#a68463fc8c0dc6b9bf135d80fb03c699b" title=" " alt="" coords="565,5,716,47"/>
+<area shape="rect" id="node4" href="$d0/ddd/classsysy_1_1ir_1_1ConstantFP.html#ab4a5a63ae1897ce1ec2b5600f34122af" title=" " alt="" coords="565,71,716,112"/>
+<area shape="rect" id="node5" href="$df/d2d/classsysy_1_1ir_1_1GVN.html#ae157c9edabfa9e9480b47f6ed689d3fb" title=" " alt="" coords="529,137,752,163"/>
+</map>

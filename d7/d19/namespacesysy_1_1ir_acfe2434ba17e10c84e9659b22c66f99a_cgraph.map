@@ -1,0 +1,16 @@
+<map id="sysy::ir::aliasAtCall" name="sysy::ir::aliasAtCall">
+<area shape="rect" id="node1" title=" " alt="" coords="5,283,152,309"/>
+<area shape="rect" id="node2" href="$d7/d19/namespacesysy_1_1ir.html#ad224d7a4a6f35c7af5f121522ecf35c5" title=" " alt="" coords="232,169,339,196"/>
+<area shape="rect" id="node11" href="$d5/d35/classsysy_1_1ir_1_1CallInstruction.html#a52df54835a7c1e00adbff8cdfce32ca5" title=" " alt="" coords="200,242,371,283"/>
+<area shape="rect" id="node13" href="$d5/d35/classsysy_1_1ir_1_1CallInstruction.html#a916151348941432110e8fe00939a630b" title=" " alt="" coords="200,307,371,349"/>
+<area shape="rect" id="node14" href="$d7/d19/namespacesysy_1_1ir.html#a33f37c9fd9aecc8f657c567626c6e9b2" title=" " alt="" coords="200,373,371,400"/>
+<area shape="rect" id="node3" href="$d7/d19/namespacesysy_1_1ir.html#a4a8754b28af9f6629393cfe4cf66f3f5" title=" " alt="" coords="419,64,609,91"/>
+<area shape="rect" id="node8" href="$d7/d19/namespacesysy_1_1ir.html#a8430f85f938d0c102224e4238a5eb602" title=" " alt="" coords="663,220,807,247"/>
+<area shape="rect" id="node9" href="$d7/d19/namespacesysy_1_1ir.html#a692600b5bc967e417fbda24d5285e9c6" title=" " alt="" coords="670,169,799,196"/>
+<area shape="rect" id="node10" href="$d7/d19/namespacesysy_1_1ir.html#a72e9e0695295d713f224dd411d9a1341" title=" " alt="" coords="453,169,575,196"/>
+<area shape="rect" id="node4" href="$dc/de9/classsysy_1_1ir_1_1AllocaInstruction.html#a9ce24cac005a40998ad4c3f740664301" title=" " alt="" coords="867,162,1052,203"/>
+<area shape="rect" id="node5" href="$d7/d1e/classsysy_1_1ir_1_1Type.html#acef75cffb3fa405698cd9aa5984ece89" title=" " alt="" coords="860,5,1059,32"/>
+<area shape="rect" id="node6" href="$dd/d88/classsysy_1_1ir_1_1GlobalValue.html#a358791693c90a731eb2c6232a370529e" title=" " alt="" coords="657,53,812,94"/>
+<area shape="rect" id="node7" href="$d9/d9f/classsysy_1_1ir_1_1Value.html#af4402152f2e0134f8bcfb4153fdf3a64" title=" " alt="" coords="874,60,1045,87"/>
+<area shape="rect" id="node12" href="$dd/d20/namespacesysy.html#a746e1eb45442547b5f49e0087727fdb3" title=" " alt="" coords="445,271,583,297"/>
+</map>

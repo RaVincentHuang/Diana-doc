@@ -1,6 +1,7 @@
 var classsysy_1_1ir_1_1Context =
 [
     [ "Context", "dc/d02/classsysy_1_1ir_1_1Context.html#aeccf1016ae8d678af2e0d83d6adce01c", null ],
+    [ "getInstance", "dc/d02/classsysy_1_1ir_1_1Context.html#aba7555fd5267d54a604e4a5f0fdc69b2", null ],
     [ "ArrayTy", "dc/d02/classsysy_1_1ir_1_1Context.html#aa2980b9fd969c731a8e532bfdf145416", null ],
     [ "FloatTy", "dc/d02/classsysy_1_1ir_1_1Context.html#a3407c097477ccaa5d6bb2256ace14c03", null ],
     [ "FunctionTy", "dc/d02/classsysy_1_1ir_1_1Context.html#a98b554b537e05bb590b5fa0864a179b7", null ],

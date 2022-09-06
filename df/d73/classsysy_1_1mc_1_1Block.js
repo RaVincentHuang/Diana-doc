@@ -23,6 +23,7 @@ var classsysy_1_1mc_1_1Block =
     [ "live_use_v", "df/d73/classsysy_1_1mc_1_1Block.html#ae0aef8a0b1f80afdfac6423000ae2c97", null ],
     [ "loop_depth", "df/d73/classsysy_1_1mc_1_1Block.html#aac4465ecce34c28c2b5d0975745d074b", null ],
     [ "name", "df/d73/classsysy_1_1mc_1_1Block.html#a3440c7e85176fb2b63dadece55f46279", null ],
+    [ "num", "df/d73/classsysy_1_1mc_1_1Block.html#aa88fd9c02c16cebfa1f9b628b1994d15", null ],
     [ "predecessor", "df/d73/classsysy_1_1mc_1_1Block.html#a5e7240244eb5b07c793bb4bccb149260", null ],
     [ "successor", "df/d73/classsysy_1_1mc_1_1Block.html#ac982b2304ed7e0dba1df0851247c3311", null ],
     [ "vc_div_map", "df/d73/classsysy_1_1mc_1_1Block.html#a5e44fb38456355349bae32eff70463dc", null ],

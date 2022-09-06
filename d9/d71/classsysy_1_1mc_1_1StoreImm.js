@@ -10,5 +10,6 @@ var classsysy_1_1mc_1_1StoreImm =
     [ "dst", "d9/d71/classsysy_1_1mc_1_1StoreImm.html#a049cad7ab5612101d6baa150498986da", null ],
     [ "lhs", "d9/d71/classsysy_1_1mc_1_1StoreImm.html#a576d6a78bdbad3bbe16dc7ed358640d1", null ],
     [ "offset", "d9/d71/classsysy_1_1mc_1_1StoreImm.html#a82137c0f4847257a6453ffd3bc86b677", null ],
-    [ "type", "d9/d71/classsysy_1_1mc_1_1StoreImm.html#a9e5a3c845a2d0473ee1e5267c02bd6df", null ]
+    [ "type", "d9/d71/classsysy_1_1mc_1_1StoreImm.html#a9e5a3c845a2d0473ee1e5267c02bd6df", null ],
+    [ "type_map", "d9/d71/classsysy_1_1mc_1_1StoreImm.html#a13e6e8fa97e24ce48c3f883dc7cd3905", null ]
 ];

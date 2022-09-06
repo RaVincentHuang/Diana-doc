@@ -1,0 +1,14 @@
+<map id="sysy::ir::LSR::eraseSingleMul" name="sysy::ir::LSR::eraseSingleMul">
+<area shape="rect" id="node1" title=" " alt="" coords="5,224,213,251"/>
+<area shape="rect" id="node2" href="$d8/d7d/classsysy_1_1ir_1_1SCEV.html#a1a94375263bda82d29bc737c9a7cfc9d" title=" " alt="" coords="298,5,429,32"/>
+<area shape="rect" id="node3" href="$d2/d57/classsysy_1_1ir_1_1Loop.html#a07f70a12e8c18d0c7e7669a97f28c715" title=" " alt="" coords="272,56,455,83"/>
+<area shape="rect" id="node4" href="$d2/d57/classsysy_1_1ir_1_1Loop.html#a0d57745959cc7441ac58069b078ee3c1" title=" " alt="" coords="278,107,449,149"/>
+<area shape="rect" id="node5" href="$d9/d9f/classsysy_1_1ir_1_1Value.html#ae464b729ace674387c5cc76af167f09f" title=" " alt="" coords="273,173,453,200"/>
+<area shape="rect" id="node6" href="$d2/d57/classsysy_1_1ir_1_1Loop.html#a349884a7c65bd9460af3d9d0141e032f" title=" " alt="" coords="261,224,465,251"/>
+<area shape="rect" id="node7" href="$d2/d57/classsysy_1_1ir_1_1Loop.html#a42a98c7dc7ae3e7f2a44b246da1ef528" title=" " alt="" coords="278,275,449,301"/>
+<area shape="rect" id="node8" href="$df/dd2/classsysy_1_1ir_1_1BasicBlock.html#a3a77266ab2691af1473d43935de595e6" title=" " alt="" coords="280,326,447,367"/>
+<area shape="rect" id="node10" href="$df/dd2/classsysy_1_1ir_1_1BasicBlock.html#ade4b37bab9943dd89a3bd9c7967a9b9e" title=" " alt="" coords="290,391,437,433"/>
+<area shape="rect" id="node11" href="$d9/d9f/classsysy_1_1ir_1_1Value.html#aeb1a0e39e1ca02b7e3b231886f871d9a" title=" " alt="" coords="279,457,447,498"/>
+<area shape="rect" id="node9" href="$dc/d46/classsysy_1_1ir_1_1Instruction.html#a03508386f88a1697e942901f76300195" title=" " alt="" coords="527,326,673,367"/>
+<area shape="rect" id="node12" href="$d9/d9f/classsysy_1_1ir_1_1Value.html#a77ccc84b71f29b3dbee04f97f8056088" title=" " alt="" coords="513,464,687,491"/>
+</map>

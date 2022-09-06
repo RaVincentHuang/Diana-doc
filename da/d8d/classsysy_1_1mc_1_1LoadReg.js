@@ -12,5 +12,6 @@ var classsysy_1_1mc_1_1LoadReg =
     [ "lhs", "da/d8d/classsysy_1_1mc_1_1LoadReg.html#a36fc7075c4223f00232ba88ddaa78ea5", null ],
     [ "rhs", "da/d8d/classsysy_1_1mc_1_1LoadReg.html#a83ff407f3c42f1ed87dd223552d75b1b", null ],
     [ "shift", "da/d8d/classsysy_1_1mc_1_1LoadReg.html#a136ddaebb5a70a9eee497f61f5907988", null ],
-    [ "type", "da/d8d/classsysy_1_1mc_1_1LoadReg.html#af50e239c9b45d7b680fa6fa5eefa0b49", null ]
+    [ "type", "da/d8d/classsysy_1_1mc_1_1LoadReg.html#af50e239c9b45d7b680fa6fa5eefa0b49", null ],
+    [ "type_map", "da/d8d/classsysy_1_1mc_1_1LoadReg.html#a86dec5180f2534bf3e7928e4cabb9f93", null ]
 ];

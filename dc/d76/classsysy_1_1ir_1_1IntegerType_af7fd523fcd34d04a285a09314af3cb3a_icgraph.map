@@ -1,0 +1,10 @@
+<map id="sysy::ir::IntegerType::getInt8Ty" name="sysy::ir::IntegerType::getInt8Ty">
+<area shape="rect" id="node1" title=" " alt="" coords="932,23,1084,65"/>
+<area shape="rect" id="node2" href="$dc/d76/classsysy_1_1ir_1_1IntegerType.html#aecdc39e3dc5faf58e13a291943653d14" title=" " alt="" coords="703,5,884,32"/>
+<area shape="rect" id="node4" href="$d7/d1e/classsysy_1_1ir_1_1Type.html#ae814270a93bf4def78ab6a5beb5b8bf5" title=" " alt="" coords="706,56,881,83"/>
+<area shape="rect" id="node3" href="$d7/d1e/classsysy_1_1ir_1_1Type.html#a79ff29344d561325d67f3aeec9ac6a60" title=" " alt="" coords="460,5,655,32"/>
+<area shape="rect" id="node5" href="$dc/d75/classsysy_1_1ir_1_1ConstantInt.html#a7d7d64f6c6b87a983ed00aad2e237061" title=" " alt="" coords="467,56,647,83"/>
+<area shape="rect" id="node6" href="$d0/da1/classsysy_1_1ir_1_1PointerType.html#a76e319e7e3bc2ac425cf5a3c6faed566" title=" " alt="" coords="481,107,633,149"/>
+<area shape="rect" id="node7" href="$d7/d1e/classsysy_1_1ir_1_1Type.html#a48af647a285304e118d183510508f84d" title=" " alt="" coords="220,115,412,141"/>
+<area shape="rect" id="node8" href="$db/d2c/classsysy_1_1ir_1_1IRBuilder.html#a78f86254e2c4008388a173208598bdce" title=" " alt="" coords="5,107,172,149"/>
+</map>

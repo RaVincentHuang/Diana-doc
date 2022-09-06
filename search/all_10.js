@@ -1,13 +1,6 @@
 var searchData=
 [
-  ['unaryexpcontext_210',['UnaryExpContext',['../d2/d55/classSysYParser_1_1UnaryExpContext.html',1,'SysYParser']]],
-  ['unaryexprnode_211',['UnaryExprNode',['../d1/dd8/classsysy_1_1ast_1_1UnaryExprNode.html',1,'sysy::ast']]],
-  ['unaryinstruction_212',['UnaryInstruction',['../d1/d1e/classsysy_1_1ir_1_1UnaryInstruction.html',1,'sysy::ir']]],
-  ['unaryopcontext_213',['UnaryOpContext',['../d7/db7/classSysYParser_1_1UnaryOpContext.html',1,'SysYParser']]],
-  ['undefoccurrence_214',['UndefOccurrence',['../de/d99/classsysy_1_1ir_1_1UndefOccurrence.html',1,'sysy::ir']]],
-  ['undeftype_215',['UndefType',['../df/d12/classsysy_1_1ir_1_1UndefType.html',1,'sysy::ir']]],
-  ['undefvalue_216',['UndefValue',['../d0/d64/classsysy_1_1ir_1_1UndefValue.html',1,'sysy::ir']]],
-  ['unsetssa_217',['UnsetSSA',['../d5/d44/classsysy_1_1ir_1_1UnsetSSA.html',1,'sysy::ir']]],
-  ['use_218',['Use',['../df/deb/classsysy_1_1ir_1_1Use.html',1,'sysy::ir']]],
-  ['user_219',['User',['../d9/d1a/classsysy_1_1ir_1_1User.html',1,'sysy::ir']]]
+  ['queueloadmemphi_1172',['queueLoadMemPhi',['../d3/d8e/classsysy_1_1ir_1_1MemorySSA.html#a9ad78280491d45c7898f9aebf74f0c29',1,'sysy::ir::MemorySSA::queueLoadMemPhi(GlobalValue *gv, BasicBlock *father)'],['../d3/d8e/classsysy_1_1ir_1_1MemorySSA.html#a12c70f2a9509eb49ddd0c6af870c95e5',1,'sysy::ir::MemorySSA::queueLoadMemPhi(Value *array, BasicBlock *father)']]],
+  ['queuephi_1173',['queuePhi',['../db/df2/classsysy_1_1ir_1_1Memory2Reg.html#afa3c2bcf6d4f10b4cdac8b5509746442',1,'sysy::ir::Memory2Reg']]],
+  ['queuestorememphi_1174',['queueStoreMemPhi',['../d3/d8e/classsysy_1_1ir_1_1MemorySSA.html#abdb55a00b151e7564b20139d850b8bec',1,'sysy::ir::MemorySSA::queueStoreMemPhi(GlobalValue *gv, BasicBlock *father)'],['../d3/d8e/classsysy_1_1ir_1_1MemorySSA.html#a0afdd8803ae754c21d439bcfd98f995a',1,'sysy::ir::MemorySSA::queueStoreMemPhi(Value *array, BasicBlock *father)']]]
 ];

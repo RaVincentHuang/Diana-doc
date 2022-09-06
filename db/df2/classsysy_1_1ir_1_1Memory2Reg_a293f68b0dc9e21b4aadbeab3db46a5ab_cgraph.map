@@ -1,0 +1,8 @@
+<map id="sysy::ir::Memory2Reg::renameAllocaInBB" name="sysy::ir::Memory2Reg::renameAllocaInBB">
+<area shape="rect" id="node1" title=" " alt="" coords="5,71,168,112"/>
+<area shape="rect" id="node2" href="$d0/d64/classsysy_1_1ir_1_1UndefValue.html#a10816442563374ceefb27a735e795c18" title=" " alt="" coords="225,5,375,47"/>
+<area shape="rect" id="node4" href="$df/dd2/classsysy_1_1ir_1_1BasicBlock.html#a87edb8a6b3ef522b2aa073d74737cba0" title=" " alt="" coords="227,71,373,112"/>
+<area shape="rect" id="node5" href="$d9/d9f/classsysy_1_1ir_1_1Value.html#aeb1a0e39e1ca02b7e3b231886f871d9a" title=" " alt="" coords="216,136,384,177"/>
+<area shape="rect" id="node3" href="$d0/d64/classsysy_1_1ir_1_1UndefValue.html#a01ad8d3e4f8dc476e68cebeb9aeed797" title=" " alt="" coords="443,5,594,47"/>
+<area shape="rect" id="node6" href="$d9/d9f/classsysy_1_1ir_1_1Value.html#a77ccc84b71f29b3dbee04f97f8056088" title=" " alt="" coords="432,143,605,170"/>
+</map>

@@ -60,6 +60,9 @@ var classsysy_1_1ir_1_1Instruction =
     [ "isCmp", "dc/d46/classsysy_1_1ir_1_1Instruction.html#a1956d1838dfda8d21fec2c6405d9856f", null ],
     [ "isCommutative", "dc/d46/classsysy_1_1ir_1_1Instruction.html#a3bc12d35df517c98fc48ef9c040a007e", null ],
     [ "isInteger", "dc/d46/classsysy_1_1ir_1_1Instruction.html#a08aa12d42fea429cbd94f8ca0a4afe79", null ],
+    [ "isReverse", "dc/d46/classsysy_1_1ir_1_1Instruction.html#a5166425ad6cbe9bdf20f203efe3ebd06", null ],
     [ "isTerminator", "dc/d46/classsysy_1_1ir_1_1Instruction.html#a58339878755cc7edf5041fca90f9bd9b", null ],
-    [ "reSetBasicBlock", "dc/d46/classsysy_1_1ir_1_1Instruction.html#a03508386f88a1697e942901f76300195", null ]
+    [ "reSetBasicBlock", "dc/d46/classsysy_1_1ir_1_1Instruction.html#a03508386f88a1697e942901f76300195", null ],
+    [ "father", "dc/d46/classsysy_1_1ir_1_1Instruction.html#aec920ff5f556331f5d29b52f21012b49", null ],
+    [ "kind", "dc/d46/classsysy_1_1ir_1_1Instruction.html#a2b63e88332c653f9d626022471379d99", null ]
 ];

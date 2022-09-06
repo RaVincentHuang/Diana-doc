@@ -10,5 +10,10 @@ var classsysy_1_1ir_1_1CollectOccurrences =
     [ "isSameExpr", "de/d41/classsysy_1_1ir_1_1CollectOccurrences.html#a0db54493aa3aa940b6a233a62d24fc6b", null ],
     [ "phiSize", "de/d41/classsysy_1_1ir_1_1CollectOccurrences.html#ab845fb9b313defd2156e85404ad26df5", null ],
     [ "allClasses", "de/d41/classsysy_1_1ir_1_1CollectOccurrences.html#ab005e96e92d67703822d54b492c640c0", null ],
-    [ "occurrenceName", "de/d41/classsysy_1_1ir_1_1CollectOccurrences.html#a075c1351cb6f79897337bb35f6506064", null ]
+    [ "instructions", "de/d41/classsysy_1_1ir_1_1CollectOccurrences.html#a5a726a00b7b7a94e48a9ef260abe02e8", null ],
+    [ "keyInstr", "de/d41/classsysy_1_1ir_1_1CollectOccurrences.html#aeb2cd0d7bdd368607c4d3338ffe968cd", null ],
+    [ "occurrenceName", "de/d41/classsysy_1_1ir_1_1CollectOccurrences.html#a075c1351cb6f79897337bb35f6506064", null ],
+    [ "phiBB", "de/d41/classsysy_1_1ir_1_1CollectOccurrences.html#aaf4b5e21cb49d11516a8bc9453b6efd7", null ],
+    [ "phis", "de/d41/classsysy_1_1ir_1_1CollectOccurrences.html#a42f635634b538d2b9e48bec21c411b10", null ],
+    [ "realOccurrencesBB", "de/d41/classsysy_1_1ir_1_1CollectOccurrences.html#a3eba130f0cadcaa1113d5e3784c2606a", null ]
 ];

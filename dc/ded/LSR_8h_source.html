@@ -86,11 +86,11 @@ $(document).ready(function(){initNavTree('dc/ded/LSR_8h_source.html','../../'); 
 <div class="title">LSR.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SYSY_TRANSFORM_LSR_H</span></div>
+<a href="../../dc/ded/LSR_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SYSY_TRANSFORM_LSR_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define SYSY_TRANSFORM_LSR_H</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;sysy/IR/PassManager.h&quot;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;sysy/IR/Loop.h&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span>sysy</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d8/d4e/PassManager_8h.html">sysy/IR/PassManager.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../db/d9e/Loop_8h.html">sysy/IR/Loop.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../dd/d20/namespacesysy.html">sysy</a></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>ir</div>
@@ -99,14 +99,14 @@ $(document).ready(function(){initNavTree('dc/ded/LSR_8h_source.html','../../'); 
 <div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="../../db/d19/classsysy_1_1ir_1_1LSR.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../db/d19/classsysy_1_1ir_1_1LSR.html">LSR</a> : <span class="keyword">public</span> <a class="code" href="../../d5/d01/classsysy_1_1Pass.html">FunctionPass</a></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    std::vector&lt;BinaryInst*&gt; Multiplies;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">void</span> identifyAllInductiveMultiplication(<a class="code" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html">Loop</a>* loop);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">void</span> eraseSingleMul(<a class="code" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html">Loop</a>* loop, <a class="code" href="../../d9/dcc/classsysy_1_1ir_1_1BinaryInstrcution.html">BinaryInst</a>* mul);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">void</span> runOnLoop(<a class="code" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html">Loop</a>* loop);</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="../../db/d19/classsysy_1_1ir_1_1LSR.html#abd8ce67a486de584ba91f45d7471eea1">   14</a></span>&#160;    std::vector&lt;BinaryInst*&gt; <a class="code" href="../../db/d19/classsysy_1_1ir_1_1LSR.html#abd8ce67a486de584ba91f45d7471eea1">Multiplies</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../db/d19/classsysy_1_1ir_1_1LSR.html#a5b0485e4df4289f82373fcafd9535930">identifyAllInductiveMultiplication</a>(<a class="code" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html">Loop</a>* loop);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../db/d19/classsysy_1_1ir_1_1LSR.html#ae6969b06d0dd559112fc725842d5b370">eraseSingleMul</a>(<a class="code" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html">Loop</a>* loop, <a class="code" href="../../d9/dcc/classsysy_1_1ir_1_1BinaryInstrcution.html">BinaryInst</a>* mul);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../db/d19/classsysy_1_1ir_1_1LSR.html#a81e424a516f27acd1c75fd22c1b9b4ca">runOnLoop</a>(<a class="code" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html">Loop</a>* loop);</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="../../db/d19/classsysy_1_1ir_1_1LSR.html">LSR</a>();</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> run(<a class="code" href="../../d4/d36/classsysy_1_1ir_1_1Function.html">Function</a>* func) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    std::string getName()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;LSR&quot;</span>; }</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="../../db/d19/classsysy_1_1ir_1_1LSR.html#affc8c8bdb4be1927a67450656f8d2936">LSR</a>();</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../db/d19/classsysy_1_1ir_1_1LSR.html#a01589b57af10a7b0e6362613a50d7a5b">run</a>(<a class="code" href="../../d4/d36/classsysy_1_1ir_1_1Function.html">Function</a>* func) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="../../db/d19/classsysy_1_1ir_1_1LSR.html#a2c9a73dcfd94547024c82ff2c8f7ca3f">   21</a></span>&#160;    std::string <a class="code" href="../../db/d19/classsysy_1_1ir_1_1LSR.html#a2c9a73dcfd94547024c82ff2c8f7ca3f">getName</a>()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;LSR&quot;</span>; }</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;};</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;} <span class="comment">// namespace ir</span></div>
@@ -118,15 +118,25 @@ $(document).ready(function(){initNavTree('dc/ded/LSR_8h_source.html','../../'); 
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclasssysy_1_1ir_1_1LSR_html_a5b0485e4df4289f82373fcafd9535930"><div class="ttname"><a href="../../db/d19/classsysy_1_1ir_1_1LSR.html#a5b0485e4df4289f82373fcafd9535930">sysy::ir::LSR::identifyAllInductiveMultiplication</a></div><div class="ttdeci">void identifyAllInductiveMultiplication(Loop *loop)</div><div class="ttdef"><b>Definition:</b> LSR.cpp:24</div></div>
+<div class="ttc" id="aclasssysy_1_1ir_1_1LSR_html_abd8ce67a486de584ba91f45d7471eea1"><div class="ttname"><a href="../../db/d19/classsysy_1_1ir_1_1LSR.html#abd8ce67a486de584ba91f45d7471eea1">sysy::ir::LSR::Multiplies</a></div><div class="ttdeci">std::vector&lt; BinaryInst * &gt; Multiplies</div><div class="ttdef"><b>Definition:</b> LSR.h:14</div></div>
 <div class="ttc" id="aclasssysy_1_1ir_1_1BinaryInstrcution_html"><div class="ttname"><a href="../../d9/dcc/classsysy_1_1ir_1_1BinaryInstrcution.html">sysy::ir::BinaryInstrcution</a></div><div class="ttdef"><b>Definition:</b> Instructions.h:17</div></div>
 <div class="ttc" id="aclasssysy_1_1ir_1_1Loop_html"><div class="ttname"><a href="../../d2/d57/classsysy_1_1ir_1_1Loop.html">sysy::ir::Loop</a></div><div class="ttdef"><b>Definition:</b> Loop.h:51</div></div>
+<div class="ttc" id="aclasssysy_1_1ir_1_1LSR_html_a81e424a516f27acd1c75fd22c1b9b4ca"><div class="ttname"><a href="../../db/d19/classsysy_1_1ir_1_1LSR.html#a81e424a516f27acd1c75fd22c1b9b4ca">sysy::ir::LSR::runOnLoop</a></div><div class="ttdeci">void runOnLoop(Loop *loop)</div><div class="ttdef"><b>Definition:</b> LSR.cpp:79</div></div>
 <div class="ttc" id="aclasssysy_1_1ir_1_1Function_html"><div class="ttname"><a href="../../d4/d36/classsysy_1_1ir_1_1Function.html">sysy::ir::Function</a></div><div class="ttdef"><b>Definition:</b> Function.h:19</div></div>
 <div class="ttc" id="aclasssysy_1_1Pass_html"><div class="ttname"><a href="../../d5/d01/classsysy_1_1Pass.html">sysy::Pass</a></div><div class="ttdef"><b>Definition:</b> PassManager.h:14</div></div>
 <div class="ttc" id="aclasssysy_1_1ir_1_1LSR_html"><div class="ttname"><a href="../../db/d19/classsysy_1_1ir_1_1LSR.html">sysy::ir::LSR</a></div><div class="ttdef"><b>Definition:</b> LSR.h:11</div></div>
+<div class="ttc" id="aclasssysy_1_1ir_1_1LSR_html_a2c9a73dcfd94547024c82ff2c8f7ca3f"><div class="ttname"><a href="../../db/d19/classsysy_1_1ir_1_1LSR.html#a2c9a73dcfd94547024c82ff2c8f7ca3f">sysy::ir::LSR::getName</a></div><div class="ttdeci">std::string getName() override</div><div class="ttdef"><b>Definition:</b> LSR.h:21</div></div>
+<div class="ttc" id="aclasssysy_1_1ir_1_1LSR_html_ae6969b06d0dd559112fc725842d5b370"><div class="ttname"><a href="../../db/d19/classsysy_1_1ir_1_1LSR.html#ae6969b06d0dd559112fc725842d5b370">sysy::ir::LSR::eraseSingleMul</a></div><div class="ttdeci">void eraseSingleMul(Loop *loop, BinaryInst *mul)</div><div class="ttdef"><b>Definition:</b> LSR.cpp:35</div></div>
+<div class="ttc" id="anamespacesysy_html"><div class="ttname"><a href="../../dd/d20/namespacesysy.html">sysy</a></div><div class="ttdef"><b>Definition:</b> AliasAnalysis.h:6</div></div>
+<div class="ttc" id="aPassManager_8h_html"><div class="ttname"><a href="../../d8/d4e/PassManager_8h.html">PassManager.h</a></div></div>
+<div class="ttc" id="aLoop_8h_html"><div class="ttname"><a href="../../db/d9e/Loop_8h.html">Loop.h</a></div></div>
+<div class="ttc" id="aclasssysy_1_1ir_1_1LSR_html_a01589b57af10a7b0e6362613a50d7a5b"><div class="ttname"><a href="../../db/d19/classsysy_1_1ir_1_1LSR.html#a01589b57af10a7b0e6362613a50d7a5b">sysy::ir::LSR::run</a></div><div class="ttdeci">void run(Function *func) override</div><div class="ttdef"><b>Definition:</b> LSR.cpp:94</div></div>
+<div class="ttc" id="aclasssysy_1_1ir_1_1LSR_html_affc8c8bdb4be1927a67450656f8d2936"><div class="ttname"><a href="../../db/d19/classsysy_1_1ir_1_1LSR.html#affc8c8bdb4be1927a67450656f8d2936">sysy::ir::LSR::LSR</a></div><div class="ttdeci">LSR()</div><div class="ttdef"><b>Definition:</b> LSR.cpp:15</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_b87821115ea3cf61d61e0bb4a6051ac5.html">sysy</a></li><li class="navelem"><a class="el" href="../../dir_c57c09d2f988700d800e6ebfe7229c98.html">Transform</a></li><li class="navelem"><a class="el" href="../../dir_3efbccf99c3caf8e0efef43603c0154c.html">Loop</a></li><li class="navelem"><b>LSR.h</b></li>
+    <li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_b87821115ea3cf61d61e0bb4a6051ac5.html">sysy</a></li><li class="navelem"><a class="el" href="../../dir_c57c09d2f988700d800e6ebfe7229c98.html">Transform</a></li><li class="navelem"><a class="el" href="../../dir_3efbccf99c3caf8e0efef43603c0154c.html">Loop</a></li><li class="navelem"><a class="el" href="../../dc/ded/LSR_8h.html">LSR.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

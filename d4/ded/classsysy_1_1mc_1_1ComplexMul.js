@@ -10,5 +10,6 @@ var classsysy_1_1mc_1_1ComplexMul =
     [ "extra", "d4/ded/classsysy_1_1mc_1_1ComplexMul.html#ac0d2b7018ef6e204102513eaf041e5c6", null ],
     [ "lhs", "d4/ded/classsysy_1_1mc_1_1ComplexMul.html#a97c8fc4664d442655d95c32c74c005a7", null ],
     [ "rhs", "d4/ded/classsysy_1_1mc_1_1ComplexMul.html#ae1b3ecca0457124ecd453a0905429abc", null ],
-    [ "type", "d4/ded/classsysy_1_1mc_1_1ComplexMul.html#aedef528cad882b4a8510be64c99de256", null ]
+    [ "type", "d4/ded/classsysy_1_1mc_1_1ComplexMul.html#aedef528cad882b4a8510be64c99de256", null ],
+    [ "type_map", "d4/ded/classsysy_1_1mc_1_1ComplexMul.html#a90724a68f9c8648b8afc7fde6c9ceed7", null ]
 ];

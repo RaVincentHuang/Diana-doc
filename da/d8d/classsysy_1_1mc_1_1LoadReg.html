@@ -92,6 +92,8 @@ $(document).ready(function(){initNavTree('da/d8d/classsysy_1_1mc_1_1LoadReg.html
 <div class="title">sysy::mc::LoadReg Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="../../d2/d63/Target_2Instruction_8h_source.html">Instruction.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for sysy::mc::LoadReg:</div>
 <div class="dyncontent">
@@ -115,134 +117,355 @@ Collaboration diagram for sysy::mc::LoadReg:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a14215b7c2b0a323a044c9e5da9773b74"><td class="memItemLeft" align="right" valign="top"><a id="a14215b7c2b0a323a044c9e5da9773b74"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Type</b> { <b>SLOAD</b>, 
-<b>VLOAD</b>
+<tr class="memitem:a14215b7c2b0a323a044c9e5da9773b74"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d8d/classsysy_1_1mc_1_1LoadReg.html#a14215b7c2b0a323a044c9e5da9773b74">Type</a> { <a class="el" href="../../da/d8d/classsysy_1_1mc_1_1LoadReg.html#a14215b7c2b0a323a044c9e5da9773b74a29549ab03054d765fa329b8c8c66ad7e">SLOAD</a>, 
+<a class="el" href="../../da/d8d/classsysy_1_1mc_1_1LoadReg.html#a14215b7c2b0a323a044c9e5da9773b74a71a3995a4bfb5f56694b3447c5854e27">VLOAD</a>
  }</td></tr>
 <tr class="separator:a14215b7c2b0a323a044c9e5da9773b74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_classsysy_1_1mc_1_1Instruction"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classsysy_1_1mc_1_1Instruction')"><img src="../../closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html">sysy::mc::Instruction</a></td></tr>
-<tr class="memitem:ae1e3d04be9f7eb85616aa58a9b128a6f inherit pub_types_classsysy_1_1mc_1_1Instruction"><td class="memItemLeft" align="right" valign="top"><a id="ae1e3d04be9f7eb85616aa58a9b128a6f"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>InstrType</b> { <br />
-&#160;&#160;<b>BinaryReg</b>, 
-<b>BinaryImm</b>, 
-<b>ComplexMul</b>, 
-<b>MoveReg</b>, 
+<tr class="memitem:ae1e3d04be9f7eb85616aa58a9b128a6f inherit pub_types_classsysy_1_1mc_1_1Instruction"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6f">InstrType</a> { <br />
+&#160;&#160;<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fa51f90e8f7f54f26479f3346ce88ed20e">BinaryReg</a>, 
+<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fa6381c443559d58816db2419e11a64f21">BinaryImm</a>, 
+<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fa0841cd79c986b855ae2d871d51ef4262">ComplexMul</a>, 
+<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fac11db440f340cde663ef33298fa0ae3b">MoveReg</a>, 
 <br />
-&#160;&#160;<b>ShiftInstr</b>, 
-<b>MoveImm</b>, 
-<b>CompareReg</b>, 
-<b>CompareImm</b>, 
+&#160;&#160;<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fa890670bb2da73f1890e23734dd4def67">ShiftInstr</a>, 
+<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fa51fa2bde929aced320df7f7f5fd4e301">MoveImm</a>, 
+<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fa759b8e0bae96f147fd143738e94bdb62">CompareReg</a>, 
+<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fa25d22a0b80eb48b86a1f1991e475b156">CompareImm</a>, 
 <br />
-&#160;&#160;<b>Branch</b>, 
-<b>Push</b>, 
-<b>Pop</b>, 
-<b>Load</b>, 
+&#160;&#160;<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6faf0b60f239d674db685b5009edf2da827">Branch</a>, 
+<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fadb2a27db04ad134afb6383d4c5c5c7fa">Push</a>, 
+<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6faaa0d456a2a4a3a2aa2b1447bc4046f66">Pop</a>, 
+<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fa7bfde3da593860ddf4e31a57087d5082">Load</a>, 
 <br />
-&#160;&#160;<b>Store</b>, 
-<b>LoadGlobal</b>, 
-<b>Call</b>, 
-<b>Return</b>, 
+&#160;&#160;<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fabe01d20b2410fd0a4ba5f9b4c536347e">Store</a>, 
+<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fa33e54fc3d2353d03094f5cd595c91830">LoadGlobal</a>, 
+<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fa99df3385cd56ddc34c8e015b0c091d84">Call</a>, 
+<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fa3c8e7eaeed7947601cb65412e9f0c0b3">Return</a>, 
 <br />
-&#160;&#160;<b>LoadFP</b>, 
-<b>Convert</b>, 
-<b>Bic</b>, 
-<b>None</b>
+&#160;&#160;<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fa6900d1b07176ffc3c518a9529b3312a0">LoadFP</a>, 
+<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fad913e02ef11a8bcd9e3172bfd10fba2b">Convert</a>, 
+<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fa15ba802bf0f4f0c23e22e64640612d37">Bic</a>, 
+<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fa3289d32485b767faa0b4a81aa64ae6d0">None</a>
 <br />
  }</td></tr>
 <tr class="separator:ae1e3d04be9f7eb85616aa58a9b128a6f inherit pub_types_classsysy_1_1mc_1_1Instruction"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a213faf43e3f3bbd62aa73ab1dfa1ed10 inherit pub_types_classsysy_1_1mc_1_1Instruction"><td class="memItemLeft" align="right" valign="top"><a id="a213faf43e3f3bbd62aa73ab1dfa1ed10"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>CondType</b> { <br />
-&#160;&#160;<b>AL</b>, 
-<b>EQ</b>, 
-<b>NE</b>, 
-<b>GE</b>, 
+<tr class="memitem:a213faf43e3f3bbd62aa73ab1dfa1ed10 inherit pub_types_classsysy_1_1mc_1_1Instruction"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a213faf43e3f3bbd62aa73ab1dfa1ed10">CondType</a> { <br />
+&#160;&#160;<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a213faf43e3f3bbd62aa73ab1dfa1ed10a98bdd4e412bbed97ad28d08ab9e007ee">AL</a>, 
+<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a213faf43e3f3bbd62aa73ab1dfa1ed10a3f2ad71b3f966ccc05219eea36e64ea9">EQ</a>, 
+<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a213faf43e3f3bbd62aa73ab1dfa1ed10a2b568664aae7c105219c784b4a972da6">NE</a>, 
+<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a213faf43e3f3bbd62aa73ab1dfa1ed10ace2877b7c342918e9fda169f176cd028">GE</a>, 
 <br />
-&#160;&#160;<b>GT</b>, 
-<b>LE</b>, 
-<b>LT</b>
+&#160;&#160;<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a213faf43e3f3bbd62aa73ab1dfa1ed10a516ec873bdb7e7e6a0bececc8758e9a3">GT</a>, 
+<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a213faf43e3f3bbd62aa73ab1dfa1ed10ae3c27441a4c928fa24ed175557f1f7e0">LE</a>, 
+<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a213faf43e3f3bbd62aa73ab1dfa1ed10a9a5de371dd3bc1efd20054233720338a">LT</a>
 <br />
  }</td></tr>
 <tr class="separator:a213faf43e3f3bbd62aa73ab1dfa1ed10 inherit pub_types_classsysy_1_1mc_1_1Instruction"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4594b5d7c50637e70dc9966f195c44d1"><td class="memItemLeft" align="right" valign="top"><a id="a4594b5d7c50637e70dc9966f195c44d1"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>LoadReg</b> (Type _type, <a class="el" href="../../d4/d18/classsysy_1_1mc_1_1Reg.html">Reg</a> *_dst, <a class="el" href="../../d4/d18/classsysy_1_1mc_1_1Reg.html">Reg</a> *_lhs, <a class="el" href="../../d4/d18/classsysy_1_1mc_1_1Reg.html">Reg</a> *_rhs)</td></tr>
+<tr class="memitem:a3e02f24f4705d332f81a172c02b518b7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d8d/classsysy_1_1mc_1_1LoadReg.html#a3e02f24f4705d332f81a172c02b518b7">LoadReg</a> ()</td></tr>
+<tr class="separator:a3e02f24f4705d332f81a172c02b518b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4594b5d7c50637e70dc9966f195c44d1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d8d/classsysy_1_1mc_1_1LoadReg.html#a4594b5d7c50637e70dc9966f195c44d1">LoadReg</a> (<a class="el" href="../../da/d8d/classsysy_1_1mc_1_1LoadReg.html#a14215b7c2b0a323a044c9e5da9773b74">Type</a> _type, <a class="el" href="../../d4/d18/classsysy_1_1mc_1_1Reg.html">Reg</a> *_dst, <a class="el" href="../../d4/d18/classsysy_1_1mc_1_1Reg.html">Reg</a> *_lhs, <a class="el" href="../../d4/d18/classsysy_1_1mc_1_1Reg.html">Reg</a> *_rhs)</td></tr>
 <tr class="separator:a4594b5d7c50637e70dc9966f195c44d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7617466c86dfcc313593959d64e6912d"><td class="memItemLeft" align="right" valign="top"><a id="a7617466c86dfcc313593959d64e6912d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setShift</b> (<a class="el" href="../../db/d06/classsysy_1_1mc_1_1Shift.html">Shift</a> *_shift)</td></tr>
+<tr class="memitem:a7617466c86dfcc313593959d64e6912d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d8d/classsysy_1_1mc_1_1LoadReg.html#a7617466c86dfcc313593959d64e6912d">setShift</a> (<a class="el" href="../../db/d06/classsysy_1_1mc_1_1Shift.html">Shift</a> *_shift)</td></tr>
 <tr class="separator:a7617466c86dfcc313593959d64e6912d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefbbce509601d13506ebd20b7086fc90"><td class="memItemLeft" align="right" valign="top"><a id="aefbbce509601d13506ebd20b7086fc90"></a>
-virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><b>gen_asm</b> () override</td></tr>
+<tr class="memitem:aefbbce509601d13506ebd20b7086fc90"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d8d/classsysy_1_1mc_1_1LoadReg.html#aefbbce509601d13506ebd20b7086fc90">gen_asm</a> () override</td></tr>
 <tr class="separator:aefbbce509601d13506ebd20b7086fc90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classsysy_1_1mc_1_1Instruction"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classsysy_1_1mc_1_1Instruction')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html">sysy::mc::Instruction</a></td></tr>
-<tr class="memitem:a6c7fba22a5e06013d69427e337e3e941 inherit pub_methods_classsysy_1_1mc_1_1Instruction"><td class="memItemLeft" align="right" valign="top"><a id="a6c7fba22a5e06013d69427e337e3e941"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>def</b> (int id)</td></tr>
+<tr class="memitem:a6c7fba22a5e06013d69427e337e3e941 inherit pub_methods_classsysy_1_1mc_1_1Instruction"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a6c7fba22a5e06013d69427e337e3e941">def</a> (int id)</td></tr>
 <tr class="separator:a6c7fba22a5e06013d69427e337e3e941 inherit pub_methods_classsysy_1_1mc_1_1Instruction"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad90a4407878bb0e62a39bd8135055338 inherit pub_methods_classsysy_1_1mc_1_1Instruction"><td class="memItemLeft" align="right" valign="top"><a id="ad90a4407878bb0e62a39bd8135055338"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>use</b> (int id)</td></tr>
+<tr class="memitem:ad90a4407878bb0e62a39bd8135055338 inherit pub_methods_classsysy_1_1mc_1_1Instruction"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ad90a4407878bb0e62a39bd8135055338">use</a> (int id)</td></tr>
 <tr class="separator:ad90a4407878bb0e62a39bd8135055338 inherit pub_methods_classsysy_1_1mc_1_1Instruction"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae90f2c9418426901a9d17b2eaaa95ec2 inherit pub_methods_classsysy_1_1mc_1_1Instruction"><td class="memItemLeft" align="right" valign="top"><a id="ae90f2c9418426901a9d17b2eaaa95ec2"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>def_v</b> (int id)</td></tr>
+<tr class="memitem:ae90f2c9418426901a9d17b2eaaa95ec2 inherit pub_methods_classsysy_1_1mc_1_1Instruction"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae90f2c9418426901a9d17b2eaaa95ec2">def_v</a> (int id)</td></tr>
 <tr class="separator:ae90f2c9418426901a9d17b2eaaa95ec2 inherit pub_methods_classsysy_1_1mc_1_1Instruction"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7067db5557f71c08086b7250076b9911 inherit pub_methods_classsysy_1_1mc_1_1Instruction"><td class="memItemLeft" align="right" valign="top"><a id="a7067db5557f71c08086b7250076b9911"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>use_v</b> (int id)</td></tr>
+<tr class="memitem:a7067db5557f71c08086b7250076b9911 inherit pub_methods_classsysy_1_1mc_1_1Instruction"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a7067db5557f71c08086b7250076b9911">use_v</a> (int id)</td></tr>
 <tr class="separator:a7067db5557f71c08086b7250076b9911 inherit pub_methods_classsysy_1_1mc_1_1Instruction"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a422c3bda1f5e9cfdaade608917fae836 inherit pub_methods_classsysy_1_1mc_1_1Instruction"><td class="memItemLeft" align="right" valign="top"><a id="a422c3bda1f5e9cfdaade608917fae836"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>replace_reg</b> (int before, int after)</td></tr>
+<tr class="memitem:a422c3bda1f5e9cfdaade608917fae836 inherit pub_methods_classsysy_1_1mc_1_1Instruction"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a422c3bda1f5e9cfdaade608917fae836">replace_reg</a> (int before, int after)</td></tr>
 <tr class="separator:a422c3bda1f5e9cfdaade608917fae836 inherit pub_methods_classsysy_1_1mc_1_1Instruction"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaabd9f974a816d11fbc625915b76087b inherit pub_methods_classsysy_1_1mc_1_1Instruction"><td class="memItemLeft" align="right" valign="top"><a id="aaabd9f974a816d11fbc625915b76087b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Instruction</b> (InstrType _type, std::vector&lt; <a class="el" href="../../d4/d18/classsysy_1_1mc_1_1Reg.html">Reg</a> * &gt; _def_reg, std::vector&lt; <a class="el" href="../../d4/d18/classsysy_1_1mc_1_1Reg.html">Reg</a> * &gt; _use_reg)</td></tr>
+<tr class="memitem:aaabd9f974a816d11fbc625915b76087b inherit pub_methods_classsysy_1_1mc_1_1Instruction"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#aaabd9f974a816d11fbc625915b76087b">Instruction</a> (<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6f">InstrType</a> _type, std::vector&lt; <a class="el" href="../../d4/d18/classsysy_1_1mc_1_1Reg.html">Reg</a> * &gt; _def_reg, std::vector&lt; <a class="el" href="../../d4/d18/classsysy_1_1mc_1_1Reg.html">Reg</a> * &gt; _use_reg)</td></tr>
 <tr class="separator:aaabd9f974a816d11fbc625915b76087b inherit pub_methods_classsysy_1_1mc_1_1Instruction"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb6a1d695556bba5aca42684aac10976 inherit pub_methods_classsysy_1_1mc_1_1Instruction"><td class="memItemLeft" align="right" valign="top"><a id="acb6a1d695556bba5aca42684aac10976"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Instruction</b> (InstrType _type)</td></tr>
+<tr class="memitem:acb6a1d695556bba5aca42684aac10976 inherit pub_methods_classsysy_1_1mc_1_1Instruction"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#acb6a1d695556bba5aca42684aac10976">Instruction</a> (<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6f">InstrType</a> _type)</td></tr>
 <tr class="separator:acb6a1d695556bba5aca42684aac10976 inherit pub_methods_classsysy_1_1mc_1_1Instruction"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88cd336b1d89d2a2378fffec11681ea8 inherit pub_methods_classsysy_1_1mc_1_1Instruction"><td class="memItemLeft" align="right" valign="top"><a id="a88cd336b1d89d2a2378fffec11681ea8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setCond</b> (CondType _cond)</td></tr>
+<tr class="memitem:a88cd336b1d89d2a2378fffec11681ea8 inherit pub_methods_classsysy_1_1mc_1_1Instruction"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a88cd336b1d89d2a2378fffec11681ea8">setCond</a> (<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a213faf43e3f3bbd62aa73ab1dfa1ed10">CondType</a> _cond)</td></tr>
 <tr class="separator:a88cd336b1d89d2a2378fffec11681ea8 inherit pub_methods_classsysy_1_1mc_1_1Instruction"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:af50e239c9b45d7b680fa6fa5eefa0b49"><td class="memItemLeft" align="right" valign="top"><a id="af50e239c9b45d7b680fa6fa5eefa0b49"></a>
-Type&#160;</td><td class="memItemRight" valign="bottom"><b>type</b></td></tr>
+<tr class="memitem:af50e239c9b45d7b680fa6fa5eefa0b49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/d8d/classsysy_1_1mc_1_1LoadReg.html#a14215b7c2b0a323a044c9e5da9773b74">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d8d/classsysy_1_1mc_1_1LoadReg.html#af50e239c9b45d7b680fa6fa5eefa0b49">type</a></td></tr>
 <tr class="separator:af50e239c9b45d7b680fa6fa5eefa0b49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ab049be44bb4e98a36c237439bf2006"><td class="memItemLeft" align="right" valign="top"><a id="a2ab049be44bb4e98a36c237439bf2006"></a>
-<a class="el" href="../../d4/d18/classsysy_1_1mc_1_1Reg.html">Reg</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>dst</b></td></tr>
+<tr class="memitem:a2ab049be44bb4e98a36c237439bf2006"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d18/classsysy_1_1mc_1_1Reg.html">Reg</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d8d/classsysy_1_1mc_1_1LoadReg.html#a2ab049be44bb4e98a36c237439bf2006">dst</a></td></tr>
 <tr class="separator:a2ab049be44bb4e98a36c237439bf2006"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36fc7075c4223f00232ba88ddaa78ea5"><td class="memItemLeft" align="right" valign="top"><a id="a36fc7075c4223f00232ba88ddaa78ea5"></a>
-<a class="el" href="../../d4/d18/classsysy_1_1mc_1_1Reg.html">Reg</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>lhs</b></td></tr>
+<tr class="memitem:a36fc7075c4223f00232ba88ddaa78ea5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d18/classsysy_1_1mc_1_1Reg.html">Reg</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d8d/classsysy_1_1mc_1_1LoadReg.html#a36fc7075c4223f00232ba88ddaa78ea5">lhs</a></td></tr>
 <tr class="separator:a36fc7075c4223f00232ba88ddaa78ea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83ff407f3c42f1ed87dd223552d75b1b"><td class="memItemLeft" align="right" valign="top"><a id="a83ff407f3c42f1ed87dd223552d75b1b"></a>
-<a class="el" href="../../d4/d18/classsysy_1_1mc_1_1Reg.html">Reg</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>rhs</b></td></tr>
+<tr class="memitem:a83ff407f3c42f1ed87dd223552d75b1b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d18/classsysy_1_1mc_1_1Reg.html">Reg</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d8d/classsysy_1_1mc_1_1LoadReg.html#a83ff407f3c42f1ed87dd223552d75b1b">rhs</a></td></tr>
 <tr class="separator:a83ff407f3c42f1ed87dd223552d75b1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a136ddaebb5a70a9eee497f61f5907988"><td class="memItemLeft" align="right" valign="top"><a id="a136ddaebb5a70a9eee497f61f5907988"></a>
-<a class="el" href="../../db/d06/classsysy_1_1mc_1_1Shift.html">Shift</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>shift</b></td></tr>
+<tr class="memitem:a136ddaebb5a70a9eee497f61f5907988"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d06/classsysy_1_1mc_1_1Shift.html">Shift</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d8d/classsysy_1_1mc_1_1LoadReg.html#a136ddaebb5a70a9eee497f61f5907988">shift</a></td></tr>
 <tr class="separator:a136ddaebb5a70a9eee497f61f5907988"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classsysy_1_1mc_1_1Instruction"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classsysy_1_1mc_1_1Instruction')"><img src="../../closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html">sysy::mc::Instruction</a></td></tr>
-<tr class="memitem:ac10ac77169b51d365785c1a6f686eb71 inherit pub_attribs_classsysy_1_1mc_1_1Instruction"><td class="memItemLeft" align="right" valign="top"><a id="ac10ac77169b51d365785c1a6f686eb71"></a>
-InstrType&#160;</td><td class="memItemRight" valign="bottom"><b>instr_type</b></td></tr>
+<tr class="memitem:ac10ac77169b51d365785c1a6f686eb71 inherit pub_attribs_classsysy_1_1mc_1_1Instruction"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6f">InstrType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ac10ac77169b51d365785c1a6f686eb71">instr_type</a></td></tr>
 <tr class="separator:ac10ac77169b51d365785c1a6f686eb71 inherit pub_attribs_classsysy_1_1mc_1_1Instruction"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56efa7c32238d8daf23b0806a077af4f inherit pub_attribs_classsysy_1_1mc_1_1Instruction"><td class="memItemLeft" align="right" valign="top"><a id="a56efa7c32238d8daf23b0806a077af4f"></a>
-CondType&#160;</td><td class="memItemRight" valign="bottom"><b>cond</b></td></tr>
+<tr class="memitem:a56efa7c32238d8daf23b0806a077af4f inherit pub_attribs_classsysy_1_1mc_1_1Instruction"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a213faf43e3f3bbd62aa73ab1dfa1ed10">CondType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a56efa7c32238d8daf23b0806a077af4f">cond</a></td></tr>
 <tr class="separator:a56efa7c32238d8daf23b0806a077af4f inherit pub_attribs_classsysy_1_1mc_1_1Instruction"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a988e3d706e1cc12bd43c9e40aa6cef3a inherit pub_attribs_classsysy_1_1mc_1_1Instruction"><td class="memItemLeft" align="right" valign="top"><a id="a988e3d706e1cc12bd43c9e40aa6cef3a"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_float</b> = false</td></tr>
+<tr class="memitem:a988e3d706e1cc12bd43c9e40aa6cef3a inherit pub_attribs_classsysy_1_1mc_1_1Instruction"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a988e3d706e1cc12bd43c9e40aa6cef3a">is_float</a> = false</td></tr>
 <tr class="separator:a988e3d706e1cc12bd43c9e40aa6cef3a inherit pub_attribs_classsysy_1_1mc_1_1Instruction"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b8245e96fca60ec21cdd4410669f0b2 inherit pub_attribs_classsysy_1_1mc_1_1Instruction"><td class="memItemLeft" align="right" valign="top"><a id="a7b8245e96fca60ec21cdd4410669f0b2"></a>
-std::vector&lt; <a class="el" href="../../d4/d18/classsysy_1_1mc_1_1Reg.html">Reg</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>def_reg</b></td></tr>
+<tr class="memitem:a7b8245e96fca60ec21cdd4410669f0b2 inherit pub_attribs_classsysy_1_1mc_1_1Instruction"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d4/d18/classsysy_1_1mc_1_1Reg.html">Reg</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a7b8245e96fca60ec21cdd4410669f0b2">def_reg</a></td></tr>
 <tr class="separator:a7b8245e96fca60ec21cdd4410669f0b2 inherit pub_attribs_classsysy_1_1mc_1_1Instruction"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a848e99bd5fc45a5be53edabae9ad9c84 inherit pub_attribs_classsysy_1_1mc_1_1Instruction"><td class="memItemLeft" align="right" valign="top"><a id="a848e99bd5fc45a5be53edabae9ad9c84"></a>
-std::vector&lt; <a class="el" href="../../d4/d18/classsysy_1_1mc_1_1Reg.html">Reg</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>use_reg</b></td></tr>
+<tr class="memitem:a848e99bd5fc45a5be53edabae9ad9c84 inherit pub_attribs_classsysy_1_1mc_1_1Instruction"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d4/d18/classsysy_1_1mc_1_1Reg.html">Reg</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a848e99bd5fc45a5be53edabae9ad9c84">use_reg</a></td></tr>
 <tr class="separator:a848e99bd5fc45a5be53edabae9ad9c84 inherit pub_attribs_classsysy_1_1mc_1_1Instruction"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a86dec5180f2534bf3e7928e4cabb9f93"><td class="memItemLeft" align="right" valign="top">static std::map&lt; Type, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>type_map</b></td></tr>
+<tr class="memitem:a86dec5180f2534bf3e7928e4cabb9f93"><td class="memItemLeft" align="right" valign="top">static std::map&lt; <a class="el" href="../../da/d8d/classsysy_1_1mc_1_1LoadReg.html#a14215b7c2b0a323a044c9e5da9773b74">Type</a>, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d8d/classsysy_1_1mc_1_1LoadReg.html#a86dec5180f2534bf3e7928e4cabb9f93">type_map</a></td></tr>
 <tr class="separator:a86dec5180f2534bf3e7928e4cabb9f93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_attribs_classsysy_1_1mc_1_1Instruction"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classsysy_1_1mc_1_1Instruction')"><img src="../../closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html">sysy::mc::Instruction</a></td></tr>
-<tr class="memitem:ac7e5455ba0543091910aa9548420f778 inherit pub_static_attribs_classsysy_1_1mc_1_1Instruction"><td class="memItemLeft" align="right" valign="top">static std::map&lt; InstrType, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>type_map</b></td></tr>
+<tr class="memitem:ac7e5455ba0543091910aa9548420f778 inherit pub_static_attribs_classsysy_1_1mc_1_1Instruction"><td class="memItemLeft" align="right" valign="top">static std::map&lt; <a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6f">InstrType</a>, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ac7e5455ba0543091910aa9548420f778">type_map</a></td></tr>
 <tr class="separator:ac7e5455ba0543091910aa9548420f778 inherit pub_static_attribs_classsysy_1_1mc_1_1Instruction"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0254e23298dfef38c7ffc30125222b10 inherit pub_static_attribs_classsysy_1_1mc_1_1Instruction"><td class="memItemLeft" align="right" valign="top">static std::map&lt; CondType, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>condMap</b></td></tr>
+<tr class="memitem:a0254e23298dfef38c7ffc30125222b10 inherit pub_static_attribs_classsysy_1_1mc_1_1Instruction"><td class="memItemLeft" align="right" valign="top">static std::map&lt; <a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a213faf43e3f3bbd62aa73ab1dfa1ed10">CondType</a>, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a0254e23298dfef38c7ffc30125222b10">condMap</a></td></tr>
 <tr class="separator:a0254e23298dfef38c7ffc30125222b10 inherit pub_static_attribs_classsysy_1_1mc_1_1Instruction"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a14215b7c2b0a323a044c9e5da9773b74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14215b7c2b0a323a044c9e5da9773b74">&#9670;&nbsp;</a></span>Type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../da/d8d/classsysy_1_1mc_1_1LoadReg.html#a14215b7c2b0a323a044c9e5da9773b74">sysy::mc::LoadReg::Type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a14215b7c2b0a323a044c9e5da9773b74a29549ab03054d765fa329b8c8c66ad7e"></a>SLOAD&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a14215b7c2b0a323a044c9e5da9773b74a71a3995a4bfb5f56694b3447c5854e27"></a>VLOAD&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a3e02f24f4705d332f81a172c02b518b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e02f24f4705d332f81a172c02b518b7">&#9670;&nbsp;</a></span>LoadReg() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sysy::mc::LoadReg::LoadReg </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4594b5d7c50637e70dc9966f195c44d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4594b5d7c50637e70dc9966f195c44d1">&#9670;&nbsp;</a></span>LoadReg() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sysy::mc::LoadReg::LoadReg </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d8d/classsysy_1_1mc_1_1LoadReg.html#a14215b7c2b0a323a044c9e5da9773b74">Type</a>&#160;</td>
+          <td class="paramname"><em>_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d18/classsysy_1_1mc_1_1Reg.html">Reg</a> *&#160;</td>
+          <td class="paramname"><em>_dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d18/classsysy_1_1mc_1_1Reg.html">Reg</a> *&#160;</td>
+          <td class="paramname"><em>_lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d18/classsysy_1_1mc_1_1Reg.html">Reg</a> *&#160;</td>
+          <td class="paramname"><em>_rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aefbbce509601d13506ebd20b7086fc90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefbbce509601d13506ebd20b7086fc90">&#9670;&nbsp;</a></span>gen_asm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string sysy::mc::LoadReg::gen_asm </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ace082df992550630008fa32394da8061">sysy::mc::Instruction</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a56efa7c32238d8daf23b0806a077af4f">sysy::mc::Instruction::cond</a>, <a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a0254e23298dfef38c7ffc30125222b10">sysy::mc::Instruction::condMap</a>, <a class="el" href="../../da/d8d/classsysy_1_1mc_1_1LoadReg.html#a2ab049be44bb4e98a36c237439bf2006">dst</a>, <a class="el" href="../../d4/d18/classsysy_1_1mc_1_1Reg.html#ae97919b21671f26613d8d5cabfc6505a">sysy::mc::Reg::getSignature()</a>, <a class="el" href="../../db/d06/classsysy_1_1mc_1_1Shift.html#a07793f6d037308b76b44b1e2e92ee63d">sysy::mc::Shift::imm</a>, <a class="el" href="../../da/d8d/classsysy_1_1mc_1_1LoadReg.html#a36fc7075c4223f00232ba88ddaa78ea5">lhs</a>, <a class="el" href="../../da/d8d/classsysy_1_1mc_1_1LoadReg.html#a83ff407f3c42f1ed87dd223552d75b1b">rhs</a>, <a class="el" href="../../da/d8d/classsysy_1_1mc_1_1LoadReg.html#a136ddaebb5a70a9eee497f61f5907988">shift</a>, <a class="el" href="../../db/d06/classsysy_1_1mc_1_1Shift.html#a6e9086057cb66db021582c27b698f9fd">sysy::mc::Shift::type</a>, <a class="el" href="../../da/d8d/classsysy_1_1mc_1_1LoadReg.html#af50e239c9b45d7b680fa6fa5eefa0b49">type</a>, <a class="el" href="../../db/d06/classsysy_1_1mc_1_1Shift.html#a74f947eae6cf116b7e7012e111a782cf">sysy::mc::Shift::type_map</a>, and <a class="el" href="../../da/d8d/classsysy_1_1mc_1_1LoadReg.html#a86dec5180f2534bf3e7928e4cabb9f93">type_map</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d8d/classsysy_1_1mc_1_1LoadReg_aefbbce509601d13506ebd20b7086fc90_cgraph.png" border="0" usemap="#da/d8d/classsysy_1_1mc_1_1LoadReg_aefbbce509601d13506ebd20b7086fc90_cgraph" alt=""/></div>
+<map name="da/d8d/classsysy_1_1mc_1_1LoadReg_aefbbce509601d13506ebd20b7086fc90_cgraph" id="da/d8d/classsysy_1_1mc_1_1LoadReg_aefbbce509601d13506ebd20b7086fc90_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,156,47"/>
+<area shape="rect" href="../../d4/d18/classsysy_1_1mc_1_1Reg.html#ae97919b21671f26613d8d5cabfc6505a" title=" " alt="" coords="204,13,407,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7617466c86dfcc313593959d64e6912d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7617466c86dfcc313593959d64e6912d">&#9670;&nbsp;</a></span>setShift()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sysy::mc::LoadReg::setShift </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/d06/classsysy_1_1mc_1_1Shift.html">Shift</a> *&#160;</td>
+          <td class="paramname"><em>_shift</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../da/d8d/classsysy_1_1mc_1_1LoadReg.html#a136ddaebb5a70a9eee497f61f5907988">shift</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a2ab049be44bb4e98a36c237439bf2006"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ab049be44bb4e98a36c237439bf2006">&#9670;&nbsp;</a></span>dst</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d18/classsysy_1_1mc_1_1Reg.html">Reg</a>* sysy::mc::LoadReg::dst</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../da/d8d/classsysy_1_1mc_1_1LoadReg.html#aefbbce509601d13506ebd20b7086fc90">gen_asm()</a>.</p>
+
+</div>
+</div>
+<a id="a36fc7075c4223f00232ba88ddaa78ea5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36fc7075c4223f00232ba88ddaa78ea5">&#9670;&nbsp;</a></span>lhs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d18/classsysy_1_1mc_1_1Reg.html">Reg</a> * sysy::mc::LoadReg::lhs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../da/d8d/classsysy_1_1mc_1_1LoadReg.html#aefbbce509601d13506ebd20b7086fc90">gen_asm()</a>.</p>
+
+</div>
+</div>
+<a id="a83ff407f3c42f1ed87dd223552d75b1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83ff407f3c42f1ed87dd223552d75b1b">&#9670;&nbsp;</a></span>rhs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d18/classsysy_1_1mc_1_1Reg.html">Reg</a> * sysy::mc::LoadReg::rhs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../da/d8d/classsysy_1_1mc_1_1LoadReg.html#aefbbce509601d13506ebd20b7086fc90">gen_asm()</a>.</p>
+
+</div>
+</div>
+<a id="a136ddaebb5a70a9eee497f61f5907988"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a136ddaebb5a70a9eee497f61f5907988">&#9670;&nbsp;</a></span>shift</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d06/classsysy_1_1mc_1_1Shift.html">Shift</a>* sysy::mc::LoadReg::shift</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../da/d8d/classsysy_1_1mc_1_1LoadReg.html#aefbbce509601d13506ebd20b7086fc90">gen_asm()</a>, and <a class="el" href="../../da/d8d/classsysy_1_1mc_1_1LoadReg.html#a7617466c86dfcc313593959d64e6912d">setShift()</a>.</p>
+
+</div>
+</div>
+<a id="af50e239c9b45d7b680fa6fa5eefa0b49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af50e239c9b45d7b680fa6fa5eefa0b49">&#9670;&nbsp;</a></span>type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d8d/classsysy_1_1mc_1_1LoadReg.html#a14215b7c2b0a323a044c9e5da9773b74">Type</a> sysy::mc::LoadReg::type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../da/d8d/classsysy_1_1mc_1_1LoadReg.html#aefbbce509601d13506ebd20b7086fc90">gen_asm()</a>.</p>
+
+</div>
+</div>
 <a id="a86dec5180f2534bf3e7928e4cabb9f93"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a86dec5180f2534bf3e7928e4cabb9f93">&#9670;&nbsp;</a></span>type_map</h2>
 
@@ -253,7 +476,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt; LoadReg::Type, std::string &gt; sysy::mc::LoadReg::type_map</td>
+          <td class="memname">std::map&lt; <a class="el" href="../../da/d8d/classsysy_1_1mc_1_1LoadReg.html#a14215b7c2b0a323a044c9e5da9773b74">LoadReg::Type</a>, std::string &gt; sysy::mc::LoadReg::type_map</td>
         </tr>
       </table>
   </td>
@@ -263,21 +486,25 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    {SLOAD, <span class="stringliteral">&quot;ldr&quot;</span>}, {VLOAD, <span class="stringliteral">&quot;vldr&quot;</span>}</div>
+<div class="line">    {<a class="code" href="../../da/d8d/classsysy_1_1mc_1_1LoadReg.html#a14215b7c2b0a323a044c9e5da9773b74a29549ab03054d765fa329b8c8c66ad7e">SLOAD</a>, <span class="stringliteral">&quot;ldr&quot;</span>}, {<a class="code" href="../../da/d8d/classsysy_1_1mc_1_1LoadReg.html#a14215b7c2b0a323a044c9e5da9773b74a71a3995a4bfb5f56694b3447c5854e27">VLOAD</a>, <span class="stringliteral">&quot;vldr&quot;</span>}</div>
 <div class="line">}</div>
 </div><!-- fragment -->
+<p class="reference">Referenced by <a class="el" href="../../da/d8d/classsysy_1_1mc_1_1LoadReg.html#aefbbce509601d13506ebd20b7086fc90">gen_asm()</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>include/sysy/Target/<a class="el" href="../../d2/d63/Target_2Instruction_8h_source.html">Instruction.h</a></li>
-<li>lib/Target/MCInstruction.cpp</li>
+<li>lib/Target/<a class="el" href="../../da/d73/MCInstruction_8cpp.html">MCInstruction.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclasssysy_1_1mc_1_1LoadReg_html_a14215b7c2b0a323a044c9e5da9773b74a29549ab03054d765fa329b8c8c66ad7e"><div class="ttname"><a href="../../da/d8d/classsysy_1_1mc_1_1LoadReg.html#a14215b7c2b0a323a044c9e5da9773b74a29549ab03054d765fa329b8c8c66ad7e">sysy::mc::LoadReg::SLOAD</a></div><div class="ttdeci">@ SLOAD</div><div class="ttdef"><b>Definition:</b> Instruction.h:285</div></div>
+<div class="ttc" id="aclasssysy_1_1mc_1_1LoadReg_html_a14215b7c2b0a323a044c9e5da9773b74a71a3995a4bfb5f56694b3447c5854e27"><div class="ttname"><a href="../../da/d8d/classsysy_1_1mc_1_1LoadReg.html#a14215b7c2b0a323a044c9e5da9773b74a71a3995a4bfb5f56694b3447c5854e27">sysy::mc::LoadReg::VLOAD</a></div><div class="ttdeci">@ VLOAD</div><div class="ttdef"><b>Definition:</b> Instruction.h:285</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>sysy</b></li><li class="navelem"><b>mc</b></li><li class="navelem"><a class="el" href="../../da/d8d/classsysy_1_1mc_1_1LoadReg.html">LoadReg</a></li>
+    <li class="navelem"><a class="el" href="../../dd/d20/namespacesysy.html">sysy</a></li><li class="navelem"><a class="el" href="../../d7/d26/namespacesysy_1_1mc.html">mc</a></li><li class="navelem"><a class="el" href="../../da/d8d/classsysy_1_1mc_1_1LoadReg.html">LoadReg</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

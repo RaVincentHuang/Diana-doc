@@ -41,8 +41,10 @@ var classsysy_1_1mc_1_1Instruction =
     [ "use", "d6/de0/classsysy_1_1mc_1_1Instruction.html#ad90a4407878bb0e62a39bd8135055338", null ],
     [ "use_v", "d6/de0/classsysy_1_1mc_1_1Instruction.html#a7067db5557f71c08086b7250076b9911", null ],
     [ "cond", "d6/de0/classsysy_1_1mc_1_1Instruction.html#a56efa7c32238d8daf23b0806a077af4f", null ],
+    [ "condMap", "d6/de0/classsysy_1_1mc_1_1Instruction.html#a0254e23298dfef38c7ffc30125222b10", null ],
     [ "def_reg", "d6/de0/classsysy_1_1mc_1_1Instruction.html#a7b8245e96fca60ec21cdd4410669f0b2", null ],
     [ "instr_type", "d6/de0/classsysy_1_1mc_1_1Instruction.html#ac10ac77169b51d365785c1a6f686eb71", null ],
     [ "is_float", "d6/de0/classsysy_1_1mc_1_1Instruction.html#a988e3d706e1cc12bd43c9e40aa6cef3a", null ],
+    [ "type_map", "d6/de0/classsysy_1_1mc_1_1Instruction.html#ac7e5455ba0543091910aa9548420f778", null ],
     [ "use_reg", "d6/de0/classsysy_1_1mc_1_1Instruction.html#a848e99bd5fc45a5be53edabae9ad9c84", null ]
 ];

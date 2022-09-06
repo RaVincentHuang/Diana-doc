@@ -86,60 +86,644 @@ $(document).ready(function(){initNavTree('db/d6d/classsysy_1_1ir_1_1GVInfo.html'
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="../../d1/d53/classsysy_1_1ir_1_1GVInfo-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">sysy::ir::GVInfo Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="../../d8/d92/MemorySSA_8h_source.html">MemorySSA.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/db2/structsysy_1_1ir_1_1GVInfo_1_1cmpl.html">cmpl</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d78/structsysy_1_1ir_1_1GVInfo_1_1cmps.html">cmps</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ae9e59f1bc7c1bbfb1b491fd8dcc3bb12"><td class="memItemLeft" align="right" valign="top"><a id="ae9e59f1bc7c1bbfb1b491fd8dcc3bb12"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>iterator</b> = std::unordered_map&lt; <a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *, std::set&lt; <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a> *, cmps &gt; &gt;::iterator</td></tr>
+<tr class="memitem:ae9e59f1bc7c1bbfb1b491fd8dcc3bb12"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d6d/classsysy_1_1ir_1_1GVInfo.html#ae9e59f1bc7c1bbfb1b491fd8dcc3bb12">iterator</a> = std::unordered_map&lt; <a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *, std::set&lt; <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a> *, <a class="el" href="../../d7/d78/structsysy_1_1ir_1_1GVInfo_1_1cmps.html">cmps</a> &gt; &gt;::<a class="el" href="../../db/d6d/classsysy_1_1ir_1_1GVInfo.html#ae9e59f1bc7c1bbfb1b491fd8dcc3bb12">iterator</a></td></tr>
 <tr class="separator:ae9e59f1bc7c1bbfb1b491fd8dcc3bb12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1caaa15d300479666fc7bbd8be54d71b"><td class="memItemLeft" align="right" valign="top"><a id="a1caaa15d300479666fc7bbd8be54d71b"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>storeSize</b> ()</td></tr>
+<tr class="memitem:a1caaa15d300479666fc7bbd8be54d71b"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d6d/classsysy_1_1ir_1_1GVInfo.html#a1caaa15d300479666fc7bbd8be54d71b">storeSize</a> ()</td></tr>
 <tr class="separator:a1caaa15d300479666fc7bbd8be54d71b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a573244d81f91593a0e3ebe17fbd4caa4"><td class="memItemLeft" align="right" valign="top"><a id="a573244d81f91593a0e3ebe17fbd4caa4"></a>
-<a class="el" href="../../dd/d0a/classsysy_1_1iterator__range.html">iterator_range</a>&lt; iterator &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>get</b> ()</td></tr>
+<tr class="memitem:a573244d81f91593a0e3ebe17fbd4caa4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d0a/classsysy_1_1iterator__range.html">iterator_range</a>&lt; <a class="el" href="../../db/d6d/classsysy_1_1ir_1_1GVInfo.html#ae9e59f1bc7c1bbfb1b491fd8dcc3bb12">iterator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d6d/classsysy_1_1ir_1_1GVInfo.html#a573244d81f91593a0e3ebe17fbd4caa4">get</a> ()</td></tr>
 <tr class="separator:a573244d81f91593a0e3ebe17fbd4caa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32e488f79fea2fc5df559b59767acdae"><td class="memItemLeft" align="right" valign="top"><a id="a32e488f79fea2fc5df559b59767acdae"></a>
-std::set&lt; <a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getBlock</b> ()</td></tr>
+<tr class="memitem:a32e488f79fea2fc5df559b59767acdae"><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d6d/classsysy_1_1ir_1_1GVInfo.html#a32e488f79fea2fc5df559b59767acdae">getBlock</a> ()</td></tr>
 <tr class="separator:a32e488f79fea2fc5df559b59767acdae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adeb42cd6d8755cfc3a0903932c2f4228"><td class="memItemLeft" align="right" valign="top"><a id="adeb42cd6d8755cfc3a0903932c2f4228"></a>
-std::set&lt; <a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getDefBlocks</b> ()</td></tr>
+<tr class="memitem:adeb42cd6d8755cfc3a0903932c2f4228"><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d6d/classsysy_1_1ir_1_1GVInfo.html#adeb42cd6d8755cfc3a0903932c2f4228">getDefBlocks</a> ()</td></tr>
 <tr class="separator:adeb42cd6d8755cfc3a0903932c2f4228"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c7d7c4837edf6819f5d2685e9f7ce5c"><td class="memItemLeft" align="right" valign="top"><a id="a7c7d7c4837edf6819f5d2685e9f7ce5c"></a>
-std::set&lt; <a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getUseBlocks</b> ()</td></tr>
+<tr class="memitem:a7c7d7c4837edf6819f5d2685e9f7ce5c"><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d6d/classsysy_1_1ir_1_1GVInfo.html#a7c7d7c4837edf6819f5d2685e9f7ce5c">getUseBlocks</a> ()</td></tr>
 <tr class="separator:a7c7d7c4837edf6819f5d2685e9f7ce5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb9f02ef0446a616c563c49003fcee05"><td class="memItemLeft" align="right" valign="top"><a id="afb9f02ef0446a616c563c49003fcee05"></a>
-std::set&lt; <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a> *, cmps &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getStore</b> (<a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *bb)</td></tr>
+<tr class="memitem:afb9f02ef0446a616c563c49003fcee05"><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a> *, <a class="el" href="../../d7/d78/structsysy_1_1ir_1_1GVInfo_1_1cmps.html">cmps</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d6d/classsysy_1_1ir_1_1GVInfo.html#afb9f02ef0446a616c563c49003fcee05">getStore</a> (<a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *bb)</td></tr>
 <tr class="separator:afb9f02ef0446a616c563c49003fcee05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7228a1657bac93e00713a56c8854efe"><td class="memItemLeft" align="right" valign="top"><a id="ae7228a1657bac93e00713a56c8854efe"></a>
-std::set&lt; <a class="el" href="../../db/d0c/classsysy_1_1ir_1_1LoadInstruction.html">LoadInst</a> *, cmpl &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getLoad</b> (<a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *bb)</td></tr>
+<tr class="memitem:ae7228a1657bac93e00713a56c8854efe"><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#ad41f0d55a845953700ecd9baf0d6c18e">LoadInst</a> *, <a class="el" href="../../d0/db2/structsysy_1_1ir_1_1GVInfo_1_1cmpl.html">cmpl</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d6d/classsysy_1_1ir_1_1GVInfo.html#ae7228a1657bac93e00713a56c8854efe">getLoad</a> (<a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *bb)</td></tr>
 <tr class="separator:ae7228a1657bac93e00713a56c8854efe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f5b98d67e09238c7d6b942b47d6792b"><td class="memItemLeft" align="right" valign="top"><a id="a3f5b98d67e09238c7d6b942b47d6792b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setStorePhi</b> (<a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *bb, <a class="el" href="../../d9/d8a/classsysy_1_1ir_1_1MemPhiInstruction.html">MemPhiInst</a> *_phi)</td></tr>
+<tr class="memitem:a3f5b98d67e09238c7d6b942b47d6792b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d6d/classsysy_1_1ir_1_1GVInfo.html#a3f5b98d67e09238c7d6b942b47d6792b">setStorePhi</a> (<a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *bb, <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a1b488031f66390a0066860b0c938f372">MemPhiInst</a> *_phi)</td></tr>
 <tr class="separator:a3f5b98d67e09238c7d6b942b47d6792b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af85209c46f2eced8341de84e651b0d16"><td class="memItemLeft" align="right" valign="top"><a id="af85209c46f2eced8341de84e651b0d16"></a>
-<a class="el" href="../../d9/d8a/classsysy_1_1ir_1_1MemPhiInstruction.html">MemPhiInst</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getStorePhi</b> (<a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *bb)</td></tr>
+<tr class="memitem:af85209c46f2eced8341de84e651b0d16"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a1b488031f66390a0066860b0c938f372">MemPhiInst</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d6d/classsysy_1_1ir_1_1GVInfo.html#af85209c46f2eced8341de84e651b0d16">getStorePhi</a> (<a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *bb)</td></tr>
 <tr class="separator:af85209c46f2eced8341de84e651b0d16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f9a5bda95988c589382279507dac6e1"><td class="memItemLeft" align="right" valign="top"><a id="a0f9a5bda95988c589382279507dac6e1"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>storephiSize</b> ()</td></tr>
+<tr class="memitem:a0f9a5bda95988c589382279507dac6e1"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d6d/classsysy_1_1ir_1_1GVInfo.html#a0f9a5bda95988c589382279507dac6e1">storephiSize</a> ()</td></tr>
 <tr class="separator:a0f9a5bda95988c589382279507dac6e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2130496353fb065a0a757f5ff9fb7a51"><td class="memItemLeft" align="right" valign="top"><a id="a2130496353fb065a0a757f5ff9fb7a51"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setLoadPhi</b> (<a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *bb, <a class="el" href="../../d9/d8a/classsysy_1_1ir_1_1MemPhiInstruction.html">MemPhiInst</a> *_phi)</td></tr>
+<tr class="memitem:a2130496353fb065a0a757f5ff9fb7a51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d6d/classsysy_1_1ir_1_1GVInfo.html#a2130496353fb065a0a757f5ff9fb7a51">setLoadPhi</a> (<a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *bb, <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a1b488031f66390a0066860b0c938f372">MemPhiInst</a> *_phi)</td></tr>
 <tr class="separator:a2130496353fb065a0a757f5ff9fb7a51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06a59022561b16689ded9830c0c92241"><td class="memItemLeft" align="right" valign="top"><a id="a06a59022561b16689ded9830c0c92241"></a>
-<a class="el" href="../../d9/d8a/classsysy_1_1ir_1_1MemPhiInstruction.html">MemPhiInst</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getLoadPhi</b> (<a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *bb)</td></tr>
+<tr class="memitem:a06a59022561b16689ded9830c0c92241"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a1b488031f66390a0066860b0c938f372">MemPhiInst</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d6d/classsysy_1_1ir_1_1GVInfo.html#a06a59022561b16689ded9830c0c92241">getLoadPhi</a> (<a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *bb)</td></tr>
 <tr class="separator:a06a59022561b16689ded9830c0c92241"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0217e2bc34ce6ea22b71e3339fd3e2a3"><td class="memItemLeft" align="right" valign="top"><a id="a0217e2bc34ce6ea22b71e3339fd3e2a3"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>loadPhiSize</b> ()</td></tr>
+<tr class="memitem:a0217e2bc34ce6ea22b71e3339fd3e2a3"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d6d/classsysy_1_1ir_1_1GVInfo.html#a0217e2bc34ce6ea22b71e3339fd3e2a3">loadPhiSize</a> ()</td></tr>
 <tr class="separator:a0217e2bc34ce6ea22b71e3339fd3e2a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a031aae837c8adf2cdc5aa29094921fa4"><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d6d/classsysy_1_1ir_1_1GVInfo.html#a031aae837c8adf2cdc5aa29094921fa4">defBlocks</a></td></tr>
+<tr class="separator:a031aae837c8adf2cdc5aa29094921fa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7875328d0fbe9a8a0cfb2cd8fa1a798d"><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d6d/classsysy_1_1ir_1_1GVInfo.html#a7875328d0fbe9a8a0cfb2cd8fa1a798d">useBlocks</a></td></tr>
+<tr class="separator:a7875328d0fbe9a8a0cfb2cd8fa1a798d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a825283d2be00c43bb504366d19577fd6"><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d6d/classsysy_1_1ir_1_1GVInfo.html#a825283d2be00c43bb504366d19577fd6">block</a></td></tr>
+<tr class="separator:a825283d2be00c43bb504366d19577fd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd7eac68ae0f9c9bd6be29dd09d39b75"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; <a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *, std::set&lt; <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a> *, <a class="el" href="../../d7/d78/structsysy_1_1ir_1_1GVInfo_1_1cmps.html">cmps</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d6d/classsysy_1_1ir_1_1GVInfo.html#afd7eac68ae0f9c9bd6be29dd09d39b75">store</a></td></tr>
+<tr class="separator:afd7eac68ae0f9c9bd6be29dd09d39b75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80870b2086d71806ba97978b490acce7"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; <a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *, std::set&lt; <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#ad41f0d55a845953700ecd9baf0d6c18e">LoadInst</a> *, <a class="el" href="../../d0/db2/structsysy_1_1ir_1_1GVInfo_1_1cmpl.html">cmpl</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d6d/classsysy_1_1ir_1_1GVInfo.html#a80870b2086d71806ba97978b490acce7">load</a></td></tr>
+<tr class="separator:a80870b2086d71806ba97978b490acce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08da7d9ba115211e2188732f93a0dbc8"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; <a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *, <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a1b488031f66390a0066860b0c938f372">MemPhiInst</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d6d/classsysy_1_1ir_1_1GVInfo.html#a08da7d9ba115211e2188732f93a0dbc8">storePhi</a></td></tr>
+<tr class="separator:a08da7d9ba115211e2188732f93a0dbc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa77c4cc644ffbab34202a3bbd9b8a9cf"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; <a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *, <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a1b488031f66390a0066860b0c938f372">MemPhiInst</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d6d/classsysy_1_1ir_1_1GVInfo.html#aa77c4cc644ffbab34202a3bbd9b8a9cf">loadPhi</a></td></tr>
+<tr class="separator:aa77c4cc644ffbab34202a3bbd9b8a9cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="ae9e59f1bc7c1bbfb1b491fd8dcc3bb12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9e59f1bc7c1bbfb1b491fd8dcc3bb12">&#9670;&nbsp;</a></span>iterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../db/d6d/classsysy_1_1ir_1_1GVInfo.html#ae9e59f1bc7c1bbfb1b491fd8dcc3bb12">sysy::ir::GVInfo::iterator</a> =  std::unordered_map&lt;<a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a>*, std::set&lt;<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a>*, <a class="el" href="../../d7/d78/structsysy_1_1ir_1_1GVInfo_1_1cmps.html">cmps</a>&gt; &gt;::<a class="el" href="../../db/d6d/classsysy_1_1ir_1_1GVInfo.html#ae9e59f1bc7c1bbfb1b491fd8dcc3bb12">iterator</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a573244d81f91593a0e3ebe17fbd4caa4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a573244d81f91593a0e3ebe17fbd4caa4">&#9670;&nbsp;</a></span>get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d0a/classsysy_1_1iterator__range.html">iterator_range</a>&lt;<a class="el" href="../../db/d6d/classsysy_1_1ir_1_1GVInfo.html#ae9e59f1bc7c1bbfb1b491fd8dcc3bb12">iterator</a>&gt; sysy::ir::GVInfo::get </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../dd/d20/namespacesysy.html#a746e1eb45442547b5f49e0087727fdb3">sysy::make_range()</a>, and <a class="el" href="../../db/d6d/classsysy_1_1ir_1_1GVInfo.html#afd7eac68ae0f9c9bd6be29dd09d39b75">store</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/d6d/classsysy_1_1ir_1_1GVInfo_a573244d81f91593a0e3ebe17fbd4caa4_cgraph.png" border="0" usemap="#db/d6d/classsysy_1_1ir_1_1GVInfo_a573244d81f91593a0e3ebe17fbd4caa4_cgraph" alt=""/></div>
+<map name="db/d6d/classsysy_1_1ir_1_1GVInfo_a573244d81f91593a0e3ebe17fbd4caa4_cgraph" id="db/d6d/classsysy_1_1ir_1_1GVInfo_a573244d81f91593a0e3ebe17fbd4caa4_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,155,32"/>
+<area shape="rect" href="../../dd/d20/namespacesysy.html#a746e1eb45442547b5f49e0087727fdb3" title=" " alt="" coords="203,5,341,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a32e488f79fea2fc5df559b59767acdae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32e488f79fea2fc5df559b59767acdae">&#9670;&nbsp;</a></span>getBlock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::set&lt;<a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a>*&gt;&amp; sysy::ir::GVInfo::getBlock </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../db/d6d/classsysy_1_1ir_1_1GVInfo.html#a825283d2be00c43bb504366d19577fd6">block</a>.</p>
+
+</div>
+</div>
+<a id="adeb42cd6d8755cfc3a0903932c2f4228"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adeb42cd6d8755cfc3a0903932c2f4228">&#9670;&nbsp;</a></span>getDefBlocks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::set&lt;<a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a>*&gt;&amp; sysy::ir::GVInfo::getDefBlocks </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../db/d6d/classsysy_1_1ir_1_1GVInfo.html#a031aae837c8adf2cdc5aa29094921fa4">defBlocks</a>.</p>
+
+</div>
+</div>
+<a id="ae7228a1657bac93e00713a56c8854efe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7228a1657bac93e00713a56c8854efe">&#9670;&nbsp;</a></span>getLoad()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::set&lt;<a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#ad41f0d55a845953700ecd9baf0d6c18e">LoadInst</a>*, <a class="el" href="../../d0/db2/structsysy_1_1ir_1_1GVInfo_1_1cmpl.html">cmpl</a>&gt;&amp; sysy::ir::GVInfo::getLoad </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *&#160;</td>
+          <td class="paramname"><em>bb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../db/d6d/classsysy_1_1ir_1_1GVInfo.html#a80870b2086d71806ba97978b490acce7">load</a>.</p>
+
+</div>
+</div>
+<a id="a06a59022561b16689ded9830c0c92241"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06a59022561b16689ded9830c0c92241">&#9670;&nbsp;</a></span>getLoadPhi()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a1b488031f66390a0066860b0c938f372">MemPhiInst</a>* sysy::ir::GVInfo::getLoadPhi </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *&#160;</td>
+          <td class="paramname"><em>bb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../db/d6d/classsysy_1_1ir_1_1GVInfo.html#aa77c4cc644ffbab34202a3bbd9b8a9cf">loadPhi</a>.</p>
+
+</div>
+</div>
+<a id="afb9f02ef0446a616c563c49003fcee05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb9f02ef0446a616c563c49003fcee05">&#9670;&nbsp;</a></span>getStore()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::set&lt;<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a>*, <a class="el" href="../../d7/d78/structsysy_1_1ir_1_1GVInfo_1_1cmps.html">cmps</a>&gt;&amp; sysy::ir::GVInfo::getStore </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *&#160;</td>
+          <td class="paramname"><em>bb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../db/d6d/classsysy_1_1ir_1_1GVInfo.html#afd7eac68ae0f9c9bd6be29dd09d39b75">store</a>.</p>
+
+</div>
+</div>
+<a id="af85209c46f2eced8341de84e651b0d16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af85209c46f2eced8341de84e651b0d16">&#9670;&nbsp;</a></span>getStorePhi()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a1b488031f66390a0066860b0c938f372">MemPhiInst</a>* sysy::ir::GVInfo::getStorePhi </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *&#160;</td>
+          <td class="paramname"><em>bb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../db/d6d/classsysy_1_1ir_1_1GVInfo.html#a08da7d9ba115211e2188732f93a0dbc8">storePhi</a>.</p>
+
+</div>
+</div>
+<a id="a7c7d7c4837edf6819f5d2685e9f7ce5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c7d7c4837edf6819f5d2685e9f7ce5c">&#9670;&nbsp;</a></span>getUseBlocks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::set&lt;<a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a>*&gt;&amp; sysy::ir::GVInfo::getUseBlocks </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../db/d6d/classsysy_1_1ir_1_1GVInfo.html#a7875328d0fbe9a8a0cfb2cd8fa1a798d">useBlocks</a>.</p>
+
+</div>
+</div>
+<a id="a0217e2bc34ce6ea22b71e3339fd3e2a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0217e2bc34ce6ea22b71e3339fd3e2a3">&#9670;&nbsp;</a></span>loadPhiSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t sysy::ir::GVInfo::loadPhiSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../db/d6d/classsysy_1_1ir_1_1GVInfo.html#aa77c4cc644ffbab34202a3bbd9b8a9cf">loadPhi</a>.</p>
+
+</div>
+</div>
+<a id="a2130496353fb065a0a757f5ff9fb7a51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2130496353fb065a0a757f5ff9fb7a51">&#9670;&nbsp;</a></span>setLoadPhi()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sysy::ir::GVInfo::setLoadPhi </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *&#160;</td>
+          <td class="paramname"><em>bb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a1b488031f66390a0066860b0c938f372">MemPhiInst</a> *&#160;</td>
+          <td class="paramname"><em>_phi</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../db/d6d/classsysy_1_1ir_1_1GVInfo.html#aa77c4cc644ffbab34202a3bbd9b8a9cf">loadPhi</a>.</p>
+
+</div>
+</div>
+<a id="a3f5b98d67e09238c7d6b942b47d6792b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f5b98d67e09238c7d6b942b47d6792b">&#9670;&nbsp;</a></span>setStorePhi()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sysy::ir::GVInfo::setStorePhi </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *&#160;</td>
+          <td class="paramname"><em>bb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a1b488031f66390a0066860b0c938f372">MemPhiInst</a> *&#160;</td>
+          <td class="paramname"><em>_phi</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../db/d6d/classsysy_1_1ir_1_1GVInfo.html#a08da7d9ba115211e2188732f93a0dbc8">storePhi</a>.</p>
+
+</div>
+</div>
+<a id="a0f9a5bda95988c589382279507dac6e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f9a5bda95988c589382279507dac6e1">&#9670;&nbsp;</a></span>storephiSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t sysy::ir::GVInfo::storephiSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../db/d6d/classsysy_1_1ir_1_1GVInfo.html#a08da7d9ba115211e2188732f93a0dbc8">storePhi</a>.</p>
+
+</div>
+</div>
+<a id="a1caaa15d300479666fc7bbd8be54d71b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1caaa15d300479666fc7bbd8be54d71b">&#9670;&nbsp;</a></span>storeSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t sysy::ir::GVInfo::storeSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../db/d6d/classsysy_1_1ir_1_1GVInfo.html#afd7eac68ae0f9c9bd6be29dd09d39b75">store</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a825283d2be00c43bb504366d19577fd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a825283d2be00c43bb504366d19577fd6">&#9670;&nbsp;</a></span>block</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::set&lt;<a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a>*&gt; sysy::ir::GVInfo::block</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../db/d6d/classsysy_1_1ir_1_1GVInfo.html#a32e488f79fea2fc5df559b59767acdae">getBlock()</a>.</p>
+
+</div>
+</div>
+<a id="a031aae837c8adf2cdc5aa29094921fa4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a031aae837c8adf2cdc5aa29094921fa4">&#9670;&nbsp;</a></span>defBlocks</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::set&lt;<a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a>*&gt; sysy::ir::GVInfo::defBlocks</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../db/d6d/classsysy_1_1ir_1_1GVInfo.html#adeb42cd6d8755cfc3a0903932c2f4228">getDefBlocks()</a>.</p>
+
+</div>
+</div>
+<a id="a80870b2086d71806ba97978b490acce7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80870b2086d71806ba97978b490acce7">&#9670;&nbsp;</a></span>load</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt;<a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a>*, std::set&lt;<a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#ad41f0d55a845953700ecd9baf0d6c18e">LoadInst</a>*, <a class="el" href="../../d0/db2/structsysy_1_1ir_1_1GVInfo_1_1cmpl.html">cmpl</a>&gt; &gt; sysy::ir::GVInfo::load</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../db/d6d/classsysy_1_1ir_1_1GVInfo.html#ae7228a1657bac93e00713a56c8854efe">getLoad()</a>.</p>
+
+</div>
+</div>
+<a id="aa77c4cc644ffbab34202a3bbd9b8a9cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa77c4cc644ffbab34202a3bbd9b8a9cf">&#9670;&nbsp;</a></span>loadPhi</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt;<a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a>*, <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a1b488031f66390a0066860b0c938f372">MemPhiInst</a>*&gt; sysy::ir::GVInfo::loadPhi</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../db/d6d/classsysy_1_1ir_1_1GVInfo.html#a06a59022561b16689ded9830c0c92241">getLoadPhi()</a>, <a class="el" href="../../db/d6d/classsysy_1_1ir_1_1GVInfo.html#a0217e2bc34ce6ea22b71e3339fd3e2a3">loadPhiSize()</a>, and <a class="el" href="../../db/d6d/classsysy_1_1ir_1_1GVInfo.html#a2130496353fb065a0a757f5ff9fb7a51">setLoadPhi()</a>.</p>
+
+</div>
+</div>
+<a id="afd7eac68ae0f9c9bd6be29dd09d39b75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd7eac68ae0f9c9bd6be29dd09d39b75">&#9670;&nbsp;</a></span>store</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt;<a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a>*, std::set&lt;<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a>*, <a class="el" href="../../d7/d78/structsysy_1_1ir_1_1GVInfo_1_1cmps.html">cmps</a>&gt; &gt; sysy::ir::GVInfo::store</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../db/d6d/classsysy_1_1ir_1_1GVInfo.html#a573244d81f91593a0e3ebe17fbd4caa4">get()</a>, <a class="el" href="../../db/d6d/classsysy_1_1ir_1_1GVInfo.html#afb9f02ef0446a616c563c49003fcee05">getStore()</a>, and <a class="el" href="../../db/d6d/classsysy_1_1ir_1_1GVInfo.html#a1caaa15d300479666fc7bbd8be54d71b">storeSize()</a>.</p>
+
+</div>
+</div>
+<a id="a08da7d9ba115211e2188732f93a0dbc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08da7d9ba115211e2188732f93a0dbc8">&#9670;&nbsp;</a></span>storePhi</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt;<a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a>*, <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a1b488031f66390a0066860b0c938f372">MemPhiInst</a>*&gt; sysy::ir::GVInfo::storePhi</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../db/d6d/classsysy_1_1ir_1_1GVInfo.html#af85209c46f2eced8341de84e651b0d16">getStorePhi()</a>, <a class="el" href="../../db/d6d/classsysy_1_1ir_1_1GVInfo.html#a3f5b98d67e09238c7d6b942b47d6792b">setStorePhi()</a>, and <a class="el" href="../../db/d6d/classsysy_1_1ir_1_1GVInfo.html#a0f9a5bda95988c589382279507dac6e1">storephiSize()</a>.</p>
+
+</div>
+</div>
+<a id="a7875328d0fbe9a8a0cfb2cd8fa1a798d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7875328d0fbe9a8a0cfb2cd8fa1a798d">&#9670;&nbsp;</a></span>useBlocks</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::set&lt;<a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a>*&gt; sysy::ir::GVInfo::useBlocks</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../db/d6d/classsysy_1_1ir_1_1GVInfo.html#a7c7d7c4837edf6819f5d2685e9f7ce5c">getUseBlocks()</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>include/sysy/Transform/Utils/<a class="el" href="../../d8/d92/MemorySSA_8h_source.html">MemorySSA.h</a></li>
 </ul>
@@ -148,7 +732,7 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>loadPhiSize</b> ()<
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>sysy</b></li><li class="navelem"><b>ir</b></li><li class="navelem"><a class="el" href="../../db/d6d/classsysy_1_1ir_1_1GVInfo.html">GVInfo</a></li>
+    <li class="navelem"><a class="el" href="../../dd/d20/namespacesysy.html">sysy</a></li><li class="navelem"><a class="el" href="../../d7/d19/namespacesysy_1_1ir.html">ir</a></li><li class="navelem"><a class="el" href="../../db/d6d/classsysy_1_1ir_1_1GVInfo.html">GVInfo</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

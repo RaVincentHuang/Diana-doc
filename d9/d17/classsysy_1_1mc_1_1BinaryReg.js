@@ -18,5 +18,6 @@ var classsysy_1_1mc_1_1BinaryReg =
     [ "lhs", "d9/d17/classsysy_1_1mc_1_1BinaryReg.html#a09458b1cb2c03fc45b31e022c36de0ab", null ],
     [ "rhs", "d9/d17/classsysy_1_1mc_1_1BinaryReg.html#afbc46dc48d5078f78e0975e05416e222", null ],
     [ "shift", "d9/d17/classsysy_1_1mc_1_1BinaryReg.html#a54406eca60322fb60cef5c821aab34b2", null ],
-    [ "type", "d9/d17/classsysy_1_1mc_1_1BinaryReg.html#a2da611c90cd9462295282c667aea3787", null ]
+    [ "type", "d9/d17/classsysy_1_1mc_1_1BinaryReg.html#a2da611c90cd9462295282c667aea3787", null ],
+    [ "type_map", "d9/d17/classsysy_1_1mc_1_1BinaryReg.html#adc674c8a5a7a85750605965c9682f187", null ]
 ];

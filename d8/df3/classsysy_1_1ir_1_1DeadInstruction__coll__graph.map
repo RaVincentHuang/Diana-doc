@@ -1,7 +1,9 @@
 <map id="sysy::ir::DeadInstruction" name="sysy::ir::DeadInstruction">
-<area shape="rect" id="node1" title=" " alt="" coords="5,323,184,349"/>
-<area shape="rect" id="node2" href="$dc/d46/classsysy_1_1ir_1_1Instruction.html" title=" " alt="" coords="22,247,167,273"/>
-<area shape="rect" id="node3" href="$d9/d1a/classsysy_1_1ir_1_1User.html" title=" " alt="" coords="41,171,148,197"/>
-<area shape="rect" id="node4" href="$d9/d9f/classsysy_1_1ir_1_1Value.html" title=" " alt="" coords="39,95,151,121"/>
-<area shape="rect" id="node5" href="$d7/d1e/classsysy_1_1ir_1_1Type.html" title=" " alt="" coords="41,5,148,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="21,352,200,379"/>
+<area shape="rect" id="node2" href="$dc/d46/classsysy_1_1ir_1_1Instruction.html" title=" " alt="" coords="38,276,183,303"/>
+<area shape="rect" id="node3" href="$d9/d1a/classsysy_1_1ir_1_1User.html" title=" " alt="" coords="5,185,112,212"/>
+<area shape="rect" id="node4" href="$d9/d9f/classsysy_1_1ir_1_1Value.html" title=" " alt="" coords="259,95,371,121"/>
+<area shape="rect" id="node6" href="$df/dd2/classsysy_1_1ir_1_1BasicBlock.html" title=" " alt="" coords="136,185,283,212"/>
+<area shape="rect" id="node7" href="$d4/d36/classsysy_1_1ir_1_1Function.html" title=" " alt="" coords="292,276,423,303"/>
+<area shape="rect" id="node5" href="$d7/d1e/classsysy_1_1ir_1_1Type.html" title=" " alt="" coords="340,5,447,32"/>
 </map>

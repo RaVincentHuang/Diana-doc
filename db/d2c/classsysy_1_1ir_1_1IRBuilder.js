@@ -44,5 +44,7 @@ var classsysy_1_1ir_1_1IRBuilder =
     [ "GetInsertBlock", "db/d2c/classsysy_1_1ir_1_1IRBuilder.html#a2f1936b9f79b6fb5239ffc871b4a4a53", null ],
     [ "insertInstr", "db/d2c/classsysy_1_1ir_1_1IRBuilder.html#a01fff6d11a3d5e4212010270c35421ac", null ],
     [ "SetInsertPoint", "db/d2c/classsysy_1_1ir_1_1IRBuilder.html#ad73391e09049bb51ba914aede14fee7d", null ],
-    [ "SetInsertPoint", "db/d2c/classsysy_1_1ir_1_1IRBuilder.html#a4b75aab5745da50538a08674831ed0ba", null ]
+    [ "SetInsertPoint", "db/d2c/classsysy_1_1ir_1_1IRBuilder.html#a4b75aab5745da50538a08674831ed0ba", null ],
+    [ "curBB", "db/d2c/classsysy_1_1ir_1_1IRBuilder.html#ad182fe269b344a500949ad665ba02902", null ],
+    [ "insertPoint", "db/d2c/classsysy_1_1ir_1_1IRBuilder.html#ad5a98d650858ed242354cb64ac089ac4", null ]
 ];

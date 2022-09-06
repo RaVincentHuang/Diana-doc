@@ -12,5 +12,11 @@ var classsysy_1_1ir_1_1AllocaInfo =
     [ "phiSize", "de/d6e/classsysy_1_1ir_1_1AllocaInfo.html#add4db4784a216c6cdc919be259ccdf90", null ],
     [ "setPhi", "de/d6e/classsysy_1_1ir_1_1AllocaInfo.html#a9cfb77cd5ab1436908cd1f18f4f14e3e", null ],
     [ "storeSize", "de/d6e/classsysy_1_1ir_1_1AllocaInfo.html#a0e8c963a74e4dfaa23ab0d0a10d0ef9e", null ],
-    [ "unLockLoad", "de/d6e/classsysy_1_1ir_1_1AllocaInfo.html#ac5f058679c9aa942bead5723bfe132e0", null ]
+    [ "block", "de/d6e/classsysy_1_1ir_1_1AllocaInfo.html#a68e960cccae68ce683461ab846587edc", null ],
+    [ "defBlocks", "de/d6e/classsysy_1_1ir_1_1AllocaInfo.html#a9611105c902fce3364a2210d061eda76", null ],
+    [ "load", "de/d6e/classsysy_1_1ir_1_1AllocaInfo.html#a79f9c2b9fe090fc9563af1aa74fd53a1", null ],
+    [ "phi", "de/d6e/classsysy_1_1ir_1_1AllocaInfo.html#a2d449e29f59091e4ffb4a91f982aca61", null ],
+    [ "store", "de/d6e/classsysy_1_1ir_1_1AllocaInfo.html#a8a63172c9e939a27608e53b049eef12b", null ],
+    [ "unLockLoad", "de/d6e/classsysy_1_1ir_1_1AllocaInfo.html#ac5f058679c9aa942bead5723bfe132e0", null ],
+    [ "useBlocks", "de/d6e/classsysy_1_1ir_1_1AllocaInfo.html#ada95ac2401a1fc26e8ade526ca3992d0", null ]
 ];

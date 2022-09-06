@@ -86,21 +86,21 @@ $(document).ready(function(){initNavTree('d4/d85/IPDCE_8h_source.html','../../')
 <div class="title">IPDCE.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SYSY_TRANSFORM_IPDCE_H</span></div>
+<a href="../../d4/d85/IPDCE_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SYSY_TRANSFORM_IPDCE_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define SYSY_TRANSFORM_IPDCE_H</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;sysy/IR/PassManager.h&quot;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">namespace </span>sysy</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d8/d4e/PassManager_8h.html">sysy/IR/PassManager.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../dd/d20/namespacesysy.html">sysy</a></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span>ir</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
 <div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="../../da/d78/classsysy_1_1ir_1_1IPDCE.html">    8</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../da/d78/classsysy_1_1ir_1_1IPDCE.html">IPDCE</a> : <span class="keyword">public</span> <a class="code" href="../../d5/d01/classsysy_1_1Pass.html">ModulePass</a></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordtype">void</span> eraseAllUnuseReturn(<a class="code" href="../../dd/d71/classsysy_1_1ir_1_1Module.html">Module</a>* mod);</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../da/d78/classsysy_1_1ir_1_1IPDCE.html#a8190cedfd7ea9fbfbde1a055140edabd">eraseAllUnuseReturn</a>(<a class="code" href="../../dd/d71/classsysy_1_1ir_1_1Module.html">Module</a>* mod);</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="../../da/d78/classsysy_1_1ir_1_1IPDCE.html">IPDCE</a>();</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">void</span> run(<a class="code" href="../../dd/d71/classsysy_1_1ir_1_1Module.html">Module</a>* mod) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    std::string getName()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;IPDCE&quot;</span>; }</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="../../da/d78/classsysy_1_1ir_1_1IPDCE.html#a9903c67008992ef812ae3262a45e54fe">IPDCE</a>();</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../da/d78/classsysy_1_1ir_1_1IPDCE.html#aa472c28d5f090912e01a70721594c8e4">run</a>(<a class="code" href="../../dd/d71/classsysy_1_1ir_1_1Module.html">Module</a>* mod) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="../../da/d78/classsysy_1_1ir_1_1IPDCE.html#a59e4f3da73cd8500fbafc74543181454">   15</a></span>&#160;    std::string <a class="code" href="../../da/d78/classsysy_1_1ir_1_1IPDCE.html#a59e4f3da73cd8500fbafc74543181454">getName</a>()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;IPDCE&quot;</span>; }</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;};</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;} <span class="comment">// namespace ir</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    </div>
@@ -110,13 +110,19 @@ $(document).ready(function(){initNavTree('d4/d85/IPDCE_8h_source.html','../../')
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclasssysy_1_1ir_1_1IPDCE_html_a59e4f3da73cd8500fbafc74543181454"><div class="ttname"><a href="../../da/d78/classsysy_1_1ir_1_1IPDCE.html#a59e4f3da73cd8500fbafc74543181454">sysy::ir::IPDCE::getName</a></div><div class="ttdeci">std::string getName() override</div><div class="ttdef"><b>Definition:</b> IPDCE.h:15</div></div>
+<div class="ttc" id="aclasssysy_1_1ir_1_1IPDCE_html_a8190cedfd7ea9fbfbde1a055140edabd"><div class="ttname"><a href="../../da/d78/classsysy_1_1ir_1_1IPDCE.html#a8190cedfd7ea9fbfbde1a055140edabd">sysy::ir::IPDCE::eraseAllUnuseReturn</a></div><div class="ttdeci">void eraseAllUnuseReturn(Module *mod)</div><div class="ttdef"><b>Definition:</b> IPDCE.cpp:18</div></div>
+<div class="ttc" id="aclasssysy_1_1ir_1_1IPDCE_html_a9903c67008992ef812ae3262a45e54fe"><div class="ttname"><a href="../../da/d78/classsysy_1_1ir_1_1IPDCE.html#a9903c67008992ef812ae3262a45e54fe">sysy::ir::IPDCE::IPDCE</a></div><div class="ttdeci">IPDCE()</div><div class="ttdef"><b>Definition:</b> IPDCE.cpp:13</div></div>
+<div class="ttc" id="aclasssysy_1_1ir_1_1IPDCE_html_aa472c28d5f090912e01a70721594c8e4"><div class="ttname"><a href="../../da/d78/classsysy_1_1ir_1_1IPDCE.html#aa472c28d5f090912e01a70721594c8e4">sysy::ir::IPDCE::run</a></div><div class="ttdeci">void run(Module *mod) override</div><div class="ttdef"><b>Definition:</b> IPDCE.cpp:64</div></div>
 <div class="ttc" id="aclasssysy_1_1Pass_html"><div class="ttname"><a href="../../d5/d01/classsysy_1_1Pass.html">sysy::Pass</a></div><div class="ttdef"><b>Definition:</b> PassManager.h:14</div></div>
 <div class="ttc" id="aclasssysy_1_1ir_1_1IPDCE_html"><div class="ttname"><a href="../../da/d78/classsysy_1_1ir_1_1IPDCE.html">sysy::ir::IPDCE</a></div><div class="ttdef"><b>Definition:</b> IPDCE.h:8</div></div>
+<div class="ttc" id="anamespacesysy_html"><div class="ttname"><a href="../../dd/d20/namespacesysy.html">sysy</a></div><div class="ttdef"><b>Definition:</b> AliasAnalysis.h:6</div></div>
+<div class="ttc" id="aPassManager_8h_html"><div class="ttname"><a href="../../d8/d4e/PassManager_8h.html">PassManager.h</a></div></div>
 <div class="ttc" id="aclasssysy_1_1ir_1_1Module_html"><div class="ttname"><a href="../../dd/d71/classsysy_1_1ir_1_1Module.html">sysy::ir::Module</a></div><div class="ttdef"><b>Definition:</b> Module.h:16</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_b87821115ea3cf61d61e0bb4a6051ac5.html">sysy</a></li><li class="navelem"><a class="el" href="../../dir_c57c09d2f988700d800e6ebfe7229c98.html">Transform</a></li><li class="navelem"><a class="el" href="../../dir_84c48ea28894a10e1deb6127ee6818ba.html">IPO</a></li><li class="navelem"><b>IPDCE.h</b></li>
+    <li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_b87821115ea3cf61d61e0bb4a6051ac5.html">sysy</a></li><li class="navelem"><a class="el" href="../../dir_c57c09d2f988700d800e6ebfe7229c98.html">Transform</a></li><li class="navelem"><a class="el" href="../../dir_84c48ea28894a10e1deb6127ee6818ba.html">IPO</a></li><li class="navelem"><a class="el" href="../../d4/d85/IPDCE_8h.html">IPDCE.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

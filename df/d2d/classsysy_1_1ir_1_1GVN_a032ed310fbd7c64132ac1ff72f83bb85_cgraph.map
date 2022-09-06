@@ -1,0 +1,27 @@
+<map id="sysy::ir::GVN::doPerInstr" name="sysy::ir::GVN::doPerInstr">
+<area shape="rect" id="node1" title=" " alt="" coords="5,401,184,427"/>
+<area shape="rect" id="node2" href="$df/d2d/classsysy_1_1ir_1_1GVN.html#a9107711a96fb6beb28bf30c5b33ca517" title=" " alt="" coords="232,94,437,121"/>
+<area shape="rect" id="node6" href="$dc/d75/classsysy_1_1ir_1_1ConstantInt.html#ab879fa5399f2ecc1a3937f137b44e4b7" title=" " alt="" coords="507,286,687,313"/>
+<area shape="rect" id="node8" href="$d0/ddd/classsysy_1_1ir_1_1ConstantFP.html#a220c527175a83958ccef9427270b17ae" title=" " alt="" coords="507,430,686,457"/>
+<area shape="rect" id="node10" href="$d7/d1e/classsysy_1_1ir_1_1Type.html#a1b915129bd2ac53ea09512292870354b" title=" " alt="" coords="243,182,426,209"/>
+<area shape="rect" id="node13" href="$d7/d19/namespacesysy_1_1ir.html#a33f37c9fd9aecc8f657c567626c6e9b2" title=" " alt="" coords="249,350,420,377"/>
+<area shape="rect" id="node14" href="$d9/d9f/classsysy_1_1ir_1_1Value.html#a77ccc84b71f29b3dbee04f97f8056088" title=" " alt="" coords="756,547,929,574"/>
+<area shape="rect" id="node15" href="$dc/d75/classsysy_1_1ir_1_1ConstantInt.html#a1b77553261b7ac4d5e4806530385ac93" title=" " alt="" coords="259,233,410,275"/>
+<area shape="rect" id="node16" href="$d0/ddd/classsysy_1_1ir_1_1ConstantFP.html#a030df1bfc682b489cfdf43911e04ffaa" title=" " alt="" coords="259,452,410,493"/>
+<area shape="rect" id="node17" href="$dd/d88/classsysy_1_1ir_1_1GlobalValue.html#aaafbf5d3fccce3aae705d8fbf6f48797" title=" " alt="" coords="257,569,412,611"/>
+<area shape="rect" id="node18" href="$d7/d19/namespacesysy_1_1ir.html#a4f27828412a810ef0722a31d44fff010" title=" " alt="" coords="273,635,397,662"/>
+<area shape="rect" id="node25" href="$d7/d19/namespacesysy_1_1ir.html#a09fe9a3330a5cfba8768a9d40fee6b65" title=" " alt="" coords="236,686,433,713"/>
+<area shape="rect" id="node3" href="$dc/d75/classsysy_1_1ir_1_1ConstantInt.html#a68463fc8c0dc6b9bf135d80fb03c699b" title=" " alt="" coords="521,123,672,164"/>
+<area shape="rect" id="node4" href="$d0/ddd/classsysy_1_1ir_1_1ConstantFP.html#ab4a5a63ae1897ce1ec2b5600f34122af" title=" " alt="" coords="521,5,672,47"/>
+<area shape="rect" id="node5" href="$df/d2d/classsysy_1_1ir_1_1GVN.html#ae157c9edabfa9e9480b47f6ed689d3fb" title=" " alt="" coords="485,71,708,98"/>
+<area shape="rect" id="node7" href="$dc/d75/classsysy_1_1ir_1_1ConstantInt.html#a3fc70f0b683fcaaf933de031d132e99e" title=" " alt="" coords="767,279,918,320"/>
+<area shape="rect" id="node9" href="$d0/ddd/classsysy_1_1ir_1_1ConstantFP.html#a2a7ce2c356b51597f0a4e1a9757776e9" title=" " alt="" coords="767,423,918,464"/>
+<area shape="rect" id="node11" href="$dc/d76/classsysy_1_1ir_1_1IntegerType.html#af0815a818d9f8e78f62f8e4eeac574ce" title=" " alt="" coords="521,188,673,229"/>
+<area shape="rect" id="node12" href="$dc/d02/classsysy_1_1ir_1_1Context.html#aba7555fd5267d54a604e4a5f0fdc69b2" title=" " alt="" coords="775,188,910,229"/>
+<area shape="rect" id="node19" href="$dc/d46/classsysy_1_1ir_1_1Instruction.html#aade5575316fb35822e3785e543ecba69" title=" " alt="" coords="524,737,669,779"/>
+<area shape="rect" id="node20" href="$d7/d19/namespacesysy_1_1ir.html#a674d70548687b6b3116a8233ff09b4da" title=" " alt="" coords="519,635,674,662"/>
+<area shape="rect" id="node23" href="$d9/d9f/classsysy_1_1ir_1_1Value.html#aeb1a0e39e1ca02b7e3b231886f871d9a" title=" " alt="" coords="513,569,681,611"/>
+<area shape="rect" id="node24" href="$d9/d1a/classsysy_1_1ir_1_1User.html#a8158c3fdc550db46fe421da7dcb7245d" title=" " alt="" coords="509,686,684,713"/>
+<area shape="rect" id="node21" href="$df/dd2/classsysy_1_1ir_1_1BasicBlock.html#a660a1f7bd57b7f83800201e82d4f317a" title=" " alt="" coords="769,613,916,655"/>
+<area shape="rect" id="node22" href="$df/dd2/classsysy_1_1ir_1_1BasicBlock.html#a4c1013a439a6a9c10ab36496b131ca57" title=" " alt="" coords="769,679,916,720"/>
+</map>

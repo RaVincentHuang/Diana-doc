@@ -8,5 +8,7 @@ var classsysy_1_1ir_1_1PhiOccurrence =
     [ "getIncoming", "db/d14/classsysy_1_1ir_1_1PhiOccurrence.html#a6a8eb7795d3fd48708ec42aeca42e531", null ],
     [ "getSignature", "db/d14/classsysy_1_1ir_1_1PhiOccurrence.html#adb5357c46ce5bb0e1e17602292d9a6d7", null ],
     [ "setIncoming", "db/d14/classsysy_1_1ir_1_1PhiOccurrence.html#a0ceb9638addf4262dc9e74268a52753b", null ],
-    [ "size", "db/d14/classsysy_1_1ir_1_1PhiOccurrence.html#a2b7cc2c6efec6eb65749d4a63e08c8d8", null ]
+    [ "size", "db/d14/classsysy_1_1ir_1_1PhiOccurrence.html#a2b7cc2c6efec6eb65749d4a63e08c8d8", null ],
+    [ "father", "db/d14/classsysy_1_1ir_1_1PhiOccurrence.html#a2897a3adf66aeb0072b028b4e2b0fcd3", null ],
+    [ "incomingOccurrence", "db/d14/classsysy_1_1ir_1_1PhiOccurrence.html#a593ab16c988b86e8464101ecd3d8e5a2", null ]
 ];

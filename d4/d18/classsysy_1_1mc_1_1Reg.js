@@ -18,5 +18,7 @@ var classsysy_1_1mc_1_1Reg =
     [ "cost", "d4/d18/classsysy_1_1mc_1_1Reg.html#a51d1aa98a973c28b70f37c8179847324", null ],
     [ "id", "d4/d18/classsysy_1_1mc_1_1Reg.html#abc08e95baee8323173b65d8daa80e066", null ],
     [ "kind", "d4/d18/classsysy_1_1mc_1_1Reg.html#ad53d1d2ce8ef0907eee8d66f931f8686", null ],
-    [ "type", "d4/d18/classsysy_1_1mc_1_1Reg.html#aaa930e518c884a63af6859be70f89d81", null ]
+    [ "kind_map", "d4/d18/classsysy_1_1mc_1_1Reg.html#a326dd3fd328efc9ed21ff2e41e8dd913", null ],
+    [ "type", "d4/d18/classsysy_1_1mc_1_1Reg.html#aaa930e518c884a63af6859be70f89d81", null ],
+    [ "type_map", "d4/d18/classsysy_1_1mc_1_1Reg.html#a6e9207032e13907bd6d0c179dfad3fa0", null ]
 ];

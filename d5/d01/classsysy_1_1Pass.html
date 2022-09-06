@@ -86,11 +86,14 @@ $(document).ready(function(){initNavTree('d5/d01/classsysy_1_1Pass.html','../../
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="../../d5/def/classsysy_1_1Pass-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">sysy::Pass&lt; Opt &gt; Class Template Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="../../d8/d4e/PassManager_8h_source.html">PassManager.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for sysy::Pass&lt; Opt &gt;:</div>
 <div class="dyncontent">
@@ -146,34 +149,436 @@ Inheritance diagram for sysy::Pass&lt; Opt &gt;:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a876dcea0233148a62cff8008771a2a6a"><td class="memItemLeft" align="right" valign="top"><a id="a876dcea0233148a62cff8008771a2a6a"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>DfsFunc</b> = std::function&lt; void(<a class="el" href="../../d5/d01/classsysy_1_1Pass.html">Pass</a>&lt; Opt &gt; *)&gt;</td></tr>
+<tr class="memitem:a876dcea0233148a62cff8008771a2a6a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d01/classsysy_1_1Pass.html#a876dcea0233148a62cff8008771a2a6a">DfsFunc</a> = std::function&lt; void(<a class="el" href="../../d5/d01/classsysy_1_1Pass.html">Pass</a>&lt; Opt &gt; *)&gt;</td></tr>
 <tr class="separator:a876dcea0233148a62cff8008771a2a6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1a239de32e6560d250de0c0c486215d2"><td class="memItemLeft" align="right" valign="top"><a id="a1a239de32e6560d250de0c0c486215d2"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> (Opt opt)=0</td></tr>
+<tr class="memitem:abd2d30551ae94b816c3c620ac22512b2"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d01/classsysy_1_1Pass.html#abd2d30551ae94b816c3c620ac22512b2">~Pass</a> ()</td></tr>
+<tr class="separator:abd2d30551ae94b816c3c620ac22512b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a239de32e6560d250de0c0c486215d2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d01/classsysy_1_1Pass.html#a1a239de32e6560d250de0c0c486215d2">run</a> (Opt opt)=0</td></tr>
 <tr class="separator:a1a239de32e6560d250de0c0c486215d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab06bbe434deae382eb35a8ab2dea0e3c"><td class="memItemLeft" align="right" valign="top"><a id="ab06bbe434deae382eb35a8ab2dea0e3c"></a>
-virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getName</b> ()=0</td></tr>
+<tr class="memitem:ab06bbe434deae382eb35a8ab2dea0e3c"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d01/classsysy_1_1Pass.html#ab06bbe434deae382eb35a8ab2dea0e3c">getName</a> ()=0</td></tr>
 <tr class="separator:ab06bbe434deae382eb35a8ab2dea0e3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a173295351670ccda8884f99ce538637c"><td class="memItemLeft" align="right" valign="top"><a id="a173295351670ccda8884f99ce538637c"></a>
-std::vector&lt; <a class="el" href="../../d5/d01/classsysy_1_1Pass.html">Pass</a>&lt; Opt &gt; * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getRelated</b> ()</td></tr>
+<tr class="memitem:a173295351670ccda8884f99ce538637c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d5/d01/classsysy_1_1Pass.html">Pass</a>&lt; Opt &gt; * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d01/classsysy_1_1Pass.html#a173295351670ccda8884f99ce538637c">getRelated</a> ()</td></tr>
 <tr class="separator:a173295351670ccda8884f99ce538637c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fa8345efad5dc07e9106b89580cb976"><td class="memItemLeft" align="right" valign="top"><a id="a9fa8345efad5dc07e9106b89580cb976"></a>
-std::vector&lt; <a class="el" href="../../d5/d01/classsysy_1_1Pass.html">Pass</a>&lt; Opt &gt; * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getFinish</b> ()</td></tr>
+<tr class="memitem:a9fa8345efad5dc07e9106b89580cb976"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d5/d01/classsysy_1_1Pass.html">Pass</a>&lt; Opt &gt; * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d01/classsysy_1_1Pass.html#a9fa8345efad5dc07e9106b89580cb976">getFinish</a> ()</td></tr>
 <tr class="separator:a9fa8345efad5dc07e9106b89580cb976"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:afbe59b0867e1cac38f46d977467515c6"><td class="memItemLeft" align="right" valign="top"><a id="afbe59b0867e1cac38f46d977467515c6"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>relatedDfs</b> (<a class="el" href="../../d5/d01/classsysy_1_1Pass.html">Pass</a>&lt; Opt &gt; *pass, DfsFunc func)</td></tr>
+<tr class="memitem:afbe59b0867e1cac38f46d977467515c6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d01/classsysy_1_1Pass.html#afbe59b0867e1cac38f46d977467515c6">relatedDfs</a> (<a class="el" href="../../d5/d01/classsysy_1_1Pass.html">Pass</a>&lt; Opt &gt; *pass, <a class="el" href="../../d5/d01/classsysy_1_1Pass.html#a876dcea0233148a62cff8008771a2a6a">DfsFunc</a> func)</td></tr>
 <tr class="separator:afbe59b0867e1cac38f46d977467515c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6d56fe3ac425806457937d491d8b600"><td class="memItemLeft" align="right" valign="top"><a id="ab6d56fe3ac425806457937d491d8b600"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>finishByDfs</b> (<a class="el" href="../../d5/d01/classsysy_1_1Pass.html">Pass</a>&lt; Opt &gt; *pass, DfsFunc func)</td></tr>
+<tr class="memitem:ab6d56fe3ac425806457937d491d8b600"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d01/classsysy_1_1Pass.html#ab6d56fe3ac425806457937d491d8b600">finishByDfs</a> (<a class="el" href="../../d5/d01/classsysy_1_1Pass.html">Pass</a>&lt; Opt &gt; *pass, <a class="el" href="../../d5/d01/classsysy_1_1Pass.html#a876dcea0233148a62cff8008771a2a6a">DfsFunc</a> func)</td></tr>
 <tr class="separator:ab6d56fe3ac425806457937d491d8b600"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a0cff7477eb59e83fffa83325b3bc7aa6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d5/d01/classsysy_1_1Pass.html">Pass</a>&lt; Opt &gt; * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d01/classsysy_1_1Pass.html#a0cff7477eb59e83fffa83325b3bc7aa6">relatedPasses</a></td></tr>
+<tr class="separator:a0cff7477eb59e83fffa83325b3bc7aa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a8c59314914f472adac06afff1581a7"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d5/d01/classsysy_1_1Pass.html">Pass</a>&lt; Opt &gt; * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d01/classsysy_1_1Pass.html#a2a8c59314914f472adac06afff1581a7">passFinishBy</a></td></tr>
+<tr class="separator:a2a8c59314914f472adac06afff1581a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a876dcea0233148a62cff8008771a2a6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a876dcea0233148a62cff8008771a2a6a">&#9670;&nbsp;</a></span>DfsFunc</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Opt &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d5/d01/classsysy_1_1Pass.html">sysy::Pass</a>&lt; Opt &gt;::<a class="el" href="../../d5/d01/classsysy_1_1Pass.html#a876dcea0233148a62cff8008771a2a6a">DfsFunc</a> =  std::function&lt;void(<a class="el" href="../../d5/d01/classsysy_1_1Pass.html">Pass</a>&lt;Opt&gt;*)&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="abd2d30551ae94b816c3c620ac22512b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd2d30551ae94b816c3c620ac22512b2">&#9670;&nbsp;</a></span>~Pass()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Opt &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../d5/d01/classsysy_1_1Pass.html">sysy::Pass</a>&lt; Opt &gt;::~<a class="el" href="../../d5/d01/classsysy_1_1Pass.html">Pass</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab6d56fe3ac425806457937d491d8b600"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6d56fe3ac425806457937d491d8b600">&#9670;&nbsp;</a></span>finishByDfs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Opt &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void <a class="el" href="../../d5/d01/classsysy_1_1Pass.html">sysy::Pass</a>&lt; Opt &gt;::finishByDfs </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/d01/classsysy_1_1Pass.html">Pass</a>&lt; Opt &gt; *&#160;</td>
+          <td class="paramname"><em>pass</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d5/d01/classsysy_1_1Pass.html#a876dcea0233148a62cff8008771a2a6a">DfsFunc</a>&#160;</td>
+          <td class="paramname"><em>func</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d5/d01/classsysy_1_1Pass.html#a9fa8345efad5dc07e9106b89580cb976">sysy::Pass&lt; Opt &gt;::getFinish()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../de/de9/classsysy_1_1PassManager.html#a8fb5cac5b5454feb96cdfd25edf7ea71">sysy::PassManager&lt; Opt &gt;::addPass()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d01/classsysy_1_1Pass_ab6d56fe3ac425806457937d491d8b600_cgraph.png" border="0" usemap="#d5/d01/classsysy_1_1Pass_ab6d56fe3ac425806457937d491d8b600_cgraph" alt=""/></div>
+<map name="d5/d01/classsysy_1_1Pass_ab6d56fe3ac425806457937d491d8b600_cgraph" id="d5/d01/classsysy_1_1Pass_ab6d56fe3ac425806457937d491d8b600_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,176,32"/>
+<area shape="rect" href="../../d5/d01/classsysy_1_1Pass.html#a9fa8345efad5dc07e9106b89580cb976" title=" " alt="" coords="224,5,379,32"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d01/classsysy_1_1Pass_ab6d56fe3ac425806457937d491d8b600_icgraph.png" border="0" usemap="#d5/d01/classsysy_1_1Pass_ab6d56fe3ac425806457937d491d8b600_icgraph" alt=""/></div>
+<map name="d5/d01/classsysy_1_1Pass_ab6d56fe3ac425806457937d491d8b600_icgraph" id="d5/d01/classsysy_1_1Pass_ab6d56fe3ac425806457937d491d8b600_icgraph">
+<area shape="rect" title=" " alt="" coords="548,71,719,98"/>
+<area shape="rect" href="../../de/de9/classsysy_1_1PassManager.html#a8fb5cac5b5454feb96cdfd25edf7ea71" title=" " alt="" coords="347,64,500,105"/>
+<area shape="rect" href="../../d0/d45/classsysy_1_1ir_1_1DomInfo.html#ad3d5614202cb0d95d87f4d544ba3503e" title=" " alt="" coords="133,5,273,47"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a0821eb9de161af783ca6706a87d988d5" title=" " alt="" coords="108,71,299,98"/>
+<area shape="rect" href="../../de/ddd/classsysy_1_1ir_1_1PostDomInfo.html#ad55d0fd6a6e39b1d84e7034eecd38791" title=" " alt="" coords="123,123,283,164"/>
+<area shape="rect" href="../../d4/d0b/compiler_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,71,60,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9fa8345efad5dc07e9106b89580cb976"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fa8345efad5dc07e9106b89580cb976">&#9670;&nbsp;</a></span>getFinish()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Opt &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="../../d5/d01/classsysy_1_1Pass.html">Pass</a>&lt;Opt&gt;*&gt;&amp; <a class="el" href="../../d5/d01/classsysy_1_1Pass.html">sysy::Pass</a>&lt; Opt &gt;::getFinish </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d5/d01/classsysy_1_1Pass.html#a2a8c59314914f472adac06afff1581a7">sysy::Pass&lt; Opt &gt;::passFinishBy</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../df/db7/classsysy_1_1ir_1_1ADCE.html#a6fe31896b9c0abbc569a4643efd8a349">sysy::ir::ADCE::ADCE()</a>, <a class="el" href="../../de/de9/classsysy_1_1PassManager.html#a8fb5cac5b5454feb96cdfd25edf7ea71">sysy::PassManager&lt; Opt &gt;::addPass()</a>, <a class="el" href="../../dc/db7/classsysy_1_1ir_1_1EliminatePhi.html#a1b986d9489de5825c9c33e31889eed49">sysy::ir::EliminatePhi::EliminatePhi()</a>, <a class="el" href="../../d5/d01/classsysy_1_1Pass.html#ab6d56fe3ac425806457937d491d8b600">sysy::Pass&lt; Opt &gt;::finishByDfs()</a>, <a class="el" href="../../dd/d74/classsysy_1_1ir_1_1GCM.html#ae06f73605244deabe5ff3343cdef7716">sysy::ir::GCM::GCM()</a>, <a class="el" href="../../df/d2d/classsysy_1_1ir_1_1GVN.html#ad9cca7d094c4e7aa66ef5039a31f4eba">sysy::ir::GVN::GVN()</a>, <a class="el" href="../../dd/d16/classsysy_1_1ir_1_1LoopEarlyPass.html#a06363aa0b34a40b986d8db890f923e40">sysy::ir::LoopEarlyPass::LoopEarlyPass()</a>, <a class="el" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#ab97486a1482d60a53a893a3e877d5a38">sysy::ir::LoopParallel::LoopParallel()</a>, <a class="el" href="../../dd/d17/classsysy_1_1ir_1_1LoopUnrollAll.html#a8993fda618efdba901f8746c27337c85">sysy::ir::LoopUnrollAll::LoopUnrollAll()</a>, <a class="el" href="../../d5/d94/classsysy_1_1ir_1_1LoopVariablePass.html#a97baa521628dfe4504cd43f1de2f2d1f">sysy::ir::LoopVariablePass::LoopVariablePass()</a>, <a class="el" href="../../db/d19/classsysy_1_1ir_1_1LSR.html#affc8c8bdb4be1927a67450656f8d2936">sysy::ir::LSR::LSR()</a>, and <a class="el" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#a1b85bdcb9368a6d9a3f78d756c01fb5f">sysy::ir::PRE::PRE()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d01/classsysy_1_1Pass_a9fa8345efad5dc07e9106b89580cb976_icgraph.png" border="0" usemap="#d5/d01/classsysy_1_1Pass_a9fa8345efad5dc07e9106b89580cb976_icgraph" alt=""/></div>
+<map name="d5/d01/classsysy_1_1Pass_a9fa8345efad5dc07e9106b89580cb976_icgraph" id="d5/d01/classsysy_1_1Pass_a9fa8345efad5dc07e9106b89580cb976_icgraph">
+<area shape="rect" title=" " alt="" coords="785,304,940,331"/>
+<area shape="rect" href="../../df/db7/classsysy_1_1ir_1_1ADCE.html#a6fe31896b9c0abbc569a4643efd8a349" title=" " alt="" coords="565,5,721,32"/>
+<area shape="rect" href="../../de/de9/classsysy_1_1PassManager.html#a8fb5cac5b5454feb96cdfd25edf7ea71" title=" " alt="" coords="347,107,500,149"/>
+<area shape="rect" href="../../dc/db7/classsysy_1_1ir_1_1EliminatePhi.html#a1b986d9489de5825c9c33e31889eed49" title=" " alt="" coords="563,107,722,149"/>
+<area shape="rect" href="../../d5/d01/classsysy_1_1Pass.html#ab6d56fe3ac425806457937d491d8b600" title=" " alt="" coords="557,173,728,200"/>
+<area shape="rect" href="../../dd/d74/classsysy_1_1ir_1_1GCM.html#ae06f73605244deabe5ff3343cdef7716" title=" " alt="" coords="569,224,716,251"/>
+<area shape="rect" href="../../df/d2d/classsysy_1_1ir_1_1GVN.html#ad9cca7d094c4e7aa66ef5039a31f4eba" title=" " alt="" coords="571,275,714,301"/>
+<area shape="rect" href="../../dd/d16/classsysy_1_1ir_1_1LoopEarlyPass.html#a06363aa0b34a40b986d8db890f923e40" title=" " alt="" coords="558,326,727,367"/>
+<area shape="rect" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#ab97486a1482d60a53a893a3e877d5a38" title=" " alt="" coords="565,391,720,433"/>
+<area shape="rect" href="../../dd/d17/classsysy_1_1ir_1_1LoopUnrollAll.html#a8993fda618efdba901f8746c27337c85" title=" " alt="" coords="561,457,724,498"/>
+<area shape="rect" href="../../d5/d94/classsysy_1_1ir_1_1LoopVariablePass.html#a97baa521628dfe4504cd43f1de2f2d1f" title=" " alt="" coords="548,522,737,563"/>
+<area shape="rect" href="../../db/d19/classsysy_1_1ir_1_1LSR.html#affc8c8bdb4be1927a67450656f8d2936" title=" " alt="" coords="577,588,709,615"/>
+<area shape="rect" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#a1b85bdcb9368a6d9a3f78d756c01fb5f" title=" " alt="" coords="575,639,710,665"/>
+<area shape="rect" href="../../d0/d45/classsysy_1_1ir_1_1DomInfo.html#ad3d5614202cb0d95d87f4d544ba3503e" title=" " alt="" coords="133,49,273,90"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a0821eb9de161af783ca6706a87d988d5" title=" " alt="" coords="108,115,299,141"/>
+<area shape="rect" href="../../de/ddd/classsysy_1_1ir_1_1PostDomInfo.html#ad55d0fd6a6e39b1d84e7034eecd38791" title=" " alt="" coords="123,166,283,207"/>
+<area shape="rect" href="../../d4/d0b/compiler_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,115,60,141"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab06bbe434deae382eb35a8ab2dea0e3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab06bbe434deae382eb35a8ab2dea0e3c">&#9670;&nbsp;</a></span>getName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Opt &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string <a class="el" href="../../d5/d01/classsysy_1_1Pass.html">sysy::Pass</a>&lt; Opt &gt;::getName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#a1b636c5bc39ff5155227d4ea77c35694">sysy::ir::PRE</a>, <a class="el" href="../../d9/da0/classsysy_1_1ir_1_1DomFrontierGen.html#a64a4342e1670a50bb40653066c725c58">sysy::ir::DomFrontierGen</a>, <a class="el" href="../../dc/d69/classsysy_1_1ir_1_1PostDomFrontierGen.html#ac9eea2897f0cd19970a2ec330b337413">sysy::ir::PostDomFrontierGen</a>, <a class="el" href="../../dd/d16/classsysy_1_1ir_1_1LoopEarlyPass.html#a20e4875d5ef4c0abdbfe630b0dfa0807">sysy::ir::LoopEarlyPass</a>, <a class="el" href="../../db/df2/classsysy_1_1ir_1_1Memory2Reg.html#a98890c3dd2f6387331a2924488162de7">sysy::ir::Memory2Reg</a>, <a class="el" href="../../df/d0a/classsysy_1_1ir_1_1DomTreeGen.html#a9def7de7b9753b3a63a3579f0238a937">sysy::ir::DomTreeGen</a>, <a class="el" href="../../d8/d28/classsysy_1_1ir_1_1PostDomTreeGen.html#ae58c867f86641e943cdea42bd8544273">sysy::ir::PostDomTreeGen</a>, <a class="el" href="../../d5/d94/classsysy_1_1ir_1_1LoopVariablePass.html#a7325a551f33227220bfd40377d95b0a5">sysy::ir::LoopVariablePass</a>, <a class="el" href="../../df/d2d/classsysy_1_1ir_1_1GVN.html#ac77db3beaffb8ee1be2809b0571c546d">sysy::ir::GVN</a>, <a class="el" href="../../db/db5/classsysy_1_1ir_1_1ScalarEvolutionClean.html#a674eca9f03c63f9fa8dd766a7cc2810e">sysy::ir::ScalarEvolutionClean</a>, <a class="el" href="../../db/d65/classsysy_1_1ir_1_1IdomGen.html#ae0e3029981f806160e4d071433edef61">sysy::ir::IdomGen</a>, <a class="el" href="../../d2/df3/classsysy_1_1ir_1_1LinearScalarPass.html#abeac09efb71913414b9843d239993f1b">sysy::ir::LinearScalarPass</a>, <a class="el" href="../../d0/dd2/classsysy_1_1ir_1_1IpdomGen.html#ab9361c8c3b1d4a2a668d4eb61e237632">sysy::ir::IpdomGen</a>, <a class="el" href="../../db/d99/classsysy_1_1ir_1_1DCE.html#a2bb3cbe41167b1139becd02905effd8b">sysy::ir::DCE</a>, <a class="el" href="../../dd/d74/classsysy_1_1ir_1_1GCM.html#a48c57d6b3dd30e8d9b936abab2c42c71">sysy::ir::GCM</a>, <a class="el" href="../../d2/d3c/classsysy_1_1ir_1_1SimplifyCFG.html#a323d6e200661c231c235ec00498cb6f6">sysy::ir::SimplifyCFG</a>, <a class="el" href="../../dc/db7/classsysy_1_1ir_1_1EliminatePhi.html#a148c7e76a0149d413e786c8830110237">sysy::ir::EliminatePhi</a>, <a class="el" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#a7e9914280a5fbbdcd8cb0ce9544ed12c">sysy::ir::ScalarEvolution</a>, <a class="el" href="../../d6/d4d/classsysy_1_1ir_1_1FunctionVertify.html#a5a60c809395cce6a8e1caf4d5034d050">sysy::ir::FunctionVertify</a>, <a class="el" href="../../db/d19/classsysy_1_1ir_1_1LSR.html#a2c9a73dcfd94547024c82ff2c8f7ca3f">sysy::ir::LSR</a>, <a class="el" href="../../d9/d47/classsysy_1_1ir_1_1LCSSA.html#aadc75bf2a8c3021d0bd896070b226f3a">sysy::ir::LCSSA</a>, <a class="el" href="../../d1/dc6/classsysy_1_1ir_1_1SSASet.html#a09982e22140afb137411c7b6b429a2c3">sysy::ir::SSASet</a>, <a class="el" href="../../d0/d00/classsysy_1_1ir_1_1ScalarPass.html#abf5043a1c80c14b832f37c66780c96ef">sysy::ir::ScalarPass</a>, <a class="el" href="../../d4/d68/classsysy_1_1ir_1_1CleanExitBasicBlock.html#a8dc2b7a0655c61e8b1822ccd4e29f7c3">sysy::ir::CleanExitBasicBlock</a>, <a class="el" href="../../df/db7/classsysy_1_1ir_1_1ADCE.html#ac383a1e2662cf1c6ea556eb16999ae2b">sysy::ir::ADCE</a>, <a class="el" href="../../d6/d6f/classsysy_1_1ir_1_1InstructionCombine.html#a3fc852cf5f68f1fe342f936572f8b619">sysy::ir::InstructionCombine</a>, <a class="el" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#aac51f3b07e2370a85d70c62171fa47fe">sysy::ir::LoopParallel</a>, <a class="el" href="../../da/d2e/classsysy_1_1ir_1_1FunctionInline.html#a5bd724d9ba2dcb7e90a66e0e05e64e8d">sysy::ir::FunctionInline</a>, <a class="el" href="../../dd/d17/classsysy_1_1ir_1_1LoopUnrollAll.html#a5194c2abe7145b25694caedba4f5ab67">sysy::ir::LoopUnrollAll</a>, <a class="el" href="../../d0/d40/classsysy_1_1ir_1_1SplitCriticalEdge.html#ae7d5e0af84b8781cf51b482f55584f46">sysy::ir::SplitCriticalEdge</a>, <a class="el" href="../../d0/d45/classsysy_1_1ir_1_1DomInfo.html#a95fce918ab237f3e7abcfecb0b8a0012">sysy::ir::DomInfo</a>, <a class="el" href="../../d3/d63/classsysy_1_1ir_1_1ModuleVertify.html#abd95313053d10a69dd2501de522aff9c">sysy::ir::ModuleVertify</a>, <a class="el" href="../../da/d78/classsysy_1_1ir_1_1IPDCE.html#a59e4f3da73cd8500fbafc74543181454">sysy::ir::IPDCE</a>, <a class="el" href="../../de/ddd/classsysy_1_1ir_1_1PostDomInfo.html#aee7387d95aee0a30c0c6c04f5b23caf5">sysy::ir::PostDomInfo</a>, <a class="el" href="../../d5/dbf/classsysy_1_1ir_1_1LoaclDCE.html#ad7139675186e50a1debab38e33883406">sysy::ir::LoaclDCE</a>, <a class="el" href="../../d1/dc7/classsysy_1_1ir_1_1LocalGCM.html#a3c5cf84ab9c8a10e8bb16456d88886a7">sysy::ir::LocalGCM</a>, <a class="el" href="../../d1/d67/classsysy_1_1ir_1_1LocalGVN.html#aa12878c76a005f244e223bcea0b74753">sysy::ir::LocalGVN</a>, <a class="el" href="../../d9/d4d/classsysy_1_1ir_1_1IPAnalysis.html#a30d0b54904e39762322d69641fedcc61">sysy::ir::IPAnalysis</a>, <a class="el" href="../../d5/d44/classsysy_1_1ir_1_1UnsetSSA.html#a06508db68ccb56e9d2d4511daabf15a6">sysy::ir::UnsetSSA</a>, <a class="el" href="../../d8/db5/classsysy_1_1ir_1_1ConstructExitBasicBlock.html#a01674dfd3b39e9a4afb7e206db6f59c3">sysy::ir::ConstructExitBasicBlock</a>, <a class="el" href="../../d7/d6d/classsysy_1_1ir_1_1ClearMemorySSA.html#a93ad60bc00a065acff690bc29482adbb">sysy::ir::ClearMemorySSA</a>, <a class="el" href="../../d3/d8e/classsysy_1_1ir_1_1MemorySSA.html#af29d8b001744cef78e465ed9420cb05a">sysy::ir::MemorySSA</a>, <a class="el" href="../../de/de9/classsysy_1_1PassManager.html#a2486a10914f0f10cc3c5856b5cfa55d1">sysy::PassManager&lt; Opt &gt;</a>, and <a class="el" href="../../d8/d39/classsysy_1_1ir_1_1LoopInfo.html#ae0f81e4d7989b38af3fb79d5f1fc4928">sysy::ir::LoopInfo</a>.</p>
+
+</div>
+</div>
+<a id="a173295351670ccda8884f99ce538637c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a173295351670ccda8884f99ce538637c">&#9670;&nbsp;</a></span>getRelated()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Opt &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="../../d5/d01/classsysy_1_1Pass.html">Pass</a>&lt;Opt&gt;*&gt;&amp; <a class="el" href="../../d5/d01/classsysy_1_1Pass.html">sysy::Pass</a>&lt; Opt &gt;::getRelated </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d5/d01/classsysy_1_1Pass.html#a0cff7477eb59e83fffa83325b3bc7aa6">sysy::Pass&lt; Opt &gt;::relatedPasses</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../df/db7/classsysy_1_1ir_1_1ADCE.html#a6fe31896b9c0abbc569a4643efd8a349">sysy::ir::ADCE::ADCE()</a>, <a class="el" href="../../da/d2e/classsysy_1_1ir_1_1FunctionInline.html#ae57012feaace821eaa4d659f33ccb59e">sysy::ir::FunctionInline::FunctionInline()</a>, <a class="el" href="../../dd/d74/classsysy_1_1ir_1_1GCM.html#ae06f73605244deabe5ff3343cdef7716">sysy::ir::GCM::GCM()</a>, <a class="el" href="../../df/d2d/classsysy_1_1ir_1_1GVN.html#ad9cca7d094c4e7aa66ef5039a31f4eba">sysy::ir::GVN::GVN()</a>, <a class="el" href="../../da/d78/classsysy_1_1ir_1_1IPDCE.html#a9903c67008992ef812ae3262a45e54fe">sysy::ir::IPDCE::IPDCE()</a>, <a class="el" href="../../d1/d67/classsysy_1_1ir_1_1LocalGVN.html#a375044c5b75f22470e2572501d5023a7">sysy::ir::LocalGVN::LocalGVN()</a>, <a class="el" href="../../d8/d39/classsysy_1_1ir_1_1LoopInfo.html#ae04938568202a41955f9fb33dc490283">sysy::ir::LoopInfo::LoopInfo()</a>, <a class="el" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#ab97486a1482d60a53a893a3e877d5a38">sysy::ir::LoopParallel::LoopParallel()</a>, <a class="el" href="../../dd/d17/classsysy_1_1ir_1_1LoopUnrollAll.html#a8993fda618efdba901f8746c27337c85">sysy::ir::LoopUnrollAll::LoopUnrollAll()</a>, <a class="el" href="../../db/d19/classsysy_1_1ir_1_1LSR.html#affc8c8bdb4be1927a67450656f8d2936">sysy::ir::LSR::LSR()</a>, <a class="el" href="../../db/df2/classsysy_1_1ir_1_1Memory2Reg.html#a225a4e7d7af73e4ca4b7f6fa937a971a">sysy::ir::Memory2Reg::Memory2Reg()</a>, <a class="el" href="../../d3/d8e/classsysy_1_1ir_1_1MemorySSA.html#aa9e424234ff4a42e6d868479e4dcffb4">sysy::ir::MemorySSA::MemorySSA()</a>, <a class="el" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#a1b85bdcb9368a6d9a3f78d756c01fb5f">sysy::ir::PRE::PRE()</a>, <a class="el" href="../../d5/d01/classsysy_1_1Pass.html#afbe59b0867e1cac38f46d977467515c6">sysy::Pass&lt; Opt &gt;::relatedDfs()</a>, and <a class="el" href="../../d0/d00/classsysy_1_1ir_1_1ScalarPass.html#afa4f09823dfd7d5f9acfac0565092a6b">sysy::ir::ScalarPass::ScalarPass()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d01/classsysy_1_1Pass_a173295351670ccda8884f99ce538637c_icgraph.png" border="0" usemap="#d5/d01/classsysy_1_1Pass_a173295351670ccda8884f99ce538637c_icgraph" alt=""/></div>
+<map name="d5/d01/classsysy_1_1Pass_a173295351670ccda8884f99ce538637c_icgraph" id="d5/d01/classsysy_1_1Pass_a173295351670ccda8884f99ce538637c_icgraph">
+<area shape="rect" title=" " alt="" coords="763,413,929,440"/>
+<area shape="rect" href="../../df/db7/classsysy_1_1ir_1_1ADCE.html#a6fe31896b9c0abbc569a4643efd8a349" title=" " alt="" coords="553,5,709,32"/>
+<area shape="rect" href="../../da/d2e/classsysy_1_1ir_1_1FunctionInline.html#ae57012feaace821eaa4d659f33ccb59e" title=" " alt="" coords="548,57,715,98"/>
+<area shape="rect" href="../../dd/d74/classsysy_1_1ir_1_1GCM.html#ae06f73605244deabe5ff3343cdef7716" title=" " alt="" coords="558,123,705,149"/>
+<area shape="rect" href="../../df/d2d/classsysy_1_1ir_1_1GVN.html#ad9cca7d094c4e7aa66ef5039a31f4eba" title=" " alt="" coords="560,173,703,200"/>
+<area shape="rect" href="../../da/d78/classsysy_1_1ir_1_1IPDCE.html#a9903c67008992ef812ae3262a45e54fe" title=" " alt="" coords="550,224,713,251"/>
+<area shape="rect" href="../../d1/d67/classsysy_1_1ir_1_1LocalGVN.html#a375044c5b75f22470e2572501d5023a7" title=" " alt="" coords="562,275,701,317"/>
+<area shape="rect" href="../../d8/d39/classsysy_1_1ir_1_1LoopInfo.html#ae04938568202a41955f9fb33dc490283" title=" " alt="" coords="565,341,697,382"/>
+<area shape="rect" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#ab97486a1482d60a53a893a3e877d5a38" title=" " alt="" coords="554,406,709,447"/>
+<area shape="rect" href="../../dd/d17/classsysy_1_1ir_1_1LoopUnrollAll.html#a8993fda618efdba901f8746c27337c85" title=" " alt="" coords="550,471,713,513"/>
+<area shape="rect" href="../../db/d19/classsysy_1_1ir_1_1LSR.html#affc8c8bdb4be1927a67450656f8d2936" title=" " alt="" coords="565,537,697,564"/>
+<area shape="rect" href="../../db/df2/classsysy_1_1ir_1_1Memory2Reg.html#a225a4e7d7af73e4ca4b7f6fa937a971a" title=" " alt="" coords="550,589,713,630"/>
+<area shape="rect" href="../../d3/d8e/classsysy_1_1ir_1_1MemorySSA.html#aa9e424234ff4a42e6d868479e4dcffb4" title=" " alt="" coords="553,654,709,695"/>
+<area shape="rect" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#a1b85bdcb9368a6d9a3f78d756c01fb5f" title=" " alt="" coords="564,720,699,747"/>
+<area shape="rect" href="../../d5/d01/classsysy_1_1Pass.html#afbe59b0867e1cac38f46d977467515c6" title=" " alt="" coords="549,771,713,797"/>
+<area shape="rect" href="../../d0/d00/classsysy_1_1ir_1_1ScalarPass.html#afa4f09823dfd7d5f9acfac0565092a6b" title=" " alt="" coords="559,822,704,863"/>
+<area shape="rect" href="../../de/de9/classsysy_1_1PassManager.html#a8fb5cac5b5454feb96cdfd25edf7ea71" title=" " alt="" coords="347,763,500,805"/>
+<area shape="rect" href="../../d0/d45/classsysy_1_1ir_1_1DomInfo.html#ad3d5614202cb0d95d87f4d544ba3503e" title=" " alt="" coords="133,705,273,746"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a0821eb9de161af783ca6706a87d988d5" title=" " alt="" coords="108,771,299,797"/>
+<area shape="rect" href="../../de/ddd/classsysy_1_1ir_1_1PostDomInfo.html#ad55d0fd6a6e39b1d84e7034eecd38791" title=" " alt="" coords="123,822,283,863"/>
+<area shape="rect" href="../../d4/d0b/compiler_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,771,60,797"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afbe59b0867e1cac38f46d977467515c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbe59b0867e1cac38f46d977467515c6">&#9670;&nbsp;</a></span>relatedDfs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Opt &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void <a class="el" href="../../d5/d01/classsysy_1_1Pass.html">sysy::Pass</a>&lt; Opt &gt;::relatedDfs </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/d01/classsysy_1_1Pass.html">Pass</a>&lt; Opt &gt; *&#160;</td>
+          <td class="paramname"><em>pass</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d5/d01/classsysy_1_1Pass.html#a876dcea0233148a62cff8008771a2a6a">DfsFunc</a>&#160;</td>
+          <td class="paramname"><em>func</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d5/d01/classsysy_1_1Pass.html#a173295351670ccda8884f99ce538637c">sysy::Pass&lt; Opt &gt;::getRelated()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../de/de9/classsysy_1_1PassManager.html#a8fb5cac5b5454feb96cdfd25edf7ea71">sysy::PassManager&lt; Opt &gt;::addPass()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d01/classsysy_1_1Pass_afbe59b0867e1cac38f46d977467515c6_cgraph.png" border="0" usemap="#d5/d01/classsysy_1_1Pass_afbe59b0867e1cac38f46d977467515c6_cgraph" alt=""/></div>
+<map name="d5/d01/classsysy_1_1Pass_afbe59b0867e1cac38f46d977467515c6_cgraph" id="d5/d01/classsysy_1_1Pass_afbe59b0867e1cac38f46d977467515c6_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,169,32"/>
+<area shape="rect" href="../../d5/d01/classsysy_1_1Pass.html#a173295351670ccda8884f99ce538637c" title=" " alt="" coords="217,5,384,32"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d01/classsysy_1_1Pass_afbe59b0867e1cac38f46d977467515c6_icgraph.png" border="0" usemap="#d5/d01/classsysy_1_1Pass_afbe59b0867e1cac38f46d977467515c6_icgraph" alt=""/></div>
+<map name="d5/d01/classsysy_1_1Pass_afbe59b0867e1cac38f46d977467515c6_icgraph" id="d5/d01/classsysy_1_1Pass_afbe59b0867e1cac38f46d977467515c6_icgraph">
+<area shape="rect" title=" " alt="" coords="548,71,712,98"/>
+<area shape="rect" href="../../de/de9/classsysy_1_1PassManager.html#a8fb5cac5b5454feb96cdfd25edf7ea71" title=" " alt="" coords="347,64,500,105"/>
+<area shape="rect" href="../../d0/d45/classsysy_1_1ir_1_1DomInfo.html#ad3d5614202cb0d95d87f4d544ba3503e" title=" " alt="" coords="133,5,273,47"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a0821eb9de161af783ca6706a87d988d5" title=" " alt="" coords="108,71,299,98"/>
+<area shape="rect" href="../../de/ddd/classsysy_1_1ir_1_1PostDomInfo.html#ad55d0fd6a6e39b1d84e7034eecd38791" title=" " alt="" coords="123,123,283,164"/>
+<area shape="rect" href="../../d4/d0b/compiler_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,71,60,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1a239de32e6560d250de0c0c486215d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a239de32e6560d250de0c0c486215d2">&#9670;&nbsp;</a></span>run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Opt &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="../../d5/d01/classsysy_1_1Pass.html">sysy::Pass</a>&lt; Opt &gt;::run </td>
+          <td>(</td>
+          <td class="paramtype">Opt&#160;</td>
+          <td class="paramname"><em>opt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="../../de/de9/classsysy_1_1PassManager.html#a8bfee9c4d85f38b6c7282fc4308ec5cb">sysy::PassManager&lt; Opt &gt;</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a2a8c59314914f472adac06afff1581a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a8c59314914f472adac06afff1581a7">&#9670;&nbsp;</a></span>passFinishBy</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Opt &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="../../d5/d01/classsysy_1_1Pass.html">Pass</a>&lt;Opt&gt;*&gt; <a class="el" href="../../d5/d01/classsysy_1_1Pass.html">sysy::Pass</a>&lt; Opt &gt;::passFinishBy</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../d5/d01/classsysy_1_1Pass.html#a9fa8345efad5dc07e9106b89580cb976">sysy::Pass&lt; Opt &gt;::getFinish()</a>.</p>
+
+</div>
+</div>
+<a id="a0cff7477eb59e83fffa83325b3bc7aa6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cff7477eb59e83fffa83325b3bc7aa6">&#9670;&nbsp;</a></span>relatedPasses</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Opt &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="../../d5/d01/classsysy_1_1Pass.html">Pass</a>&lt;Opt&gt;*&gt; <a class="el" href="../../d5/d01/classsysy_1_1Pass.html">sysy::Pass</a>&lt; Opt &gt;::relatedPasses</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../d5/d01/classsysy_1_1Pass.html#a173295351670ccda8884f99ce538637c">sysy::Pass&lt; Opt &gt;::getRelated()</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>include/sysy/IR/<a class="el" href="../../d8/d4e/PassManager_8h_source.html">PassManager.h</a></li>
 </ul>
@@ -182,7 +587,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>finishByDfs</b
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>sysy</b></li><li class="navelem"><a class="el" href="../../d5/d01/classsysy_1_1Pass.html">Pass</a></li>
+    <li class="navelem"><a class="el" href="../../dd/d20/namespacesysy.html">sysy</a></li><li class="navelem"><a class="el" href="../../d5/d01/classsysy_1_1Pass.html">Pass</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

@@ -12,5 +12,6 @@ var classsysy_1_1mc_1_1StoreReg =
     [ "lhs", "df/dec/classsysy_1_1mc_1_1StoreReg.html#a4cd88e3d85ab2fd3aa552a93a0a681be", null ],
     [ "rhs", "df/dec/classsysy_1_1mc_1_1StoreReg.html#a9f50a7763ee653e6c7eeb7238e0b753e", null ],
     [ "shift", "df/dec/classsysy_1_1mc_1_1StoreReg.html#ad655ee6531578bd9967f4a9a94404a3c", null ],
-    [ "type", "df/dec/classsysy_1_1mc_1_1StoreReg.html#a426b1a3820076af75d7830fb1e9dab55", null ]
+    [ "type", "df/dec/classsysy_1_1mc_1_1StoreReg.html#a426b1a3820076af75d7830fb1e9dab55", null ],
+    [ "type_map", "df/dec/classsysy_1_1mc_1_1StoreReg.html#aff69b425e2c11643abfeaa10cd04f7c4", null ]
 ];

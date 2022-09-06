@@ -85,37 +85,222 @@ $(document).ready(function(){initNavTree('d4/d00/classsysy_1_1ir_1_1IRCopier.htm
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="../../d1/dd2/classsysy_1_1ir_1_1IRCopier-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">sysy::ir::IRCopier Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="../../dc/d54/IRCopy_8h_source.html">IRCopy.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a18af20192f2d6062d84869ac6faf1d5e"><td class="memItemLeft" align="right" valign="top"><a id="a18af20192f2d6062d84869ac6faf1d5e"></a>
-<a class="el" href="../../d4/d36/classsysy_1_1ir_1_1Function.html">Function</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getFunctionCopy</b> (<a class="el" href="../../d4/d36/classsysy_1_1ir_1_1Function.html">Function</a> *func)</td></tr>
+<tr class="memitem:a18af20192f2d6062d84869ac6faf1d5e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d36/classsysy_1_1ir_1_1Function.html">Function</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d00/classsysy_1_1ir_1_1IRCopier.html#a18af20192f2d6062d84869ac6faf1d5e">getFunctionCopy</a> (<a class="el" href="../../d4/d36/classsysy_1_1ir_1_1Function.html">Function</a> *func)</td></tr>
 <tr class="separator:a18af20192f2d6062d84869ac6faf1d5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a419dd40c19a74d2cb6737cc845039487"><td class="memItemLeft" align="right" valign="top"><a id="a419dd40c19a74d2cb6737cc845039487"></a>
-<a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html">Loop</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getLoopCopy</b> (<a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html">Loop</a> *loop, std::unordered_map&lt; <a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *, <a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> * &gt; &amp;LoopValueCpy, std::unordered_map&lt; <a class="el" href="../../da/dd0/classsysy_1_1ir_1_1PhiInstruction.html">PhiInst</a> *, <a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> * &gt; &amp;CurrentIncomingValue)</td></tr>
+<tr class="memitem:a419dd40c19a74d2cb6737cc845039487"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html">Loop</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d00/classsysy_1_1ir_1_1IRCopier.html#a419dd40c19a74d2cb6737cc845039487">getLoopCopy</a> (<a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html">Loop</a> *loop, std::unordered_map&lt; <a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *, <a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> * &gt; &amp;LoopValueCpy, std::unordered_map&lt; <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a54b15b0f11f28826cb9853c7491747da">PhiInst</a> *, <a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> * &gt; &amp;CurrentIncomingValue)</td></tr>
 <tr class="separator:a419dd40c19a74d2cb6737cc845039487"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a78c9a2189587cfca19a23017b0987152"><td class="memItemLeft" align="right" valign="top"><a id="a78c9a2189587cfca19a23017b0987152"></a>
-static <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getCopyOfInstruction</b> (<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a> *instr, std::function&lt; <a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *(<a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *)&gt; findValue)</td></tr>
+<tr class="memitem:a78c9a2189587cfca19a23017b0987152"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d00/classsysy_1_1ir_1_1IRCopier.html#a78c9a2189587cfca19a23017b0987152">getCopyOfInstruction</a> (<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a> *instr, std::function&lt; <a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *(<a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *)&gt; findValue)</td></tr>
 <tr class="separator:a78c9a2189587cfca19a23017b0987152"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:acff15e036297192d530b121f250544b9"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; <a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *, <a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d00/classsysy_1_1ir_1_1IRCopier.html#acff15e036297192d530b121f250544b9">ValueCopy</a></td></tr>
+<tr class="separator:acff15e036297192d530b121f250544b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a78c9a2189587cfca19a23017b0987152"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78c9a2189587cfca19a23017b0987152">&#9670;&nbsp;</a></span>getCopyOfInstruction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a> * sysy::ir::IRCopier::getCopyOfInstruction </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a> *&#160;</td>
+          <td class="paramname"><em>instr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; <a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *(<a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *)&gt;&#160;</td>
+          <td class="paramname"><em>findValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../dd/d20/namespacesysy.html#a5dbe46de6c5b4ee6dec9066c0cd32dbf">sysy::name</a>.</p>
+
+</div>
+</div>
+<a id="a18af20192f2d6062d84869ac6faf1d5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18af20192f2d6062d84869ac6faf1d5e">&#9670;&nbsp;</a></span>getFunctionCopy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d36/classsysy_1_1ir_1_1Function.html">Function</a> * sysy::ir::IRCopier::getFunctionCopy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d36/classsysy_1_1ir_1_1Function.html">Function</a> *&#160;</td>
+          <td class="paramname"><em>func</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html#a84e4bf2c8f6d48fe700c8aae8f6ca777">sysy::ir::BasicBlock::BasicBlockDfs()</a>, <a class="el" href="../../d4/d36/classsysy_1_1ir_1_1Function.html#a574f9fb41fb425e0a944e90303feeba6">sysy::ir::Function::Create()</a>, <a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html#aae96301011a76be2d6f4bc0820f16d44">sysy::ir::BasicBlock::Create()</a>, <a class="el" href="../../d4/d36/classsysy_1_1ir_1_1Function.html#a8eaa9ba6787e31dcfc4d7d0755fd860f">sysy::ir::Function::getArgs()</a>, <a class="el" href="../../d4/d36/classsysy_1_1ir_1_1Function.html#a20b59feab8d06acdd0a8dc18411921d4">sysy::ir::Function::getBasicBlockList()</a>, <a class="el" href="../../d4/d36/classsysy_1_1ir_1_1Function.html#aa752a24216de14d0b9ba17d76f9b7a29">sysy::ir::Function::getEntryBlock()</a>, <a class="el" href="../../dd/d71/classsysy_1_1ir_1_1Module.html#a42f6f3bc7afe95ca8b399f9e30ef194c">sysy::ir::Module::getInstance()</a>, <a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html#ae464b729ace674387c5cc76af167f09f">sysy::ir::Value::getName()</a>, <a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html#ae1910c2aa4c3a82990b0c973bbfcfb10">sysy::ir::BasicBlock::getPredecessor()</a>, <a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html#af4402152f2e0134f8bcfb4153fdf3a64">sysy::ir::Value::getType()</a>, and <a class="el" href="../../d4/d00/classsysy_1_1ir_1_1IRCopier.html#acff15e036297192d530b121f250544b9">ValueCopy</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../da/d2e/classsysy_1_1ir_1_1FunctionInline.html#aa3e68f1f7d996f449663bd362882a0ca">sysy::ir::FunctionInline::inlineAtCall()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d00/classsysy_1_1ir_1_1IRCopier_a18af20192f2d6062d84869ac6faf1d5e_cgraph.png" border="0" usemap="#d4/d00/classsysy_1_1ir_1_1IRCopier_a18af20192f2d6062d84869ac6faf1d5e_cgraph" alt=""/></div>
+<map name="d4/d00/classsysy_1_1ir_1_1IRCopier_a18af20192f2d6062d84869ac6faf1d5e_cgraph" id="d4/d00/classsysy_1_1ir_1_1IRCopier_a18af20192f2d6062d84869ac6faf1d5e_cgraph">
+<area shape="rect" title=" " alt="" coords="5,287,144,328"/>
+<area shape="rect" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html#a84e4bf2c8f6d48fe700c8aae8f6ca777" title=" " alt="" coords="209,5,355,47"/>
+<area shape="rect" href="../../d4/d36/classsysy_1_1ir_1_1Function.html#a574f9fb41fb425e0a944e90303feeba6" title=" " alt="" coords="217,71,347,112"/>
+<area shape="rect" href="../../dd/d71/classsysy_1_1ir_1_1Module.html#a42f6f3bc7afe95ca8b399f9e30ef194c" title=" " alt="" coords="615,137,823,163"/>
+<area shape="rect" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html#aae96301011a76be2d6f4bc0820f16d44" title=" " alt="" coords="209,188,355,229"/>
+<area shape="rect" href="../../d4/d36/classsysy_1_1ir_1_1Function.html#a8eaa9ba6787e31dcfc4d7d0755fd860f" title=" " alt="" coords="217,253,347,295"/>
+<area shape="rect" href="../../d4/d36/classsysy_1_1ir_1_1Function.html#a20b59feab8d06acdd0a8dc18411921d4" title=" " alt="" coords="209,319,355,360"/>
+<area shape="rect" href="../../d4/d36/classsysy_1_1ir_1_1Function.html#aa752a24216de14d0b9ba17d76f9b7a29" title=" " alt="" coords="217,384,347,425"/>
+<area shape="rect" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html#ae464b729ace674387c5cc76af167f09f" title=" " alt="" coords="192,450,372,477"/>
+<area shape="rect" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html#ae1910c2aa4c3a82990b0c973bbfcfb10" title=" " alt="" coords="209,501,355,543"/>
+<area shape="rect" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html#af4402152f2e0134f8bcfb4153fdf3a64" title=" " alt="" coords="197,567,367,594"/>
+<area shape="rect" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html#ac4ce5c07032b9dab7bbad0310860c153" title=" " alt="" coords="420,5,567,47"/>
+<area shape="rect" href="../../d4/d36/classsysy_1_1ir_1_1Function.html#a129fbbc93c5535af58d47900b294fc92" title=" " alt="" coords="428,71,559,112"/>
+<area shape="rect" href="../../db/d08/classsysy_1_1ir_1_1FunctionType.html#aacd5b091ed67cb0dbdd8cbf3be3d9a32" title=" " alt="" coords="638,71,799,112"/>
+<area shape="rect" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html#a8e8c608777d8776fc1308b0667ef7ef0" title=" " alt="" coords="420,188,567,229"/>
+<area shape="rect" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html#a370d97f20c81e41c71f2969e93e8c266" title=" " alt="" coords="420,253,567,295"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d00/classsysy_1_1ir_1_1IRCopier_a18af20192f2d6062d84869ac6faf1d5e_icgraph.png" border="0" usemap="#d4/d00/classsysy_1_1ir_1_1IRCopier_a18af20192f2d6062d84869ac6faf1d5e_icgraph" alt=""/></div>
+<map name="d4/d00/classsysy_1_1ir_1_1IRCopier_a18af20192f2d6062d84869ac6faf1d5e_icgraph" id="d4/d00/classsysy_1_1ir_1_1IRCopier_a18af20192f2d6062d84869ac6faf1d5e_icgraph">
+<area shape="rect" title=" " alt="" coords="220,5,359,47"/>
+<area shape="rect" href="../../da/d2e/classsysy_1_1ir_1_1FunctionInline.html#aa3e68f1f7d996f449663bd362882a0ca" title=" " alt="" coords="5,5,172,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a419dd40c19a74d2cb6737cc845039487"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a419dd40c19a74d2cb6737cc845039487">&#9670;&nbsp;</a></span>getLoopCopy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html">Loop</a> * sysy::ir::IRCopier::getLoopCopy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html">Loop</a> *&#160;</td>
+          <td class="paramname"><em>loop</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::unordered_map&lt; <a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *, <a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>LoopValueCpy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::unordered_map&lt; <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a54b15b0f11f28826cb9853c7491747da">PhiInst</a> *, <a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>CurrentIncomingValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a07f70a12e8c18d0c7e7669a97f28c715">sysy::ir::Loop::getHeader()</a>, <a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html#a87edb8a6b3ef522b2aa073d74737cba0">sysy::ir::BasicBlock::getInstructions()</a>, <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a0d57745959cc7441ac58069b078ee3c1">sysy::ir::Loop::getLatchBlock()</a>, <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#afc4815cae4ad957fbb224f93bb7091ac">sysy::ir::Loop::getLoopBasicBlocks()</a>, <a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html#ae464b729ace674387c5cc76af167f09f">sysy::ir::Value::getName()</a>, and <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a5b14b21cbfbe5f192fa588a6303dd8fe">sysy::ir::Loop::getParent()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dd/d17/classsysy_1_1ir_1_1LoopUnrollAll.html#a9489d80bcdc9d07f8dc596a55ad5d3c0">sysy::ir::LoopUnrollAll::runOnLoop()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d00/classsysy_1_1ir_1_1IRCopier_a419dd40c19a74d2cb6737cc845039487_cgraph.png" border="0" usemap="#d4/d00/classsysy_1_1ir_1_1IRCopier_a419dd40c19a74d2cb6737cc845039487_cgraph" alt=""/></div>
+<map name="d4/d00/classsysy_1_1ir_1_1IRCopier_a419dd40c19a74d2cb6737cc845039487_cgraph" id="d4/d00/classsysy_1_1ir_1_1IRCopier_a419dd40c19a74d2cb6737cc845039487_cgraph">
+<area shape="rect" title=" " alt="" coords="5,155,136,197"/>
+<area shape="rect" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a07f70a12e8c18d0c7e7669a97f28c715" title=" " alt="" coords="194,5,377,32"/>
+<area shape="rect" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html#a87edb8a6b3ef522b2aa073d74737cba0" title=" " alt="" coords="212,57,359,98"/>
+<area shape="rect" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a0d57745959cc7441ac58069b078ee3c1" title=" " alt="" coords="200,122,371,163"/>
+<area shape="rect" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#afc4815cae4ad957fbb224f93bb7091ac" title=" " alt="" coords="184,187,387,229"/>
+<area shape="rect" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html#ae464b729ace674387c5cc76af167f09f" title=" " alt="" coords="195,253,375,280"/>
+<area shape="rect" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a5b14b21cbfbe5f192fa588a6303dd8fe" title=" " alt="" coords="197,304,374,331"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d00/classsysy_1_1ir_1_1IRCopier_a419dd40c19a74d2cb6737cc845039487_icgraph.png" border="0" usemap="#d4/d00/classsysy_1_1ir_1_1IRCopier_a419dd40c19a74d2cb6737cc845039487_icgraph" alt=""/></div>
+<map name="d4/d00/classsysy_1_1ir_1_1IRCopier_a419dd40c19a74d2cb6737cc845039487_icgraph" id="d4/d00/classsysy_1_1ir_1_1IRCopier_a419dd40c19a74d2cb6737cc845039487_icgraph">
+<area shape="rect" title=" " alt="" coords="456,5,587,47"/>
+<area shape="rect" href="../../dd/d17/classsysy_1_1ir_1_1LoopUnrollAll.html#a9489d80bcdc9d07f8dc596a55ad5d3c0" title=" " alt="" coords="245,5,408,47"/>
+<area shape="rect" href="../../dd/d17/classsysy_1_1ir_1_1LoopUnrollAll.html#ae4c6c5cd1f56cc3264dc72649fb1809c" title=" " alt="" coords="5,13,197,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="acff15e036297192d530b121f250544b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acff15e036297192d530b121f250544b9">&#9670;&nbsp;</a></span>ValueCopy</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt;<a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a>*, <a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a>*&gt; sysy::ir::IRCopier::ValueCopy</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../d4/d00/classsysy_1_1ir_1_1IRCopier.html#a18af20192f2d6062d84869ac6faf1d5e">getFunctionCopy()</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>include/sysy/IR/<a class="el" href="../../dc/d54/IRCopy_8h_source.html">IRCopy.h</a></li>
-<li>lib/IR/IRCopy.cpp</li>
+<li>lib/IR/<a class="el" href="../../d5/dea/IRCopy_8cpp.html">IRCopy.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>sysy</b></li><li class="navelem"><b>ir</b></li><li class="navelem"><a class="el" href="../../d4/d00/classsysy_1_1ir_1_1IRCopier.html">IRCopier</a></li>
+    <li class="navelem"><a class="el" href="../../dd/d20/namespacesysy.html">sysy</a></li><li class="navelem"><a class="el" href="../../d7/d19/namespacesysy_1_1ir.html">ir</a></li><li class="navelem"><a class="el" href="../../d4/d00/classsysy_1_1ir_1_1IRCopier.html">IRCopier</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

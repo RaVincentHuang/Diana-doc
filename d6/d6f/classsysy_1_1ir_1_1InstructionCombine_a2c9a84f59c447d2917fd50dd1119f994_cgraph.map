@@ -1,0 +1,12 @@
+<map id="sysy::ir::InstructionCombine::visitBinary" name="sysy::ir::InstructionCombine::visitBinary">
+<area shape="rect" id="node1" title=" " alt="" coords="5,136,208,177"/>
+<area shape="rect" id="node2" href="$dc/d46/classsysy_1_1ir_1_1Instruction.html#a1b75bf99f7751b0c76f15d94652ca176" title=" " alt="" coords="527,5,673,47"/>
+<area shape="rect" id="node3" href="$d6/d6f/classsysy_1_1ir_1_1InstructionCombine.html#ad6ba6f7f3df7be9c0380d2343cb65784" title=" " alt="" coords="256,201,459,243"/>
+<area shape="rect" id="node10" href="$d6/d6f/classsysy_1_1ir_1_1InstructionCombine.html#ab878fcc588eb24cf1c8947b6911ebd57" title=" " alt="" coords="256,136,459,177"/>
+<area shape="rect" id="node4" href="$dc/d75/classsysy_1_1ir_1_1ConstantInt.html#ab879fa5399f2ecc1a3937f137b44e4b7" title=" " alt="" coords="510,318,690,345"/>
+<area shape="rect" id="node6" href="$dc/d46/classsysy_1_1ir_1_1Instruction.html#aade5575316fb35822e3785e543ecba69" title=" " alt="" coords="527,71,673,112"/>
+<area shape="rect" id="node7" href="$d9/dcc/classsysy_1_1ir_1_1BinaryInstrcution.html#a2be639f106e9dae6fcb8b5282545793b" title=" " alt="" coords="507,136,693,177"/>
+<area shape="rect" id="node8" href="$d9/dcc/classsysy_1_1ir_1_1BinaryInstrcution.html#a3c78f6797c076d91c4d9eaa9ed0cc6db" title=" " alt="" coords="507,201,693,243"/>
+<area shape="rect" id="node9" href="$d9/d9f/classsysy_1_1ir_1_1Value.html#af4402152f2e0134f8bcfb4153fdf3a64" title=" " alt="" coords="515,267,685,294"/>
+<area shape="rect" id="node5" href="$dc/d75/classsysy_1_1ir_1_1ConstantInt.html#a3fc70f0b683fcaaf933de031d132e99e" title=" " alt="" coords="741,311,892,352"/>
+</map>

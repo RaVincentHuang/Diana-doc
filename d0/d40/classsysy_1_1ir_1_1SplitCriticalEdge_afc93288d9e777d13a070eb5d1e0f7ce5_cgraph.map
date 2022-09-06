@@ -1,0 +1,12 @@
+<map id="sysy::ir::SplitCriticalEdge::run" name="sysy::ir::SplitCriticalEdge::run">
+<area shape="rect" id="node1" title=" " alt="" coords="5,78,217,105"/>
+<area shape="rect" id="node2" href="$df/dd2/classsysy_1_1ir_1_1BasicBlock.html#a84e4bf2c8f6d48fe700c8aae8f6ca777" title=" " alt="" coords="283,5,430,47"/>
+<area shape="rect" id="node4" href="$d0/d40/classsysy_1_1ir_1_1SplitCriticalEdge.html#a242e0a7829225ce3df9b25d83aac1f9f" title=" " alt="" coords="265,71,448,112"/>
+<area shape="rect" id="node10" href="$d4/d36/classsysy_1_1ir_1_1Function.html#aa752a24216de14d0b9ba17d76f9b7a29" title=" " alt="" coords="291,136,422,177"/>
+<area shape="rect" id="node3" href="$df/dd2/classsysy_1_1ir_1_1BasicBlock.html#ac4ce5c07032b9dab7bbad0310860c153" title=" " alt="" coords="496,5,643,47"/>
+<area shape="rect" id="node5" href="$df/dd2/classsysy_1_1ir_1_1BasicBlock.html#aae96301011a76be2d6f4bc0820f16d44" title=" " alt="" coords="496,71,643,112"/>
+<area shape="rect" id="node8" href="$df/dd2/classsysy_1_1ir_1_1BasicBlock.html#a87edb8a6b3ef522b2aa073d74737cba0" title=" " alt="" coords="496,136,643,177"/>
+<area shape="rect" id="node9" href="$df/dd2/classsysy_1_1ir_1_1BasicBlock.html#ae1910c2aa4c3a82990b0c973bbfcfb10" title=" " alt="" coords="496,201,643,243"/>
+<area shape="rect" id="node6" href="$df/dd2/classsysy_1_1ir_1_1BasicBlock.html#a8e8c608777d8776fc1308b0667ef7ef0" title=" " alt="" coords="691,39,837,80"/>
+<area shape="rect" id="node7" href="$df/dd2/classsysy_1_1ir_1_1BasicBlock.html#a370d97f20c81e41c71f2969e93e8c266" title=" " alt="" coords="691,104,837,145"/>
+</map>

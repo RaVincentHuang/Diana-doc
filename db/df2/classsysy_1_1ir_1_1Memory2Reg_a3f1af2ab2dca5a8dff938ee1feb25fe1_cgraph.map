@@ -1,0 +1,14 @@
+<map id="sysy::ir::Memory2Reg::analysisAlloca" name="sysy::ir::Memory2Reg::analysisAlloca">
+<area shape="rect" id="node1" title=" " alt="" coords="5,221,168,262"/>
+<area shape="rect" id="node2" href="$de/d6e/classsysy_1_1ir_1_1AllocaInfo.html#aebdf198ddd96b368e58b23d25bdb33ad" title=" " alt="" coords="217,5,388,32"/>
+<area shape="rect" id="node4" href="$de/d6e/classsysy_1_1ir_1_1AllocaInfo.html#a02a825922fb5bee2cbce2c01de7f418b" title=" " alt="" coords="232,57,373,98"/>
+<area shape="rect" id="node5" href="$de/d6e/classsysy_1_1ir_1_1AllocaInfo.html#afe884f69d4071e66439bfe958b0cb8d1" title=" " alt="" coords="232,122,373,163"/>
+<area shape="rect" id="node6" href="$de/d6e/classsysy_1_1ir_1_1AllocaInfo.html#aa328a99c16755d9b8e7d638d7b448f70" title=" " alt="" coords="232,187,373,229"/>
+<area shape="rect" id="node7" href="$de/d6e/classsysy_1_1ir_1_1AllocaInfo.html#a04b4ceda0a86f4b30252c40626b7ca38" title=" " alt="" coords="232,253,373,294"/>
+<area shape="rect" id="node8" href="$de/d6e/classsysy_1_1ir_1_1AllocaInfo.html#a5c2869c66ba601732e5fb0ef0ab6c75c" title=" " alt="" coords="232,318,373,359"/>
+<area shape="rect" id="node9" href="$d9/d9f/classsysy_1_1ir_1_1Value.html#a77ccc84b71f29b3dbee04f97f8056088" title=" " alt="" coords="216,384,389,411"/>
+<area shape="rect" id="node10" href="$d7/d19/namespacesysy_1_1ir.html#a6048ac961862511a63015d039cd202bf" title=" " alt="" coords="251,435,354,461"/>
+<area shape="rect" id="node3" href="$dd/d20/namespacesysy.html#a746e1eb45442547b5f49e0087727fdb3" title=" " alt="" coords="441,5,580,32"/>
+<area shape="rect" id="node11" href="$dc/d46/classsysy_1_1ir_1_1Instruction.html#aade5575316fb35822e3785e543ecba69" title=" " alt="" coords="438,394,583,435"/>
+<area shape="rect" id="node12" href="$df/dd2/classsysy_1_1ir_1_1BasicBlock.html#a5ad4d87dbcad45e44aedfd0c24009e9b" title=" " alt="" coords="437,459,584,501"/>
+</map>

@@ -86,130 +86,1712 @@ $(document).ready(function(){initNavTree('d2/d57/classsysy_1_1ir_1_1Loop.html','
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="../../d4/dec/classsysy_1_1ir_1_1Loop-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">sysy::ir::Loop Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="../../db/d9e/Loop_8h_source.html">Loop.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for sysy::ir::Loop:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d0c/classsysy_1_1ir_1_1Loop__coll__graph.png" border="0" usemap="#sysy_1_1ir_1_1Loop_coll__map" alt="Collaboration graph"/></div>
+<map name="sysy_1_1ir_1_1Loop_coll__map" id="sysy_1_1ir_1_1Loop_coll__map">
+<area shape="rect" title=" " alt="" coords="1493,108,1600,135"/>
+<area shape="rect" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html" title=" " alt="" coords="407,219,553,245"/>
+<area shape="rect" href="../../d4/d36/classsysy_1_1ir_1_1Function.html" title=" " alt="" coords="674,268,805,295"/>
+<area shape="rect" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html" title=" " alt="" coords="667,109,812,136"/>
+<area shape="rect" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html" title=" " alt="" coords="193,219,305,245"/>
+<area shape="rect" href="../../d9/d1a/classsysy_1_1ir_1_1User.html" title=" " alt="" coords="427,112,533,139"/>
+<area shape="rect" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html" title=" " alt="" coords="5,341,112,368"/>
+<area shape="rect" href="../../dc/d38/classsysy_1_1ir_1_1MemoryInstruction.html" title=" " alt="" coords="909,57,1108,84"/>
+<area shape="rect" href="../../da/dd0/classsysy_1_1ir_1_1PhiInstruction.html" title=" " alt="" coords="1235,57,1400,84"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:aba5d378a73dac04a538b9aceba74d6ac"><td class="memItemLeft" align="right" valign="top"><a id="aba5d378a73dac04a538b9aceba74d6ac"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>scev_iterator</b> = std::unordered_map&lt; <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a> *, <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html">SCEV</a> &gt;::iterator</td></tr>
+<tr class="memitem:aba5d378a73dac04a538b9aceba74d6ac"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#aba5d378a73dac04a538b9aceba74d6ac">scev_iterator</a> = std::unordered_map&lt; <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a> *, <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html">SCEV</a> &gt;::iterator</td></tr>
 <tr class="separator:aba5d378a73dac04a538b9aceba74d6ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a158626cd096154860b1415f98699787a"><td class="memItemLeft" align="right" valign="top"><a id="a158626cd096154860b1415f98699787a"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Loop</b> (<a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *header)</td></tr>
+<tr class="memitem:a158626cd096154860b1415f98699787a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a158626cd096154860b1415f98699787a">Loop</a> (<a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *header)</td></tr>
 <tr class="separator:a158626cd096154860b1415f98699787a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b14b21cbfbe5f192fa588a6303dd8fe"><td class="memItemLeft" align="right" valign="top"><a id="a5b14b21cbfbe5f192fa588a6303dd8fe"></a>
-<a class="el" href="../../d4/d36/classsysy_1_1ir_1_1Function.html">Function</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getParent</b> ()</td></tr>
+<tr class="memitem:a5b14b21cbfbe5f192fa588a6303dd8fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d36/classsysy_1_1ir_1_1Function.html">Function</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a5b14b21cbfbe5f192fa588a6303dd8fe">getParent</a> ()</td></tr>
 <tr class="separator:a5b14b21cbfbe5f192fa588a6303dd8fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf8a7f52e8897d7f216d4137d53eecf2"><td class="memItemLeft" align="right" valign="top"><a id="adf8a7f52e8897d7f216d4137d53eecf2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setLoopDepth</b> (int depth)</td></tr>
+<tr class="memitem:adf8a7f52e8897d7f216d4137d53eecf2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#adf8a7f52e8897d7f216d4137d53eecf2">setLoopDepth</a> (int <a class="el" href="../../dd/d20/namespacesysy.html#a3b4faaf28714267c1eb2fe867efa790e">depth</a>)</td></tr>
 <tr class="separator:adf8a7f52e8897d7f216d4137d53eecf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a615f3e5abb0e5b49ee7a8db61fd7f743"><td class="memItemLeft" align="right" valign="top"><a id="a615f3e5abb0e5b49ee7a8db61fd7f743"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>getLoopDepth</b> ()</td></tr>
+<tr class="memitem:a615f3e5abb0e5b49ee7a8db61fd7f743"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a615f3e5abb0e5b49ee7a8db61fd7f743">getLoopDepth</a> ()</td></tr>
 <tr class="separator:a615f3e5abb0e5b49ee7a8db61fd7f743"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91b057253a21c182068b9d3f73fbf662"><td class="memItemLeft" align="right" valign="top"><a id="a91b057253a21c182068b9d3f73fbf662"></a>
-<a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html">Loop</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getParentLoop</b> ()</td></tr>
+<tr class="memitem:a91b057253a21c182068b9d3f73fbf662"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html">Loop</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a91b057253a21c182068b9d3f73fbf662">getParentLoop</a> ()</td></tr>
 <tr class="separator:a91b057253a21c182068b9d3f73fbf662"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3753161c201c78ceda2ec9524e1fa2bc"><td class="memItemLeft" align="right" valign="top"><a id="a3753161c201c78ceda2ec9524e1fa2bc"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setParentLoop</b> (<a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html">Loop</a> *parent)</td></tr>
+<tr class="memitem:a3753161c201c78ceda2ec9524e1fa2bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a3753161c201c78ceda2ec9524e1fa2bc">setParentLoop</a> (<a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html">Loop</a> *<a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a79880ddf39ef47794adebcc961ed1c66">parent</a>)</td></tr>
 <tr class="separator:a3753161c201c78ceda2ec9524e1fa2bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30adf4782a178f414d9d41e809eb2ff6"><td class="memItemLeft" align="right" valign="top"><a id="a30adf4782a178f414d9d41e809eb2ff6"></a>
-std::vector&lt; <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html">Loop</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getSubLoops</b> ()</td></tr>
+<tr class="memitem:a30adf4782a178f414d9d41e809eb2ff6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html">Loop</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a30adf4782a178f414d9d41e809eb2ff6">getSubLoops</a> ()</td></tr>
 <tr class="separator:a30adf4782a178f414d9d41e809eb2ff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc4815cae4ad957fbb224f93bb7091ac"><td class="memItemLeft" align="right" valign="top"><a id="afc4815cae4ad957fbb224f93bb7091ac"></a>
-std::vector&lt; <a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getLoopBasicBlocks</b> ()</td></tr>
+<tr class="memitem:afc4815cae4ad957fbb224f93bb7091ac"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#afc4815cae4ad957fbb224f93bb7091ac">getLoopBasicBlocks</a> ()</td></tr>
 <tr class="separator:afc4815cae4ad957fbb224f93bb7091ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07f70a12e8c18d0c7e7669a97f28c715"><td class="memItemLeft" align="right" valign="top"><a id="a07f70a12e8c18d0c7e7669a97f28c715"></a>
-<a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getHeader</b> ()</td></tr>
+<tr class="memitem:a07f70a12e8c18d0c7e7669a97f28c715"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a07f70a12e8c18d0c7e7669a97f28c715">getHeader</a> ()</td></tr>
 <tr class="separator:a07f70a12e8c18d0c7e7669a97f28c715"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afec5ef902bbba00d66e2ab3b41c0a18a"><td class="memItemLeft" align="right" valign="top"><a id="afec5ef902bbba00d66e2ab3b41c0a18a"></a>
-std::unordered_set&lt; <a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getExitingBlocks</b> ()</td></tr>
+<tr class="memitem:afec5ef902bbba00d66e2ab3b41c0a18a"><td class="memItemLeft" align="right" valign="top">std::unordered_set&lt; <a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#afec5ef902bbba00d66e2ab3b41c0a18a">getExitingBlocks</a> ()</td></tr>
 <tr class="separator:afec5ef902bbba00d66e2ab3b41c0a18a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11ba45b6f9f0901b247f51ef07f8d49f"><td class="memItemLeft" align="right" valign="top"><a id="a11ba45b6f9f0901b247f51ef07f8d49f"></a>
-std::unordered_set&lt; <a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getExitBlocks</b> ()</td></tr>
+<tr class="memitem:a11ba45b6f9f0901b247f51ef07f8d49f"><td class="memItemLeft" align="right" valign="top">std::unordered_set&lt; <a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a11ba45b6f9f0901b247f51ef07f8d49f">getExitBlocks</a> ()</td></tr>
 <tr class="separator:a11ba45b6f9f0901b247f51ef07f8d49f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d57745959cc7441ac58069b078ee3c1"><td class="memItemLeft" align="right" valign="top"><a id="a0d57745959cc7441ac58069b078ee3c1"></a>
-<a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getLatchBlock</b> ()</td></tr>
+<tr class="memitem:a0d57745959cc7441ac58069b078ee3c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a0d57745959cc7441ac58069b078ee3c1">getLatchBlock</a> ()</td></tr>
 <tr class="separator:a0d57745959cc7441ac58069b078ee3c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdf2d255c2125bd4f7fa4eac270f8997"><td class="memItemLeft" align="right" valign="top"><a id="acdf2d255c2125bd4f7fa4eac270f8997"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setLatchBlock</b> (<a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *latch)</td></tr>
+<tr class="memitem:acdf2d255c2125bd4f7fa4eac270f8997"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#acdf2d255c2125bd4f7fa4eac270f8997">setLatchBlock</a> (<a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *latch)</td></tr>
 <tr class="separator:acdf2d255c2125bd4f7fa4eac270f8997"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a349884a7c65bd9460af3d9d0141e032f"><td class="memItemLeft" align="right" valign="top"><a id="a349884a7c65bd9460af3d9d0141e032f"></a>
-<a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getPreHeader</b> ()</td></tr>
+<tr class="memitem:a349884a7c65bd9460af3d9d0141e032f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a349884a7c65bd9460af3d9d0141e032f">getPreHeader</a> ()</td></tr>
 <tr class="separator:a349884a7c65bd9460af3d9d0141e032f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a343fa82d057c7e0cc746359b11b43289"><td class="memItemLeft" align="right" valign="top"><a id="a343fa82d057c7e0cc746359b11b43289"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setPreHeader</b> (<a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *_preHeader)</td></tr>
+<tr class="memitem:a343fa82d057c7e0cc746359b11b43289"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a343fa82d057c7e0cc746359b11b43289">setPreHeader</a> (<a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *_preHeader)</td></tr>
 <tr class="separator:a343fa82d057c7e0cc746359b11b43289"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42a98c7dc7ae3e7f2a44b246da1ef528"><td class="memItemLeft" align="right" valign="top"><a id="a42a98c7dc7ae3e7f2a44b246da1ef528"></a>
-<a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html">SCEV</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getSCEV</b> (<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a> *instr)</td></tr>
+<tr class="memitem:a42a98c7dc7ae3e7f2a44b246da1ef528"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html">SCEV</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a42a98c7dc7ae3e7f2a44b246da1ef528">getSCEV</a> (<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a> *instr)</td></tr>
 <tr class="separator:a42a98c7dc7ae3e7f2a44b246da1ef528"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02dec62b51b39a19229377c2ff143fa1"><td class="memItemLeft" align="right" valign="top"><a id="a02dec62b51b39a19229377c2ff143fa1"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasSCEV</b> (<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a> *instr)</td></tr>
+<tr class="memitem:a02dec62b51b39a19229377c2ff143fa1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a02dec62b51b39a19229377c2ff143fa1">hasSCEV</a> (<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a> *instr)</td></tr>
 <tr class="separator:a02dec62b51b39a19229377c2ff143fa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e98bbaa7ff7eef397806d6dbbafc425"><td class="memItemLeft" align="right" valign="top"><a id="a8e98bbaa7ff7eef397806d6dbbafc425"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>registerSCEV</b> (<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a> *instr, <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html">SCEV</a> scev)</td></tr>
+<tr class="memitem:a8e98bbaa7ff7eef397806d6dbbafc425"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a8e98bbaa7ff7eef397806d6dbbafc425">registerSCEV</a> (<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a> *instr, <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html">SCEV</a> scev)</td></tr>
 <tr class="separator:a8e98bbaa7ff7eef397806d6dbbafc425"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae31d6873670fd665271944a66f6235a7"><td class="memItemLeft" align="right" valign="top"><a id="ae31d6873670fd665271944a66f6235a7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>cleanSCEV</b> ()</td></tr>
+<tr class="memitem:ae31d6873670fd665271944a66f6235a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#ae31d6873670fd665271944a66f6235a7">cleanSCEV</a> ()</td></tr>
 <tr class="separator:ae31d6873670fd665271944a66f6235a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a163aee178e52806173cf9516676689b9"><td class="memItemLeft" align="right" valign="top"><a id="a163aee178e52806173cf9516676689b9"></a>
-<a class="el" href="../../dd/d0a/classsysy_1_1iterator__range.html">iterator_range</a>&lt; scev_iterator &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getSCEV</b> ()</td></tr>
+<tr class="memitem:a163aee178e52806173cf9516676689b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d0a/classsysy_1_1iterator__range.html">iterator_range</a>&lt; <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#aba5d378a73dac04a538b9aceba74d6ac">scev_iterator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a163aee178e52806173cf9516676689b9">getSCEV</a> ()</td></tr>
 <tr class="separator:a163aee178e52806173cf9516676689b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5954870f24560a728cb2e2f76059d215"><td class="memItemLeft" align="right" valign="top"><a id="a5954870f24560a728cb2e2f76059d215"></a>
-<a class="el" href="../../da/dd0/classsysy_1_1ir_1_1PhiInstruction.html">PhiInst</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getIndexPhi</b> ()</td></tr>
+<tr class="memitem:a5954870f24560a728cb2e2f76059d215"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a54b15b0f11f28826cb9853c7491747da">PhiInst</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a5954870f24560a728cb2e2f76059d215">getIndexPhi</a> ()</td></tr>
 <tr class="separator:a5954870f24560a728cb2e2f76059d215"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac121edda70739df4fe514be10d6c78a4"><td class="memItemLeft" align="right" valign="top"><a id="ac121edda70739df4fe514be10d6c78a4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setIndexPhi</b> (<a class="el" href="../../da/dd0/classsysy_1_1ir_1_1PhiInstruction.html">PhiInst</a> *phi)</td></tr>
+<tr class="memitem:ac121edda70739df4fe514be10d6c78a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#ac121edda70739df4fe514be10d6c78a4">setIndexPhi</a> (<a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a54b15b0f11f28826cb9853c7491747da">PhiInst</a> *phi)</td></tr>
 <tr class="separator:ac121edda70739df4fe514be10d6c78a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae127a7b1973141cb1bf517eab2774664"><td class="memItemLeft" align="right" valign="top"><a id="ae127a7b1973141cb1bf517eab2774664"></a>
-<a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getIndexEnd</b> ()</td></tr>
+<tr class="memitem:ae127a7b1973141cb1bf517eab2774664"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#ae127a7b1973141cb1bf517eab2774664">getIndexEnd</a> ()</td></tr>
 <tr class="separator:ae127a7b1973141cb1bf517eab2774664"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd485e828ea2011206d7a0a601ded628"><td class="memItemLeft" align="right" valign="top"><a id="abd485e828ea2011206d7a0a601ded628"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setIndexEnd</b> (<a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *end)</td></tr>
+<tr class="memitem:abd485e828ea2011206d7a0a601ded628"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#abd485e828ea2011206d7a0a601ded628">setIndexEnd</a> (<a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *end)</td></tr>
 <tr class="separator:abd485e828ea2011206d7a0a601ded628"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a330c84a50b4746b38642c22b46d093ac"><td class="memItemLeft" align="right" valign="top"><a id="a330c84a50b4746b38642c22b46d093ac"></a>
-<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getIndexCondInstr</b> ()</td></tr>
+<tr class="memitem:a330c84a50b4746b38642c22b46d093ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a330c84a50b4746b38642c22b46d093ac">getIndexCondInstr</a> ()</td></tr>
 <tr class="separator:a330c84a50b4746b38642c22b46d093ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af55f83e6183a0d4947755e419e477a10"><td class="memItemLeft" align="right" valign="top"><a id="af55f83e6183a0d4947755e419e477a10"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setIndexCondInstr</b> (<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a> *instr)</td></tr>
+<tr class="memitem:af55f83e6183a0d4947755e419e477a10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#af55f83e6183a0d4947755e419e477a10">setIndexCondInstr</a> (<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a> *instr)</td></tr>
 <tr class="separator:af55f83e6183a0d4947755e419e477a10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70e8df4e3237bcba426a8cd03975b629"><td class="memItemLeft" align="right" valign="top"><a id="a70e8df4e3237bcba426a8cd03975b629"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>getTripCount</b> ()</td></tr>
+<tr class="memitem:a70e8df4e3237bcba426a8cd03975b629"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a70e8df4e3237bcba426a8cd03975b629">getTripCount</a> ()</td></tr>
 <tr class="separator:a70e8df4e3237bcba426a8cd03975b629"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64a403dac834e45bc1d12c4c43ae06cd"><td class="memItemLeft" align="right" valign="top"><a id="a64a403dac834e45bc1d12c4c43ae06cd"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setTripCount</b> (int c)</td></tr>
+<tr class="memitem:a64a403dac834e45bc1d12c4c43ae06cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a64a403dac834e45bc1d12c4c43ae06cd">setTripCount</a> (int c)</td></tr>
 <tr class="separator:a64a403dac834e45bc1d12c4c43ae06cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa64d6aa1c68816c432267a5f3d00ca50"><td class="memItemLeft" align="right" valign="top"><a id="aa64d6aa1c68816c432267a5f3d00ca50"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setICmpKind</b> (Instruction::InstrKind kind)</td></tr>
+<tr class="memitem:aa64d6aa1c68816c432267a5f3d00ca50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#aa64d6aa1c68816c432267a5f3d00ca50">setICmpKind</a> (<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0">Instruction::InstrKind</a> kind)</td></tr>
 <tr class="separator:aa64d6aa1c68816c432267a5f3d00ca50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab46b6e9f46e15db1bbcfd94194bf400d"><td class="memItemLeft" align="right" valign="top"><a id="ab46b6e9f46e15db1bbcfd94194bf400d"></a>
-Instruction::InstrKind&#160;</td><td class="memItemRight" valign="bottom"><b>getICmpKind</b> ()</td></tr>
+<tr class="memitem:ab46b6e9f46e15db1bbcfd94194bf400d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0">Instruction::InstrKind</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#ab46b6e9f46e15db1bbcfd94194bf400d">getICmpKind</a> ()</td></tr>
 <tr class="separator:ab46b6e9f46e15db1bbcfd94194bf400d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfc5820461d6ea0eddfc4de9397435d8"><td class="memItemLeft" align="right" valign="top"><a id="abfc5820461d6ea0eddfc4de9397435d8"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isLoopInvariant</b> (<a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *val)</td></tr>
+<tr class="memitem:abfc5820461d6ea0eddfc4de9397435d8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#abfc5820461d6ea0eddfc4de9397435d8">isLoopInvariant</a> (<a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *val)</td></tr>
 <tr class="separator:abfc5820461d6ea0eddfc4de9397435d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a8310e83e0492a34505062f26499edc09"><td class="memItemLeft" align="right" valign="top"><a id="a8310e83e0492a34505062f26499edc09"></a>
-std::unordered_set&lt; <a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>BBSet</b></td></tr>
+<tr class="memitem:a8310e83e0492a34505062f26499edc09"><td class="memItemLeft" align="right" valign="top">std::unordered_set&lt; <a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a8310e83e0492a34505062f26499edc09">BBSet</a></td></tr>
 <tr class="separator:a8310e83e0492a34505062f26499edc09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a79880ddf39ef47794adebcc961ed1c66"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d36/classsysy_1_1ir_1_1Function.html">Function</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a79880ddf39ef47794adebcc961ed1c66">parent</a></td></tr>
+<tr class="separator:a79880ddf39ef47794adebcc961ed1c66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d3677e3c83ae973d9c80b6ec2e307c0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a8d3677e3c83ae973d9c80b6ec2e307c0">loopDepth</a></td></tr>
+<tr class="separator:a8d3677e3c83ae973d9c80b6ec2e307c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a086e482545ac0e29e61596849af2f68a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html">Loop</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a086e482545ac0e29e61596849af2f68a">parentLoop</a></td></tr>
+<tr class="separator:a086e482545ac0e29e61596849af2f68a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac84616861c283569f1a456b47e9946b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#ac84616861c283569f1a456b47e9946b4">loopHeader</a></td></tr>
+<tr class="separator:ac84616861c283569f1a456b47e9946b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38329b8e4c36921c8057c1ca6e7a5f44"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html">Loop</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a38329b8e4c36921c8057c1ca6e7a5f44">subLoops</a></td></tr>
+<tr class="separator:a38329b8e4c36921c8057c1ca6e7a5f44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55f69c474a025ffa599617c4bf3b2829"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a55f69c474a025ffa599617c4bf3b2829">blocks</a></td></tr>
+<tr class="separator:a55f69c474a025ffa599617c4bf3b2829"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad85e03b7367a6519172edb07aed940c0"><td class="memItemLeft" align="right" valign="top">std::unordered_set&lt; <a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#ad85e03b7367a6519172edb07aed940c0">exitingBlocks</a></td></tr>
+<tr class="separator:ad85e03b7367a6519172edb07aed940c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e35418e49807ec3bf234040a527f7e9"><td class="memItemLeft" align="right" valign="top">std::unordered_set&lt; <a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a3e35418e49807ec3bf234040a527f7e9">exitBlocks</a></td></tr>
+<tr class="separator:a3e35418e49807ec3bf234040a527f7e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eca2286fd80e284762832ab0434962d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a9eca2286fd80e284762832ab0434962d">latchBlock</a></td></tr>
+<tr class="separator:a9eca2286fd80e284762832ab0434962d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f170bcef0f5a2d93edacfd2cd0be29a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a3f170bcef0f5a2d93edacfd2cd0be29a">preHeader</a></td></tr>
+<tr class="separator:a3f170bcef0f5a2d93edacfd2cd0be29a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac752bd9db587de7e3b75cda9ab83c703"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a> *, <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html">SCEV</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#ac752bd9db587de7e3b75cda9ab83c703">SCEVCheck</a></td></tr>
+<tr class="separator:ac752bd9db587de7e3b75cda9ab83c703"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad818c2812e5e10118f22b2026525f067"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a54b15b0f11f28826cb9853c7491747da">PhiInst</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#ad818c2812e5e10118f22b2026525f067">indPhi</a></td></tr>
+<tr class="separator:ad818c2812e5e10118f22b2026525f067"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a333b612ff477443006872a432c0002f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a333b612ff477443006872a432c0002f4">indCondVar</a></td></tr>
+<tr class="separator:a333b612ff477443006872a432c0002f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac31e4c96b871ade92e48fd0ddc90d124"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#ac31e4c96b871ade92e48fd0ddc90d124">indEnd</a></td></tr>
+<tr class="separator:ac31e4c96b871ade92e48fd0ddc90d124"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a063be6794435c2a94286433d3f1debf0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0">Instruction::InstrKind</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a063be6794435c2a94286433d3f1debf0">icmpKind</a></td></tr>
+<tr class="separator:a063be6794435c2a94286433d3f1debf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c1da1d1380a94d780023ec60a27858e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a0c1da1d1380a94d780023ec60a27858e">tripCount</a></td></tr>
+<tr class="separator:a0c1da1d1380a94d780023ec60a27858e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="aba5d378a73dac04a538b9aceba74d6ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba5d378a73dac04a538b9aceba74d6ac">&#9670;&nbsp;</a></span>scev_iterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#aba5d378a73dac04a538b9aceba74d6ac">sysy::ir::Loop::scev_iterator</a> =  std::unordered_map&lt;<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a>*, <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html">SCEV</a>&gt;::iterator</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a158626cd096154860b1415f98699787a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a158626cd096154860b1415f98699787a">&#9670;&nbsp;</a></span>Loop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sysy::ir::Loop::Loop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *&#160;</td>
+          <td class="paramname"><em>header</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a8310e83e0492a34505062f26499edc09">BBSet</a>, and <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a55f69c474a025ffa599617c4bf3b2829">blocks</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae31d6873670fd665271944a66f6235a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae31d6873670fd665271944a66f6235a7">&#9670;&nbsp;</a></span>cleanSCEV()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sysy::ir::Loop::cleanSCEV </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#ac752bd9db587de7e3b75cda9ab83c703">SCEVCheck</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#a0f98946c99fd079aa59c712a3212b5d0">sysy::ir::ScalarEvolution::runOnLoop()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d57/classsysy_1_1ir_1_1Loop_ae31d6873670fd665271944a66f6235a7_icgraph.png" border="0" usemap="#d2/d57/classsysy_1_1ir_1_1Loop_ae31d6873670fd665271944a66f6235a7_icgraph" alt=""/></div>
+<map name="d2/d57/classsysy_1_1ir_1_1Loop_ae31d6873670fd665271944a66f6235a7_icgraph" id="d2/d57/classsysy_1_1ir_1_1Loop_ae31d6873670fd665271944a66f6235a7_icgraph">
+<area shape="rect" title=" " alt="" coords="485,13,669,39"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#a0f98946c99fd079aa59c712a3212b5d0" title=" " alt="" coords="260,5,437,47"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#aa77c21818a83d9b475e3d967662190bc" title=" " alt="" coords="5,13,212,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a11ba45b6f9f0901b247f51ef07f8d49f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11ba45b6f9f0901b247f51ef07f8d49f">&#9670;&nbsp;</a></span>getExitBlocks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_set&lt;<a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a>*&gt;&amp; sysy::ir::Loop::getExitBlocks </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a3e35418e49807ec3bf234040a527f7e9">exitBlocks</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d9/d47/classsysy_1_1ir_1_1LCSSA.html#a17ff93e8a806fe1e10766b5b26c4431f">sysy::ir::LCSSA::insertLoopClosedPhi()</a>, <a class="el" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#a7e8596f47e5439f678ac43d46e853a24">sysy::ir::LoopParallel::isParallelizable()</a>, <a class="el" href="../../dd/d17/classsysy_1_1ir_1_1LoopUnrollAll.html#a9489d80bcdc9d07f8dc596a55ad5d3c0">sysy::ir::LoopUnrollAll::runOnLoop()</a>, <a class="el" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#aec3eb4fc816d226921d5885959c7c789">sysy::ir::LoopParallel::runOnLoop()</a>, and <a class="el" href="../../d9/d47/classsysy_1_1ir_1_1LCSSA.html#a20c40ac8737dacfa7c8bface59ce1059">sysy::ir::LCSSA::runOnLoop()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d57/classsysy_1_1ir_1_1Loop_a11ba45b6f9f0901b247f51ef07f8d49f_icgraph.png" border="0" usemap="#d2/d57/classsysy_1_1ir_1_1Loop_a11ba45b6f9f0901b247f51ef07f8d49f_icgraph" alt=""/></div>
+<map name="d2/d57/classsysy_1_1ir_1_1Loop_a11ba45b6f9f0901b247f51ef07f8d49f_icgraph" id="d2/d57/classsysy_1_1ir_1_1Loop_a11ba45b6f9f0901b247f51ef07f8d49f_icgraph">
+<area shape="rect" title=" " alt="" coords="724,130,928,157"/>
+<area shape="rect" href="../../d9/d47/classsysy_1_1ir_1_1LCSSA.html#a17ff93e8a806fe1e10766b5b26c4431f" title=" " alt="" coords="481,5,676,47"/>
+<area shape="rect" href="../../d9/d47/classsysy_1_1ir_1_1LCSSA.html#a20c40ac8737dacfa7c8bface59ce1059" title=" " alt="" coords="237,57,433,83"/>
+<area shape="rect" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#a7e8596f47e5439f678ac43d46e853a24" title=" " alt="" coords="501,123,656,164"/>
+<area shape="rect" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#aec3eb4fc816d226921d5885959c7c789" title=" " alt="" coords="258,137,413,179"/>
+<area shape="rect" href="../../dd/d17/classsysy_1_1ir_1_1LoopUnrollAll.html#a9489d80bcdc9d07f8dc596a55ad5d3c0" title=" " alt="" coords="497,240,660,281"/>
+<area shape="rect" href="../../d9/d47/classsysy_1_1ir_1_1LCSSA.html#a89dae4966f458bfe2aeca6c0cf20cb99" title=" " alt="" coords="24,57,171,83"/>
+<area shape="rect" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#aee3a0e1625a7f3f75fde8ce2d24fa603" title=" " alt="" coords="5,145,189,171"/>
+<area shape="rect" href="../../dd/d17/classsysy_1_1ir_1_1LoopUnrollAll.html#ae4c6c5cd1f56cc3264dc72649fb1809c" title=" " alt="" coords="239,247,431,274"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afec5ef902bbba00d66e2ab3b41c0a18a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afec5ef902bbba00d66e2ab3b41c0a18a">&#9670;&nbsp;</a></span>getExitingBlocks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_set&lt;<a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a>*&gt;&amp; sysy::ir::Loop::getExitingBlocks </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#ad85e03b7367a6519172edb07aed940c0">exitingBlocks</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#a7e8596f47e5439f678ac43d46e853a24">sysy::ir::LoopParallel::isParallelizable()</a>, and <a class="el" href="../../dd/d17/classsysy_1_1ir_1_1LoopUnrollAll.html#a9489d80bcdc9d07f8dc596a55ad5d3c0">sysy::ir::LoopUnrollAll::runOnLoop()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d57/classsysy_1_1ir_1_1Loop_afec5ef902bbba00d66e2ab3b41c0a18a_icgraph.png" border="0" usemap="#d2/d57/classsysy_1_1ir_1_1Loop_afec5ef902bbba00d66e2ab3b41c0a18a_icgraph" alt=""/></div>
+<map name="d2/d57/classsysy_1_1ir_1_1Loop_afec5ef902bbba00d66e2ab3b41c0a18a_icgraph" id="d2/d57/classsysy_1_1ir_1_1Loop_afec5ef902bbba00d66e2ab3b41c0a18a_icgraph">
+<area shape="rect" title=" " alt="" coords="688,39,869,80"/>
+<area shape="rect" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#a7e8596f47e5439f678ac43d46e853a24" title=" " alt="" coords="481,5,636,47"/>
+<area shape="rect" href="../../dd/d17/classsysy_1_1ir_1_1LoopUnrollAll.html#a9489d80bcdc9d07f8dc596a55ad5d3c0" title=" " alt="" coords="477,71,640,112"/>
+<area shape="rect" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#aec3eb4fc816d226921d5885959c7c789" title=" " alt="" coords="256,5,411,47"/>
+<area shape="rect" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#aee3a0e1625a7f3f75fde8ce2d24fa603" title=" " alt="" coords="5,13,189,39"/>
+<area shape="rect" href="../../dd/d17/classsysy_1_1ir_1_1LoopUnrollAll.html#ae4c6c5cd1f56cc3264dc72649fb1809c" title=" " alt="" coords="237,78,429,105"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a07f70a12e8c18d0c7e7669a97f28c715"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07f70a12e8c18d0c7e7669a97f28c715">&#9670;&nbsp;</a></span>getHeader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a>* sysy::ir::Loop::getHeader </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#ac84616861c283569f1a456b47e9946b4">loopHeader</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d8/d39/classsysy_1_1ir_1_1LoopInfo.html#a7155ae8a9a709a6032fbbf5898a55d64">sysy::ir::LoopInfo::discoverAndMapSubloop()</a>, <a class="el" href="../../db/d19/classsysy_1_1ir_1_1LSR.html#ae6969b06d0dd559112fc725842d5b370">sysy::ir::LSR::eraseSingleMul()</a>, <a class="el" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#ac26333925ef1ce0092c71c23719e0533">sysy::ir::ScalarEvolution::findAndRegisterBIV()</a>, <a class="el" href="../../d4/d00/classsysy_1_1ir_1_1IRCopier.html#a419dd40c19a74d2cb6737cc845039487">sysy::ir::IRCopier::getLoopCopy()</a>, and <a class="el" href="../../dd/d17/classsysy_1_1ir_1_1LoopUnrollAll.html#a9489d80bcdc9d07f8dc596a55ad5d3c0">sysy::ir::LoopUnrollAll::runOnLoop()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d57/classsysy_1_1ir_1_1Loop_a07f70a12e8c18d0c7e7669a97f28c715_icgraph.png" border="0" usemap="#d2/d57/classsysy_1_1ir_1_1Loop_a07f70a12e8c18d0c7e7669a97f28c715_icgraph" alt=""/></div>
+<map name="d2/d57/classsysy_1_1ir_1_1Loop_a07f70a12e8c18d0c7e7669a97f28c715_icgraph" id="d2/d57/classsysy_1_1ir_1_1Loop_a07f70a12e8c18d0c7e7669a97f28c715_icgraph">
+<area shape="rect" title=" " alt="" coords="743,130,925,157"/>
+<area shape="rect" href="../../d8/d39/classsysy_1_1ir_1_1LoopInfo.html#a7155ae8a9a709a6032fbbf5898a55d64" title=" " alt="" coords="495,5,686,47"/>
+<area shape="rect" href="../../db/d19/classsysy_1_1ir_1_1LSR.html#ae6969b06d0dd559112fc725842d5b370" title=" " alt="" coords="487,71,695,98"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#ac26333925ef1ce0092c71c23719e0533" title=" " alt="" coords="502,123,679,164"/>
+<area shape="rect" href="../../d4/d00/classsysy_1_1ir_1_1IRCopier.html#a419dd40c19a74d2cb6737cc845039487" title=" " alt="" coords="525,188,656,229"/>
+<area shape="rect" href="../../dd/d17/classsysy_1_1ir_1_1LoopUnrollAll.html#a9489d80bcdc9d07f8dc596a55ad5d3c0" title=" " alt="" coords="268,217,431,259"/>
+<area shape="rect" href="../../d8/d39/classsysy_1_1ir_1_1LoopInfo.html#ad477b27ae9d5df15701b5be7f3e44b55" title=" " alt="" coords="269,13,430,39"/>
+<area shape="rect" href="../../db/d19/classsysy_1_1ir_1_1LSR.html#a81e424a516f27acd1c75fd22c1b9b4ca" title=" " alt="" coords="260,71,439,98"/>
+<area shape="rect" href="../../db/d19/classsysy_1_1ir_1_1LSR.html#a01589b57af10a7b0e6362613a50d7a5b" title=" " alt="" coords="44,71,173,98"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#a0f98946c99fd079aa59c712a3212b5d0" title=" " alt="" coords="261,123,438,164"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#aa77c21818a83d9b475e3d967662190bc" title=" " alt="" coords="5,130,212,157"/>
+<area shape="rect" href="../../dd/d17/classsysy_1_1ir_1_1LoopUnrollAll.html#ae4c6c5cd1f56cc3264dc72649fb1809c" title=" " alt="" coords="13,225,205,251"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab46b6e9f46e15db1bbcfd94194bf400d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab46b6e9f46e15db1bbcfd94194bf400d">&#9670;&nbsp;</a></span>getICmpKind()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0">Instruction::InstrKind</a> sysy::ir::Loop::getICmpKind </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a063be6794435c2a94286433d3f1debf0">icmpKind</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#a0f98946c99fd079aa59c712a3212b5d0">sysy::ir::ScalarEvolution::runOnLoop()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d57/classsysy_1_1ir_1_1Loop_ab46b6e9f46e15db1bbcfd94194bf400d_icgraph.png" border="0" usemap="#d2/d57/classsysy_1_1ir_1_1Loop_ab46b6e9f46e15db1bbcfd94194bf400d_icgraph" alt=""/></div>
+<map name="d2/d57/classsysy_1_1ir_1_1Loop_ab46b6e9f46e15db1bbcfd94194bf400d_icgraph" id="d2/d57/classsysy_1_1ir_1_1Loop_ab46b6e9f46e15db1bbcfd94194bf400d_icgraph">
+<area shape="rect" title=" " alt="" coords="485,13,684,39"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#a0f98946c99fd079aa59c712a3212b5d0" title=" " alt="" coords="260,5,437,47"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#aa77c21818a83d9b475e3d967662190bc" title=" " alt="" coords="5,13,212,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a330c84a50b4746b38642c22b46d093ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a330c84a50b4746b38642c22b46d093ac">&#9670;&nbsp;</a></span>getIndexCondInstr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a>* sysy::ir::Loop::getIndexCondInstr </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a333b612ff477443006872a432c0002f4">indCondVar</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#aec3eb4fc816d226921d5885959c7c789">sysy::ir::LoopParallel::runOnLoop()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d57/classsysy_1_1ir_1_1Loop_a330c84a50b4746b38642c22b46d093ac_icgraph.png" border="0" usemap="#d2/d57/classsysy_1_1ir_1_1Loop_a330c84a50b4746b38642c22b46d093ac_icgraph" alt=""/></div>
+<map name="d2/d57/classsysy_1_1ir_1_1Loop_a330c84a50b4746b38642c22b46d093ac_icgraph" id="d2/d57/classsysy_1_1ir_1_1Loop_a330c84a50b4746b38642c22b46d093ac_icgraph">
+<area shape="rect" title=" " alt="" coords="440,5,612,47"/>
+<area shape="rect" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#aec3eb4fc816d226921d5885959c7c789" title=" " alt="" coords="237,5,392,47"/>
+<area shape="rect" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#aee3a0e1625a7f3f75fde8ce2d24fa603" title=" " alt="" coords="5,13,189,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae127a7b1973141cb1bf517eab2774664"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae127a7b1973141cb1bf517eab2774664">&#9670;&nbsp;</a></span>getIndexEnd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a>* sysy::ir::Loop::getIndexEnd </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#ac31e4c96b871ade92e48fd0ddc90d124">indEnd</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#a7e8596f47e5439f678ac43d46e853a24">sysy::ir::LoopParallel::isParallelizable()</a>, <a class="el" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#aec3eb4fc816d226921d5885959c7c789">sysy::ir::LoopParallel::runOnLoop()</a>, and <a class="el" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#a0f98946c99fd079aa59c712a3212b5d0">sysy::ir::ScalarEvolution::runOnLoop()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d57/classsysy_1_1ir_1_1Loop_ae127a7b1973141cb1bf517eab2774664_icgraph.png" border="0" usemap="#d2/d57/classsysy_1_1ir_1_1Loop_ae127a7b1973141cb1bf517eab2774664_icgraph" alt=""/></div>
+<map name="d2/d57/classsysy_1_1ir_1_1Loop_ae127a7b1973141cb1bf517eab2774664_icgraph" id="d2/d57/classsysy_1_1ir_1_1Loop_ae127a7b1973141cb1bf517eab2774664_icgraph">
+<area shape="rect" title=" " alt="" coords="717,71,913,98"/>
+<area shape="rect" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#a7e8596f47e5439f678ac43d46e853a24" title=" " alt="" coords="503,5,658,47"/>
+<area shape="rect" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#aec3eb4fc816d226921d5885959c7c789" title=" " alt="" coords="263,35,418,76"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#a0f98946c99fd079aa59c712a3212b5d0" title=" " alt="" coords="492,123,669,164"/>
+<area shape="rect" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#aee3a0e1625a7f3f75fde8ce2d24fa603" title=" " alt="" coords="5,42,189,69"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#aa77c21818a83d9b475e3d967662190bc" title=" " alt="" coords="237,130,444,157"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5954870f24560a728cb2e2f76059d215"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5954870f24560a728cb2e2f76059d215">&#9670;&nbsp;</a></span>getIndexPhi()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a54b15b0f11f28826cb9853c7491747da">PhiInst</a>* sysy::ir::Loop::getIndexPhi </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#ad818c2812e5e10118f22b2026525f067">indPhi</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#a7e8596f47e5439f678ac43d46e853a24">sysy::ir::LoopParallel::isParallelizable()</a>, <a class="el" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#aec3eb4fc816d226921d5885959c7c789">sysy::ir::LoopParallel::runOnLoop()</a>, and <a class="el" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#a0f98946c99fd079aa59c712a3212b5d0">sysy::ir::ScalarEvolution::runOnLoop()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d57/classsysy_1_1ir_1_1Loop_a5954870f24560a728cb2e2f76059d215_icgraph.png" border="0" usemap="#d2/d57/classsysy_1_1ir_1_1Loop_a5954870f24560a728cb2e2f76059d215_icgraph" alt=""/></div>
+<map name="d2/d57/classsysy_1_1ir_1_1Loop_a5954870f24560a728cb2e2f76059d215_icgraph" id="d2/d57/classsysy_1_1ir_1_1Loop_a5954870f24560a728cb2e2f76059d215_icgraph">
+<area shape="rect" title=" " alt="" coords="717,71,909,98"/>
+<area shape="rect" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#a7e8596f47e5439f678ac43d46e853a24" title=" " alt="" coords="503,5,658,47"/>
+<area shape="rect" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#aec3eb4fc816d226921d5885959c7c789" title=" " alt="" coords="263,35,418,76"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#a0f98946c99fd079aa59c712a3212b5d0" title=" " alt="" coords="492,123,669,164"/>
+<area shape="rect" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#aee3a0e1625a7f3f75fde8ce2d24fa603" title=" " alt="" coords="5,42,189,69"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#aa77c21818a83d9b475e3d967662190bc" title=" " alt="" coords="237,130,444,157"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0d57745959cc7441ac58069b078ee3c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d57745959cc7441ac58069b078ee3c1">&#9670;&nbsp;</a></span>getLatchBlock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a>* sysy::ir::Loop::getLatchBlock </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a9eca2286fd80e284762832ab0434962d">latchBlock</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../db/d19/classsysy_1_1ir_1_1LSR.html#ae6969b06d0dd559112fc725842d5b370">sysy::ir::LSR::eraseSingleMul()</a>, <a class="el" href="../../d4/d00/classsysy_1_1ir_1_1IRCopier.html#a419dd40c19a74d2cb6737cc845039487">sysy::ir::IRCopier::getLoopCopy()</a>, <a class="el" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#a7e8596f47e5439f678ac43d46e853a24">sysy::ir::LoopParallel::isParallelizable()</a>, and <a class="el" href="../../dd/d17/classsysy_1_1ir_1_1LoopUnrollAll.html#a9489d80bcdc9d07f8dc596a55ad5d3c0">sysy::ir::LoopUnrollAll::runOnLoop()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d57/classsysy_1_1ir_1_1Loop_a0d57745959cc7441ac58069b078ee3c1_icgraph.png" border="0" usemap="#d2/d57/classsysy_1_1ir_1_1Loop_a0d57745959cc7441ac58069b078ee3c1_icgraph" alt=""/></div>
+<map name="d2/d57/classsysy_1_1ir_1_1Loop_a0d57745959cc7441ac58069b078ee3c1_icgraph" id="d2/d57/classsysy_1_1ir_1_1Loop_a0d57745959cc7441ac58069b078ee3c1_icgraph">
+<area shape="rect" title=" " alt="" coords="728,86,899,127"/>
+<area shape="rect" href="../../db/d19/classsysy_1_1ir_1_1LSR.html#ae6969b06d0dd559112fc725842d5b370" title=" " alt="" coords="472,5,680,32"/>
+<area shape="rect" href="../../d4/d00/classsysy_1_1ir_1_1IRCopier.html#a419dd40c19a74d2cb6737cc845039487" title=" " alt="" coords="511,57,641,98"/>
+<area shape="rect" href="../../dd/d17/classsysy_1_1ir_1_1LoopUnrollAll.html#a9489d80bcdc9d07f8dc596a55ad5d3c0" title=" " alt="" coords="253,82,416,123"/>
+<area shape="rect" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#a7e8596f47e5439f678ac43d46e853a24" title=" " alt="" coords="499,174,653,215"/>
+<area shape="rect" href="../../db/d19/classsysy_1_1ir_1_1LSR.html#a81e424a516f27acd1c75fd22c1b9b4ca" title=" " alt="" coords="245,5,424,32"/>
+<area shape="rect" href="../../db/d19/classsysy_1_1ir_1_1LSR.html#a01589b57af10a7b0e6362613a50d7a5b" title=" " alt="" coords="37,5,166,32"/>
+<area shape="rect" href="../../dd/d17/classsysy_1_1ir_1_1LoopUnrollAll.html#ae4c6c5cd1f56cc3264dc72649fb1809c" title=" " alt="" coords="5,89,197,116"/>
+<area shape="rect" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#aec3eb4fc816d226921d5885959c7c789" title=" " alt="" coords="257,174,412,215"/>
+<area shape="rect" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#aee3a0e1625a7f3f75fde8ce2d24fa603" title=" " alt="" coords="9,181,193,208"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afc4815cae4ad957fbb224f93bb7091ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc4815cae4ad957fbb224f93bb7091ac">&#9670;&nbsp;</a></span>getLoopBasicBlocks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a>*&gt;&amp; sysy::ir::Loop::getLoopBasicBlocks </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a55f69c474a025ffa599617c4bf3b2829">blocks</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d9/d47/classsysy_1_1ir_1_1LCSSA.html#a09595d9a2371eb6bd5ae258db16eaa07">sysy::ir::LCSSA::computeDefInUseOut()</a>, <a class="el" href="../../d4/d00/classsysy_1_1ir_1_1IRCopier.html#a419dd40c19a74d2cb6737cc845039487">sysy::ir::IRCopier::getLoopCopy()</a>, <a class="el" href="../../db/d19/classsysy_1_1ir_1_1LSR.html#a5b0485e4df4289f82373fcafd9535930">sysy::ir::LSR::identifyAllInductiveMultiplication()</a>, <a class="el" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#a7e8596f47e5439f678ac43d46e853a24">sysy::ir::LoopParallel::isParallelizable()</a>, <a class="el" href="../../dd/d17/classsysy_1_1ir_1_1LoopUnrollAll.html#a9489d80bcdc9d07f8dc596a55ad5d3c0">sysy::ir::LoopUnrollAll::runOnLoop()</a>, and <a class="el" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#a0f98946c99fd079aa59c712a3212b5d0">sysy::ir::ScalarEvolution::runOnLoop()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d57/classsysy_1_1ir_1_1Loop_afc4815cae4ad957fbb224f93bb7091ac_icgraph.png" border="0" usemap="#d2/d57/classsysy_1_1ir_1_1Loop_afc4815cae4ad957fbb224f93bb7091ac_icgraph" alt=""/></div>
+<map name="d2/d57/classsysy_1_1ir_1_1Loop_afc4815cae4ad957fbb224f93bb7091ac_icgraph" id="d2/d57/classsysy_1_1ir_1_1Loop_afc4815cae4ad957fbb224f93bb7091ac_icgraph">
+<area shape="rect" title=" " alt="" coords="731,159,933,200"/>
+<area shape="rect" href="../../d9/d47/classsysy_1_1ir_1_1LCSSA.html#a09595d9a2371eb6bd5ae258db16eaa07" title=" " alt="" coords="500,5,683,47"/>
+<area shape="rect" href="../../d4/d00/classsysy_1_1ir_1_1IRCopier.html#a419dd40c19a74d2cb6737cc845039487" title=" " alt="" coords="526,71,657,112"/>
+<area shape="rect" href="../../dd/d17/classsysy_1_1ir_1_1LoopUnrollAll.html#a9489d80bcdc9d07f8dc596a55ad5d3c0" title=" " alt="" coords="267,100,430,141"/>
+<area shape="rect" href="../../db/d19/classsysy_1_1ir_1_1LSR.html#a5b0485e4df4289f82373fcafd9535930" title=" " alt="" coords="504,188,679,229"/>
+<area shape="rect" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#a7e8596f47e5439f678ac43d46e853a24" title=" " alt="" coords="514,253,669,295"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#a0f98946c99fd079aa59c712a3212b5d0" title=" " alt="" coords="503,319,680,360"/>
+<area shape="rect" href="../../d9/d47/classsysy_1_1ir_1_1LCSSA.html#a20c40ac8737dacfa7c8bface59ce1059" title=" " alt="" coords="251,13,447,39"/>
+<area shape="rect" href="../../d9/d47/classsysy_1_1ir_1_1LCSSA.html#a89dae4966f458bfe2aeca6c0cf20cb99" title=" " alt="" coords="28,13,175,39"/>
+<area shape="rect" href="../../dd/d17/classsysy_1_1ir_1_1LoopUnrollAll.html#ae4c6c5cd1f56cc3264dc72649fb1809c" title=" " alt="" coords="5,107,197,134"/>
+<area shape="rect" href="../../db/d19/classsysy_1_1ir_1_1LSR.html#a81e424a516f27acd1c75fd22c1b9b4ca" title=" " alt="" coords="259,195,438,222"/>
+<area shape="rect" href="../../db/d19/classsysy_1_1ir_1_1LSR.html#a01589b57af10a7b0e6362613a50d7a5b" title=" " alt="" coords="37,195,166,222"/>
+<area shape="rect" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#aec3eb4fc816d226921d5885959c7c789" title=" " alt="" coords="271,253,426,295"/>
+<area shape="rect" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#aee3a0e1625a7f3f75fde8ce2d24fa603" title=" " alt="" coords="9,261,193,287"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#aa77c21818a83d9b475e3d967662190bc" title=" " alt="" coords="245,326,452,353"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a615f3e5abb0e5b49ee7a8db61fd7f743"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a615f3e5abb0e5b49ee7a8db61fd7f743">&#9670;&nbsp;</a></span>getLoopDepth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sysy::ir::Loop::getLoopDepth </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a8d3677e3c83ae973d9c80b6ec2e307c0">loopDepth</a>.</p>
+
+</div>
+</div>
+<a id="a5b14b21cbfbe5f192fa588a6303dd8fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b14b21cbfbe5f192fa588a6303dd8fe">&#9670;&nbsp;</a></span>getParent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d36/classsysy_1_1ir_1_1Function.html">Function</a>* sysy::ir::Loop::getParent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a79880ddf39ef47794adebcc961ed1c66">parent</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/d00/classsysy_1_1ir_1_1IRCopier.html#a419dd40c19a74d2cb6737cc845039487">sysy::ir::IRCopier::getLoopCopy()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d57/classsysy_1_1ir_1_1Loop_a5b14b21cbfbe5f192fa588a6303dd8fe_icgraph.png" border="0" usemap="#d2/d57/classsysy_1_1ir_1_1Loop_a5b14b21cbfbe5f192fa588a6303dd8fe_icgraph" alt=""/></div>
+<map name="d2/d57/classsysy_1_1ir_1_1Loop_a5b14b21cbfbe5f192fa588a6303dd8fe_icgraph" id="d2/d57/classsysy_1_1ir_1_1Loop_a5b14b21cbfbe5f192fa588a6303dd8fe_icgraph">
+<area shape="rect" title=" " alt="" coords="635,13,812,39"/>
+<area shape="rect" href="../../d4/d00/classsysy_1_1ir_1_1IRCopier.html#a419dd40c19a74d2cb6737cc845039487" title=" " alt="" coords="456,5,587,47"/>
+<area shape="rect" href="../../dd/d17/classsysy_1_1ir_1_1LoopUnrollAll.html#a9489d80bcdc9d07f8dc596a55ad5d3c0" title=" " alt="" coords="245,5,408,47"/>
+<area shape="rect" href="../../dd/d17/classsysy_1_1ir_1_1LoopUnrollAll.html#ae4c6c5cd1f56cc3264dc72649fb1809c" title=" " alt="" coords="5,13,197,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a91b057253a21c182068b9d3f73fbf662"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91b057253a21c182068b9d3f73fbf662">&#9670;&nbsp;</a></span>getParentLoop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html">Loop</a>* sysy::ir::Loop::getParentLoop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a086e482545ac0e29e61596849af2f68a">parentLoop</a>.</p>
+
+</div>
+</div>
+<a id="a349884a7c65bd9460af3d9d0141e032f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a349884a7c65bd9460af3d9d0141e032f">&#9670;&nbsp;</a></span>getPreHeader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a>* sysy::ir::Loop::getPreHeader </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a3f170bcef0f5a2d93edacfd2cd0be29a">preHeader</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../db/d19/classsysy_1_1ir_1_1LSR.html#ae6969b06d0dd559112fc725842d5b370">sysy::ir::LSR::eraseSingleMul()</a>, <a class="el" href="../../dd/d17/classsysy_1_1ir_1_1LoopUnrollAll.html#a9489d80bcdc9d07f8dc596a55ad5d3c0">sysy::ir::LoopUnrollAll::runOnLoop()</a>, and <a class="el" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#aec3eb4fc816d226921d5885959c7c789">sysy::ir::LoopParallel::runOnLoop()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d57/classsysy_1_1ir_1_1Loop_a349884a7c65bd9460af3d9d0141e032f_icgraph.png" border="0" usemap="#d2/d57/classsysy_1_1ir_1_1Loop_a349884a7c65bd9460af3d9d0141e032f_icgraph" alt=""/></div>
+<map name="d2/d57/classsysy_1_1ir_1_1Loop_a349884a7c65bd9460af3d9d0141e032f_icgraph" id="d2/d57/classsysy_1_1ir_1_1Loop_a349884a7c65bd9460af3d9d0141e032f_icgraph">
+<area shape="rect" title=" " alt="" coords="679,64,883,91"/>
+<area shape="rect" href="../../db/d19/classsysy_1_1ir_1_1LSR.html#ae6969b06d0dd559112fc725842d5b370" title=" " alt="" coords="423,5,631,32"/>
+<area shape="rect" href="../../dd/d17/classsysy_1_1ir_1_1LoopUnrollAll.html#a9489d80bcdc9d07f8dc596a55ad5d3c0" title=" " alt="" coords="445,57,608,98"/>
+<area shape="rect" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#aec3eb4fc816d226921d5885959c7c789" title=" " alt="" coords="449,122,604,163"/>
+<area shape="rect" href="../../db/d19/classsysy_1_1ir_1_1LSR.html#a81e424a516f27acd1c75fd22c1b9b4ca" title=" " alt="" coords="189,5,368,32"/>
+<area shape="rect" href="../../db/d19/classsysy_1_1ir_1_1LSR.html#a01589b57af10a7b0e6362613a50d7a5b" title=" " alt="" coords="5,5,135,32"/>
+<area shape="rect" href="../../dd/d17/classsysy_1_1ir_1_1LoopUnrollAll.html#ae4c6c5cd1f56cc3264dc72649fb1809c" title=" " alt="" coords="183,64,375,91"/>
+<area shape="rect" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#aee3a0e1625a7f3f75fde8ce2d24fa603" title=" " alt="" coords="187,129,371,156"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a163aee178e52806173cf9516676689b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a163aee178e52806173cf9516676689b9">&#9670;&nbsp;</a></span>getSCEV() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d0a/classsysy_1_1iterator__range.html">iterator_range</a>&lt;<a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#aba5d378a73dac04a538b9aceba74d6ac">scev_iterator</a>&gt; sysy::ir::Loop::getSCEV </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../dd/d20/namespacesysy.html#a746e1eb45442547b5f49e0087727fdb3">sysy::make_range()</a>, and <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#ac752bd9db587de7e3b75cda9ab83c703">SCEVCheck</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d57/classsysy_1_1ir_1_1Loop_a163aee178e52806173cf9516676689b9_cgraph.png" border="0" usemap="#d2/d57/classsysy_1_1ir_1_1Loop_a163aee178e52806173cf9516676689b9_cgraph" alt=""/></div>
+<map name="d2/d57/classsysy_1_1ir_1_1Loop_a163aee178e52806173cf9516676689b9_cgraph" id="d2/d57/classsysy_1_1ir_1_1Loop_a163aee178e52806173cf9516676689b9_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,176,32"/>
+<area shape="rect" href="../../dd/d20/namespacesysy.html#a746e1eb45442547b5f49e0087727fdb3" title=" " alt="" coords="224,5,363,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a42a98c7dc7ae3e7f2a44b246da1ef528"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42a98c7dc7ae3e7f2a44b246da1ef528">&#9670;&nbsp;</a></span>getSCEV() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html">SCEV</a> &amp; sysy::ir::Loop::getSCEV </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a> *&#160;</td>
+          <td class="paramname"><em>instr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#ac752bd9db587de7e3b75cda9ab83c703">SCEVCheck</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../db/d19/classsysy_1_1ir_1_1LSR.html#ae6969b06d0dd559112fc725842d5b370">sysy::ir::LSR::eraseSingleMul()</a>, <a class="el" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#a7e8596f47e5439f678ac43d46e853a24">sysy::ir::LoopParallel::isParallelizable()</a>, <a class="el" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#add6ba9c6e01df421bda290132596a2d1">sysy::ir::ScalarEvolution::linkInstructionToSCEV()</a>, <a class="el" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#aec3eb4fc816d226921d5885959c7c789">sysy::ir::LoopParallel::runOnLoop()</a>, <a class="el" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#a0f98946c99fd079aa59c712a3212b5d0">sysy::ir::ScalarEvolution::runOnLoop()</a>, and <a class="el" href="../../db/db5/classsysy_1_1ir_1_1ScalarEvolutionClean.html#a7d83dd7d16c9289afc5dab0b7e43ab3e">sysy::ir::ScalarEvolutionClean::runOnLoop()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d57/classsysy_1_1ir_1_1Loop_a42a98c7dc7ae3e7f2a44b246da1ef528_icgraph.png" border="0" usemap="#d2/d57/classsysy_1_1ir_1_1Loop_a42a98c7dc7ae3e7f2a44b246da1ef528_icgraph" alt=""/></div>
+<map name="d2/d57/classsysy_1_1ir_1_1Loop_a42a98c7dc7ae3e7f2a44b246da1ef528_icgraph" id="d2/d57/classsysy_1_1ir_1_1Loop_a42a98c7dc7ae3e7f2a44b246da1ef528_icgraph">
+<area shape="rect" title=" " alt="" coords="743,152,913,179"/>
+<area shape="rect" href="../../db/d19/classsysy_1_1ir_1_1LSR.html#ae6969b06d0dd559112fc725842d5b370" title=" " alt="" coords="487,5,695,32"/>
+<area shape="rect" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#a7e8596f47e5439f678ac43d46e853a24" title=" " alt="" coords="513,57,668,98"/>
+<area shape="rect" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#aec3eb4fc816d226921d5885959c7c789" title=" " alt="" coords="272,101,427,142"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#add6ba9c6e01df421bda290132596a2d1" title=" " alt="" coords="502,174,679,215"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#a0f98946c99fd079aa59c712a3212b5d0" title=" " alt="" coords="261,189,438,230"/>
+<area shape="rect" href="../../db/db5/classsysy_1_1ir_1_1ScalarEvolutionClean.html#a7d83dd7d16c9289afc5dab0b7e43ab3e" title=" " alt="" coords="502,291,679,333"/>
+<area shape="rect" href="../../db/d19/classsysy_1_1ir_1_1LSR.html#a81e424a516f27acd1c75fd22c1b9b4ca" title=" " alt="" coords="260,5,439,32"/>
+<area shape="rect" href="../../db/d19/classsysy_1_1ir_1_1LSR.html#a01589b57af10a7b0e6362613a50d7a5b" title=" " alt="" coords="44,5,173,32"/>
+<area shape="rect" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#aee3a0e1625a7f3f75fde8ce2d24fa603" title=" " alt="" coords="17,108,201,135"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#aa77c21818a83d9b475e3d967662190bc" title=" " alt="" coords="5,196,212,223"/>
+<area shape="rect" href="../../db/db5/classsysy_1_1ir_1_1ScalarEvolutionClean.html#a85d2beeb742df724f115ea59e0adec6b" title=" " alt="" coords="261,291,438,333"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a30adf4782a178f414d9d41e809eb2ff6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30adf4782a178f414d9d41e809eb2ff6">&#9670;&nbsp;</a></span>getSubLoops()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html">Loop</a>*&gt;&amp; sysy::ir::Loop::getSubLoops </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a38329b8e4c36921c8057c1ca6e7a5f44">subLoops</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d9/d47/classsysy_1_1ir_1_1LCSSA.html#a20c40ac8737dacfa7c8bface59ce1059">sysy::ir::LCSSA::runOnLoop()</a>, <a class="el" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#a0f98946c99fd079aa59c712a3212b5d0">sysy::ir::ScalarEvolution::runOnLoop()</a>, <a class="el" href="../../db/d19/classsysy_1_1ir_1_1LSR.html#a81e424a516f27acd1c75fd22c1b9b4ca">sysy::ir::LSR::runOnLoop()</a>, and <a class="el" href="../../db/db5/classsysy_1_1ir_1_1ScalarEvolutionClean.html#a7d83dd7d16c9289afc5dab0b7e43ab3e">sysy::ir::ScalarEvolutionClean::runOnLoop()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d57/classsysy_1_1ir_1_1Loop_a30adf4782a178f414d9d41e809eb2ff6_icgraph.png" border="0" usemap="#d2/d57/classsysy_1_1ir_1_1Loop_a30adf4782a178f414d9d41e809eb2ff6_icgraph" alt=""/></div>
+<map name="d2/d57/classsysy_1_1ir_1_1Loop_a30adf4782a178f414d9d41e809eb2ff6_icgraph" id="d2/d57/classsysy_1_1ir_1_1Loop_a30adf4782a178f414d9d41e809eb2ff6_icgraph">
+<area shape="rect" title=" " alt="" coords="504,93,703,120"/>
+<area shape="rect" href="../../d9/d47/classsysy_1_1ir_1_1LCSSA.html#a20c40ac8737dacfa7c8bface59ce1059" title=" " alt="" coords="260,5,456,32"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#a0f98946c99fd079aa59c712a3212b5d0" title=" " alt="" coords="269,57,447,98"/>
+<area shape="rect" href="../../db/d19/classsysy_1_1ir_1_1LSR.html#a81e424a516f27acd1c75fd22c1b9b4ca" title=" " alt="" coords="269,123,447,149"/>
+<area shape="rect" href="../../db/db5/classsysy_1_1ir_1_1ScalarEvolutionClean.html#a7d83dd7d16c9289afc5dab0b7e43ab3e" title=" " alt="" coords="269,174,447,215"/>
+<area shape="rect" href="../../d9/d47/classsysy_1_1ir_1_1LCSSA.html#a89dae4966f458bfe2aeca6c0cf20cb99" title=" " alt="" coords="35,5,182,32"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#aa77c21818a83d9b475e3d967662190bc" title=" " alt="" coords="5,64,212,91"/>
+<area shape="rect" href="../../db/d19/classsysy_1_1ir_1_1LSR.html#a01589b57af10a7b0e6362613a50d7a5b" title=" " alt="" coords="44,123,173,149"/>
+<area shape="rect" href="../../db/db5/classsysy_1_1ir_1_1ScalarEvolutionClean.html#a85d2beeb742df724f115ea59e0adec6b" title=" " alt="" coords="20,174,197,215"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a70e8df4e3237bcba426a8cd03975b629"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70e8df4e3237bcba426a8cd03975b629">&#9670;&nbsp;</a></span>getTripCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sysy::ir::Loop::getTripCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a0c1da1d1380a94d780023ec60a27858e">tripCount</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#a7e8596f47e5439f678ac43d46e853a24">sysy::ir::LoopParallel::isParallelizable()</a>, and <a class="el" href="../../dd/d17/classsysy_1_1ir_1_1LoopUnrollAll.html#a9489d80bcdc9d07f8dc596a55ad5d3c0">sysy::ir::LoopUnrollAll::runOnLoop()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d57/classsysy_1_1ir_1_1Loop_a70e8df4e3237bcba426a8cd03975b629_icgraph.png" border="0" usemap="#d2/d57/classsysy_1_1ir_1_1Loop_a70e8df4e3237bcba426a8cd03975b629_icgraph" alt=""/></div>
+<map name="d2/d57/classsysy_1_1ir_1_1Loop_a70e8df4e3237bcba426a8cd03975b629_icgraph" id="d2/d57/classsysy_1_1ir_1_1Loop_a70e8df4e3237bcba426a8cd03975b629_icgraph">
+<area shape="rect" title=" " alt="" coords="688,46,885,73"/>
+<area shape="rect" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#a7e8596f47e5439f678ac43d46e853a24" title=" " alt="" coords="481,5,636,47"/>
+<area shape="rect" href="../../dd/d17/classsysy_1_1ir_1_1LoopUnrollAll.html#a9489d80bcdc9d07f8dc596a55ad5d3c0" title=" " alt="" coords="477,71,640,112"/>
+<area shape="rect" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#aec3eb4fc816d226921d5885959c7c789" title=" " alt="" coords="256,5,411,47"/>
+<area shape="rect" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#aee3a0e1625a7f3f75fde8ce2d24fa603" title=" " alt="" coords="5,13,189,39"/>
+<area shape="rect" href="../../dd/d17/classsysy_1_1ir_1_1LoopUnrollAll.html#ae4c6c5cd1f56cc3264dc72649fb1809c" title=" " alt="" coords="237,78,429,105"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a02dec62b51b39a19229377c2ff143fa1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02dec62b51b39a19229377c2ff143fa1">&#9670;&nbsp;</a></span>hasSCEV()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sysy::ir::Loop::hasSCEV </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a> *&#160;</td>
+          <td class="paramname"><em>instr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#ac752bd9db587de7e3b75cda9ab83c703">SCEVCheck</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../db/d19/classsysy_1_1ir_1_1LSR.html#a5b0485e4df4289f82373fcafd9535930">sysy::ir::LSR::identifyAllInductiveMultiplication()</a>, <a class="el" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#a7e8596f47e5439f678ac43d46e853a24">sysy::ir::LoopParallel::isParallelizable()</a>, <a class="el" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#add6ba9c6e01df421bda290132596a2d1">sysy::ir::ScalarEvolution::linkInstructionToSCEV()</a>, and <a class="el" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#a0f98946c99fd079aa59c712a3212b5d0">sysy::ir::ScalarEvolution::runOnLoop()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d57/classsysy_1_1ir_1_1Loop_a02dec62b51b39a19229377c2ff143fa1_icgraph.png" border="0" usemap="#d2/d57/classsysy_1_1ir_1_1Loop_a02dec62b51b39a19229377c2ff143fa1_icgraph" alt=""/></div>
+<map name="d2/d57/classsysy_1_1ir_1_1Loop_a02dec62b51b39a19229377c2ff143fa1_icgraph" id="d2/d57/classsysy_1_1ir_1_1Loop_a02dec62b51b39a19229377c2ff143fa1_icgraph">
+<area shape="rect" title=" " alt="" coords="712,111,884,138"/>
+<area shape="rect" href="../../db/d19/classsysy_1_1ir_1_1LSR.html#a5b0485e4df4289f82373fcafd9535930" title=" " alt="" coords="488,5,663,47"/>
+<area shape="rect" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#a7e8596f47e5439f678ac43d46e853a24" title=" " alt="" coords="498,71,653,112"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#add6ba9c6e01df421bda290132596a2d1" title=" " alt="" coords="487,136,664,177"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#a0f98946c99fd079aa59c712a3212b5d0" title=" " alt="" coords="261,165,438,207"/>
+<area shape="rect" href="../../db/d19/classsysy_1_1ir_1_1LSR.html#a81e424a516f27acd1c75fd22c1b9b4ca" title=" " alt="" coords="260,13,439,39"/>
+<area shape="rect" href="../../db/d19/classsysy_1_1ir_1_1LSR.html#a01589b57af10a7b0e6362613a50d7a5b" title=" " alt="" coords="44,13,173,39"/>
+<area shape="rect" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#aec3eb4fc816d226921d5885959c7c789" title=" " alt="" coords="272,71,427,112"/>
+<area shape="rect" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#aee3a0e1625a7f3f75fde8ce2d24fa603" title=" " alt="" coords="17,78,201,105"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#aa77c21818a83d9b475e3d967662190bc" title=" " alt="" coords="5,173,212,199"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abfc5820461d6ea0eddfc4de9397435d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfc5820461d6ea0eddfc4de9397435d8">&#9670;&nbsp;</a></span>isLoopInvariant()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sysy::ir::Loop::isLoopInvariant </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a8310e83e0492a34505062f26499edc09">BBSet</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#aeca910c337f8a40967fae41997c542e2">sysy::ir::ScalarEvolution::BIV2SCEV()</a>, <a class="el" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#ac26333925ef1ce0092c71c23719e0533">sysy::ir::ScalarEvolution::findAndRegisterBIV()</a>, <a class="el" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#a7e8596f47e5439f678ac43d46e853a24">sysy::ir::LoopParallel::isParallelizable()</a>, <a class="el" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#add6ba9c6e01df421bda290132596a2d1">sysy::ir::ScalarEvolution::linkInstructionToSCEV()</a>, and <a class="el" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#a30d85b7e712b856858226e7c3fbf23dd">sysy::ir::ScalarEvolution::registerBIV()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d57/classsysy_1_1ir_1_1Loop_abfc5820461d6ea0eddfc4de9397435d8_icgraph.png" border="0" usemap="#d2/d57/classsysy_1_1ir_1_1Loop_abfc5820461d6ea0eddfc4de9397435d8_icgraph" alt=""/></div>
+<map name="d2/d57/classsysy_1_1ir_1_1Loop_abfc5820461d6ea0eddfc4de9397435d8_icgraph" id="d2/d57/classsysy_1_1ir_1_1Loop_abfc5820461d6ea0eddfc4de9397435d8_icgraph">
+<area shape="rect" title=" " alt="" coords="1168,122,1383,149"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#aeca910c337f8a40967fae41997c542e2" title=" " alt="" coords="943,5,1120,47"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#a30d85b7e712b856858226e7c3fbf23dd" title=" " alt="" coords="717,56,895,97"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#ac26333925ef1ce0092c71c23719e0533" title=" " alt="" coords="489,115,666,156"/>
+<area shape="rect" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#a7e8596f47e5439f678ac43d46e853a24" title=" " alt="" coords="954,173,1109,215"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#add6ba9c6e01df421bda290132596a2d1" title=" " alt="" coords="717,239,895,280"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#a0f98946c99fd079aa59c712a3212b5d0" title=" " alt="" coords="260,176,437,217"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#aa77c21818a83d9b475e3d967662190bc" title=" " alt="" coords="5,183,212,210"/>
+<area shape="rect" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#aec3eb4fc816d226921d5885959c7c789" title=" " alt="" coords="729,173,883,215"/>
+<area shape="rect" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#aee3a0e1625a7f3f75fde8ce2d24fa603" title=" " alt="" coords="485,181,669,207"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8e98bbaa7ff7eef397806d6dbbafc425"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e98bbaa7ff7eef397806d6dbbafc425">&#9670;&nbsp;</a></span>registerSCEV()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sysy::ir::Loop::registerSCEV </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a> *&#160;</td>
+          <td class="paramname"><em>instr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html">SCEV</a>&#160;</td>
+          <td class="paramname"><em>scev</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#ac752bd9db587de7e3b75cda9ab83c703">SCEVCheck</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#aeca910c337f8a40967fae41997c542e2">sysy::ir::ScalarEvolution::BIV2SCEV()</a>, and <a class="el" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#add6ba9c6e01df421bda290132596a2d1">sysy::ir::ScalarEvolution::linkInstructionToSCEV()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d57/classsysy_1_1ir_1_1Loop_a8e98bbaa7ff7eef397806d6dbbafc425_icgraph.png" border="0" usemap="#d2/d57/classsysy_1_1ir_1_1Loop_a8e98bbaa7ff7eef397806d6dbbafc425_icgraph" alt=""/></div>
+<map name="d2/d57/classsysy_1_1ir_1_1Loop_a8e98bbaa7ff7eef397806d6dbbafc425_icgraph" id="d2/d57/classsysy_1_1ir_1_1Loop_a8e98bbaa7ff7eef397806d6dbbafc425_icgraph">
+<area shape="rect" title=" " alt="" coords="1161,46,1360,73"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#aeca910c337f8a40967fae41997c542e2" title=" " alt="" coords="936,8,1113,49"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#add6ba9c6e01df421bda290132596a2d1" title=" " alt="" coords="711,71,888,112"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#a30d85b7e712b856858226e7c3fbf23dd" title=" " alt="" coords="711,5,888,47"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#ac26333925ef1ce0092c71c23719e0533" title=" " alt="" coords="485,8,663,49"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#a0f98946c99fd079aa59c712a3212b5d0" title=" " alt="" coords="260,39,437,80"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#aa77c21818a83d9b475e3d967662190bc" title=" " alt="" coords="5,46,212,73"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa64d6aa1c68816c432267a5f3d00ca50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa64d6aa1c68816c432267a5f3d00ca50">&#9670;&nbsp;</a></span>setICmpKind()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sysy::ir::Loop::setICmpKind </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0">Instruction::InstrKind</a>&#160;</td>
+          <td class="paramname"><em>kind</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a063be6794435c2a94286433d3f1debf0">icmpKind</a>.</p>
+
+</div>
+</div>
+<a id="af55f83e6183a0d4947755e419e477a10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af55f83e6183a0d4947755e419e477a10">&#9670;&nbsp;</a></span>setIndexCondInstr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sysy::ir::Loop::setIndexCondInstr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a> *&#160;</td>
+          <td class="paramname"><em>instr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a333b612ff477443006872a432c0002f4">indCondVar</a>.</p>
+
+</div>
+</div>
+<a id="abd485e828ea2011206d7a0a601ded628"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd485e828ea2011206d7a0a601ded628">&#9670;&nbsp;</a></span>setIndexEnd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sysy::ir::Loop::setIndexEnd </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *&#160;</td>
+          <td class="paramname"><em>end</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#ac31e4c96b871ade92e48fd0ddc90d124">indEnd</a>.</p>
+
+</div>
+</div>
+<a id="ac121edda70739df4fe514be10d6c78a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac121edda70739df4fe514be10d6c78a4">&#9670;&nbsp;</a></span>setIndexPhi()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sysy::ir::Loop::setIndexPhi </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a54b15b0f11f28826cb9853c7491747da">PhiInst</a> *&#160;</td>
+          <td class="paramname"><em>phi</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#ad818c2812e5e10118f22b2026525f067">indPhi</a>.</p>
+
+</div>
+</div>
+<a id="acdf2d255c2125bd4f7fa4eac270f8997"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdf2d255c2125bd4f7fa4eac270f8997">&#9670;&nbsp;</a></span>setLatchBlock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sysy::ir::Loop::setLatchBlock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *&#160;</td>
+          <td class="paramname"><em>latch</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a9eca2286fd80e284762832ab0434962d">latchBlock</a>.</p>
+
+</div>
+</div>
+<a id="adf8a7f52e8897d7f216d4137d53eecf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf8a7f52e8897d7f216d4137d53eecf2">&#9670;&nbsp;</a></span>setLoopDepth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sysy::ir::Loop::setLoopDepth </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>depth</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../dd/d20/namespacesysy.html#a3b4faaf28714267c1eb2fe867efa790e">sysy::depth</a>, and <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a8d3677e3c83ae973d9c80b6ec2e307c0">loopDepth</a>.</p>
+
+</div>
+</div>
+<a id="a3753161c201c78ceda2ec9524e1fa2bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3753161c201c78ceda2ec9524e1fa2bc">&#9670;&nbsp;</a></span>setParentLoop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sysy::ir::Loop::setParentLoop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html">Loop</a> *&#160;</td>
+          <td class="paramname"><em>parent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a79880ddf39ef47794adebcc961ed1c66">parent</a>, and <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a086e482545ac0e29e61596849af2f68a">parentLoop</a>.</p>
+
+</div>
+</div>
+<a id="a343fa82d057c7e0cc746359b11b43289"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a343fa82d057c7e0cc746359b11b43289">&#9670;&nbsp;</a></span>setPreHeader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sysy::ir::Loop::setPreHeader </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *&#160;</td>
+          <td class="paramname"><em>_preHeader</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a3f170bcef0f5a2d93edacfd2cd0be29a">preHeader</a>.</p>
+
+</div>
+</div>
+<a id="a64a403dac834e45bc1d12c4c43ae06cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64a403dac834e45bc1d12c4c43ae06cd">&#9670;&nbsp;</a></span>setTripCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sysy::ir::Loop::setTripCount </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a0c1da1d1380a94d780023ec60a27858e">tripCount</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#a0f98946c99fd079aa59c712a3212b5d0">sysy::ir::ScalarEvolution::runOnLoop()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d57/classsysy_1_1ir_1_1Loop_a64a403dac834e45bc1d12c4c43ae06cd_icgraph.png" border="0" usemap="#d2/d57/classsysy_1_1ir_1_1Loop_a64a403dac834e45bc1d12c4c43ae06cd_icgraph" alt=""/></div>
+<map name="d2/d57/classsysy_1_1ir_1_1Loop_a64a403dac834e45bc1d12c4c43ae06cd_icgraph" id="d2/d57/classsysy_1_1ir_1_1Loop_a64a403dac834e45bc1d12c4c43ae06cd_icgraph">
+<area shape="rect" title=" " alt="" coords="485,13,681,39"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#a0f98946c99fd079aa59c712a3212b5d0" title=" " alt="" coords="260,5,437,47"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#aa77c21818a83d9b475e3d967662190bc" title=" " alt="" coords="5,13,212,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a8310e83e0492a34505062f26499edc09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8310e83e0492a34505062f26499edc09">&#9670;&nbsp;</a></span>BBSet</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_set&lt;<a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a>*&gt; sysy::ir::Loop::BBSet</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../d9/d47/classsysy_1_1ir_1_1LCSSA.html#a09595d9a2371eb6bd5ae258db16eaa07">sysy::ir::LCSSA::computeDefInUseOut()</a>, <a class="el" href="../../d9/d47/classsysy_1_1ir_1_1LCSSA.html#a068baf911427ce22ca436e55acccc161">sysy::ir::LCSSA::getIncomingValAtBB()</a>, <a class="el" href="../../d9/d47/classsysy_1_1ir_1_1LCSSA.html#a17ff93e8a806fe1e10766b5b26c4431f">sysy::ir::LCSSA::insertLoopClosedPhi()</a>, <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#abfc5820461d6ea0eddfc4de9397435d8">isLoopInvariant()</a>, and <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a158626cd096154860b1415f98699787a">Loop()</a>.</p>
+
+</div>
+</div>
+<a id="a55f69c474a025ffa599617c4bf3b2829"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55f69c474a025ffa599617c4bf3b2829">&#9670;&nbsp;</a></span>blocks</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a>*&gt; sysy::ir::Loop::blocks</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#afc4815cae4ad957fbb224f93bb7091ac">getLoopBasicBlocks()</a>, and <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a158626cd096154860b1415f98699787a">Loop()</a>.</p>
+
+</div>
+</div>
+<a id="a3e35418e49807ec3bf234040a527f7e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e35418e49807ec3bf234040a527f7e9">&#9670;&nbsp;</a></span>exitBlocks</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_set&lt;<a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a>*&gt; sysy::ir::Loop::exitBlocks</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a11ba45b6f9f0901b247f51ef07f8d49f">getExitBlocks()</a>.</p>
+
+</div>
+</div>
+<a id="ad85e03b7367a6519172edb07aed940c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad85e03b7367a6519172edb07aed940c0">&#9670;&nbsp;</a></span>exitingBlocks</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_set&lt;<a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a>*&gt; sysy::ir::Loop::exitingBlocks</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#afec5ef902bbba00d66e2ab3b41c0a18a">getExitingBlocks()</a>.</p>
+
+</div>
+</div>
+<a id="a063be6794435c2a94286433d3f1debf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a063be6794435c2a94286433d3f1debf0">&#9670;&nbsp;</a></span>icmpKind</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0">Instruction::InstrKind</a> sysy::ir::Loop::icmpKind</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#ab46b6e9f46e15db1bbcfd94194bf400d">getICmpKind()</a>, and <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#aa64d6aa1c68816c432267a5f3d00ca50">setICmpKind()</a>.</p>
+
+</div>
+</div>
+<a id="a333b612ff477443006872a432c0002f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a333b612ff477443006872a432c0002f4">&#9670;&nbsp;</a></span>indCondVar</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a>* sysy::ir::Loop::indCondVar</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a330c84a50b4746b38642c22b46d093ac">getIndexCondInstr()</a>, and <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#af55f83e6183a0d4947755e419e477a10">setIndexCondInstr()</a>.</p>
+
+</div>
+</div>
+<a id="ac31e4c96b871ade92e48fd0ddc90d124"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac31e4c96b871ade92e48fd0ddc90d124">&#9670;&nbsp;</a></span>indEnd</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a>* sysy::ir::Loop::indEnd</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#ae127a7b1973141cb1bf517eab2774664">getIndexEnd()</a>, and <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#abd485e828ea2011206d7a0a601ded628">setIndexEnd()</a>.</p>
+
+</div>
+</div>
+<a id="ad818c2812e5e10118f22b2026525f067"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad818c2812e5e10118f22b2026525f067">&#9670;&nbsp;</a></span>indPhi</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a54b15b0f11f28826cb9853c7491747da">PhiInst</a>* sysy::ir::Loop::indPhi</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a5954870f24560a728cb2e2f76059d215">getIndexPhi()</a>, and <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#ac121edda70739df4fe514be10d6c78a4">setIndexPhi()</a>.</p>
+
+</div>
+</div>
+<a id="a9eca2286fd80e284762832ab0434962d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9eca2286fd80e284762832ab0434962d">&#9670;&nbsp;</a></span>latchBlock</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a>* sysy::ir::Loop::latchBlock</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a0d57745959cc7441ac58069b078ee3c1">getLatchBlock()</a>, and <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#acdf2d255c2125bd4f7fa4eac270f8997">setLatchBlock()</a>.</p>
+
+</div>
+</div>
+<a id="a8d3677e3c83ae973d9c80b6ec2e307c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d3677e3c83ae973d9c80b6ec2e307c0">&#9670;&nbsp;</a></span>loopDepth</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sysy::ir::Loop::loopDepth</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a615f3e5abb0e5b49ee7a8db61fd7f743">getLoopDepth()</a>, and <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#adf8a7f52e8897d7f216d4137d53eecf2">setLoopDepth()</a>.</p>
+
+</div>
+</div>
+<a id="ac84616861c283569f1a456b47e9946b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac84616861c283569f1a456b47e9946b4">&#9670;&nbsp;</a></span>loopHeader</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a>* sysy::ir::Loop::loopHeader</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a07f70a12e8c18d0c7e7669a97f28c715">getHeader()</a>.</p>
+
+</div>
+</div>
+<a id="a79880ddf39ef47794adebcc961ed1c66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79880ddf39ef47794adebcc961ed1c66">&#9670;&nbsp;</a></span>parent</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d36/classsysy_1_1ir_1_1Function.html">Function</a>* sysy::ir::Loop::parent</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a5b14b21cbfbe5f192fa588a6303dd8fe">getParent()</a>, and <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a3753161c201c78ceda2ec9524e1fa2bc">setParentLoop()</a>.</p>
+
+</div>
+</div>
+<a id="a086e482545ac0e29e61596849af2f68a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a086e482545ac0e29e61596849af2f68a">&#9670;&nbsp;</a></span>parentLoop</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html">Loop</a>* sysy::ir::Loop::parentLoop</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a91b057253a21c182068b9d3f73fbf662">getParentLoop()</a>, and <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a3753161c201c78ceda2ec9524e1fa2bc">setParentLoop()</a>.</p>
+
+</div>
+</div>
+<a id="a3f170bcef0f5a2d93edacfd2cd0be29a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f170bcef0f5a2d93edacfd2cd0be29a">&#9670;&nbsp;</a></span>preHeader</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a>* sysy::ir::Loop::preHeader</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a349884a7c65bd9460af3d9d0141e032f">getPreHeader()</a>, and <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a343fa82d057c7e0cc746359b11b43289">setPreHeader()</a>.</p>
+
+</div>
+</div>
+<a id="ac752bd9db587de7e3b75cda9ab83c703"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac752bd9db587de7e3b75cda9ab83c703">&#9670;&nbsp;</a></span>SCEVCheck</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt;<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a>*, <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html">SCEV</a>&gt; sysy::ir::Loop::SCEVCheck</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#ae31d6873670fd665271944a66f6235a7">cleanSCEV()</a>, <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a163aee178e52806173cf9516676689b9">getSCEV()</a>, <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a02dec62b51b39a19229377c2ff143fa1">hasSCEV()</a>, and <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a8e98bbaa7ff7eef397806d6dbbafc425">registerSCEV()</a>.</p>
+
+</div>
+</div>
+<a id="a38329b8e4c36921c8057c1ca6e7a5f44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38329b8e4c36921c8057c1ca6e7a5f44">&#9670;&nbsp;</a></span>subLoops</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html">Loop</a>*&gt; sysy::ir::Loop::subLoops</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a30adf4782a178f414d9d41e809eb2ff6">getSubLoops()</a>.</p>
+
+</div>
+</div>
+<a id="a0c1da1d1380a94d780023ec60a27858e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c1da1d1380a94d780023ec60a27858e">&#9670;&nbsp;</a></span>tripCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sysy::ir::Loop::tripCount</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a70e8df4e3237bcba426a8cd03975b629">getTripCount()</a>, and <a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html#a64a403dac834e45bc1d12c4c43ae06cd">setTripCount()</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>include/sysy/IR/<a class="el" href="../../db/d9e/Loop_8h_source.html">Loop.h</a></li>
-<li>lib/IR/Loop.cpp</li>
+<li>lib/IR/<a class="el" href="../../da/d4c/Loop_8cpp.html">Loop.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>sysy</b></li><li class="navelem"><b>ir</b></li><li class="navelem"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html">Loop</a></li>
+    <li class="navelem"><a class="el" href="../../dd/d20/namespacesysy.html">sysy</a></li><li class="navelem"><a class="el" href="../../d7/d19/namespacesysy_1_1ir.html">ir</a></li><li class="navelem"><a class="el" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html">Loop</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

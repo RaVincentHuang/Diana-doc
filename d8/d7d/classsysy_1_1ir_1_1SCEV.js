@@ -16,5 +16,7 @@ var classsysy_1_1ir_1_1SCEV =
     [ "operator+", "d8/d7d/classsysy_1_1ir_1_1SCEV.html#a1629efebfd362631976135848c9c74ed", null ],
     [ "operator+", "d8/d7d/classsysy_1_1ir_1_1SCEV.html#a42f42e37c1cef1064c97ca28814d1c24", null ],
     [ "operator-", "d8/d7d/classsysy_1_1ir_1_1SCEV.html#a34c5e4ddb32015b0ce22e7aa2f4df904", null ],
-    [ "operator-", "d8/d7d/classsysy_1_1ir_1_1SCEV.html#aff7d7376d0feb140c3dff092b0b4cd6d", null ]
+    [ "operator-", "d8/d7d/classsysy_1_1ir_1_1SCEV.html#aff7d7376d0feb140c3dff092b0b4cd6d", null ],
+    [ "instructionsHasBeenCaculated", "d8/d7d/classsysy_1_1ir_1_1SCEV.html#ab56d223148456897c50493cc43904455", null ],
+    [ "scevBody", "d8/d7d/classsysy_1_1ir_1_1SCEV.html#ad2bafbfa5f368c3d3c1a39390c9cc493", null ]
 ];

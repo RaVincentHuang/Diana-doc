@@ -10,5 +10,6 @@ var classsysy_1_1mc_1_1LoadImm =
     [ "dst", "dc/df3/classsysy_1_1mc_1_1LoadImm.html#a634a0fc79b38a8dca82930748cb04e90", null ],
     [ "lhs", "dc/df3/classsysy_1_1mc_1_1LoadImm.html#a8a3f98ab8c1065ba303bac6ad1755c1a", null ],
     [ "offset", "dc/df3/classsysy_1_1mc_1_1LoadImm.html#a84312e3276ac2a52f097ea281fb436fb", null ],
-    [ "type", "dc/df3/classsysy_1_1mc_1_1LoadImm.html#a9c3276d44da6bbd8367577ff907928be", null ]
+    [ "type", "dc/df3/classsysy_1_1mc_1_1LoadImm.html#a9c3276d44da6bbd8367577ff907928be", null ],
+    [ "type_map", "dc/df3/classsysy_1_1mc_1_1LoadImm.html#a1e2a1f2362bcf886c16359b32032a77d", null ]
 ];

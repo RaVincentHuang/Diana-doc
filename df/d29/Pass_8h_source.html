@@ -86,30 +86,30 @@ $(document).ready(function(){initNavTree('df/d29/Pass_8h_source.html','../../');
 <div class="title">Pass.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SYSY_TARGET_Pass_H</span></div>
+<a href="../../df/d29/Pass_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SYSY_TARGET_Pass_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define SYSY_TARGET_Pass_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;sysy/Target/Function.h&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;sysy/Target/Block.h&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;sysy/Target/Instruction.h&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d6/d9e/Target_2Function_8h.html">sysy/Target/Function.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d9/dfd/Block_8h.html">sysy/Target/Block.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d2/d63/Target_2Instruction_8h.html">sysy/Target/Instruction.h</a>&quot;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>sysy </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../dd/d20/namespacesysy.html">sysy</a> </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>mc </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keywordtype">void</span> analyseType(Function* func);</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keywordtype">void</span> remove_top_to_bottom(Function* func);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keywordtype">void</span> remove_bottom_to_top(Function* func);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keywordtype">void</span> remove_same_move(Function* func);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d7/d26/namespacesysy_1_1mc.html#a4968db37371542f344ffce2e9f9a6918">analyseType</a>(Function* func);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d7/d26/namespacesysy_1_1mc.html#a9ff04c787506e5e315ec71397596e710">remove_top_to_bottom</a>(Function* func);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d7/d26/namespacesysy_1_1mc.html#aee2952ba5f99ee3c4f87414ff482679a">remove_bottom_to_top</a>(Function* func);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d7/d26/namespacesysy_1_1mc.html#a8d19b04f6549520511df8a91ce449d3a">remove_same_move</a>(Function* func);</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keywordtype">void</span> remove_multi_store(Function* func);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keywordtype">void</span> remove_multi_load(Function* func);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keywordtype">void</span> remove_redundant_move (Function* func);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d7/d26/namespacesysy_1_1mc.html#a684b8872948778ac3283e9d2ae079b5f">remove_multi_store</a>(Function* func);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d7/d26/namespacesysy_1_1mc.html#a8245a5b25861e7c6f0bfe14217ea524b">remove_multi_load</a>(Function* func);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d7/d26/namespacesysy_1_1mc.html#ae7580b2bcaa47bfe6a7003b38612c145">remove_redundant_move</a> (Function* func);</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keywordtype">void</span> merge_block(Function* func);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keywordtype">void</span> remove_branch(Function* func);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d7/d26/namespacesysy_1_1mc.html#a8f0f286d9994fbd8b98f24181d00ffaf">merge_block</a>(Function* func);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d7/d26/namespacesysy_1_1mc.html#a9b5cb2f68d35585ec2938d7b24f149e1">remove_branch</a>(Function* func);</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
@@ -117,10 +117,23 @@ $(document).ready(function(){initNavTree('df/d29/Pass_8h_source.html','../../');
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aBlock_8h_html"><div class="ttname"><a href="../../d9/dfd/Block_8h.html">Block.h</a></div></div>
+<div class="ttc" id="anamespacesysy_1_1mc_html_aee2952ba5f99ee3c4f87414ff482679a"><div class="ttname"><a href="../../d7/d26/namespacesysy_1_1mc.html#aee2952ba5f99ee3c4f87414ff482679a">sysy::mc::remove_bottom_to_top</a></div><div class="ttdeci">void remove_bottom_to_top(Function *func)</div><div class="ttdef"><b>Definition:</b> Pass.cpp:104</div></div>
+<div class="ttc" id="anamespacesysy_1_1mc_html_a684b8872948778ac3283e9d2ae079b5f"><div class="ttname"><a href="../../d7/d26/namespacesysy_1_1mc.html#a684b8872948778ac3283e9d2ae079b5f">sysy::mc::remove_multi_store</a></div><div class="ttdeci">void remove_multi_store(Function *func)</div><div class="ttdef"><b>Definition:</b> Pass.cpp:200</div></div>
+<div class="ttc" id="anamespacesysy_1_1mc_html_a8f0f286d9994fbd8b98f24181d00ffaf"><div class="ttname"><a href="../../d7/d26/namespacesysy_1_1mc.html#a8f0f286d9994fbd8b98f24181d00ffaf">sysy::mc::merge_block</a></div><div class="ttdeci">void merge_block(Function *func)</div><div class="ttdef"><b>Definition:</b> Pass.cpp:319</div></div>
+<div class="ttc" id="anamespacesysy_1_1mc_html_a9ff04c787506e5e315ec71397596e710"><div class="ttname"><a href="../../d7/d26/namespacesysy_1_1mc.html#a9ff04c787506e5e315ec71397596e710">sysy::mc::remove_top_to_bottom</a></div><div class="ttdeci">void remove_top_to_bottom(Function *func)</div><div class="ttdef"><b>Definition:</b> Pass.cpp:94</div></div>
+<div class="ttc" id="anamespacesysy_1_1mc_html_a4968db37371542f344ffce2e9f9a6918"><div class="ttname"><a href="../../d7/d26/namespacesysy_1_1mc.html#a4968db37371542f344ffce2e9f9a6918">sysy::mc::analyseType</a></div><div class="ttdeci">void analyseType(Function *func)</div><div class="ttdef"><b>Definition:</b> Pass.cpp:73</div></div>
+<div class="ttc" id="anamespacesysy_1_1mc_html_a8d19b04f6549520511df8a91ce449d3a"><div class="ttname"><a href="../../d7/d26/namespacesysy_1_1mc.html#a8d19b04f6549520511df8a91ce449d3a">sysy::mc::remove_same_move</a></div><div class="ttdeci">void remove_same_move(Function *func)</div><div class="ttdef"><b>Definition:</b> Pass.cpp:190</div></div>
+<div class="ttc" id="aTarget_2Function_8h_html"><div class="ttname"><a href="../../d6/d9e/Target_2Function_8h.html">Function.h</a></div></div>
+<div class="ttc" id="anamespacesysy_html"><div class="ttname"><a href="../../dd/d20/namespacesysy.html">sysy</a></div><div class="ttdef"><b>Definition:</b> AliasAnalysis.h:6</div></div>
+<div class="ttc" id="anamespacesysy_1_1mc_html_a9b5cb2f68d35585ec2938d7b24f149e1"><div class="ttname"><a href="../../d7/d26/namespacesysy_1_1mc.html#a9b5cb2f68d35585ec2938d7b24f149e1">sysy::mc::remove_branch</a></div><div class="ttdeci">void remove_branch(Function *func)</div><div class="ttdef"><b>Definition:</b> Pass.cpp:356</div></div>
+<div class="ttc" id="anamespacesysy_1_1mc_html_ae7580b2bcaa47bfe6a7003b38612c145"><div class="ttname"><a href="../../d7/d26/namespacesysy_1_1mc.html#ae7580b2bcaa47bfe6a7003b38612c145">sysy::mc::remove_redundant_move</a></div><div class="ttdeci">void remove_redundant_move(Function *func)</div><div class="ttdef"><b>Definition:</b> Pass.cpp:270</div></div>
+<div class="ttc" id="aTarget_2Instruction_8h_html"><div class="ttname"><a href="../../d2/d63/Target_2Instruction_8h.html">Instruction.h</a></div></div>
+<div class="ttc" id="anamespacesysy_1_1mc_html_a8245a5b25861e7c6f0bfe14217ea524b"><div class="ttname"><a href="../../d7/d26/namespacesysy_1_1mc.html#a8245a5b25861e7c6f0bfe14217ea524b">sysy::mc::remove_multi_load</a></div><div class="ttdeci">void remove_multi_load(Function *func)</div><div class="ttdef"><b>Definition:</b> Pass.cpp:232</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_b87821115ea3cf61d61e0bb4a6051ac5.html">sysy</a></li><li class="navelem"><a class="el" href="../../dir_5f17f804c005a2c7206af5b7343978c6.html">Target</a></li><li class="navelem"><b>Pass.h</b></li>
+    <li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_b87821115ea3cf61d61e0bb4a6051ac5.html">sysy</a></li><li class="navelem"><a class="el" href="../../dir_5f17f804c005a2c7206af5b7343978c6.html">Target</a></li><li class="navelem"><a class="el" href="../../df/d29/Pass_8h.html">Pass.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

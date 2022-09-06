@@ -1,0 +1,6 @@
+<map id="sysy::ir::DCE::removeUselessStore" name="sysy::ir::DCE::removeUselessStore">
+<area shape="rect" id="node1" title=" " alt="" coords="5,71,217,112"/>
+<area shape="rect" id="node2" href="$df/dd2/classsysy_1_1ir_1_1BasicBlock.html#a87edb8a6b3ef522b2aa073d74737cba0" title=" " alt="" coords="281,5,428,47"/>
+<area shape="rect" id="node3" href="$df/da0/classsysy_1_1ir_1_1StoreInstruction.html#af0b906f825d2291db53c6e8da7f0dc4a" title=" " alt="" coords="265,71,444,112"/>
+<area shape="rect" id="node4" href="$d9/d9f/classsysy_1_1ir_1_1Value.html#a77ccc84b71f29b3dbee04f97f8056088" title=" " alt="" coords="268,137,441,163"/>
+</map>

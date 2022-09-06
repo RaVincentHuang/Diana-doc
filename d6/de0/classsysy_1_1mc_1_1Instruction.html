@@ -92,6 +92,8 @@ $(document).ready(function(){initNavTree('d6/de0/classsysy_1_1mc_1_1Instruction.
 <div class="title">sysy::mc::Instruction Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="../../d2/d63/Target_2Instruction_8h_source.html">Instruction.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for sysy::mc::Instruction:</div>
 <div class="dyncontent">
@@ -124,103 +126,451 @@ Inheritance diagram for sysy::mc::Instruction:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ae1e3d04be9f7eb85616aa58a9b128a6f"><td class="memItemLeft" align="right" valign="top"><a id="ae1e3d04be9f7eb85616aa58a9b128a6f"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>InstrType</b> { <br />
-&#160;&#160;<b>BinaryReg</b>, 
-<b>BinaryImm</b>, 
-<b>ComplexMul</b>, 
-<b>MoveReg</b>, 
+<tr class="memitem:ae1e3d04be9f7eb85616aa58a9b128a6f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6f">InstrType</a> { <br />
+&#160;&#160;<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fa51f90e8f7f54f26479f3346ce88ed20e">BinaryReg</a>, 
+<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fa6381c443559d58816db2419e11a64f21">BinaryImm</a>, 
+<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fa0841cd79c986b855ae2d871d51ef4262">ComplexMul</a>, 
+<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fac11db440f340cde663ef33298fa0ae3b">MoveReg</a>, 
 <br />
-&#160;&#160;<b>ShiftInstr</b>, 
-<b>MoveImm</b>, 
-<b>CompareReg</b>, 
-<b>CompareImm</b>, 
+&#160;&#160;<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fa890670bb2da73f1890e23734dd4def67">ShiftInstr</a>, 
+<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fa51fa2bde929aced320df7f7f5fd4e301">MoveImm</a>, 
+<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fa759b8e0bae96f147fd143738e94bdb62">CompareReg</a>, 
+<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fa25d22a0b80eb48b86a1f1991e475b156">CompareImm</a>, 
 <br />
-&#160;&#160;<b>Branch</b>, 
-<b>Push</b>, 
-<b>Pop</b>, 
-<b>Load</b>, 
+&#160;&#160;<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6faf0b60f239d674db685b5009edf2da827">Branch</a>, 
+<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fadb2a27db04ad134afb6383d4c5c5c7fa">Push</a>, 
+<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6faaa0d456a2a4a3a2aa2b1447bc4046f66">Pop</a>, 
+<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fa7bfde3da593860ddf4e31a57087d5082">Load</a>, 
 <br />
-&#160;&#160;<b>Store</b>, 
-<b>LoadGlobal</b>, 
-<b>Call</b>, 
-<b>Return</b>, 
+&#160;&#160;<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fabe01d20b2410fd0a4ba5f9b4c536347e">Store</a>, 
+<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fa33e54fc3d2353d03094f5cd595c91830">LoadGlobal</a>, 
+<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fa99df3385cd56ddc34c8e015b0c091d84">Call</a>, 
+<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fa3c8e7eaeed7947601cb65412e9f0c0b3">Return</a>, 
 <br />
-&#160;&#160;<b>LoadFP</b>, 
-<b>Convert</b>, 
-<b>Bic</b>, 
-<b>None</b>
+&#160;&#160;<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fa6900d1b07176ffc3c518a9529b3312a0">LoadFP</a>, 
+<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fad913e02ef11a8bcd9e3172bfd10fba2b">Convert</a>, 
+<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fa15ba802bf0f4f0c23e22e64640612d37">Bic</a>, 
+<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fa3289d32485b767faa0b4a81aa64ae6d0">None</a>
 <br />
  }</td></tr>
 <tr class="separator:ae1e3d04be9f7eb85616aa58a9b128a6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a213faf43e3f3bbd62aa73ab1dfa1ed10"><td class="memItemLeft" align="right" valign="top"><a id="a213faf43e3f3bbd62aa73ab1dfa1ed10"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>CondType</b> { <br />
-&#160;&#160;<b>AL</b>, 
-<b>EQ</b>, 
-<b>NE</b>, 
-<b>GE</b>, 
+<tr class="memitem:a213faf43e3f3bbd62aa73ab1dfa1ed10"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a213faf43e3f3bbd62aa73ab1dfa1ed10">CondType</a> { <br />
+&#160;&#160;<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a213faf43e3f3bbd62aa73ab1dfa1ed10a98bdd4e412bbed97ad28d08ab9e007ee">AL</a>, 
+<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a213faf43e3f3bbd62aa73ab1dfa1ed10a3f2ad71b3f966ccc05219eea36e64ea9">EQ</a>, 
+<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a213faf43e3f3bbd62aa73ab1dfa1ed10a2b568664aae7c105219c784b4a972da6">NE</a>, 
+<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a213faf43e3f3bbd62aa73ab1dfa1ed10ace2877b7c342918e9fda169f176cd028">GE</a>, 
 <br />
-&#160;&#160;<b>GT</b>, 
-<b>LE</b>, 
-<b>LT</b>
+&#160;&#160;<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a213faf43e3f3bbd62aa73ab1dfa1ed10a516ec873bdb7e7e6a0bececc8758e9a3">GT</a>, 
+<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a213faf43e3f3bbd62aa73ab1dfa1ed10ae3c27441a4c928fa24ed175557f1f7e0">LE</a>, 
+<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a213faf43e3f3bbd62aa73ab1dfa1ed10a9a5de371dd3bc1efd20054233720338a">LT</a>
 <br />
  }</td></tr>
 <tr class="separator:a213faf43e3f3bbd62aa73ab1dfa1ed10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6c7fba22a5e06013d69427e337e3e941"><td class="memItemLeft" align="right" valign="top"><a id="a6c7fba22a5e06013d69427e337e3e941"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>def</b> (int id)</td></tr>
+<tr class="memitem:a6c7fba22a5e06013d69427e337e3e941"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a6c7fba22a5e06013d69427e337e3e941">def</a> (int id)</td></tr>
 <tr class="separator:a6c7fba22a5e06013d69427e337e3e941"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad90a4407878bb0e62a39bd8135055338"><td class="memItemLeft" align="right" valign="top"><a id="ad90a4407878bb0e62a39bd8135055338"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>use</b> (int id)</td></tr>
+<tr class="memitem:ad90a4407878bb0e62a39bd8135055338"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ad90a4407878bb0e62a39bd8135055338">use</a> (int id)</td></tr>
 <tr class="separator:ad90a4407878bb0e62a39bd8135055338"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae90f2c9418426901a9d17b2eaaa95ec2"><td class="memItemLeft" align="right" valign="top"><a id="ae90f2c9418426901a9d17b2eaaa95ec2"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>def_v</b> (int id)</td></tr>
+<tr class="memitem:ae90f2c9418426901a9d17b2eaaa95ec2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae90f2c9418426901a9d17b2eaaa95ec2">def_v</a> (int id)</td></tr>
 <tr class="separator:ae90f2c9418426901a9d17b2eaaa95ec2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7067db5557f71c08086b7250076b9911"><td class="memItemLeft" align="right" valign="top"><a id="a7067db5557f71c08086b7250076b9911"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>use_v</b> (int id)</td></tr>
+<tr class="memitem:a7067db5557f71c08086b7250076b9911"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a7067db5557f71c08086b7250076b9911">use_v</a> (int id)</td></tr>
 <tr class="separator:a7067db5557f71c08086b7250076b9911"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a422c3bda1f5e9cfdaade608917fae836"><td class="memItemLeft" align="right" valign="top"><a id="a422c3bda1f5e9cfdaade608917fae836"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>replace_reg</b> (int before, int after)</td></tr>
+<tr class="memitem:a422c3bda1f5e9cfdaade608917fae836"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a422c3bda1f5e9cfdaade608917fae836">replace_reg</a> (int before, int after)</td></tr>
 <tr class="separator:a422c3bda1f5e9cfdaade608917fae836"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaabd9f974a816d11fbc625915b76087b"><td class="memItemLeft" align="right" valign="top"><a id="aaabd9f974a816d11fbc625915b76087b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Instruction</b> (InstrType _type, std::vector&lt; <a class="el" href="../../d4/d18/classsysy_1_1mc_1_1Reg.html">Reg</a> * &gt; _def_reg, std::vector&lt; <a class="el" href="../../d4/d18/classsysy_1_1mc_1_1Reg.html">Reg</a> * &gt; _use_reg)</td></tr>
+<tr class="memitem:aaabd9f974a816d11fbc625915b76087b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#aaabd9f974a816d11fbc625915b76087b">Instruction</a> (<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6f">InstrType</a> _type, std::vector&lt; <a class="el" href="../../d4/d18/classsysy_1_1mc_1_1Reg.html">Reg</a> * &gt; _def_reg, std::vector&lt; <a class="el" href="../../d4/d18/classsysy_1_1mc_1_1Reg.html">Reg</a> * &gt; _use_reg)</td></tr>
 <tr class="separator:aaabd9f974a816d11fbc625915b76087b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb6a1d695556bba5aca42684aac10976"><td class="memItemLeft" align="right" valign="top"><a id="acb6a1d695556bba5aca42684aac10976"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Instruction</b> (InstrType _type)</td></tr>
+<tr class="memitem:acb6a1d695556bba5aca42684aac10976"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#acb6a1d695556bba5aca42684aac10976">Instruction</a> (<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6f">InstrType</a> _type)</td></tr>
 <tr class="separator:acb6a1d695556bba5aca42684aac10976"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88cd336b1d89d2a2378fffec11681ea8"><td class="memItemLeft" align="right" valign="top"><a id="a88cd336b1d89d2a2378fffec11681ea8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setCond</b> (CondType _cond)</td></tr>
+<tr class="memitem:a88cd336b1d89d2a2378fffec11681ea8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a88cd336b1d89d2a2378fffec11681ea8">setCond</a> (<a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a213faf43e3f3bbd62aa73ab1dfa1ed10">CondType</a> _cond)</td></tr>
 <tr class="separator:a88cd336b1d89d2a2378fffec11681ea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace082df992550630008fa32394da8061"><td class="memItemLeft" align="right" valign="top"><a id="ace082df992550630008fa32394da8061"></a>
-virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><b>gen_asm</b> ()=0</td></tr>
+<tr class="memitem:ace082df992550630008fa32394da8061"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ace082df992550630008fa32394da8061">gen_asm</a> ()=0</td></tr>
 <tr class="separator:ace082df992550630008fa32394da8061"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ac10ac77169b51d365785c1a6f686eb71"><td class="memItemLeft" align="right" valign="top"><a id="ac10ac77169b51d365785c1a6f686eb71"></a>
-InstrType&#160;</td><td class="memItemRight" valign="bottom"><b>instr_type</b></td></tr>
+<tr class="memitem:ac10ac77169b51d365785c1a6f686eb71"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6f">InstrType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ac10ac77169b51d365785c1a6f686eb71">instr_type</a></td></tr>
 <tr class="separator:ac10ac77169b51d365785c1a6f686eb71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56efa7c32238d8daf23b0806a077af4f"><td class="memItemLeft" align="right" valign="top"><a id="a56efa7c32238d8daf23b0806a077af4f"></a>
-CondType&#160;</td><td class="memItemRight" valign="bottom"><b>cond</b></td></tr>
+<tr class="memitem:a56efa7c32238d8daf23b0806a077af4f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a213faf43e3f3bbd62aa73ab1dfa1ed10">CondType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a56efa7c32238d8daf23b0806a077af4f">cond</a></td></tr>
 <tr class="separator:a56efa7c32238d8daf23b0806a077af4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a988e3d706e1cc12bd43c9e40aa6cef3a"><td class="memItemLeft" align="right" valign="top"><a id="a988e3d706e1cc12bd43c9e40aa6cef3a"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_float</b> = false</td></tr>
+<tr class="memitem:a988e3d706e1cc12bd43c9e40aa6cef3a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a988e3d706e1cc12bd43c9e40aa6cef3a">is_float</a> = false</td></tr>
 <tr class="separator:a988e3d706e1cc12bd43c9e40aa6cef3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b8245e96fca60ec21cdd4410669f0b2"><td class="memItemLeft" align="right" valign="top"><a id="a7b8245e96fca60ec21cdd4410669f0b2"></a>
-std::vector&lt; <a class="el" href="../../d4/d18/classsysy_1_1mc_1_1Reg.html">Reg</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>def_reg</b></td></tr>
+<tr class="memitem:a7b8245e96fca60ec21cdd4410669f0b2"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d4/d18/classsysy_1_1mc_1_1Reg.html">Reg</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a7b8245e96fca60ec21cdd4410669f0b2">def_reg</a></td></tr>
 <tr class="separator:a7b8245e96fca60ec21cdd4410669f0b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a848e99bd5fc45a5be53edabae9ad9c84"><td class="memItemLeft" align="right" valign="top"><a id="a848e99bd5fc45a5be53edabae9ad9c84"></a>
-std::vector&lt; <a class="el" href="../../d4/d18/classsysy_1_1mc_1_1Reg.html">Reg</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>use_reg</b></td></tr>
+<tr class="memitem:a848e99bd5fc45a5be53edabae9ad9c84"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d4/d18/classsysy_1_1mc_1_1Reg.html">Reg</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a848e99bd5fc45a5be53edabae9ad9c84">use_reg</a></td></tr>
 <tr class="separator:a848e99bd5fc45a5be53edabae9ad9c84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:ac7e5455ba0543091910aa9548420f778"><td class="memItemLeft" align="right" valign="top">static std::map&lt; InstrType, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>type_map</b></td></tr>
+<tr class="memitem:ac7e5455ba0543091910aa9548420f778"><td class="memItemLeft" align="right" valign="top">static std::map&lt; <a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6f">InstrType</a>, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ac7e5455ba0543091910aa9548420f778">type_map</a></td></tr>
 <tr class="separator:ac7e5455ba0543091910aa9548420f778"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0254e23298dfef38c7ffc30125222b10"><td class="memItemLeft" align="right" valign="top">static std::map&lt; CondType, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>condMap</b></td></tr>
+<tr class="memitem:a0254e23298dfef38c7ffc30125222b10"><td class="memItemLeft" align="right" valign="top">static std::map&lt; <a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a213faf43e3f3bbd62aa73ab1dfa1ed10">CondType</a>, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a0254e23298dfef38c7ffc30125222b10">condMap</a></td></tr>
 <tr class="separator:a0254e23298dfef38c7ffc30125222b10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a213faf43e3f3bbd62aa73ab1dfa1ed10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a213faf43e3f3bbd62aa73ab1dfa1ed10">&#9670;&nbsp;</a></span>CondType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a213faf43e3f3bbd62aa73ab1dfa1ed10">sysy::mc::Instruction::CondType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a213faf43e3f3bbd62aa73ab1dfa1ed10a98bdd4e412bbed97ad28d08ab9e007ee"></a>AL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a213faf43e3f3bbd62aa73ab1dfa1ed10a3f2ad71b3f966ccc05219eea36e64ea9"></a>EQ&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a213faf43e3f3bbd62aa73ab1dfa1ed10a2b568664aae7c105219c784b4a972da6"></a>NE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a213faf43e3f3bbd62aa73ab1dfa1ed10ace2877b7c342918e9fda169f176cd028"></a>GE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a213faf43e3f3bbd62aa73ab1dfa1ed10a516ec873bdb7e7e6a0bececc8758e9a3"></a>GT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a213faf43e3f3bbd62aa73ab1dfa1ed10ae3c27441a4c928fa24ed175557f1f7e0"></a>LE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a213faf43e3f3bbd62aa73ab1dfa1ed10a9a5de371dd3bc1efd20054233720338a"></a>LT&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="ae1e3d04be9f7eb85616aa58a9b128a6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1e3d04be9f7eb85616aa58a9b128a6f">&#9670;&nbsp;</a></span>InstrType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6f">sysy::mc::Instruction::InstrType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae1e3d04be9f7eb85616aa58a9b128a6fa51f90e8f7f54f26479f3346ce88ed20e"></a>BinaryReg&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1e3d04be9f7eb85616aa58a9b128a6fa6381c443559d58816db2419e11a64f21"></a>BinaryImm&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1e3d04be9f7eb85616aa58a9b128a6fa0841cd79c986b855ae2d871d51ef4262"></a>ComplexMul&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1e3d04be9f7eb85616aa58a9b128a6fac11db440f340cde663ef33298fa0ae3b"></a>MoveReg&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1e3d04be9f7eb85616aa58a9b128a6fa890670bb2da73f1890e23734dd4def67"></a>ShiftInstr&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1e3d04be9f7eb85616aa58a9b128a6fa51fa2bde929aced320df7f7f5fd4e301"></a>MoveImm&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1e3d04be9f7eb85616aa58a9b128a6fa759b8e0bae96f147fd143738e94bdb62"></a>CompareReg&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1e3d04be9f7eb85616aa58a9b128a6fa25d22a0b80eb48b86a1f1991e475b156"></a>CompareImm&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1e3d04be9f7eb85616aa58a9b128a6faf0b60f239d674db685b5009edf2da827"></a>Branch&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1e3d04be9f7eb85616aa58a9b128a6fadb2a27db04ad134afb6383d4c5c5c7fa"></a>Push&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1e3d04be9f7eb85616aa58a9b128a6faaa0d456a2a4a3a2aa2b1447bc4046f66"></a>Pop&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1e3d04be9f7eb85616aa58a9b128a6fa7bfde3da593860ddf4e31a57087d5082"></a>Load&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1e3d04be9f7eb85616aa58a9b128a6fabe01d20b2410fd0a4ba5f9b4c536347e"></a>Store&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1e3d04be9f7eb85616aa58a9b128a6fa33e54fc3d2353d03094f5cd595c91830"></a>LoadGlobal&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1e3d04be9f7eb85616aa58a9b128a6fa99df3385cd56ddc34c8e015b0c091d84"></a>Call&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1e3d04be9f7eb85616aa58a9b128a6fa3c8e7eaeed7947601cb65412e9f0c0b3"></a>Return&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1e3d04be9f7eb85616aa58a9b128a6fa6900d1b07176ffc3c518a9529b3312a0"></a>LoadFP&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1e3d04be9f7eb85616aa58a9b128a6fad913e02ef11a8bcd9e3172bfd10fba2b"></a>Convert&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1e3d04be9f7eb85616aa58a9b128a6fa15ba802bf0f4f0c23e22e64640612d37"></a>Bic&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1e3d04be9f7eb85616aa58a9b128a6fa3289d32485b767faa0b4a81aa64ae6d0"></a>None&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aaabd9f974a816d11fbc625915b76087b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaabd9f974a816d11fbc625915b76087b">&#9670;&nbsp;</a></span>Instruction() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sysy::mc::Instruction::Instruction </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6f">InstrType</a>&#160;</td>
+          <td class="paramname"><em>_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="../../d4/d18/classsysy_1_1mc_1_1Reg.html">Reg</a> * &gt;&#160;</td>
+          <td class="paramname"><em>_def_reg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="../../d4/d18/classsysy_1_1mc_1_1Reg.html">Reg</a> * &gt;&#160;</td>
+          <td class="paramname"><em>_use_reg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acb6a1d695556bba5aca42684aac10976"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb6a1d695556bba5aca42684aac10976">&#9670;&nbsp;</a></span>Instruction() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sysy::mc::Instruction::Instruction </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6f">InstrType</a>&#160;</td>
+          <td class="paramname"><em>_type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6c7fba22a5e06013d69427e337e3e941"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c7fba22a5e06013d69427e337e3e941">&#9670;&nbsp;</a></span>def()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sysy::mc::Instruction::def </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a7b8245e96fca60ec21cdd4410669f0b2">def_reg</a>, <a class="el" href="../../d4/d18/classsysy_1_1mc_1_1Reg.html#a7919447b9272ea13c53e736ccdfe2da9aeca8f5a90881f8cfc0eba4fd88c241be">sysy::mc::Reg::SREG</a>, and <a class="el" href="../../d4/d18/classsysy_1_1mc_1_1Reg.html#a33ebf21f2d1873a7895aa6695c75a18bac3624de6e5cf514ecca29245af72c47f">sysy::mc::Reg::VIRTUAL</a>.</p>
+
+</div>
+</div>
+<a id="ae90f2c9418426901a9d17b2eaaa95ec2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae90f2c9418426901a9d17b2eaaa95ec2">&#9670;&nbsp;</a></span>def_v()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sysy::mc::Instruction::def_v </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a7b8245e96fca60ec21cdd4410669f0b2">def_reg</a>, <a class="el" href="../../d4/d18/classsysy_1_1mc_1_1Reg.html#a33ebf21f2d1873a7895aa6695c75a18bac3624de6e5cf514ecca29245af72c47f">sysy::mc::Reg::VIRTUAL</a>, and <a class="el" href="../../d4/d18/classsysy_1_1mc_1_1Reg.html#a7919447b9272ea13c53e736ccdfe2da9a72bf524e64243d9a49b0a3f500fd7c05">sysy::mc::Reg::VREG</a>.</p>
+
+</div>
+</div>
+<a id="ace082df992550630008fa32394da8061"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace082df992550630008fa32394da8061">&#9670;&nbsp;</a></span>gen_asm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string sysy::mc::Instruction::gen_asm </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="../../d4/d0a/classsysy_1_1mc_1_1Bic.html#ab3a9fa9e6ec3facc0bc7d467bd55cad2">sysy::mc::Bic</a>, <a class="el" href="../../d3/d91/classsysy_1_1mc_1_1Convert.html#a416a63f70fd081dbe383d19212a729cd">sysy::mc::Convert</a>, <a class="el" href="../../d9/df3/classsysy_1_1mc_1_1LoadFP.html#a8a059eb5c3ef6fe57fcccd6b708151d8">sysy::mc::LoadFP</a>, <a class="el" href="../../de/dc6/classsysy_1_1mc_1_1Return.html#a9bd95af407aba1088875e29a3653188a">sysy::mc::Return</a>, <a class="el" href="../../d4/d9c/classsysy_1_1mc_1_1Call.html#a3b38ca2cf5c23ca2ac122c9ee3d10891">sysy::mc::Call</a>, <a class="el" href="../../da/d1d/classsysy_1_1mc_1_1LoadGlobal.html#abfa11fade378e6ea38011e6245774d55">sysy::mc::LoadGlobal</a>, <a class="el" href="../../df/dec/classsysy_1_1mc_1_1StoreReg.html#a2528c7019071829a9616cf59638133d0">sysy::mc::StoreReg</a>, <a class="el" href="../../d9/d71/classsysy_1_1mc_1_1StoreImm.html#acdcc0a846311f9e165de0f2c9f97685f">sysy::mc::StoreImm</a>, <a class="el" href="../../da/d8d/classsysy_1_1mc_1_1LoadReg.html#aefbbce509601d13506ebd20b7086fc90">sysy::mc::LoadReg</a>, <a class="el" href="../../dc/df3/classsysy_1_1mc_1_1LoadImm.html#a3b38fb174171295a4575e34f6e20e43a">sysy::mc::LoadImm</a>, <a class="el" href="../../d8/d75/classsysy_1_1mc_1_1Pop.html#a3d7c39417a06282f2ca8492670ba49f2">sysy::mc::Pop</a>, <a class="el" href="../../d9/d63/classsysy_1_1mc_1_1Push.html#a35392e3636ca06707e079442e3f0e8fb">sysy::mc::Push</a>, <a class="el" href="../../d8/dd6/classsysy_1_1mc_1_1Branch.html#a78b309ba01add7fbd7100c6a4c8a237b">sysy::mc::Branch</a>, <a class="el" href="../../d3/d29/classsysy_1_1mc_1_1CompareImm.html#ac7fb36e063dd5790359b15e3ff7c92ea">sysy::mc::CompareImm</a>, <a class="el" href="../../df/d4a/classsysy_1_1mc_1_1CompareReg.html#a8a2bcc99ee918343776cacbc22e8f56c">sysy::mc::CompareReg</a>, <a class="el" href="../../db/dd1/classsysy_1_1mc_1_1MoveImm.html#a58dd31bd75216ce23720f1d5dc296240">sysy::mc::MoveImm</a>, <a class="el" href="../../dc/d35/classsysy_1_1mc_1_1ShiftInstr.html#a413b1550b24b82dbbc3300a27e7bcfcd">sysy::mc::ShiftInstr</a>, <a class="el" href="../../d0/d54/classsysy_1_1mc_1_1MoveReg.html#af90d47ca9848d5ddd6fa01f33c4b3e24">sysy::mc::MoveReg</a>, <a class="el" href="../../d4/ded/classsysy_1_1mc_1_1ComplexMul.html#a959082dc6ea6cf4ceaaf1a9ae8024b5b">sysy::mc::ComplexMul</a>, <a class="el" href="../../da/d94/classsysy_1_1mc_1_1BinaryImm.html#a2ba21563596dc6ee5b0708aadd22fea4">sysy::mc::BinaryImm</a>, and <a class="el" href="../../d9/d17/classsysy_1_1mc_1_1BinaryReg.html#a41ed3995562c4eea85f0dbd09427b31e">sysy::mc::BinaryReg</a>.</p>
+
+</div>
+</div>
+<a id="a422c3bda1f5e9cfdaade608917fae836"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a422c3bda1f5e9cfdaade608917fae836">&#9670;&nbsp;</a></span>replace_reg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sysy::mc::Instruction::replace_reg </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>before</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>after</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a7b8245e96fca60ec21cdd4410669f0b2">def_reg</a>, and <a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a848e99bd5fc45a5be53edabae9ad9c84">use_reg</a>.</p>
+
+</div>
+</div>
+<a id="a88cd336b1d89d2a2378fffec11681ea8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88cd336b1d89d2a2378fffec11681ea8">&#9670;&nbsp;</a></span>setCond()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sysy::mc::Instruction::setCond </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a213faf43e3f3bbd62aa73ab1dfa1ed10">CondType</a>&#160;</td>
+          <td class="paramname"><em>_cond</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a56efa7c32238d8daf23b0806a077af4f">cond</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../df/d73/classsysy_1_1mc_1_1Block.html#a051e1845d20e7fe7a5ed307e27d099b9">sysy::mc::Block::instSelection()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/de0/classsysy_1_1mc_1_1Instruction_a88cd336b1d89d2a2378fffec11681ea8_icgraph.png" border="0" usemap="#d6/de0/classsysy_1_1mc_1_1Instruction_a88cd336b1d89d2a2378fffec11681ea8_icgraph" alt=""/></div>
+<map name="d6/de0/classsysy_1_1mc_1_1Instruction_a88cd336b1d89d2a2378fffec11681ea8_icgraph" id="d6/de0/classsysy_1_1mc_1_1Instruction_a88cd336b1d89d2a2378fffec11681ea8_icgraph">
+<area shape="rect" title=" " alt="" coords="268,5,424,47"/>
+<area shape="rect" href="../../df/d73/classsysy_1_1mc_1_1Block.html#a051e1845d20e7fe7a5ed307e27d099b9" title=" " alt="" coords="5,13,220,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad90a4407878bb0e62a39bd8135055338"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad90a4407878bb0e62a39bd8135055338">&#9670;&nbsp;</a></span>use()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sysy::mc::Instruction::use </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d4/d18/classsysy_1_1mc_1_1Reg.html#a7919447b9272ea13c53e736ccdfe2da9aeca8f5a90881f8cfc0eba4fd88c241be">sysy::mc::Reg::SREG</a>, <a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a848e99bd5fc45a5be53edabae9ad9c84">use_reg</a>, and <a class="el" href="../../d4/d18/classsysy_1_1mc_1_1Reg.html#a33ebf21f2d1873a7895aa6695c75a18bac3624de6e5cf514ecca29245af72c47f">sysy::mc::Reg::VIRTUAL</a>.</p>
+
+</div>
+</div>
+<a id="a7067db5557f71c08086b7250076b9911"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7067db5557f71c08086b7250076b9911">&#9670;&nbsp;</a></span>use_v()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sysy::mc::Instruction::use_v </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a848e99bd5fc45a5be53edabae9ad9c84">use_reg</a>, <a class="el" href="../../d4/d18/classsysy_1_1mc_1_1Reg.html#a33ebf21f2d1873a7895aa6695c75a18bac3624de6e5cf514ecca29245af72c47f">sysy::mc::Reg::VIRTUAL</a>, and <a class="el" href="../../d4/d18/classsysy_1_1mc_1_1Reg.html#a7919447b9272ea13c53e736ccdfe2da9a72bf524e64243d9a49b0a3f500fd7c05">sysy::mc::Reg::VREG</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a56efa7c32238d8daf23b0806a077af4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56efa7c32238d8daf23b0806a077af4f">&#9670;&nbsp;</a></span>cond</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a213faf43e3f3bbd62aa73ab1dfa1ed10">CondType</a> sysy::mc::Instruction::cond</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../d9/d17/classsysy_1_1mc_1_1BinaryReg.html#a41ed3995562c4eea85f0dbd09427b31e">sysy::mc::BinaryReg::gen_asm()</a>, <a class="el" href="../../da/d94/classsysy_1_1mc_1_1BinaryImm.html#a2ba21563596dc6ee5b0708aadd22fea4">sysy::mc::BinaryImm::gen_asm()</a>, <a class="el" href="../../d4/ded/classsysy_1_1mc_1_1ComplexMul.html#a959082dc6ea6cf4ceaaf1a9ae8024b5b">sysy::mc::ComplexMul::gen_asm()</a>, <a class="el" href="../../d0/d54/classsysy_1_1mc_1_1MoveReg.html#af90d47ca9848d5ddd6fa01f33c4b3e24">sysy::mc::MoveReg::gen_asm()</a>, <a class="el" href="../../dc/d35/classsysy_1_1mc_1_1ShiftInstr.html#a413b1550b24b82dbbc3300a27e7bcfcd">sysy::mc::ShiftInstr::gen_asm()</a>, <a class="el" href="../../db/dd1/classsysy_1_1mc_1_1MoveImm.html#a58dd31bd75216ce23720f1d5dc296240">sysy::mc::MoveImm::gen_asm()</a>, <a class="el" href="../../df/d4a/classsysy_1_1mc_1_1CompareReg.html#a8a2bcc99ee918343776cacbc22e8f56c">sysy::mc::CompareReg::gen_asm()</a>, <a class="el" href="../../d3/d29/classsysy_1_1mc_1_1CompareImm.html#ac7fb36e063dd5790359b15e3ff7c92ea">sysy::mc::CompareImm::gen_asm()</a>, <a class="el" href="../../d8/dd6/classsysy_1_1mc_1_1Branch.html#a78b309ba01add7fbd7100c6a4c8a237b">sysy::mc::Branch::gen_asm()</a>, <a class="el" href="../../dc/df3/classsysy_1_1mc_1_1LoadImm.html#a3b38fb174171295a4575e34f6e20e43a">sysy::mc::LoadImm::gen_asm()</a>, <a class="el" href="../../da/d8d/classsysy_1_1mc_1_1LoadReg.html#aefbbce509601d13506ebd20b7086fc90">sysy::mc::LoadReg::gen_asm()</a>, <a class="el" href="../../d9/d71/classsysy_1_1mc_1_1StoreImm.html#acdcc0a846311f9e165de0f2c9f97685f">sysy::mc::StoreImm::gen_asm()</a>, <a class="el" href="../../df/dec/classsysy_1_1mc_1_1StoreReg.html#a2528c7019071829a9616cf59638133d0">sysy::mc::StoreReg::gen_asm()</a>, <a class="el" href="../../da/d1d/classsysy_1_1mc_1_1LoadGlobal.html#abfa11fade378e6ea38011e6245774d55">sysy::mc::LoadGlobal::gen_asm()</a>, <a class="el" href="../../d9/df3/classsysy_1_1mc_1_1LoadFP.html#a8a059eb5c3ef6fe57fcccd6b708151d8">sysy::mc::LoadFP::gen_asm()</a>, <a class="el" href="../../d3/d91/classsysy_1_1mc_1_1Convert.html#a416a63f70fd081dbe383d19212a729cd">sysy::mc::Convert::gen_asm()</a>, and <a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a88cd336b1d89d2a2378fffec11681ea8">setCond()</a>.</p>
+
+</div>
+</div>
 <a id="a0254e23298dfef38c7ffc30125222b10"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0254e23298dfef38c7ffc30125222b10">&#9670;&nbsp;</a></span>condMap</h2>
 
@@ -231,7 +581,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt; Instruction::CondType, std::string &gt; sysy::mc::Instruction::condMap</td>
+          <td class="memname">std::map&lt; <a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a213faf43e3f3bbd62aa73ab1dfa1ed10">Instruction::CondType</a>, std::string &gt; sysy::mc::Instruction::condMap</td>
         </tr>
       </table>
   </td>
@@ -241,9 +591,55 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    {AL, <span class="stringliteral">&quot;&quot;</span>}, {EQ, <span class="stringliteral">&quot;eq&quot;</span>}, {NE, <span class="stringliteral">&quot;ne&quot;</span>}, {GE, <span class="stringliteral">&quot;ge&quot;</span>}, {GT, <span class="stringliteral">&quot;gt&quot;</span>}, {LE, <span class="stringliteral">&quot;le&quot;</span>}, {LT, <span class="stringliteral">&quot;lt&quot;</span>}</div>
+<div class="line">    {<a class="code" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a213faf43e3f3bbd62aa73ab1dfa1ed10a98bdd4e412bbed97ad28d08ab9e007ee">AL</a>, <span class="stringliteral">&quot;&quot;</span>}, {<a class="code" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a213faf43e3f3bbd62aa73ab1dfa1ed10a3f2ad71b3f966ccc05219eea36e64ea9">EQ</a>, <span class="stringliteral">&quot;eq&quot;</span>}, {<a class="code" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a213faf43e3f3bbd62aa73ab1dfa1ed10a2b568664aae7c105219c784b4a972da6">NE</a>, <span class="stringliteral">&quot;ne&quot;</span>}, {<a class="code" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a213faf43e3f3bbd62aa73ab1dfa1ed10ace2877b7c342918e9fda169f176cd028">GE</a>, <span class="stringliteral">&quot;ge&quot;</span>}, {<a class="code" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a213faf43e3f3bbd62aa73ab1dfa1ed10a516ec873bdb7e7e6a0bececc8758e9a3">GT</a>, <span class="stringliteral">&quot;gt&quot;</span>}, {<a class="code" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a213faf43e3f3bbd62aa73ab1dfa1ed10ae3c27441a4c928fa24ed175557f1f7e0">LE</a>, <span class="stringliteral">&quot;le&quot;</span>}, {<a class="code" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a213faf43e3f3bbd62aa73ab1dfa1ed10a9a5de371dd3bc1efd20054233720338a">LT</a>, <span class="stringliteral">&quot;lt&quot;</span>}</div>
 <div class="line">}</div>
 </div><!-- fragment -->
+<p class="reference">Referenced by <a class="el" href="../../d9/d17/classsysy_1_1mc_1_1BinaryReg.html#a41ed3995562c4eea85f0dbd09427b31e">sysy::mc::BinaryReg::gen_asm()</a>, <a class="el" href="../../da/d94/classsysy_1_1mc_1_1BinaryImm.html#a2ba21563596dc6ee5b0708aadd22fea4">sysy::mc::BinaryImm::gen_asm()</a>, <a class="el" href="../../d4/ded/classsysy_1_1mc_1_1ComplexMul.html#a959082dc6ea6cf4ceaaf1a9ae8024b5b">sysy::mc::ComplexMul::gen_asm()</a>, <a class="el" href="../../d0/d54/classsysy_1_1mc_1_1MoveReg.html#af90d47ca9848d5ddd6fa01f33c4b3e24">sysy::mc::MoveReg::gen_asm()</a>, <a class="el" href="../../dc/d35/classsysy_1_1mc_1_1ShiftInstr.html#a413b1550b24b82dbbc3300a27e7bcfcd">sysy::mc::ShiftInstr::gen_asm()</a>, <a class="el" href="../../db/dd1/classsysy_1_1mc_1_1MoveImm.html#a58dd31bd75216ce23720f1d5dc296240">sysy::mc::MoveImm::gen_asm()</a>, <a class="el" href="../../df/d4a/classsysy_1_1mc_1_1CompareReg.html#a8a2bcc99ee918343776cacbc22e8f56c">sysy::mc::CompareReg::gen_asm()</a>, <a class="el" href="../../d3/d29/classsysy_1_1mc_1_1CompareImm.html#ac7fb36e063dd5790359b15e3ff7c92ea">sysy::mc::CompareImm::gen_asm()</a>, <a class="el" href="../../d8/dd6/classsysy_1_1mc_1_1Branch.html#a78b309ba01add7fbd7100c6a4c8a237b">sysy::mc::Branch::gen_asm()</a>, <a class="el" href="../../dc/df3/classsysy_1_1mc_1_1LoadImm.html#a3b38fb174171295a4575e34f6e20e43a">sysy::mc::LoadImm::gen_asm()</a>, <a class="el" href="../../da/d8d/classsysy_1_1mc_1_1LoadReg.html#aefbbce509601d13506ebd20b7086fc90">sysy::mc::LoadReg::gen_asm()</a>, <a class="el" href="../../d9/d71/classsysy_1_1mc_1_1StoreImm.html#acdcc0a846311f9e165de0f2c9f97685f">sysy::mc::StoreImm::gen_asm()</a>, <a class="el" href="../../df/dec/classsysy_1_1mc_1_1StoreReg.html#a2528c7019071829a9616cf59638133d0">sysy::mc::StoreReg::gen_asm()</a>, <a class="el" href="../../da/d1d/classsysy_1_1mc_1_1LoadGlobal.html#abfa11fade378e6ea38011e6245774d55">sysy::mc::LoadGlobal::gen_asm()</a>, <a class="el" href="../../d9/df3/classsysy_1_1mc_1_1LoadFP.html#a8a059eb5c3ef6fe57fcccd6b708151d8">sysy::mc::LoadFP::gen_asm()</a>, and <a class="el" href="../../d3/d91/classsysy_1_1mc_1_1Convert.html#a416a63f70fd081dbe383d19212a729cd">sysy::mc::Convert::gen_asm()</a>.</p>
+
+</div>
+</div>
+<a id="a7b8245e96fca60ec21cdd4410669f0b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b8245e96fca60ec21cdd4410669f0b2">&#9670;&nbsp;</a></span>def_reg</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="../../d4/d18/classsysy_1_1mc_1_1Reg.html">Reg</a>*&gt; sysy::mc::Instruction::def_reg</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../d4/d9c/classsysy_1_1mc_1_1Call.html#a411e10ef2e1920c78dcfcdf51bc4df59">sysy::mc::Call::Call()</a>, <a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a6c7fba22a5e06013d69427e337e3e941">def()</a>, <a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae90f2c9418426901a9d17b2eaaa95ec2">def_v()</a>, <a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a422c3bda1f5e9cfdaade608917fae836">replace_reg()</a>, and <a class="el" href="../../de/dc6/classsysy_1_1mc_1_1Return.html#a4f94798f781b0d6601606d01cec6485c">sysy::mc::Return::Return()</a>.</p>
+
+</div>
+</div>
+<a id="ac10ac77169b51d365785c1a6f686eb71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac10ac77169b51d365785c1a6f686eb71">&#9670;&nbsp;</a></span>instr_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6f">InstrType</a> sysy::mc::Instruction::instr_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a988e3d706e1cc12bd43c9e40aa6cef3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a988e3d706e1cc12bd43c9e40aa6cef3a">&#9670;&nbsp;</a></span>is_float</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sysy::mc::Instruction::is_float = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
 </div>
 </div>
 <a id="ac7e5455ba0543091910aa9548420f778"></a>
@@ -256,7 +652,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt; Inst::InstrType, std::string &gt; sysy::mc::Inst::type_map</td>
+          <td class="memname">std::map&lt; <a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6f">Inst::InstrType</a>, std::string &gt; sysy::mc::Inst::type_map</td>
         </tr>
       </table>
   </td>
@@ -266,37 +662,77 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    {BinaryReg, <span class="stringliteral">&quot;BinaryReg&quot;</span>},</div>
-<div class="line">    {BinaryImm, <span class="stringliteral">&quot;BinaryImm&quot;</span>},</div>
-<div class="line">    {ComplexMul, <span class="stringliteral">&quot;ComplexMul&quot;</span>},</div>
-<div class="line">    {MoveReg, <span class="stringliteral">&quot;MoveReg&quot;</span>},</div>
-<div class="line">    {ShiftInstr, <span class="stringliteral">&quot;ShiftInstr&quot;</span>},</div>
-<div class="line">    {MoveImm, <span class="stringliteral">&quot;MoveImm&quot;</span>},</div>
-<div class="line">    {CompareReg, <span class="stringliteral">&quot;CompareReg&quot;</span>},</div>
-<div class="line">    {CompareImm, <span class="stringliteral">&quot;CompareImm&quot;</span>},</div>
-<div class="line">    {Branch, <span class="stringliteral">&quot;Branch&quot;</span>},</div>
-<div class="line">    {Push, <span class="stringliteral">&quot;Push&quot;</span>},</div>
-<div class="line">    {Pop, <span class="stringliteral">&quot;Pop&quot;</span>},</div>
-<div class="line">    {Load, <span class="stringliteral">&quot;Load&quot;</span>},</div>
-<div class="line">    {LoadGlobal, <span class="stringliteral">&quot;LoadGlobal&quot;</span>},</div>
-<div class="line">    {Store, <span class="stringliteral">&quot;Store&quot;</span>},</div>
-<div class="line">    {Call, <span class="stringliteral">&quot;Call&quot;</span>},</div>
-<div class="line">    {Return, <span class="stringliteral">&quot;Return&quot;</span>},</div>
-<div class="line">    {Convert, <span class="stringliteral">&quot;Convert&quot;</span>}</div>
+<div class="line">    {<a class="code" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fa51f90e8f7f54f26479f3346ce88ed20e">BinaryReg</a>, <span class="stringliteral">&quot;BinaryReg&quot;</span>},</div>
+<div class="line">    {<a class="code" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fa6381c443559d58816db2419e11a64f21">BinaryImm</a>, <span class="stringliteral">&quot;BinaryImm&quot;</span>},</div>
+<div class="line">    {<a class="code" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fa0841cd79c986b855ae2d871d51ef4262">ComplexMul</a>, <span class="stringliteral">&quot;ComplexMul&quot;</span>},</div>
+<div class="line">    {<a class="code" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fac11db440f340cde663ef33298fa0ae3b">MoveReg</a>, <span class="stringliteral">&quot;MoveReg&quot;</span>},</div>
+<div class="line">    {<a class="code" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fa890670bb2da73f1890e23734dd4def67">ShiftInstr</a>, <span class="stringliteral">&quot;ShiftInstr&quot;</span>},</div>
+<div class="line">    {<a class="code" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fa51fa2bde929aced320df7f7f5fd4e301">MoveImm</a>, <span class="stringliteral">&quot;MoveImm&quot;</span>},</div>
+<div class="line">    {<a class="code" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fa759b8e0bae96f147fd143738e94bdb62">CompareReg</a>, <span class="stringliteral">&quot;CompareReg&quot;</span>},</div>
+<div class="line">    {<a class="code" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fa25d22a0b80eb48b86a1f1991e475b156">CompareImm</a>, <span class="stringliteral">&quot;CompareImm&quot;</span>},</div>
+<div class="line">    {<a class="code" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6faf0b60f239d674db685b5009edf2da827">Branch</a>, <span class="stringliteral">&quot;Branch&quot;</span>},</div>
+<div class="line">    {<a class="code" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fadb2a27db04ad134afb6383d4c5c5c7fa">Push</a>, <span class="stringliteral">&quot;Push&quot;</span>},</div>
+<div class="line">    {<a class="code" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6faaa0d456a2a4a3a2aa2b1447bc4046f66">Pop</a>, <span class="stringliteral">&quot;Pop&quot;</span>},</div>
+<div class="line">    {<a class="code" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fa7bfde3da593860ddf4e31a57087d5082">Load</a>, <span class="stringliteral">&quot;Load&quot;</span>},</div>
+<div class="line">    {<a class="code" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fa33e54fc3d2353d03094f5cd595c91830">LoadGlobal</a>, <span class="stringliteral">&quot;LoadGlobal&quot;</span>},</div>
+<div class="line">    {<a class="code" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fabe01d20b2410fd0a4ba5f9b4c536347e">Store</a>, <span class="stringliteral">&quot;Store&quot;</span>},</div>
+<div class="line">    {<a class="code" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fa99df3385cd56ddc34c8e015b0c091d84">Call</a>, <span class="stringliteral">&quot;Call&quot;</span>},</div>
+<div class="line">    {<a class="code" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fa3c8e7eaeed7947601cb65412e9f0c0b3">Return</a>, <span class="stringliteral">&quot;Return&quot;</span>},</div>
+<div class="line">    {<a class="code" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fad913e02ef11a8bcd9e3172bfd10fba2b">Convert</a>, <span class="stringliteral">&quot;Convert&quot;</span>}</div>
 <div class="line">}</div>
 </div><!-- fragment -->
 </div>
 </div>
+<a id="a848e99bd5fc45a5be53edabae9ad9c84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a848e99bd5fc45a5be53edabae9ad9c84">&#9670;&nbsp;</a></span>use_reg</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="../../d4/d18/classsysy_1_1mc_1_1Reg.html">Reg</a>*&gt; sysy::mc::Instruction::use_reg</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../d4/d9c/classsysy_1_1mc_1_1Call.html#a411e10ef2e1920c78dcfcdf51bc4df59">sysy::mc::Call::Call()</a>, <a class="el" href="../../df/d73/classsysy_1_1mc_1_1Block.html#a051e1845d20e7fe7a5ed307e27d099b9">sysy::mc::Block::instSelection()</a>, <a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a422c3bda1f5e9cfdaade608917fae836">replace_reg()</a>, <a class="el" href="../../de/dc6/classsysy_1_1mc_1_1Return.html#a4f94798f781b0d6601606d01cec6485c">sysy::mc::Return::Return()</a>, <a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ad90a4407878bb0e62a39bd8135055338">use()</a>, and <a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a7067db5557f71c08086b7250076b9911">use_v()</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>include/sysy/Target/<a class="el" href="../../d2/d63/Target_2Instruction_8h_source.html">Instruction.h</a></li>
-<li>lib/Target/MCInstruction.cpp</li>
+<li>lib/Target/<a class="el" href="../../da/d73/MCInstruction_8cpp.html">MCInstruction.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclasssysy_1_1mc_1_1Instruction_html_a213faf43e3f3bbd62aa73ab1dfa1ed10a2b568664aae7c105219c784b4a972da6"><div class="ttname"><a href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a213faf43e3f3bbd62aa73ab1dfa1ed10a2b568664aae7c105219c784b4a972da6">sysy::mc::Instruction::NE</a></div><div class="ttdeci">@ NE</div><div class="ttdef"><b>Definition:</b> Instruction.h:55</div></div>
+<div class="ttc" id="aclasssysy_1_1mc_1_1Instruction_html_a213faf43e3f3bbd62aa73ab1dfa1ed10ae3c27441a4c928fa24ed175557f1f7e0"><div class="ttname"><a href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a213faf43e3f3bbd62aa73ab1dfa1ed10ae3c27441a4c928fa24ed175557f1f7e0">sysy::mc::Instruction::LE</a></div><div class="ttdeci">@ LE</div><div class="ttdef"><b>Definition:</b> Instruction.h:55</div></div>
+<div class="ttc" id="aclasssysy_1_1mc_1_1Instruction_html_ae1e3d04be9f7eb85616aa58a9b128a6fac11db440f340cde663ef33298fa0ae3b"><div class="ttname"><a href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fac11db440f340cde663ef33298fa0ae3b">sysy::mc::Instruction::MoveReg</a></div><div class="ttdeci">@ MoveReg</div><div class="ttdef"><b>Definition:</b> Instruction.h:35</div></div>
+<div class="ttc" id="aclasssysy_1_1mc_1_1Instruction_html_ae1e3d04be9f7eb85616aa58a9b128a6fa890670bb2da73f1890e23734dd4def67"><div class="ttname"><a href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fa890670bb2da73f1890e23734dd4def67">sysy::mc::Instruction::ShiftInstr</a></div><div class="ttdeci">@ ShiftInstr</div><div class="ttdef"><b>Definition:</b> Instruction.h:36</div></div>
+<div class="ttc" id="aclasssysy_1_1mc_1_1Instruction_html_ae1e3d04be9f7eb85616aa58a9b128a6faaa0d456a2a4a3a2aa2b1447bc4046f66"><div class="ttname"><a href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6faaa0d456a2a4a3a2aa2b1447bc4046f66">sysy::mc::Instruction::Pop</a></div><div class="ttdeci">@ Pop</div><div class="ttdef"><b>Definition:</b> Instruction.h:42</div></div>
+<div class="ttc" id="aclasssysy_1_1mc_1_1Instruction_html_ae1e3d04be9f7eb85616aa58a9b128a6fa6381c443559d58816db2419e11a64f21"><div class="ttname"><a href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fa6381c443559d58816db2419e11a64f21">sysy::mc::Instruction::BinaryImm</a></div><div class="ttdeci">@ BinaryImm</div><div class="ttdef"><b>Definition:</b> Instruction.h:33</div></div>
+<div class="ttc" id="aclasssysy_1_1mc_1_1Instruction_html_ae1e3d04be9f7eb85616aa58a9b128a6fa0841cd79c986b855ae2d871d51ef4262"><div class="ttname"><a href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fa0841cd79c986b855ae2d871d51ef4262">sysy::mc::Instruction::ComplexMul</a></div><div class="ttdeci">@ ComplexMul</div><div class="ttdef"><b>Definition:</b> Instruction.h:34</div></div>
+<div class="ttc" id="aclasssysy_1_1mc_1_1Instruction_html_a213faf43e3f3bbd62aa73ab1dfa1ed10a516ec873bdb7e7e6a0bececc8758e9a3"><div class="ttname"><a href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a213faf43e3f3bbd62aa73ab1dfa1ed10a516ec873bdb7e7e6a0bececc8758e9a3">sysy::mc::Instruction::GT</a></div><div class="ttdeci">@ GT</div><div class="ttdef"><b>Definition:</b> Instruction.h:55</div></div>
+<div class="ttc" id="aclasssysy_1_1mc_1_1Instruction_html_ae1e3d04be9f7eb85616aa58a9b128a6fad913e02ef11a8bcd9e3172bfd10fba2b"><div class="ttname"><a href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fad913e02ef11a8bcd9e3172bfd10fba2b">sysy::mc::Instruction::Convert</a></div><div class="ttdeci">@ Convert</div><div class="ttdef"><b>Definition:</b> Instruction.h:49</div></div>
+<div class="ttc" id="aclasssysy_1_1mc_1_1Instruction_html_ae1e3d04be9f7eb85616aa58a9b128a6fa99df3385cd56ddc34c8e015b0c091d84"><div class="ttname"><a href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fa99df3385cd56ddc34c8e015b0c091d84">sysy::mc::Instruction::Call</a></div><div class="ttdeci">@ Call</div><div class="ttdef"><b>Definition:</b> Instruction.h:46</div></div>
+<div class="ttc" id="aclasssysy_1_1mc_1_1Instruction_html_ae1e3d04be9f7eb85616aa58a9b128a6faf0b60f239d674db685b5009edf2da827"><div class="ttname"><a href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6faf0b60f239d674db685b5009edf2da827">sysy::mc::Instruction::Branch</a></div><div class="ttdeci">@ Branch</div><div class="ttdef"><b>Definition:</b> Instruction.h:40</div></div>
+<div class="ttc" id="aclasssysy_1_1mc_1_1Instruction_html_ae1e3d04be9f7eb85616aa58a9b128a6fa51f90e8f7f54f26479f3346ce88ed20e"><div class="ttname"><a href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fa51f90e8f7f54f26479f3346ce88ed20e">sysy::mc::Instruction::BinaryReg</a></div><div class="ttdeci">@ BinaryReg</div><div class="ttdef"><b>Definition:</b> Instruction.h:32</div></div>
+<div class="ttc" id="aclasssysy_1_1mc_1_1Instruction_html_a213faf43e3f3bbd62aa73ab1dfa1ed10a3f2ad71b3f966ccc05219eea36e64ea9"><div class="ttname"><a href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a213faf43e3f3bbd62aa73ab1dfa1ed10a3f2ad71b3f966ccc05219eea36e64ea9">sysy::mc::Instruction::EQ</a></div><div class="ttdeci">@ EQ</div><div class="ttdef"><b>Definition:</b> Instruction.h:55</div></div>
+<div class="ttc" id="aclasssysy_1_1mc_1_1Instruction_html_ae1e3d04be9f7eb85616aa58a9b128a6fa759b8e0bae96f147fd143738e94bdb62"><div class="ttname"><a href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fa759b8e0bae96f147fd143738e94bdb62">sysy::mc::Instruction::CompareReg</a></div><div class="ttdeci">@ CompareReg</div><div class="ttdef"><b>Definition:</b> Instruction.h:38</div></div>
+<div class="ttc" id="aclasssysy_1_1mc_1_1Instruction_html_ae1e3d04be9f7eb85616aa58a9b128a6fa25d22a0b80eb48b86a1f1991e475b156"><div class="ttname"><a href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fa25d22a0b80eb48b86a1f1991e475b156">sysy::mc::Instruction::CompareImm</a></div><div class="ttdeci">@ CompareImm</div><div class="ttdef"><b>Definition:</b> Instruction.h:39</div></div>
+<div class="ttc" id="aclasssysy_1_1mc_1_1Instruction_html_a213faf43e3f3bbd62aa73ab1dfa1ed10ace2877b7c342918e9fda169f176cd028"><div class="ttname"><a href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a213faf43e3f3bbd62aa73ab1dfa1ed10ace2877b7c342918e9fda169f176cd028">sysy::mc::Instruction::GE</a></div><div class="ttdeci">@ GE</div><div class="ttdef"><b>Definition:</b> Instruction.h:55</div></div>
+<div class="ttc" id="aclasssysy_1_1mc_1_1Instruction_html_a213faf43e3f3bbd62aa73ab1dfa1ed10a98bdd4e412bbed97ad28d08ab9e007ee"><div class="ttname"><a href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a213faf43e3f3bbd62aa73ab1dfa1ed10a98bdd4e412bbed97ad28d08ab9e007ee">sysy::mc::Instruction::AL</a></div><div class="ttdeci">@ AL</div><div class="ttdef"><b>Definition:</b> Instruction.h:55</div></div>
+<div class="ttc" id="aclasssysy_1_1mc_1_1Instruction_html_a213faf43e3f3bbd62aa73ab1dfa1ed10a9a5de371dd3bc1efd20054233720338a"><div class="ttname"><a href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#a213faf43e3f3bbd62aa73ab1dfa1ed10a9a5de371dd3bc1efd20054233720338a">sysy::mc::Instruction::LT</a></div><div class="ttdeci">@ LT</div><div class="ttdef"><b>Definition:</b> Instruction.h:55</div></div>
+<div class="ttc" id="aclasssysy_1_1mc_1_1Instruction_html_ae1e3d04be9f7eb85616aa58a9b128a6fabe01d20b2410fd0a4ba5f9b4c536347e"><div class="ttname"><a href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fabe01d20b2410fd0a4ba5f9b4c536347e">sysy::mc::Instruction::Store</a></div><div class="ttdeci">@ Store</div><div class="ttdef"><b>Definition:</b> Instruction.h:44</div></div>
+<div class="ttc" id="aclasssysy_1_1mc_1_1Instruction_html_ae1e3d04be9f7eb85616aa58a9b128a6fa33e54fc3d2353d03094f5cd595c91830"><div class="ttname"><a href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fa33e54fc3d2353d03094f5cd595c91830">sysy::mc::Instruction::LoadGlobal</a></div><div class="ttdeci">@ LoadGlobal</div><div class="ttdef"><b>Definition:</b> Instruction.h:45</div></div>
+<div class="ttc" id="aclasssysy_1_1mc_1_1Instruction_html_ae1e3d04be9f7eb85616aa58a9b128a6fa3c8e7eaeed7947601cb65412e9f0c0b3"><div class="ttname"><a href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fa3c8e7eaeed7947601cb65412e9f0c0b3">sysy::mc::Instruction::Return</a></div><div class="ttdeci">@ Return</div><div class="ttdef"><b>Definition:</b> Instruction.h:47</div></div>
+<div class="ttc" id="aclasssysy_1_1mc_1_1Instruction_html_ae1e3d04be9f7eb85616aa58a9b128a6fadb2a27db04ad134afb6383d4c5c5c7fa"><div class="ttname"><a href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fadb2a27db04ad134afb6383d4c5c5c7fa">sysy::mc::Instruction::Push</a></div><div class="ttdeci">@ Push</div><div class="ttdef"><b>Definition:</b> Instruction.h:41</div></div>
+<div class="ttc" id="aclasssysy_1_1mc_1_1Instruction_html_ae1e3d04be9f7eb85616aa58a9b128a6fa7bfde3da593860ddf4e31a57087d5082"><div class="ttname"><a href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fa7bfde3da593860ddf4e31a57087d5082">sysy::mc::Instruction::Load</a></div><div class="ttdeci">@ Load</div><div class="ttdef"><b>Definition:</b> Instruction.h:43</div></div>
+<div class="ttc" id="aclasssysy_1_1mc_1_1Instruction_html_ae1e3d04be9f7eb85616aa58a9b128a6fa51fa2bde929aced320df7f7f5fd4e301"><div class="ttname"><a href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html#ae1e3d04be9f7eb85616aa58a9b128a6fa51fa2bde929aced320df7f7f5fd4e301">sysy::mc::Instruction::MoveImm</a></div><div class="ttdeci">@ MoveImm</div><div class="ttdef"><b>Definition:</b> Instruction.h:37</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>sysy</b></li><li class="navelem"><b>mc</b></li><li class="navelem"><a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html">Instruction</a></li>
+    <li class="navelem"><a class="el" href="../../dd/d20/namespacesysy.html">sysy</a></li><li class="navelem"><a class="el" href="../../d7/d26/namespacesysy_1_1mc.html">mc</a></li><li class="navelem"><a class="el" href="../../d6/de0/classsysy_1_1mc_1_1Instruction.html">Instruction</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

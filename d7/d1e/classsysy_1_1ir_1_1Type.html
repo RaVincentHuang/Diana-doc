@@ -87,12 +87,15 @@ $(document).ready(function(){initNavTree('d7/d1e/classsysy_1_1ir_1_1Type.html','
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="../../d3/d0b/classsysy_1_1ir_1_1Type-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">sysy::ir::Type Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="../../d7/db7/Type_8h_source.html">Type.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for sysy::ir::Type:</div>
 <div class="dyncontent">
@@ -124,114 +127,90 @@ Public Types</h2></td></tr>
 <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#ace0e547eba970d4b983ecdded75dd6b7a4bf0f1572b7f9f1413b4c74b23ea6e53">FixedVectorTyID</a>, 
 <br />
 &#160;&#160;<a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#ace0e547eba970d4b983ecdded75dd6b7a7a45cf15022058aa3217ab957482e656">ScalableVectorTyID</a>, 
-<b>UndefTyID</b>
+<a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#ace0e547eba970d4b983ecdded75dd6b7a57af24e69c6bdaa6882f317b953b46de">UndefTyID</a>
 <br />
  }</td></tr>
 <tr class="separator:ace0e547eba970d4b983ecdded75dd6b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae9b2a92a444f0581a009b8dd6681e73d"><td class="memItemLeft" align="right" valign="top"><a id="ae9b2a92a444f0581a009b8dd6681e73d"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isFloatTy</b> ()</td></tr>
+<tr class="memitem:ae9b2a92a444f0581a009b8dd6681e73d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#ae9b2a92a444f0581a009b8dd6681e73d">isFloatTy</a> ()</td></tr>
 <tr class="separator:ae9b2a92a444f0581a009b8dd6681e73d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a677bb7ab1967579b7924cee6087d28fd"><td class="memItemLeft" align="right" valign="top"><a id="a677bb7ab1967579b7924cee6087d28fd"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isVoidTy</b> ()</td></tr>
+<tr class="memitem:a677bb7ab1967579b7924cee6087d28fd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a677bb7ab1967579b7924cee6087d28fd">isVoidTy</a> ()</td></tr>
 <tr class="separator:a677bb7ab1967579b7924cee6087d28fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c9a3b89d02629f7c3e2bd3558d290a8"><td class="memItemLeft" align="right" valign="top"><a id="a4c9a3b89d02629f7c3e2bd3558d290a8"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isLabelTy</b> ()</td></tr>
+<tr class="memitem:a4c9a3b89d02629f7c3e2bd3558d290a8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a4c9a3b89d02629f7c3e2bd3558d290a8">isLabelTy</a> ()</td></tr>
 <tr class="separator:a4c9a3b89d02629f7c3e2bd3558d290a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab51ef9921f2598908a291b4146dc047a"><td class="memItemLeft" align="right" valign="top"><a id="ab51ef9921f2598908a291b4146dc047a"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isIntegerTy</b> ()</td></tr>
+<tr class="memitem:ab51ef9921f2598908a291b4146dc047a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#ab51ef9921f2598908a291b4146dc047a">isIntegerTy</a> ()</td></tr>
 <tr class="separator:ab51ef9921f2598908a291b4146dc047a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e362c366228a229910840f5e949dc15"><td class="memItemLeft" align="right" valign="top"><a id="a4e362c366228a229910840f5e949dc15"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isIntegerTy</b> (unsigned width)</td></tr>
+<tr class="memitem:a4e362c366228a229910840f5e949dc15"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a4e362c366228a229910840f5e949dc15">isIntegerTy</a> (unsigned width)</td></tr>
 <tr class="separator:a4e362c366228a229910840f5e949dc15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8d43d5eb2bbd183d86824b50d3dacec"><td class="memItemLeft" align="right" valign="top"><a id="af8d43d5eb2bbd183d86824b50d3dacec"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isFunctionTy</b> ()</td></tr>
+<tr class="memitem:af8d43d5eb2bbd183d86824b50d3dacec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#af8d43d5eb2bbd183d86824b50d3dacec">isFunctionTy</a> ()</td></tr>
 <tr class="separator:af8d43d5eb2bbd183d86824b50d3dacec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fc1d4d960ff2cb1bc3513d5a532f7ae"><td class="memItemLeft" align="right" valign="top"><a id="a3fc1d4d960ff2cb1bc3513d5a532f7ae"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isPointerTy</b> ()</td></tr>
+<tr class="memitem:a3fc1d4d960ff2cb1bc3513d5a532f7ae"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a3fc1d4d960ff2cb1bc3513d5a532f7ae">isPointerTy</a> ()</td></tr>
 <tr class="separator:a3fc1d4d960ff2cb1bc3513d5a532f7ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9436a5a3c5cd89ce29aa1f3ff6bd0347"><td class="memItemLeft" align="right" valign="top"><a id="a9436a5a3c5cd89ce29aa1f3ff6bd0347"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isVectorTy</b> ()</td></tr>
+<tr class="memitem:a9436a5a3c5cd89ce29aa1f3ff6bd0347"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a9436a5a3c5cd89ce29aa1f3ff6bd0347">isVectorTy</a> ()</td></tr>
 <tr class="separator:a9436a5a3c5cd89ce29aa1f3ff6bd0347"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ea1bc2d05e0bd653c841f8d4b5c50bb"><td class="memItemLeft" align="right" valign="top"><a id="a9ea1bc2d05e0bd653c841f8d4b5c50bb"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isArrayTy</b> ()</td></tr>
+<tr class="memitem:a9ea1bc2d05e0bd653c841f8d4b5c50bb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a9ea1bc2d05e0bd653c841f8d4b5c50bb">isArrayTy</a> ()</td></tr>
 <tr class="separator:a9ea1bc2d05e0bd653c841f8d4b5c50bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af33154f7e1a2e1ef272bbcec14de1714"><td class="memItemLeft" align="right" valign="top"><a id="af33154f7e1a2e1ef272bbcec14de1714"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isUndefTy</b> ()</td></tr>
+<tr class="memitem:af33154f7e1a2e1ef272bbcec14de1714"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#af33154f7e1a2e1ef272bbcec14de1714">isUndefTy</a> ()</td></tr>
 <tr class="separator:af33154f7e1a2e1ef272bbcec14de1714"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acef75cffb3fa405698cd9aa5984ece89"><td class="memItemLeft" align="right" valign="top"><a id="acef75cffb3fa405698cd9aa5984ece89"></a>
-virtual <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getInnerType</b> ()=0</td></tr>
+<tr class="memitem:acef75cffb3fa405698cd9aa5984ece89"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#acef75cffb3fa405698cd9aa5984ece89">getInnerType</a> ()=0</td></tr>
 <tr class="separator:acef75cffb3fa405698cd9aa5984ece89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e700e3c8bbabeea0cf4ebb2dc0ad83b"><td class="memItemLeft" align="right" valign="top"><a id="a4e700e3c8bbabeea0cf4ebb2dc0ad83b"></a>
-virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getSignature</b> ()=0</td></tr>
+<tr class="memitem:a4e700e3c8bbabeea0cf4ebb2dc0ad83b"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a4e700e3c8bbabeea0cf4ebb2dc0ad83b">getSignature</a> ()=0</td></tr>
 <tr class="separator:a4e700e3c8bbabeea0cf4ebb2dc0ad83b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58bd3dd34b6ee7006a809f7e136f6849"><td class="memItemLeft" align="right" valign="top"><a id="a58bd3dd34b6ee7006a809f7e136f6849"></a>
-virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><b>getAllocatedSize</b> ()=0</td></tr>
+<tr class="memitem:a58bd3dd34b6ee7006a809f7e136f6849"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a58bd3dd34b6ee7006a809f7e136f6849">getAllocatedSize</a> ()=0</td></tr>
 <tr class="separator:a58bd3dd34b6ee7006a809f7e136f6849"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a33152d535709ae8a83ea70afc2de2bc5"><td class="memItemLeft" align="right" valign="top"><a id="a33152d535709ae8a83ea70afc2de2bc5"></a>
-static <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getFloatTy</b> ()</td></tr>
+<tr class="memitem:a33152d535709ae8a83ea70afc2de2bc5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a33152d535709ae8a83ea70afc2de2bc5">getFloatTy</a> ()</td></tr>
 <tr class="separator:a33152d535709ae8a83ea70afc2de2bc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5037dd4d7aa044846a0e22e5bdc77d79"><td class="memItemLeft" align="right" valign="top"><a id="a5037dd4d7aa044846a0e22e5bdc77d79"></a>
-static <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getVoidTy</b> ()</td></tr>
+<tr class="memitem:a5037dd4d7aa044846a0e22e5bdc77d79"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a5037dd4d7aa044846a0e22e5bdc77d79">getVoidTy</a> ()</td></tr>
 <tr class="separator:a5037dd4d7aa044846a0e22e5bdc77d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb06f39482cd58ea11c1e4fd2ca3ea74"><td class="memItemLeft" align="right" valign="top"><a id="acb06f39482cd58ea11c1e4fd2ca3ea74"></a>
-static <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getUndefTy</b> ()</td></tr>
+<tr class="memitem:acb06f39482cd58ea11c1e4fd2ca3ea74"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#acb06f39482cd58ea11c1e4fd2ca3ea74">getUndefTy</a> ()</td></tr>
 <tr class="separator:acb06f39482cd58ea11c1e4fd2ca3ea74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21a723b5642976244496b2f707ba2d38"><td class="memItemLeft" align="right" valign="top"><a id="a21a723b5642976244496b2f707ba2d38"></a>
-static <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getFunctionTy</b> (<a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *_retType, std::vector&lt; <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> * &gt; _argType, bool isVarArg)</td></tr>
+<tr class="memitem:a21a723b5642976244496b2f707ba2d38"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a21a723b5642976244496b2f707ba2d38">getFunctionTy</a> (<a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *_retType, std::vector&lt; <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> * &gt; _argType, bool <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#ab29bd87cf99950f4b730a193f4b63306">isVarArg</a>)</td></tr>
 <tr class="separator:a21a723b5642976244496b2f707ba2d38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab07d3ee68e975e204ee1565446e5538d"><td class="memItemLeft" align="right" valign="top"><a id="ab07d3ee68e975e204ee1565446e5538d"></a>
-static <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getLabelTy</b> ()</td></tr>
+<tr class="memitem:ab07d3ee68e975e204ee1565446e5538d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#ab07d3ee68e975e204ee1565446e5538d">getLabelTy</a> ()</td></tr>
 <tr class="separator:ab07d3ee68e975e204ee1565446e5538d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79ff29344d561325d67f3aeec9ac6a60"><td class="memItemLeft" align="right" valign="top"><a id="a79ff29344d561325d67f3aeec9ac6a60"></a>
-static <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getIntegerTy</b> (unsigned width)</td></tr>
+<tr class="memitem:a79ff29344d561325d67f3aeec9ac6a60"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a79ff29344d561325d67f3aeec9ac6a60">getIntegerTy</a> (unsigned width)</td></tr>
 <tr class="separator:a79ff29344d561325d67f3aeec9ac6a60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7a17d0fa623ea6269c26a0c2f8a52cf"><td class="memItemLeft" align="right" valign="top"><a id="af7a17d0fa623ea6269c26a0c2f8a52cf"></a>
-static <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getInt1Ty</b> ()</td></tr>
+<tr class="memitem:af7a17d0fa623ea6269c26a0c2f8a52cf"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#af7a17d0fa623ea6269c26a0c2f8a52cf">getInt1Ty</a> ()</td></tr>
 <tr class="separator:af7a17d0fa623ea6269c26a0c2f8a52cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b915129bd2ac53ea09512292870354b"><td class="memItemLeft" align="right" valign="top"><a id="a1b915129bd2ac53ea09512292870354b"></a>
-static <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getInt32Ty</b> ()</td></tr>
+<tr class="memitem:a1b915129bd2ac53ea09512292870354b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a1b915129bd2ac53ea09512292870354b">getInt32Ty</a> ()</td></tr>
 <tr class="separator:a1b915129bd2ac53ea09512292870354b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae814270a93bf4def78ab6a5beb5b8bf5"><td class="memItemLeft" align="right" valign="top"><a id="ae814270a93bf4def78ab6a5beb5b8bf5"></a>
-static <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getInt8Ty</b> ()</td></tr>
+<tr class="memitem:ae814270a93bf4def78ab6a5beb5b8bf5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#ae814270a93bf4def78ab6a5beb5b8bf5">getInt8Ty</a> ()</td></tr>
 <tr class="separator:ae814270a93bf4def78ab6a5beb5b8bf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e05bd76893a93bf68a5a194d0649f10"><td class="memItemLeft" align="right" valign="top"><a id="a3e05bd76893a93bf68a5a194d0649f10"></a>
-static <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getPointerTy</b> (<a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *inner)</td></tr>
+<tr class="memitem:a3e05bd76893a93bf68a5a194d0649f10"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a3e05bd76893a93bf68a5a194d0649f10">getPointerTy</a> (<a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *inner)</td></tr>
 <tr class="separator:a3e05bd76893a93bf68a5a194d0649f10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add8fb88bff73c5c2d7c481fd57b71ee8"><td class="memItemLeft" align="right" valign="top"><a id="add8fb88bff73c5c2d7c481fd57b71ee8"></a>
-static <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getArrayTy</b> (<a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *inner, unsigned size)</td></tr>
+<tr class="memitem:add8fb88bff73c5c2d7c481fd57b71ee8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#add8fb88bff73c5c2d7c481fd57b71ee8">getArrayTy</a> (<a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *inner, unsigned <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a38548719c3299721f566508d86c708d0">size</a>)</td></tr>
 <tr class="separator:add8fb88bff73c5c2d7c481fd57b71ee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48af647a285304e118d183510508f84d"><td class="memItemLeft" align="right" valign="top"><a id="a48af647a285304e118d183510508f84d"></a>
-static <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getInt8PtrTy</b> ()</td></tr>
+<tr class="memitem:a48af647a285304e118d183510508f84d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a48af647a285304e118d183510508f84d">getInt8PtrTy</a> ()</td></tr>
 <tr class="separator:a48af647a285304e118d183510508f84d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3fc81332cdc78b452346feb427f1bb7"><td class="memItemLeft" align="right" valign="top"><a id="aa3fc81332cdc78b452346feb427f1bb7"></a>
-static <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getInt32PtrTy</b> ()</td></tr>
+<tr class="memitem:aa3fc81332cdc78b452346feb427f1bb7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#aa3fc81332cdc78b452346feb427f1bb7">getInt32PtrTy</a> ()</td></tr>
 <tr class="separator:aa3fc81332cdc78b452346feb427f1bb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0455a347988b9d93a333c8ccd3b1f64"><td class="memItemLeft" align="right" valign="top"><a id="ac0455a347988b9d93a333c8ccd3b1f64"></a>
-static <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getFloatPtrTy</b> ()</td></tr>
+<tr class="memitem:ac0455a347988b9d93a333c8ccd3b1f64"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#ac0455a347988b9d93a333c8ccd3b1f64">getFloatPtrTy</a> ()</td></tr>
 <tr class="separator:ac0455a347988b9d93a333c8ccd3b1f64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a1e21111e8a866f933982cb7f713e7cd3"><td class="memItemLeft" align="right" valign="top"><a id="a1e21111e8a866f933982cb7f713e7cd3"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Type</b> (<a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#ace0e547eba970d4b983ecdded75dd6b7">TypeID</a> id)</td></tr>
+<tr class="memitem:a1e21111e8a866f933982cb7f713e7cd3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a1e21111e8a866f933982cb7f713e7cd3">Type</a> (<a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#ace0e547eba970d4b983ecdded75dd6b7">TypeID</a> id)</td></tr>
 <tr class="separator:a1e21111e8a866f933982cb7f713e7cd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a598caaaf9c6a7a7e9de2d890dd2d1413"><td class="memItemLeft" align="right" valign="top"><a id="a598caaaf9c6a7a7e9de2d890dd2d1413"></a>
-<a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#ace0e547eba970d4b983ecdded75dd6b7">TypeID</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getTypeId</b> ()</td></tr>
+<tr class="memitem:a598caaaf9c6a7a7e9de2d890dd2d1413"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#ace0e547eba970d4b983ecdded75dd6b7">TypeID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a598caaaf9c6a7a7e9de2d890dd2d1413">getTypeId</a> ()</td></tr>
 <tr class="separator:a598caaaf9c6a7a7e9de2d890dd2d1413"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af65346818c97b15296438311e9a25ad8"><td class="memItemLeft" align="right" valign="top"><a id="af65346818c97b15296438311e9a25ad8"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>getSize</b> ()</td></tr>
+<tr class="memitem:af65346818c97b15296438311e9a25ad8"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#af65346818c97b15296438311e9a25ad8">getSize</a> ()</td></tr>
 <tr class="separator:af65346818c97b15296438311e9a25ad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a22fb6f473846c0ed508831760ae0e5d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#ace0e547eba970d4b983ecdded75dd6b7">TypeID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a22fb6f473846c0ed508831760ae0e5d1">ID</a></td></tr>
+<tr class="separator:a22fb6f473846c0ed508831760ae0e5d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38548719c3299721f566508d86c708d0"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a38548719c3299721f566508d86c708d0">size</a></td></tr>
+<tr class="separator:a38548719c3299721f566508d86c708d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a084682039fedc6e3d2c55bb9ce3a5679"><td class="memItemLeft" align="right" valign="top"><a id="a084682039fedc6e3d2c55bb9ce3a5679"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>sameType</b> (<a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *x, <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *y)</td></tr>
+<tr class="memitem:a084682039fedc6e3d2c55bb9ce3a5679"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a084682039fedc6e3d2c55bb9ce3a5679">sameType</a> (<a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *x, <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *y)</td></tr>
 <tr class="separator:a084682039fedc6e3d2c55bb9ce3a5679"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
@@ -265,20 +244,1557 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>sameType</b> (<a clas
 </td></tr>
 <tr><td class="fieldname"><a id="ace0e547eba970d4b983ecdded75dd6b7a7a45cf15022058aa3217ab957482e656"></a>ScalableVectorTyID&#160;</td><td class="fielddoc"><p>Scalable SIMD vector type. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="ace0e547eba970d4b983ecdded75dd6b7a57af24e69c6bdaa6882f317b953b46de"></a>UndefTyID&#160;</td><td class="fielddoc"></td></tr>
 </table>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a1e21111e8a866f933982cb7f713e7cd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e21111e8a866f933982cb7f713e7cd3">&#9670;&nbsp;</a></span>Type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sysy::ir::Type::Type </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#ace0e547eba970d4b983ecdded75dd6b7">TypeID</a>&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a58bd3dd34b6ee7006a809f7e136f6849"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58bd3dd34b6ee7006a809f7e136f6849">&#9670;&nbsp;</a></span>getAllocatedSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual size_t sysy::ir::Type::getAllocatedSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="../../db/d08/classsysy_1_1ir_1_1FunctionType.html#aa6d8fd7004db466179a96dcddc09a711">sysy::ir::FunctionType</a>, <a class="el" href="../../dc/d34/classsysy_1_1ir_1_1ArrayType.html#a2969495dac251f8af469b8a8f6a18bca">sysy::ir::ArrayType</a>, <a class="el" href="../../d0/da1/classsysy_1_1ir_1_1PointerType.html#a585eb8bac0632eb710f18031ac2a0ddf">sysy::ir::PointerType</a>, <a class="el" href="../../dc/d76/classsysy_1_1ir_1_1IntegerType.html#a98b943424f23da66f29a92529faa107d">sysy::ir::IntegerType</a>, <a class="el" href="../../d2/d89/classsysy_1_1ir_1_1FloatType.html#a314d5cc5bee4eea0d9cc7744caeb8a4e">sysy::ir::FloatType</a>, <a class="el" href="../../df/d12/classsysy_1_1ir_1_1UndefType.html#a7d7f54fef8a9a53ca9308d6fa7fc2830">sysy::ir::UndefType</a>, <a class="el" href="../../db/d23/classsysy_1_1ir_1_1VoidType.html#aac7eb88aeb8d94acb069b1cce8c7ebde">sysy::ir::VoidType</a>, and <a class="el" href="../../dc/dab/classsysy_1_1ir_1_1LableType.html#af6a1cc86ad4ef00325b6c93ded5f4398">sysy::ir::LableType</a>.</p>
+
+</div>
+</div>
+<a id="add8fb88bff73c5c2d7c481fd57b71ee8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add8fb88bff73c5c2d7c481fd57b71ee8">&#9670;&nbsp;</a></span>getArrayTy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> * sysy::ir::Type::getArrayTy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *&#160;</td>
+          <td class="paramname"><em>inner</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../dc/d34/classsysy_1_1ir_1_1ArrayType.html#aee98faf0351d38f472cc25005abb11da">sysy::ir::ArrayType::get()</a>, and <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a38548719c3299721f566508d86c708d0">size</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d1e/classsysy_1_1ir_1_1Type_add8fb88bff73c5c2d7c481fd57b71ee8_cgraph.png" border="0" usemap="#d7/d1e/classsysy_1_1ir_1_1Type_add8fb88bff73c5c2d7c481fd57b71ee8_cgraph" alt=""/></div>
+<map name="d7/d1e/classsysy_1_1ir_1_1Type_add8fb88bff73c5c2d7c481fd57b71ee8_cgraph" id="d7/d1e/classsysy_1_1ir_1_1Type_add8fb88bff73c5c2d7c481fd57b71ee8_cgraph">
+<area shape="rect" title=" " alt="" coords="5,46,189,73"/>
+<area shape="rect" href="../../dc/d34/classsysy_1_1ir_1_1ArrayType.html#aee98faf0351d38f472cc25005abb11da" title=" " alt="" coords="237,46,408,73"/>
+<area shape="rect" href="../../dc/d34/classsysy_1_1ir_1_1ArrayType.html#ac3ccc06d6ece45c85a2452cb4bd403ba" title=" " alt="" coords="456,5,597,47"/>
+<area shape="rect" href="../../dc/d02/classsysy_1_1ir_1_1Context.html#aba7555fd5267d54a604e4a5f0fdc69b2" title=" " alt="" coords="459,71,594,112"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac0455a347988b9d93a333c8ccd3b1f64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0455a347988b9d93a333c8ccd3b1f64">&#9670;&nbsp;</a></span>getFloatPtrTy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> * sysy::ir::Type::getFloatPtrTy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d0/da1/classsysy_1_1ir_1_1PointerType.html#a95f1224feb6d10a8dbb66881177ae6a0">sysy::ir::PointerType::getFloatPtrTy()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d1e/classsysy_1_1ir_1_1Type_ac0455a347988b9d93a333c8ccd3b1f64_cgraph.png" border="0" usemap="#d7/d1e/classsysy_1_1ir_1_1Type_ac0455a347988b9d93a333c8ccd3b1f64_cgraph" alt=""/></div>
+<map name="d7/d1e/classsysy_1_1ir_1_1Type_ac0455a347988b9d93a333c8ccd3b1f64_cgraph" id="d7/d1e/classsysy_1_1ir_1_1Type_ac0455a347988b9d93a333c8ccd3b1f64_cgraph">
+<area shape="rect" title=" " alt="" coords="5,55,173,96"/>
+<area shape="rect" href="../../d0/da1/classsysy_1_1ir_1_1PointerType.html#a95f1224feb6d10a8dbb66881177ae6a0" title=" " alt="" coords="221,55,373,96"/>
+<area shape="rect" href="../../d0/da1/classsysy_1_1ir_1_1PointerType.html#aa4fc7ec4c568531da2325a8a49077ad2" title=" " alt="" coords="422,33,603,59"/>
+<area shape="rect" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a33152d535709ae8a83ea70afc2de2bc5" title=" " alt="" coords="421,87,604,114"/>
+<area shape="rect" href="../../dc/d02/classsysy_1_1ir_1_1Context.html#aba7555fd5267d54a604e4a5f0fdc69b2" title=" " alt="" coords="868,25,1003,67"/>
+<area shape="rect" href="../../d0/da1/classsysy_1_1ir_1_1PointerType.html#addd153610f72e8b2a4f755048e61b743" title=" " alt="" coords="660,25,812,67"/>
+<area shape="rect" href="../../d2/d89/classsysy_1_1ir_1_1FloatType.html#acf226045b7f5e4e0a2b39d8d90dde44f" title=" " alt="" coords="652,91,820,118"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a33152d535709ae8a83ea70afc2de2bc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33152d535709ae8a83ea70afc2de2bc5">&#9670;&nbsp;</a></span>getFloatTy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> * sysy::ir::Type::getFloatTy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d2/d89/classsysy_1_1ir_1_1FloatType.html#acf226045b7f5e4e0a2b39d8d90dde44f">sysy::ir::FloatType::get()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d5/de3/namespacesysy_1_1ast.html#a81e0d20268829f95cab9836ad31f7d7b">sysy::ast::AstType2IrType()</a>, <a class="el" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#a5c68dd1b271cab498999a5c6e6be8400">sysy::ir::IRBuilder::CreateFAdd()</a>, <a class="el" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#a140719f394d57e03f3508d6ca4808858">sysy::ir::IRBuilder::CreateFDiv()</a>, <a class="el" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#a8cd2f6a01cb001d25d45edcac2b90eb9">sysy::ir::IRBuilder::CreateFMul()</a>, <a class="el" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#a2d68bdb3fe016585b65fedae0f637c6f">sysy::ir::IRBuilder::CreateFNeg()</a>, <a class="el" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#a8f6096357cb37bf5e13cd4fc3a0627aa">sysy::ir::IRBuilder::CreateFRem()</a>, <a class="el" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#a5cbe59b577d8df32d6d0fd37b257ae6e">sysy::ir::IRBuilder::CreateFSub()</a>, <a class="el" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#aa51a733b082ce59e199961d821510f04">sysy::ir::IRBuilder::CreateSIToFP()</a>, <a class="el" href="../../d0/da1/classsysy_1_1ir_1_1PointerType.html#a95f1224feb6d10a8dbb66881177ae6a0">sysy::ir::PointerType::getFloatPtrTy()</a>, <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#aaec8c7184501d4e20af33427d670f987">sysy::ir::irEmit()</a>, and <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a52bcaffc38f186b60acca74573bfa32c">sysy::ir::simplifyInstruction()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d1e/classsysy_1_1ir_1_1Type_a33152d535709ae8a83ea70afc2de2bc5_cgraph.png" border="0" usemap="#d7/d1e/classsysy_1_1ir_1_1Type_a33152d535709ae8a83ea70afc2de2bc5_cgraph" alt=""/></div>
+<map name="d7/d1e/classsysy_1_1ir_1_1Type_a33152d535709ae8a83ea70afc2de2bc5_cgraph" id="d7/d1e/classsysy_1_1ir_1_1Type_a33152d535709ae8a83ea70afc2de2bc5_cgraph">
+<area shape="rect" title=" " alt="" coords="5,13,188,39"/>
+<area shape="rect" href="../../d2/d89/classsysy_1_1ir_1_1FloatType.html#acf226045b7f5e4e0a2b39d8d90dde44f" title=" " alt="" coords="236,13,404,39"/>
+<area shape="rect" href="../../dc/d02/classsysy_1_1ir_1_1Context.html#aba7555fd5267d54a604e4a5f0fdc69b2" title=" " alt="" coords="452,5,587,47"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d1e/classsysy_1_1ir_1_1Type_a33152d535709ae8a83ea70afc2de2bc5_icgraph.png" border="0" usemap="#d7/d1e/classsysy_1_1ir_1_1Type_a33152d535709ae8a83ea70afc2de2bc5_icgraph" alt=""/></div>
+<map name="d7/d1e/classsysy_1_1ir_1_1Type_a33152d535709ae8a83ea70afc2de2bc5_icgraph" id="d7/d1e/classsysy_1_1ir_1_1Type_a33152d535709ae8a83ea70afc2de2bc5_icgraph">
+<area shape="rect" title=" " alt="" coords="932,337,1115,364"/>
+<area shape="rect" href="../../d5/de3/namespacesysy_1_1ast.html#a81e0d20268829f95cab9836ad31f7d7b" title=" " alt="" coords="693,31,878,57"/>
+<area shape="rect" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#a5c68dd1b271cab498999a5c6e6be8400" title=" " alt="" coords="718,82,853,123"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#aaec8c7184501d4e20af33427d670f987" title=" " alt="" coords="497,240,612,267"/>
+<area shape="rect" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#a140719f394d57e03f3508d6ca4808858" title=" " alt="" coords="718,199,853,241"/>
+<area shape="rect" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#a8cd2f6a01cb001d25d45edcac2b90eb9" title=" " alt="" coords="718,265,853,306"/>
+<area shape="rect" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#a2d68bdb3fe016585b65fedae0f637c6f" title=" " alt="" coords="718,461,853,502"/>
+<area shape="rect" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#a8f6096357cb37bf5e13cd4fc3a0627aa" title=" " alt="" coords="718,330,853,371"/>
+<area shape="rect" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#a5cbe59b577d8df32d6d0fd37b257ae6e" title=" " alt="" coords="718,395,853,437"/>
+<area shape="rect" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#aa51a733b082ce59e199961d821510f04" title=" " alt="" coords="718,526,853,567"/>
+<area shape="rect" href="../../d0/da1/classsysy_1_1ir_1_1PointerType.html#a95f1224feb6d10a8dbb66881177ae6a0" title=" " alt="" coords="709,591,861,633"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a52bcaffc38f186b60acca74573bfa32c" title=" " alt="" coords="687,657,884,684"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a7baf50c896de58efd71818fac032b175" title=" " alt="" coords="475,5,634,32"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a801d2a81bd84408c9fe767b7822d1d95" title=" " alt="" coords="497,56,612,83"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a184ee04952268fc07f958c23abf71c59" title=" " alt="" coords="304,5,423,32"/>
+<area shape="rect" href="../../dd/d20/namespacesysy.html#ac031d4fc7b9f45e50ecee68a68a33f9d" title=" " alt="" coords="108,5,256,32"/>
+<area shape="rect" href="../../d4/d0b/compiler_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,60,32"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a7651e9b76a3320c86c88d5c81fced20d" title=" " alt="" coords="497,468,612,495"/>
+<area shape="rect" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#ac0455a347988b9d93a333c8ccd3b1f64" title=" " alt="" coords="471,591,639,633"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a21a723b5642976244496b2f707ba2d38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21a723b5642976244496b2f707ba2d38">&#9670;&nbsp;</a></span>getFunctionTy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> * sysy::ir::Type::getFunctionTy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *&#160;</td>
+          <td class="paramname"><em>_retType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> * &gt;&#160;</td>
+          <td class="paramname"><em>_argType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isVarArg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../db/d08/classsysy_1_1ir_1_1FunctionType.html#add25b78a1f09ec18d220e6f7ac5c3aa9">sysy::ir::FunctionType::get()</a>, and <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#ab29bd87cf99950f4b730a193f4b63306">sysy::ir::isVarArg</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d1e/classsysy_1_1ir_1_1Type_a21a723b5642976244496b2f707ba2d38_cgraph.png" border="0" usemap="#d7/d1e/classsysy_1_1ir_1_1Type_a21a723b5642976244496b2f707ba2d38_cgraph" alt=""/></div>
+<map name="d7/d1e/classsysy_1_1ir_1_1Type_a21a723b5642976244496b2f707ba2d38_cgraph" id="d7/d1e/classsysy_1_1ir_1_1Type_a21a723b5642976244496b2f707ba2d38_cgraph">
+<area shape="rect" title=" " alt="" coords="5,13,209,39"/>
+<area shape="rect" href="../../db/d08/classsysy_1_1ir_1_1FunctionType.html#add25b78a1f09ec18d220e6f7ac5c3aa9" title=" " alt="" coords="257,13,448,39"/>
+<area shape="rect" href="../../db/d08/classsysy_1_1ir_1_1FunctionType.html#a476bb30d7463460b2777fc31bd0aaa04" title=" " alt="" coords="496,5,657,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acef75cffb3fa405698cd9aa5984ece89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acef75cffb3fa405698cd9aa5984ece89">&#9670;&nbsp;</a></span>getInnerType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a>* sysy::ir::Type::getInnerType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="../../db/d08/classsysy_1_1ir_1_1FunctionType.html#a2ef88d0147ec1c13ebe88383df250fca">sysy::ir::FunctionType</a>, <a class="el" href="../../dc/d34/classsysy_1_1ir_1_1ArrayType.html#ade2ec9b3eb1664c1d347df8dad1c6d48">sysy::ir::ArrayType</a>, <a class="el" href="../../d0/da1/classsysy_1_1ir_1_1PointerType.html#a7a82971232765749463d7270742580c8">sysy::ir::PointerType</a>, <a class="el" href="../../dc/d76/classsysy_1_1ir_1_1IntegerType.html#a74b2e2ce7e6749e607fabc65251af418">sysy::ir::IntegerType</a>, <a class="el" href="../../d2/d89/classsysy_1_1ir_1_1FloatType.html#a1065de8eae07f7d5016c1eb85cd47bd0">sysy::ir::FloatType</a>, <a class="el" href="../../df/d12/classsysy_1_1ir_1_1UndefType.html#a44c9f9e9487368ba09833c4244d4f7b7">sysy::ir::UndefType</a>, <a class="el" href="../../db/d23/classsysy_1_1ir_1_1VoidType.html#a702fb0ecf66d51429d80cbae63793baa">sysy::ir::VoidType</a>, and <a class="el" href="../../dc/dab/classsysy_1_1ir_1_1LableType.html#a49de1723d01b6ed7c5f92de7c042d8f1">sysy::ir::LableType</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#aab11ddad3999d65d482588cf0d8d7ba0">sysy::ir::IRBuilder::CreateInBoundsGEP()</a>, <a class="el" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#a78f86254e2c4008388a173208598bdce">sysy::ir::IRBuilder::CreateMemCpyInline()</a>, <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a4c670a65f972ffe8ee7a9b0f1cba18c1">sysy::ir::emitInitial()</a>, <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a2bd57623cce01abf1c12a0a8a8b2fdc1">sysy::ir::getPtrPtr()</a>, <a class="el" href="../../dc/d65/classsysy_1_1ir_1_1GEPInstruction.html#adc291a7825f8f3fd20c3d8d307a3dc6f">sysy::ir::GEPInstruction::getSignature()</a>, <a class="el" href="../../dd/d88/classsysy_1_1ir_1_1GlobalValue.html#a358791693c90a731eb2c6232a370529e">sysy::ir::GlobalValue::getValueType()</a>, <a class="el" href="../../df/d73/classsysy_1_1mc_1_1Block.html#a051e1845d20e7fe7a5ed307e27d099b9">sysy::mc::Block::instSelection()</a>, <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a21005402fe4966ec147ce27d1fb42b11">sysy::ir::irEmit()</a>, and <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a4a8754b28af9f6629393cfe4cf66f3f5">sysy::ir::isAliasByGVToArg()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d1e/classsysy_1_1ir_1_1Type_acef75cffb3fa405698cd9aa5984ece89_icgraph.png" border="0" usemap="#d7/d1e/classsysy_1_1ir_1_1Type_acef75cffb3fa405698cd9aa5984ece89_icgraph" alt=""/></div>
+<map name="d7/d1e/classsysy_1_1ir_1_1Type_acef75cffb3fa405698cd9aa5984ece89_icgraph" id="d7/d1e/classsysy_1_1ir_1_1Type_acef75cffb3fa405698cd9aa5984ece89_icgraph">
+<area shape="rect" title=" " alt="" coords="1419,317,1617,344"/>
+<area shape="rect" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#aab11ddad3999d65d482588cf0d8d7ba0" title=" " alt="" coords="1184,121,1343,162"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a4c670a65f972ffe8ee7a9b0f1cba18c1" title=" " alt="" coords="941,5,1084,32"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a21005402fe4966ec147ce27d1fb42b11" title=" " alt="" coords="722,208,837,235"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a2bd57623cce01abf1c12a0a8a8b2fdc1" title=" " alt="" coords="946,208,1079,235"/>
+<area shape="rect" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#a78f86254e2c4008388a173208598bdce" title=" " alt="" coords="1180,310,1347,351"/>
+<area shape="rect" href="../../dc/d65/classsysy_1_1ir_1_1GEPInstruction.html#adc291a7825f8f3fd20c3d8d307a3dc6f" title=" " alt="" coords="1178,375,1349,417"/>
+<area shape="rect" href="../../dd/d88/classsysy_1_1ir_1_1GlobalValue.html#a358791693c90a731eb2c6232a370529e" title=" " alt="" coords="1186,441,1341,482"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a4a8754b28af9f6629393cfe4cf66f3f5" title=" " alt="" coords="917,549,1108,576"/>
+<area shape="rect" href="../../df/d73/classsysy_1_1mc_1_1Block.html#a051e1845d20e7fe7a5ed307e27d099b9" title=" " alt="" coords="1156,557,1371,584"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a44dca136c94fedd0ccf38e58ced4a320" title=" " alt="" coords="689,56,869,83"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a683261df6a2eb4316a6e571f4c0992b0" title=" " alt="" coords="928,107,1097,133"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#ae4bb2b7737684719c10b99eb736fa71d" title=" " alt="" coords="955,157,1070,184"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#ad24fe40af018617c3a8f1326577f66e2" title=" " alt="" coords="722,5,837,32"/>
+<area shape="rect" href="../../d3/d8e/classsysy_1_1ir_1_1MemorySSA.html#a79989a6513a2f360c2ee5dc3c55f8cb7" title=" " alt="" coords="246,517,402,558"/>
+<area shape="rect" href="../../d3/d8e/classsysy_1_1ir_1_1MemorySSA.html#a5147ccf9e945d5ad04f95bca2c2f5016" title=" " alt="" coords="239,381,409,422"/>
+<area shape="rect" href="../../dd/d88/classsysy_1_1ir_1_1GlobalValue.html#a1f5489e0f16098fa852e0c79e94ae264" title=" " alt="" coords="935,367,1090,409"/>
+<area shape="rect" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#a7e8596f47e5439f678ac43d46e853a24" title=" " alt="" coords="935,433,1090,474"/>
+<area shape="rect" href="../../d3/d8e/classsysy_1_1ir_1_1MemorySSA.html#a557917d070f1a1ab140e716b582939b3" title=" " alt="" coords="5,492,191,519"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#ad224d7a4a6f35c7af5f121522ecf35c5" title=" " alt="" coords="726,549,833,576"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#acfe2434ba17e10c84e9659b22c66f99a" title=" " alt="" coords="476,600,623,627"/>
+<area shape="rect" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#aec3eb4fc816d226921d5885959c7c789" title=" " alt="" coords="702,433,857,474"/>
+<area shape="rect" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#aee3a0e1625a7f3f75fde8ce2d24fa603" title=" " alt="" coords="457,440,641,467"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af7a17d0fa623ea6269c26a0c2f8a52cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7a17d0fa623ea6269c26a0c2f8a52cf">&#9670;&nbsp;</a></span>getInt1Ty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> * sysy::ir::Type::getInt1Ty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../dc/d76/classsysy_1_1ir_1_1IntegerType.html#ae381e84f428be02513b2ac0b941a7403">sysy::ir::IntegerType::getInt1Ty()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#af610cd14367ad068d1ad69c32f3da588">sysy::ir::IRBuilder::CreateFCmpUEQ()</a>, <a class="el" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#ab0d9c613ad87fa69114f1f9828bdd1d4">sysy::ir::IRBuilder::CreateFCmpUGE()</a>, <a class="el" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#af17a2c57a0e149e2073ed9752b17a00d">sysy::ir::IRBuilder::CreateFCmpUGT()</a>, <a class="el" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#a75d4779c4cd55f4636632d264b88ca2d">sysy::ir::IRBuilder::CreateFCmpULE()</a>, <a class="el" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#ad10613beafe0eaa3391966eca45cd9f8">sysy::ir::IRBuilder::CreateFCmpULT()</a>, <a class="el" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#ae0d440c1dee47f51f6f623306867ed98">sysy::ir::IRBuilder::CreateFCmpUNE()</a>, <a class="el" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#afa08615e7a7713dae9a0dec4c31899fb">sysy::ir::IRBuilder::CreateICmpEQ()</a>, <a class="el" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#a5683db94171be725836f7e5949ecbbba">sysy::ir::IRBuilder::CreateICmpNE()</a>, <a class="el" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#a560e13f6432e80957777ac49a023ff08">sysy::ir::IRBuilder::CreateICmpSGE()</a>, <a class="el" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#abfabdae1470c8509d9eb1b1b7b6592c7">sysy::ir::IRBuilder::CreateICmpSGT()</a>, <a class="el" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#a34c0b2f33ac0357ba84767a2e1e82e99">sysy::ir::IRBuilder::CreateICmpSLE()</a>, <a class="el" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#a447c7b6a2608d5e7602ac018b7bf1b17">sysy::ir::IRBuilder::CreateICmpSLT()</a>, <a class="el" href="../../dc/d75/classsysy_1_1ir_1_1ConstantInt.html#a7d7d64f6c6b87a983ed00aad2e237061">sysy::ir::ConstantInt::get()</a>, and <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#ab63668891b7eacabf6efc01b7d974de1">sysy::ir::irEmit()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d1e/classsysy_1_1ir_1_1Type_af7a17d0fa623ea6269c26a0c2f8a52cf_cgraph.png" border="0" usemap="#d7/d1e/classsysy_1_1ir_1_1Type_af7a17d0fa623ea6269c26a0c2f8a52cf_cgraph" alt=""/></div>
+<map name="d7/d1e/classsysy_1_1ir_1_1Type_af7a17d0fa623ea6269c26a0c2f8a52cf_cgraph" id="d7/d1e/classsysy_1_1ir_1_1Type_af7a17d0fa623ea6269c26a0c2f8a52cf_cgraph">
+<area shape="rect" title=" " alt="" coords="5,13,180,39"/>
+<area shape="rect" href="../../dc/d76/classsysy_1_1ir_1_1IntegerType.html#ae381e84f428be02513b2ac0b941a7403" title=" " alt="" coords="228,5,380,47"/>
+<area shape="rect" href="../../dc/d02/classsysy_1_1ir_1_1Context.html#aba7555fd5267d54a604e4a5f0fdc69b2" title=" " alt="" coords="428,5,563,47"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d1e/classsysy_1_1ir_1_1Type_af7a17d0fa623ea6269c26a0c2f8a52cf_icgraph.png" border="0" usemap="#d7/d1e/classsysy_1_1ir_1_1Type_af7a17d0fa623ea6269c26a0c2f8a52cf_icgraph" alt=""/></div>
+<map name="d7/d1e/classsysy_1_1ir_1_1Type_af7a17d0fa623ea6269c26a0c2f8a52cf_icgraph" id="d7/d1e/classsysy_1_1ir_1_1Type_af7a17d0fa623ea6269c26a0c2f8a52cf_icgraph">
+<area shape="rect" title=" " alt="" coords="579,438,753,465"/>
+<area shape="rect" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#af610cd14367ad068d1ad69c32f3da588" title=" " alt="" coords="371,5,510,47"/>
+<area shape="rect" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#ab0d9c613ad87fa69114f1f9828bdd1d4" title=" " alt="" coords="371,71,510,112"/>
+<area shape="rect" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#af17a2c57a0e149e2073ed9752b17a00d" title=" " alt="" coords="371,136,510,177"/>
+<area shape="rect" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#a75d4779c4cd55f4636632d264b88ca2d" title=" " alt="" coords="373,201,509,243"/>
+<area shape="rect" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#ad10613beafe0eaa3391966eca45cd9f8" title=" " alt="" coords="373,267,508,308"/>
+<area shape="rect" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#ae0d440c1dee47f51f6f623306867ed98" title=" " alt="" coords="371,332,510,373"/>
+<area shape="rect" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#afa08615e7a7713dae9a0dec4c31899fb" title=" " alt="" coords="373,724,508,765"/>
+<area shape="rect" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#a5683db94171be725836f7e5949ecbbba" title=" " alt="" coords="373,397,508,439"/>
+<area shape="rect" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#a560e13f6432e80957777ac49a023ff08" title=" " alt="" coords="373,463,508,504"/>
+<area shape="rect" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#abfabdae1470c8509d9eb1b1b7b6592c7" title=" " alt="" coords="373,528,508,569"/>
+<area shape="rect" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#a34c0b2f33ac0357ba84767a2e1e82e99" title=" " alt="" coords="373,593,508,635"/>
+<area shape="rect" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#a447c7b6a2608d5e7602ac018b7bf1b17" title=" " alt="" coords="373,659,508,700"/>
+<area shape="rect" href="../../dc/d75/classsysy_1_1ir_1_1ConstantInt.html#a7d7d64f6c6b87a983ed00aad2e237061" title=" " alt="" coords="351,790,531,817"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#ab63668891b7eacabf6efc01b7d974de1" title=" " alt="" coords="383,841,498,867"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#aaec8c7184501d4e20af33427d670f987" title=" " alt="" coords="178,373,293,399"/>
+<area shape="rect" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#aa95d315bf86671ced660749fe34cefd1" title=" " alt="" coords="168,724,303,765"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a7651e9b76a3320c86c88d5c81fced20d" title=" " alt="" coords="5,731,120,758"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa3fc81332cdc78b452346feb427f1bb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3fc81332cdc78b452346feb427f1bb7">&#9670;&nbsp;</a></span>getInt32PtrTy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> * sysy::ir::Type::getInt32PtrTy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d0/da1/classsysy_1_1ir_1_1PointerType.html#a6d93bfc52af62aecc75c1ebe6755a3b5">sysy::ir::PointerType::getInt32PtrTy()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d1e/classsysy_1_1ir_1_1Type_aa3fc81332cdc78b452346feb427f1bb7_cgraph.png" border="0" usemap="#d7/d1e/classsysy_1_1ir_1_1Type_aa3fc81332cdc78b452346feb427f1bb7_cgraph" alt=""/></div>
+<map name="d7/d1e/classsysy_1_1ir_1_1Type_aa3fc81332cdc78b452346feb427f1bb7_cgraph" id="d7/d1e/classsysy_1_1ir_1_1Type_aa3fc81332cdc78b452346feb427f1bb7_cgraph">
+<area shape="rect" title=" " alt="" coords="5,57,173,99"/>
+<area shape="rect" href="../../d0/da1/classsysy_1_1ir_1_1PointerType.html#a6d93bfc52af62aecc75c1ebe6755a3b5" title=" " alt="" coords="221,57,373,99"/>
+<area shape="rect" href="../../d0/da1/classsysy_1_1ir_1_1PointerType.html#aa4fc7ec4c568531da2325a8a49077ad2" title=" " alt="" coords="422,33,603,59"/>
+<area shape="rect" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a1b915129bd2ac53ea09512292870354b" title=" " alt="" coords="421,90,604,117"/>
+<area shape="rect" href="../../dc/d02/classsysy_1_1ir_1_1Context.html#aba7555fd5267d54a604e4a5f0fdc69b2" title=" " alt="" coords="852,29,987,71"/>
+<area shape="rect" href="../../d0/da1/classsysy_1_1ir_1_1PointerType.html#addd153610f72e8b2a4f755048e61b743" title=" " alt="" coords="652,25,804,67"/>
+<area shape="rect" href="../../dc/d76/classsysy_1_1ir_1_1IntegerType.html#af0815a818d9f8e78f62f8e4eeac574ce" title=" " alt="" coords="652,91,804,132"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1b915129bd2ac53ea09512292870354b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b915129bd2ac53ea09512292870354b">&#9670;&nbsp;</a></span>getInt32Ty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> * sysy::ir::Type::getInt32Ty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../dc/d76/classsysy_1_1ir_1_1IntegerType.html#af0815a818d9f8e78f62f8e4eeac574ce">sysy::ir::IntegerType::getInt32Ty()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d5/de3/namespacesysy_1_1ast.html#a81e0d20268829f95cab9836ad31f7d7b">sysy::ast::AstType2IrType()</a>, <a class="el" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#aeca910c337f8a40967fae41997c542e2">sysy::ir::ScalarEvolution::BIV2SCEV()</a>, <a class="el" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#a8d6d02f6b195b3855ca1eb5473e0a0d6">sysy::ir::IRBuilder::CreateAdd()</a>, <a class="el" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#a4d5e6ca290dfd4065a00e9e9506e1ebd">sysy::ir::IRBuilder::CreateFPToSI()</a>, <a class="el" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#a0dd58af91decb4b9b5ca259f5fcb5ed8">sysy::ir::IRBuilder::CreateMul()</a>, <a class="el" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#ac337c4ef1fce73be1945772b5fff9e11">sysy::ir::IRBuilder::CreateNeg()</a>, <a class="el" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#a3e306cfcd074e0fdfb5c800172e790e7">sysy::ir::IRBuilder::CreateSDiv()</a>, <a class="el" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#acdd49131f0efcdd289914358cc0dbd46">sysy::ir::IRBuilder::CreateSRem()</a>, <a class="el" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#ac74b4fa4112cd4bcb85fe34cc7ca9d7d">sysy::ir::IRBuilder::CreateSub()</a>, <a class="el" href="../../df/d2d/classsysy_1_1ir_1_1GVN.html#a032ed310fbd7c64132ac1ff72f83bb85">sysy::ir::GVN::doPerInstr()</a>, <a class="el" href="../../dc/d75/classsysy_1_1ir_1_1ConstantInt.html#a7d7d64f6c6b87a983ed00aad2e237061">sysy::ir::ConstantInt::get()</a>, <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a683261df6a2eb4316a6e571f4c0992b0">sysy::ir::getElementPtr()</a>, <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a27ae925945f91c125021d656f40281a5">sysy::ir::getIDX()</a>, <a class="el" href="../../d0/da1/classsysy_1_1ir_1_1PointerType.html#a6d93bfc52af62aecc75c1ebe6755a3b5">sysy::ir::PointerType::getInt32PtrTy()</a>, <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a2bd57623cce01abf1c12a0a8a8b2fdc1">sysy::ir::getPtrPtr()</a>, <a class="el" href="../../dc/de9/classsysy_1_1ir_1_1AllocaInstruction.html#a0567e8be0f3aea36b403fa17480a699c">sysy::ir::AllocaInstruction::getSize()</a>, <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#ae4bb2b7737684719c10b99eb736fa71d">sysy::ir::irEmit()</a>, <a class="el" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#aec3eb4fc816d226921d5885959c7c789">sysy::ir::LoopParallel::runOnLoop()</a>, and <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a52bcaffc38f186b60acca74573bfa32c">sysy::ir::simplifyInstruction()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d1e/classsysy_1_1ir_1_1Type_a1b915129bd2ac53ea09512292870354b_cgraph.png" border="0" usemap="#d7/d1e/classsysy_1_1ir_1_1Type_a1b915129bd2ac53ea09512292870354b_cgraph" alt=""/></div>
+<map name="d7/d1e/classsysy_1_1ir_1_1Type_a1b915129bd2ac53ea09512292870354b_cgraph" id="d7/d1e/classsysy_1_1ir_1_1Type_a1b915129bd2ac53ea09512292870354b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,13,188,39"/>
+<area shape="rect" href="../../dc/d76/classsysy_1_1ir_1_1IntegerType.html#af0815a818d9f8e78f62f8e4eeac574ce" title=" " alt="" coords="236,5,388,47"/>
+<area shape="rect" href="../../dc/d02/classsysy_1_1ir_1_1Context.html#aba7555fd5267d54a604e4a5f0fdc69b2" title=" " alt="" coords="436,5,571,47"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d1e/classsysy_1_1ir_1_1Type_a1b915129bd2ac53ea09512292870354b_icgraph.png" border="0" usemap="#d7/d1e/classsysy_1_1ir_1_1Type_a1b915129bd2ac53ea09512292870354b_icgraph" alt=""/></div>
+<map name="d7/d1e/classsysy_1_1ir_1_1Type_a1b915129bd2ac53ea09512292870354b_icgraph" id="d7/d1e/classsysy_1_1ir_1_1Type_a1b915129bd2ac53ea09512292870354b_icgraph">
+<area shape="rect" title=" " alt="" coords="1191,631,1373,657"/>
+<area shape="rect" href="../../d5/de3/namespacesysy_1_1ast.html#a81e0d20268829f95cab9836ad31f7d7b" title=" " alt="" coords="951,56,1137,83"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#aeca910c337f8a40967fae41997c542e2" title=" " alt="" coords="955,107,1133,149"/>
+<area shape="rect" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#a8d6d02f6b195b3855ca1eb5473e0a0d6" title=" " alt="" coords="977,173,1111,214"/>
+<area shape="rect" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#a4d5e6ca290dfd4065a00e9e9506e1ebd" title=" " alt="" coords="977,238,1111,279"/>
+<area shape="rect" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#a0dd58af91decb4b9b5ca259f5fcb5ed8" title=" " alt="" coords="977,303,1111,345"/>
+<area shape="rect" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#ac337c4ef1fce73be1945772b5fff9e11" title=" " alt="" coords="977,565,1111,606"/>
+<area shape="rect" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#a3e306cfcd074e0fdfb5c800172e790e7" title=" " alt="" coords="977,369,1111,410"/>
+<area shape="rect" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#acdd49131f0efcdd289914358cc0dbd46" title=" " alt="" coords="977,434,1111,475"/>
+<area shape="rect" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#ac74b4fa4112cd4bcb85fe34cc7ca9d7d" title=" " alt="" coords="977,499,1111,541"/>
+<area shape="rect" href="../../df/d2d/classsysy_1_1ir_1_1GVN.html#a032ed310fbd7c64132ac1ff72f83bb85" title=" " alt="" coords="955,631,1133,657"/>
+<area shape="rect" href="../../dc/d75/classsysy_1_1ir_1_1ConstantInt.html#a7d7d64f6c6b87a983ed00aad2e237061" title=" " alt="" coords="954,681,1134,708"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a683261df6a2eb4316a6e571f4c0992b0" title=" " alt="" coords="959,732,1129,759"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a27ae925945f91c125021d656f40281a5" title=" " alt="" coords="984,833,1104,860"/>
+<area shape="rect" href="../../d0/da1/classsysy_1_1ir_1_1PointerType.html#a6d93bfc52af62aecc75c1ebe6755a3b5" title=" " alt="" coords="968,885,1120,926"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a2bd57623cce01abf1c12a0a8a8b2fdc1" title=" " alt="" coords="977,783,1111,809"/>
+<area shape="rect" href="../../dc/de9/classsysy_1_1ir_1_1AllocaInstruction.html#a0567e8be0f3aea36b403fa17480a699c" title=" " alt="" coords="951,950,1137,991"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#ae4bb2b7737684719c10b99eb736fa71d" title=" " alt="" coords="987,1016,1101,1043"/>
+<area shape="rect" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#aec3eb4fc816d226921d5885959c7c789" title=" " alt="" coords="967,1067,1121,1109"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a52bcaffc38f186b60acca74573bfa32c" title=" " alt="" coords="945,1133,1143,1160"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a7baf50c896de58efd71818fac032b175" title=" " alt="" coords="726,5,885,32"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a801d2a81bd84408c9fe767b7822d1d95" title=" " alt="" coords="748,56,863,83"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a184ee04952268fc07f958c23abf71c59" title=" " alt="" coords="516,5,635,32"/>
+<area shape="rect" href="../../dd/d20/namespacesysy.html#ac031d4fc7b9f45e50ecee68a68a33f9d" title=" " alt="" coords="275,5,423,32"/>
+<area shape="rect" href="../../d4/d0b/compiler_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="81,5,136,32"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#a30d85b7e712b856858226e7c3fbf23dd" title=" " alt="" coords="717,107,894,149"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#ac26333925ef1ce0092c71c23719e0533" title=" " alt="" coords="487,107,664,149"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#a0f98946c99fd079aa59c712a3212b5d0" title=" " alt="" coords="260,107,437,149"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#aa77c21818a83d9b475e3d967662190bc" title=" " alt="" coords="5,115,212,141"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#aaec8c7184501d4e20af33427d670f987" title=" " alt="" coords="748,376,863,403"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a7651e9b76a3320c86c88d5c81fced20d" title=" " alt="" coords="748,572,863,599"/>
+<area shape="rect" href="../../df/d2d/classsysy_1_1ir_1_1GVN.html#a7c2e41acdc174f23128c9b32d43ba9ae" title=" " alt="" coords="738,631,873,657"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a21005402fe4966ec147ce27d1fb42b11" title=" " alt="" coords="748,757,863,784"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a4c670a65f972ffe8ee7a9b0f1cba18c1" title=" " alt="" coords="734,833,877,860"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a44dca136c94fedd0ccf38e58ced4a320" title=" " alt="" coords="485,808,665,835"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#ad24fe40af018617c3a8f1326577f66e2" title=" " alt="" coords="518,859,633,885"/>
+<area shape="rect" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#aa3fc81332cdc78b452346feb427f1bb7" title=" " alt="" coords="721,885,889,926"/>
+<area shape="rect" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#aee3a0e1625a7f3f75fde8ce2d24fa603" title=" " alt="" coords="713,1075,897,1101"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a48af647a285304e118d183510508f84d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48af647a285304e118d183510508f84d">&#9670;&nbsp;</a></span>getInt8PtrTy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> * sysy::ir::Type::getInt8PtrTy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d0/da1/classsysy_1_1ir_1_1PointerType.html#a76e319e7e3bc2ac425cf5a3c6faed566">sysy::ir::PointerType::getInt8PtrTy()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#a78f86254e2c4008388a173208598bdce">sysy::ir::IRBuilder::CreateMemCpyInline()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d1e/classsysy_1_1ir_1_1Type_a48af647a285304e118d183510508f84d_cgraph.png" border="0" usemap="#d7/d1e/classsysy_1_1ir_1_1Type_a48af647a285304e118d183510508f84d_cgraph" alt=""/></div>
+<map name="d7/d1e/classsysy_1_1ir_1_1Type_a48af647a285304e118d183510508f84d_cgraph" id="d7/d1e/classsysy_1_1ir_1_1Type_a48af647a285304e118d183510508f84d_cgraph">
+<area shape="rect" title=" " alt="" coords="5,65,197,91"/>
+<area shape="rect" href="../../d0/da1/classsysy_1_1ir_1_1PointerType.html#a76e319e7e3bc2ac425cf5a3c6faed566" title=" " alt="" coords="245,57,397,99"/>
+<area shape="rect" href="../../d0/da1/classsysy_1_1ir_1_1PointerType.html#aa4fc7ec4c568531da2325a8a49077ad2" title=" " alt="" coords="445,33,627,59"/>
+<area shape="rect" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#ae814270a93bf4def78ab6a5beb5b8bf5" title=" " alt="" coords="449,90,623,117"/>
+<area shape="rect" href="../../dc/d02/classsysy_1_1ir_1_1Context.html#aba7555fd5267d54a604e4a5f0fdc69b2" title=" " alt="" coords="875,29,1009,71"/>
+<area shape="rect" href="../../d0/da1/classsysy_1_1ir_1_1PointerType.html#addd153610f72e8b2a4f755048e61b743" title=" " alt="" coords="675,25,827,67"/>
+<area shape="rect" href="../../dc/d76/classsysy_1_1ir_1_1IntegerType.html#af7fd523fcd34d04a285a09314af3cb3a" title=" " alt="" coords="675,91,827,132"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d1e/classsysy_1_1ir_1_1Type_a48af647a285304e118d183510508f84d_icgraph.png" border="0" usemap="#d7/d1e/classsysy_1_1ir_1_1Type_a48af647a285304e118d183510508f84d_icgraph" alt=""/></div>
+<map name="d7/d1e/classsysy_1_1ir_1_1Type_a48af647a285304e118d183510508f84d_icgraph" id="d7/d1e/classsysy_1_1ir_1_1Type_a48af647a285304e118d183510508f84d_icgraph">
+<area shape="rect" title=" " alt="" coords="220,13,412,39"/>
+<area shape="rect" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#a78f86254e2c4008388a173208598bdce" title=" " alt="" coords="5,5,172,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae814270a93bf4def78ab6a5beb5b8bf5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae814270a93bf4def78ab6a5beb5b8bf5">&#9670;&nbsp;</a></span>getInt8Ty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> * sysy::ir::Type::getInt8Ty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../dc/d76/classsysy_1_1ir_1_1IntegerType.html#af7fd523fcd34d04a285a09314af3cb3a">sysy::ir::IntegerType::getInt8Ty()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dc/d75/classsysy_1_1ir_1_1ConstantInt.html#a7d7d64f6c6b87a983ed00aad2e237061">sysy::ir::ConstantInt::get()</a>, and <a class="el" href="../../d0/da1/classsysy_1_1ir_1_1PointerType.html#a76e319e7e3bc2ac425cf5a3c6faed566">sysy::ir::PointerType::getInt8PtrTy()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d1e/classsysy_1_1ir_1_1Type_ae814270a93bf4def78ab6a5beb5b8bf5_cgraph.png" border="0" usemap="#d7/d1e/classsysy_1_1ir_1_1Type_ae814270a93bf4def78ab6a5beb5b8bf5_cgraph" alt=""/></div>
+<map name="d7/d1e/classsysy_1_1ir_1_1Type_ae814270a93bf4def78ab6a5beb5b8bf5_cgraph" id="d7/d1e/classsysy_1_1ir_1_1Type_ae814270a93bf4def78ab6a5beb5b8bf5_cgraph">
+<area shape="rect" title=" " alt="" coords="5,13,180,39"/>
+<area shape="rect" href="../../dc/d76/classsysy_1_1ir_1_1IntegerType.html#af7fd523fcd34d04a285a09314af3cb3a" title=" " alt="" coords="228,5,380,47"/>
+<area shape="rect" href="../../dc/d02/classsysy_1_1ir_1_1Context.html#aba7555fd5267d54a604e4a5f0fdc69b2" title=" " alt="" coords="428,5,563,47"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d1e/classsysy_1_1ir_1_1Type_ae814270a93bf4def78ab6a5beb5b8bf5_icgraph.png" border="0" usemap="#d7/d1e/classsysy_1_1ir_1_1Type_ae814270a93bf4def78ab6a5beb5b8bf5_icgraph" alt=""/></div>
+<map name="d7/d1e/classsysy_1_1ir_1_1Type_ae814270a93bf4def78ab6a5beb5b8bf5_icgraph" id="d7/d1e/classsysy_1_1ir_1_1Type_ae814270a93bf4def78ab6a5beb5b8bf5_icgraph">
+<area shape="rect" title=" " alt="" coords="688,35,863,61"/>
+<area shape="rect" href="../../dc/d75/classsysy_1_1ir_1_1ConstantInt.html#a7d7d64f6c6b87a983ed00aad2e237061" title=" " alt="" coords="460,5,640,32"/>
+<area shape="rect" href="../../d0/da1/classsysy_1_1ir_1_1PointerType.html#a76e319e7e3bc2ac425cf5a3c6faed566" title=" " alt="" coords="474,57,626,98"/>
+<area shape="rect" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a48af647a285304e118d183510508f84d" title=" " alt="" coords="220,64,412,91"/>
+<area shape="rect" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#a78f86254e2c4008388a173208598bdce" title=" " alt="" coords="5,57,172,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a79ff29344d561325d67f3aeec9ac6a60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79ff29344d561325d67f3aeec9ac6a60">&#9670;&nbsp;</a></span>getIntegerTy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> * sysy::ir::Type::getIntegerTy </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>width</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../dc/d76/classsysy_1_1ir_1_1IntegerType.html#aecdc39e3dc5faf58e13a291943653d14">sysy::ir::IntegerType::get()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d1e/classsysy_1_1ir_1_1Type_a79ff29344d561325d67f3aeec9ac6a60_cgraph.png" border="0" usemap="#d7/d1e/classsysy_1_1ir_1_1Type_a79ff29344d561325d67f3aeec9ac6a60_cgraph" alt=""/></div>
+<map name="d7/d1e/classsysy_1_1ir_1_1Type_a79ff29344d561325d67f3aeec9ac6a60_cgraph" id="d7/d1e/classsysy_1_1ir_1_1Type_a79ff29344d561325d67f3aeec9ac6a60_cgraph">
+<area shape="rect" title=" " alt="" coords="5,78,200,105"/>
+<area shape="rect" href="../../dc/d76/classsysy_1_1ir_1_1IntegerType.html#aecdc39e3dc5faf58e13a291943653d14" title=" " alt="" coords="248,78,429,105"/>
+<area shape="rect" href="../../dc/d76/classsysy_1_1ir_1_1IntegerType.html#ae381e84f428be02513b2ac0b941a7403" title=" " alt="" coords="477,5,629,47"/>
+<area shape="rect" href="../../dc/d76/classsysy_1_1ir_1_1IntegerType.html#af0815a818d9f8e78f62f8e4eeac574ce" title=" " alt="" coords="477,71,629,112"/>
+<area shape="rect" href="../../dc/d76/classsysy_1_1ir_1_1IntegerType.html#af7fd523fcd34d04a285a09314af3cb3a" title=" " alt="" coords="477,136,629,177"/>
+<area shape="rect" href="../../dc/d02/classsysy_1_1ir_1_1Context.html#aba7555fd5267d54a604e4a5f0fdc69b2" title=" " alt="" coords="677,71,812,112"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab07d3ee68e975e204ee1565446e5538d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab07d3ee68e975e204ee1565446e5538d">&#9670;&nbsp;</a></span>getLabelTy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> * sysy::ir::Type::getLabelTy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../dc/dab/classsysy_1_1ir_1_1LableType.html#a1474e0536361339b084604456227654e">sysy::ir::LableType::get()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d1e/classsysy_1_1ir_1_1Type_ab07d3ee68e975e204ee1565446e5538d_cgraph.png" border="0" usemap="#d7/d1e/classsysy_1_1ir_1_1Type_ab07d3ee68e975e204ee1565446e5538d_cgraph" alt=""/></div>
+<map name="d7/d1e/classsysy_1_1ir_1_1Type_ab07d3ee68e975e204ee1565446e5538d_cgraph" id="d7/d1e/classsysy_1_1ir_1_1Type_ab07d3ee68e975e204ee1565446e5538d_cgraph">
+<area shape="rect" title=" " alt="" coords="5,13,189,39"/>
+<area shape="rect" href="../../dc/dab/classsysy_1_1ir_1_1LableType.html#a1474e0536361339b084604456227654e" title=" " alt="" coords="237,13,408,39"/>
+<area shape="rect" href="../../dc/d02/classsysy_1_1ir_1_1Context.html#aba7555fd5267d54a604e4a5f0fdc69b2" title=" " alt="" coords="456,5,591,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3e05bd76893a93bf68a5a194d0649f10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e05bd76893a93bf68a5a194d0649f10">&#9670;&nbsp;</a></span>getPointerTy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> * sysy::ir::Type::getPointerTy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *&#160;</td>
+          <td class="paramname"><em>inner</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d0/da1/classsysy_1_1ir_1_1PointerType.html#aa4fc7ec4c568531da2325a8a49077ad2">sysy::ir::PointerType::get()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dd/d88/classsysy_1_1ir_1_1GlobalValue.html#a3862fe0f848261736af6cdb9ae35d05a">sysy::ir::GlobalValue::Create()</a>, and <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a2699c92239e304d9d22cfd2ab362f361">sysy::ir::irEmit()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d1e/classsysy_1_1ir_1_1Type_a3e05bd76893a93bf68a5a194d0649f10_cgraph.png" border="0" usemap="#d7/d1e/classsysy_1_1ir_1_1Type_a3e05bd76893a93bf68a5a194d0649f10_cgraph" alt=""/></div>
+<map name="d7/d1e/classsysy_1_1ir_1_1Type_a3e05bd76893a93bf68a5a194d0649f10_cgraph" id="d7/d1e/classsysy_1_1ir_1_1Type_a3e05bd76893a93bf68a5a194d0649f10_cgraph">
+<area shape="rect" title=" " alt="" coords="5,46,200,73"/>
+<area shape="rect" href="../../d0/da1/classsysy_1_1ir_1_1PointerType.html#aa4fc7ec4c568531da2325a8a49077ad2" title=" " alt="" coords="248,46,429,73"/>
+<area shape="rect" href="../../dc/d02/classsysy_1_1ir_1_1Context.html#aba7555fd5267d54a604e4a5f0fdc69b2" title=" " alt="" coords="486,5,621,47"/>
+<area shape="rect" href="../../d0/da1/classsysy_1_1ir_1_1PointerType.html#addd153610f72e8b2a4f755048e61b743" title=" " alt="" coords="477,71,629,112"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d1e/classsysy_1_1ir_1_1Type_a3e05bd76893a93bf68a5a194d0649f10_icgraph.png" border="0" usemap="#d7/d1e/classsysy_1_1ir_1_1Type_a3e05bd76893a93bf68a5a194d0649f10_icgraph" alt=""/></div>
+<map name="d7/d1e/classsysy_1_1ir_1_1Type_a3e05bd76893a93bf68a5a194d0649f10_icgraph" id="d7/d1e/classsysy_1_1ir_1_1Type_a3e05bd76893a93bf68a5a194d0649f10_icgraph">
+<area shape="rect" title=" " alt="" coords="880,60,1075,87"/>
+<area shape="rect" href="../../dd/d88/classsysy_1_1ir_1_1GlobalValue.html#a3862fe0f848261736af6cdb9ae35d05a" title=" " alt="" coords="677,23,832,65"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a2699c92239e304d9d22cfd2ab362f361" title=" " alt="" coords="697,89,812,116"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a7baf50c896de58efd71818fac032b175" title=" " alt="" coords="471,5,629,32"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#af86f9d5efb082424b01ce4b5ff5a5689" title=" " alt="" coords="479,56,621,83"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a184ee04952268fc07f958c23abf71c59" title=" " alt="" coords="304,5,423,32"/>
+<area shape="rect" href="../../dd/d20/namespacesysy.html#ac031d4fc7b9f45e50ecee68a68a33f9d" title=" " alt="" coords="108,5,256,32"/>
+<area shape="rect" href="../../d4/d0b/compiler_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,60,32"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a801d2a81bd84408c9fe767b7822d1d95" title=" " alt="" coords="306,56,421,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4e700e3c8bbabeea0cf4ebb2dc0ad83b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e700e3c8bbabeea0cf4ebb2dc0ad83b">&#9670;&nbsp;</a></span>getSignature()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string sysy::ir::Type::getSignature </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="../../db/d08/classsysy_1_1ir_1_1FunctionType.html#aea4ff7fb5a7b0133489c42ba8e050987">sysy::ir::FunctionType</a>, <a class="el" href="../../dc/d34/classsysy_1_1ir_1_1ArrayType.html#a28c5aa10a764b613533202f699434dce">sysy::ir::ArrayType</a>, <a class="el" href="../../d0/da1/classsysy_1_1ir_1_1PointerType.html#ac53915501e35f7da145d86de913340f7">sysy::ir::PointerType</a>, <a class="el" href="../../dc/d76/classsysy_1_1ir_1_1IntegerType.html#a58c92caed64d0d5128d23846aa52b313">sysy::ir::IntegerType</a>, <a class="el" href="../../d2/d89/classsysy_1_1ir_1_1FloatType.html#a447911c95c96def5888a3f2c054bb666">sysy::ir::FloatType</a>, <a class="el" href="../../df/d12/classsysy_1_1ir_1_1UndefType.html#afffd81d9fcdae21a37f1ce8ea826c048">sysy::ir::UndefType</a>, <a class="el" href="../../db/d23/classsysy_1_1ir_1_1VoidType.html#aa365d2a57e67087ad290e65bb0e9e625">sysy::ir::VoidType</a>, and <a class="el" href="../../dc/dab/classsysy_1_1ir_1_1LableType.html#a4028eba1ec85c86579406b6f04c42b24">sysy::ir::LableType</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d9/dcc/classsysy_1_1ir_1_1BinaryInstrcution.html#a6d4585ea07231d50b119bf33b14901a3">sysy::ir::BinaryInstrcution::getSignature()</a>, <a class="el" href="../../dd/d88/classsysy_1_1ir_1_1GlobalValue.html#a1f5489e0f16098fa852e0c79e94ae264">sysy::ir::GlobalValue::getSignature()</a>, <a class="el" href="../../d0/d2d/classsysy_1_1ir_1_1Function_1_1Arg.html#a3b0a7c198c18d4bfe0a415d119640b8a">sysy::ir::Function::Arg::getSignature()</a>, <a class="el" href="../../d1/d1e/classsysy_1_1ir_1_1UnaryInstruction.html#a081f5941c82549eda203ba72e2d16199">sysy::ir::UnaryInstruction::getSignature()</a>, <a class="el" href="../../d4/d36/classsysy_1_1ir_1_1Function.html#a01ade236516cd96da24d3b2dc8b72cad">sysy::ir::Function::getSignature()</a>, <a class="el" href="../../d5/d35/classsysy_1_1ir_1_1CallInstruction.html#aa77efd2588ee52b4ac0d53f5245c3f4d">sysy::ir::CallInstruction::getSignature()</a>, <a class="el" href="../../db/d8f/classsysy_1_1ir_1_1BrInstruction.html#af8b2ed338b29fb480feee60c8ea0557a">sysy::ir::BrInstruction::getSignature()</a>, <a class="el" href="../../d8/d42/classsysy_1_1ir_1_1RetInstruction.html#a42468d21d9d7da8f1e31e82866c8d7b2">sysy::ir::RetInstruction::getSignature()</a>, <a class="el" href="../../df/da0/classsysy_1_1ir_1_1StoreInstruction.html#a393c3cbc8acc5889393601fa329905d5">sysy::ir::StoreInstruction::getSignature()</a>, <a class="el" href="../../d0/da1/classsysy_1_1ir_1_1PointerType.html#ac53915501e35f7da145d86de913340f7">sysy::ir::PointerType::getSignature()</a>, <a class="el" href="../../db/d0c/classsysy_1_1ir_1_1LoadInstruction.html#a92bb5ad2219acb4c09e39287c81089e8">sysy::ir::LoadInstruction::getSignature()</a>, <a class="el" href="../../dc/d34/classsysy_1_1ir_1_1ArrayType.html#a28c5aa10a764b613533202f699434dce">sysy::ir::ArrayType::getSignature()</a>, <a class="el" href="../../dc/d65/classsysy_1_1ir_1_1GEPInstruction.html#adc291a7825f8f3fd20c3d8d307a3dc6f">sysy::ir::GEPInstruction::getSignature()</a>, <a class="el" href="../../db/d08/classsysy_1_1ir_1_1FunctionType.html#aea4ff7fb5a7b0133489c42ba8e050987">sysy::ir::FunctionType::getSignature()</a>, <a class="el" href="../../dc/de9/classsysy_1_1ir_1_1AllocaInstruction.html#ab4ea6ea50928585b20794c55b45fe840">sysy::ir::AllocaInstruction::getSignature()</a>, <a class="el" href="../../da/dd0/classsysy_1_1ir_1_1PhiInstruction.html#a778cda3de869ec10b5c1fa390139cc84">sysy::ir::PhiInstruction::getSignature()</a>, and <a class="el" href="../../d9/d8a/classsysy_1_1ir_1_1MemPhiInstruction.html#ae035a82c6eefdc50e1cb8b668832a0d1">sysy::ir::MemPhiInstruction::getSignature()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d1e/classsysy_1_1ir_1_1Type_a4e700e3c8bbabeea0cf4ebb2dc0ad83b_icgraph.png" border="0" usemap="#d7/d1e/classsysy_1_1ir_1_1Type_a4e700e3c8bbabeea0cf4ebb2dc0ad83b_icgraph" alt=""/></div>
+<map name="d7/d1e/classsysy_1_1ir_1_1Type_a4e700e3c8bbabeea0cf4ebb2dc0ad83b_icgraph" id="d7/d1e/classsysy_1_1ir_1_1Type_a4e700e3c8bbabeea0cf4ebb2dc0ad83b_icgraph">
+<area shape="rect" title=" " alt="" coords="471,535,668,562"/>
+<area shape="rect" href="../../d9/dcc/classsysy_1_1ir_1_1BinaryInstrcution.html#a6d4585ea07231d50b119bf33b14901a3" title=" " alt="" coords="230,5,417,47"/>
+<area shape="rect" href="../../dd/d88/classsysy_1_1ir_1_1GlobalValue.html#a1f5489e0f16098fa852e0c79e94ae264" title=" " alt="" coords="246,71,401,112"/>
+<area shape="rect" href="../../d0/d2d/classsysy_1_1ir_1_1Function_1_1Arg.html#a3b0a7c198c18d4bfe0a415d119640b8a" title=" " alt="" coords="252,136,395,177"/>
+<area shape="rect" href="../../d1/d1e/classsysy_1_1ir_1_1UnaryInstruction.html#a081f5941c82549eda203ba72e2d16199" title=" " alt="" coords="231,201,415,243"/>
+<area shape="rect" href="../../d4/d36/classsysy_1_1ir_1_1Function.html#a01ade236516cd96da24d3b2dc8b72cad" title=" " alt="" coords="258,267,389,308"/>
+<area shape="rect" href="../../d5/d35/classsysy_1_1ir_1_1CallInstruction.html#aa77efd2588ee52b4ac0d53f5245c3f4d" title=" " alt="" coords="238,332,409,373"/>
+<area shape="rect" href="../../db/d8f/classsysy_1_1ir_1_1BrInstruction.html#af8b2ed338b29fb480feee60c8ea0557a" title=" " alt="" coords="244,397,403,439"/>
+<area shape="rect" href="../../d8/d42/classsysy_1_1ir_1_1RetInstruction.html#a42468d21d9d7da8f1e31e82866c8d7b2" title=" " alt="" coords="240,463,407,504"/>
+<area shape="rect" href="../../df/da0/classsysy_1_1ir_1_1StoreInstruction.html#a393c3cbc8acc5889393601fa329905d5" title=" " alt="" coords="234,528,413,569"/>
+<area shape="rect" href="../../d0/da1/classsysy_1_1ir_1_1PointerType.html#ac53915501e35f7da145d86de913340f7" title=" " alt="" coords="247,593,399,635"/>
+<area shape="rect" href="../../dc/d65/classsysy_1_1ir_1_1GEPInstruction.html#adc291a7825f8f3fd20c3d8d307a3dc6f" title=" " alt="" coords="5,623,176,664"/>
+<area shape="rect" href="../../db/d0c/classsysy_1_1ir_1_1LoadInstruction.html#a92bb5ad2219acb4c09e39287c81089e8" title=" " alt="" coords="235,711,411,752"/>
+<area shape="rect" href="../../dc/d34/classsysy_1_1ir_1_1ArrayType.html#a28c5aa10a764b613533202f699434dce" title=" " alt="" coords="253,776,394,817"/>
+<area shape="rect" href="../../db/d08/classsysy_1_1ir_1_1FunctionType.html#aea4ff7fb5a7b0133489c42ba8e050987" title=" " alt="" coords="243,841,404,883"/>
+<area shape="rect" href="../../dc/de9/classsysy_1_1ir_1_1AllocaInstruction.html#ab4ea6ea50928585b20794c55b45fe840" title=" " alt="" coords="231,907,416,948"/>
+<area shape="rect" href="../../da/dd0/classsysy_1_1ir_1_1PhiInstruction.html#a778cda3de869ec10b5c1fa390139cc84" title=" " alt="" coords="241,972,406,1013"/>
+<area shape="rect" href="../../d9/d8a/classsysy_1_1ir_1_1MemPhiInstruction.html#ae035a82c6eefdc50e1cb8b668832a0d1" title=" " alt="" coords="224,1037,423,1079"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af65346818c97b15296438311e9a25ad8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af65346818c97b15296438311e9a25ad8">&#9670;&nbsp;</a></span>getSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned sysy::ir::Type::getSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a38548719c3299721f566508d86c708d0">size</a>.</p>
+
+</div>
+</div>
+<a id="a598caaaf9c6a7a7e9de2d890dd2d1413"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a598caaaf9c6a7a7e9de2d890dd2d1413">&#9670;&nbsp;</a></span>getTypeId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#ace0e547eba970d4b983ecdded75dd6b7">TypeID</a> sysy::ir::Type::getTypeId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a22fb6f473846c0ed508831760ae0e5d1">ID</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a9ea1bc2d05e0bd653c841f8d4b5c50bb">isArrayTy()</a>, <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#ae9b2a92a444f0581a009b8dd6681e73d">isFloatTy()</a>, <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#af8d43d5eb2bbd183d86824b50d3dacec">isFunctionTy()</a>, <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#ab51ef9921f2598908a291b4146dc047a">isIntegerTy()</a>, <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a4c9a3b89d02629f7c3e2bd3558d290a8">isLabelTy()</a>, <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a3fc1d4d960ff2cb1bc3513d5a532f7ae">isPointerTy()</a>, <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#af33154f7e1a2e1ef272bbcec14de1714">isUndefTy()</a>, <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a9436a5a3c5cd89ce29aa1f3ff6bd0347">isVectorTy()</a>, and <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a677bb7ab1967579b7924cee6087d28fd">isVoidTy()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d1e/classsysy_1_1ir_1_1Type_a598caaaf9c6a7a7e9de2d890dd2d1413_icgraph.png" border="0" usemap="#d7/d1e/classsysy_1_1ir_1_1Type_a598caaaf9c6a7a7e9de2d890dd2d1413_icgraph" alt=""/></div>
+<map name="d7/d1e/classsysy_1_1ir_1_1Type_a598caaaf9c6a7a7e9de2d890dd2d1413_icgraph" id="d7/d1e/classsysy_1_1ir_1_1Type_a598caaaf9c6a7a7e9de2d890dd2d1413_icgraph">
+<area shape="rect" title=" " alt="" coords="1281,848,1459,874"/>
+<area shape="rect" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a9ea1bc2d05e0bd653c841f8d4b5c50bb" title=" " alt="" coords="1049,709,1223,736"/>
+<area shape="rect" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#ae9b2a92a444f0581a009b8dd6681e73d" title=" " alt="" coords="1050,396,1222,422"/>
+<area shape="rect" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#af8d43d5eb2bbd183d86824b50d3dacec" title=" " alt="" coords="1039,848,1233,874"/>
+<area shape="rect" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#ab51ef9921f2598908a291b4146dc047a" title=" " alt="" coords="1043,220,1229,246"/>
+<area shape="rect" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a4c9a3b89d02629f7c3e2bd3558d290a8" title=" " alt="" coords="1049,898,1223,925"/>
+<area shape="rect" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a3fc1d4d960ff2cb1bc3513d5a532f7ae" title=" " alt="" coords="1043,797,1229,824"/>
+<area shape="rect" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#af33154f7e1a2e1ef272bbcec14de1714" title=" " alt="" coords="1047,949,1225,976"/>
+<area shape="rect" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a9436a5a3c5cd89ce29aa1f3ff6bd0347" title=" " alt="" coords="1046,1000,1226,1026"/>
+<area shape="rect" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a677bb7ab1967579b7924cee6087d28fd" title=" " alt="" coords="1053,1050,1219,1077"/>
+<area shape="rect" href="../../d3/d8e/classsysy_1_1ir_1_1MemorySSA.html#a79989a6513a2f360c2ee5dc3c55f8cb7" title=" " alt="" coords="805,607,961,648"/>
+<area shape="rect" href="../../da/dab/classsysy_1_1ir_1_1Constant.html#a5121ef1ecdbb46dd04765323f7a07323" title=" " alt="" coords="816,476,951,518"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a21005402fe4966ec147ce27d1fb42b11" title=" " alt="" coords="339,865,453,892"/>
+<area shape="rect" href="../../db/df2/classsysy_1_1ir_1_1Memory2Reg.html#ae15036ff9c5b5c601b7bca172932d5af" title=" " alt="" coords="802,790,965,831"/>
+<area shape="rect" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#a7e8596f47e5439f678ac43d46e853a24" title=" " alt="" coords="806,672,961,714"/>
+<area shape="rect" href="../../d3/d8e/classsysy_1_1ir_1_1MemorySSA.html#a557917d070f1a1ab140e716b582939b3" title=" " alt="" coords="539,570,725,597"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a7baf50c896de58efd71818fac032b175" title=" " alt="" coords="553,140,711,166"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#ab63668891b7eacabf6efc01b7d974de1" title=" " alt="" coords="575,484,689,510"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a184ee04952268fc07f958c23abf71c59" title=" " alt="" coords="337,140,455,166"/>
+<area shape="rect" href="../../dd/d20/namespacesysy.html#ac031d4fc7b9f45e50ecee68a68a33f9d" title=" " alt="" coords="108,140,256,166"/>
+<area shape="rect" href="../../d4/d0b/compiler_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,140,60,166"/>
+<area shape="rect" href="../../db/df2/classsysy_1_1ir_1_1Memory2Reg.html#a6548ffce57ba27c403378a8e2d531033" title=" " alt="" coords="536,789,728,816"/>
+<area shape="rect" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#aec3eb4fc816d226921d5885959c7c789" title=" " alt="" coords="555,622,709,663"/>
+<area shape="rect" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#aee3a0e1625a7f3f75fde8ce2d24fa603" title=" " alt="" coords="304,629,488,656"/>
+<area shape="rect" href="../../dd/dd8/classsysy_1_1mc_1_1Function.html#acfb838cc2742698229fdc9675a0ed1e5" title=" " alt="" coords="812,542,955,583"/>
+<area shape="rect" href="../../dd/dd8/classsysy_1_1mc_1_1Function.html#af063979e92ada5243b92cfbe493d9497" title=" " alt="" coords="812,359,955,400"/>
+<area shape="rect" href="../../df/d73/classsysy_1_1mc_1_1Block.html#a051e1845d20e7fe7a5ed307e27d099b9" title=" " alt="" coords="776,425,991,452"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#aaec8c7184501d4e20af33427d670f987" title=" " alt="" coords="826,308,941,334"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a88ebe6f2ad1d0543760ab0bb8cc54215" title=" " alt="" coords="806,140,961,166"/>
+<area shape="rect" href="../../d4/d68/classsysy_1_1ir_1_1CleanExitBasicBlock.html#a1b9ee981c7f8f645bd342ba528a725c2" title=" " alt="" coords="797,242,970,283"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a44dca136c94fedd0ccf38e58ced4a320" title=" " alt="" coords="306,190,486,217"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a4c670a65f972ffe8ee7a9b0f1cba18c1" title=" " alt="" coords="561,241,703,268"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a801d2a81bd84408c9fe767b7822d1d95" title=" " alt="" coords="575,89,689,116"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#ad24fe40af018617c3a8f1326577f66e2" title=" " alt="" coords="339,241,453,268"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a3d316493e67a5ec132409969c28c15c2" title=" " alt="" coords="788,89,979,116"/>
+<area shape="rect" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#aab11ddad3999d65d482588cf0d8d7ba0" title=" " alt="" coords="804,855,963,896"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a683261df6a2eb4316a6e571f4c0992b0" title=" " alt="" coords="547,840,717,866"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a2bd57623cce01abf1c12a0a8a8b2fdc1" title=" " alt="" coords="565,890,699,917"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#ae4bb2b7737684719c10b99eb736fa71d" title=" " alt="" coords="575,941,689,968"/>
+<area shape="rect" href="../../d8/d42/classsysy_1_1ir_1_1RetInstruction.html#aafc0b8e867ec62d7e8104bf1fb006e96" title=" " alt="" coords="800,1043,967,1084"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acb06f39482cd58ea11c1e4fd2ca3ea74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb06f39482cd58ea11c1e4fd2ca3ea74">&#9670;&nbsp;</a></span>getUndefTy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> * sysy::ir::Type::getUndefTy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../df/d12/classsysy_1_1ir_1_1UndefType.html#a077525e09f45e87143e2700e293d5e49">sysy::ir::UndefType::get()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d1e/classsysy_1_1ir_1_1Type_acb06f39482cd58ea11c1e4fd2ca3ea74_cgraph.png" border="0" usemap="#d7/d1e/classsysy_1_1ir_1_1Type_acb06f39482cd58ea11c1e4fd2ca3ea74_cgraph" alt=""/></div>
+<map name="d7/d1e/classsysy_1_1ir_1_1Type_acb06f39482cd58ea11c1e4fd2ca3ea74_cgraph" id="d7/d1e/classsysy_1_1ir_1_1Type_acb06f39482cd58ea11c1e4fd2ca3ea74_cgraph">
+<area shape="rect" title=" " alt="" coords="5,13,193,39"/>
+<area shape="rect" href="../../df/d12/classsysy_1_1ir_1_1UndefType.html#a077525e09f45e87143e2700e293d5e49" title=" " alt="" coords="241,13,416,39"/>
+<area shape="rect" href="../../dc/d02/classsysy_1_1ir_1_1Context.html#aba7555fd5267d54a604e4a5f0fdc69b2" title=" " alt="" coords="464,5,599,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5037dd4d7aa044846a0e22e5bdc77d79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5037dd4d7aa044846a0e22e5bdc77d79">&#9670;&nbsp;</a></span>getVoidTy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> * sysy::ir::Type::getVoidTy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../db/d23/classsysy_1_1ir_1_1VoidType.html#a21216dc2b27fbfb8151a15d4c1ceccce">sysy::ir::VoidType::get()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a92aa858131de7e5c89c3aeeea517bbab">sysy::ir::createGlobalInit()</a>, <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a2699c92239e304d9d22cfd2ab362f361">sysy::ir::irEmit()</a>, <a class="el" href="../../d3/d8e/classsysy_1_1ir_1_1MemorySSA.html#a9ad78280491d45c7898f9aebf74f0c29">sysy::ir::MemorySSA::queueLoadMemPhi()</a>, and <a class="el" href="../../d3/d8e/classsysy_1_1ir_1_1MemorySSA.html#abdb55a00b151e7564b20139d850b8bec">sysy::ir::MemorySSA::queueStoreMemPhi()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d1e/classsysy_1_1ir_1_1Type_a5037dd4d7aa044846a0e22e5bdc77d79_cgraph.png" border="0" usemap="#d7/d1e/classsysy_1_1ir_1_1Type_a5037dd4d7aa044846a0e22e5bdc77d79_cgraph" alt=""/></div>
+<map name="d7/d1e/classsysy_1_1ir_1_1Type_a5037dd4d7aa044846a0e22e5bdc77d79_cgraph" id="d7/d1e/classsysy_1_1ir_1_1Type_a5037dd4d7aa044846a0e22e5bdc77d79_cgraph">
+<area shape="rect" title=" " alt="" coords="5,13,183,39"/>
+<area shape="rect" href="../../db/d23/classsysy_1_1ir_1_1VoidType.html#a21216dc2b27fbfb8151a15d4c1ceccce" title=" " alt="" coords="231,13,393,39"/>
+<area shape="rect" href="../../dc/d02/classsysy_1_1ir_1_1Context.html#aba7555fd5267d54a604e4a5f0fdc69b2" title=" " alt="" coords="441,5,576,47"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d1e/classsysy_1_1ir_1_1Type_a5037dd4d7aa044846a0e22e5bdc77d79_icgraph.png" border="0" usemap="#d7/d1e/classsysy_1_1ir_1_1Type_a5037dd4d7aa044846a0e22e5bdc77d79_icgraph" alt=""/></div>
+<map name="d7/d1e/classsysy_1_1ir_1_1Type_a5037dd4d7aa044846a0e22e5bdc77d79_icgraph" id="d7/d1e/classsysy_1_1ir_1_1Type_a5037dd4d7aa044846a0e22e5bdc77d79_icgraph">
+<area shape="rect" title=" " alt="" coords="972,111,1149,137"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a92aa858131de7e5c89c3aeeea517bbab" title=" " alt="" coords="744,31,924,57"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a2699c92239e304d9d22cfd2ab362f361" title=" " alt="" coords="777,81,891,108"/>
+<area shape="rect" href="../../d3/d8e/classsysy_1_1ir_1_1MemorySSA.html#a9ad78280491d45c7898f9aebf74f0c29" title=" " alt="" coords="756,133,912,174"/>
+<area shape="rect" href="../../d3/d8e/classsysy_1_1ir_1_1MemorySSA.html#abdb55a00b151e7564b20139d850b8bec" title=" " alt="" coords="755,198,913,239"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a7baf50c896de58efd71818fac032b175" title=" " alt="" coords="537,5,696,32"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a0a973b6c3708b72ed417540f3b9c09a9" title=" " alt="" coords="548,56,685,83"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a184ee04952268fc07f958c23abf71c59" title=" " alt="" coords="337,31,456,57"/>
+<area shape="rect" href="../../dd/d20/namespacesysy.html#ac031d4fc7b9f45e50ecee68a68a33f9d" title=" " alt="" coords="108,31,256,57"/>
+<area shape="rect" href="../../d4/d0b/compiler_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,31,60,57"/>
+<area shape="rect" href="../../d3/d8e/classsysy_1_1ir_1_1MemorySSA.html#abf279cf90546b6a0a8b36276be3478ec" title=" " alt="" coords="539,133,695,174"/>
+<area shape="rect" href="../../d3/d8e/classsysy_1_1ir_1_1MemorySSA.html#a557917d070f1a1ab140e716b582939b3" title=" " alt="" coords="304,172,489,199"/>
+<area shape="rect" href="../../d3/d8e/classsysy_1_1ir_1_1MemorySSA.html#accb8509ae51edf132a2bf6198952b778" title=" " alt="" coords="539,198,695,239"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9ea1bc2d05e0bd653c841f8d4b5c50bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ea1bc2d05e0bd653c841f8d4b5c50bb">&#9670;&nbsp;</a></span>isArrayTy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sysy::ir::Type::isArrayTy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#ace0e547eba970d4b983ecdded75dd6b7ace5a363c46b104c55b2c5583963fce13">ArrayTyID</a>, and <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a598caaaf9c6a7a7e9de2d890dd2d1413">getTypeId()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d3/d8e/classsysy_1_1ir_1_1MemorySSA.html#a79989a6513a2f360c2ee5dc3c55f8cb7">sysy::ir::MemorySSA::computeArrayInfo()</a>, <a class="el" href="../../da/dab/classsysy_1_1ir_1_1Constant.html#a5121ef1ecdbb46dd04765323f7a07323">sysy::ir::Constant::getZero()</a>, <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a21005402fe4966ec147ce27d1fb42b11">sysy::ir::irEmit()</a>, <a class="el" href="../../db/df2/classsysy_1_1ir_1_1Memory2Reg.html#ae15036ff9c5b5c601b7bca172932d5af">sysy::ir::Memory2Reg::isAllocaPromotable()</a>, and <a class="el" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#a7e8596f47e5439f678ac43d46e853a24">sysy::ir::LoopParallel::isParallelizable()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d1e/classsysy_1_1ir_1_1Type_a9ea1bc2d05e0bd653c841f8d4b5c50bb_cgraph.png" border="0" usemap="#d7/d1e/classsysy_1_1ir_1_1Type_a9ea1bc2d05e0bd653c841f8d4b5c50bb_cgraph" alt=""/></div>
+<map name="d7/d1e/classsysy_1_1ir_1_1Type_a9ea1bc2d05e0bd653c841f8d4b5c50bb_cgraph" id="d7/d1e/classsysy_1_1ir_1_1Type_a9ea1bc2d05e0bd653c841f8d4b5c50bb_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,180,32"/>
+<area shape="rect" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a598caaaf9c6a7a7e9de2d890dd2d1413" title=" " alt="" coords="228,5,405,32"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d1e/classsysy_1_1ir_1_1Type_a9ea1bc2d05e0bd653c841f8d4b5c50bb_icgraph.png" border="0" usemap="#d7/d1e/classsysy_1_1ir_1_1Type_a9ea1bc2d05e0bd653c841f8d4b5c50bb_icgraph" alt=""/></div>
+<map name="d7/d1e/classsysy_1_1ir_1_1Type_a9ea1bc2d05e0bd653c841f8d4b5c50bb_icgraph" id="d7/d1e/classsysy_1_1ir_1_1Type_a9ea1bc2d05e0bd653c841f8d4b5c50bb_icgraph">
+<area shape="rect" title=" " alt="" coords="987,137,1161,163"/>
+<area shape="rect" href="../../d3/d8e/classsysy_1_1ir_1_1MemorySSA.html#a79989a6513a2f360c2ee5dc3c55f8cb7" title=" " alt="" coords="779,5,935,47"/>
+<area shape="rect" href="../../da/dab/classsysy_1_1ir_1_1Constant.html#a5121ef1ecdbb46dd04765323f7a07323" title=" " alt="" coords="790,71,925,112"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a21005402fe4966ec147ce27d1fb42b11" title=" " alt="" coords="800,137,915,163"/>
+<area shape="rect" href="../../db/df2/classsysy_1_1ir_1_1Memory2Reg.html#ae15036ff9c5b5c601b7bca172932d5af" title=" " alt="" coords="776,188,939,229"/>
+<area shape="rect" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#a7e8596f47e5439f678ac43d46e853a24" title=" " alt="" coords="780,253,935,295"/>
+<area shape="rect" href="../../d3/d8e/classsysy_1_1ir_1_1MemorySSA.html#a557917d070f1a1ab140e716b582939b3" title=" " alt="" coords="539,13,725,39"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a7baf50c896de58efd71818fac032b175" title=" " alt="" coords="553,71,711,98"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#ab63668891b7eacabf6efc01b7d974de1" title=" " alt="" coords="575,122,689,149"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a184ee04952268fc07f958c23abf71c59" title=" " alt="" coords="337,71,455,98"/>
+<area shape="rect" href="../../dd/d20/namespacesysy.html#ac031d4fc7b9f45e50ecee68a68a33f9d" title=" " alt="" coords="108,71,256,98"/>
+<area shape="rect" href="../../d4/d0b/compiler_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,71,60,98"/>
+<area shape="rect" href="../../db/df2/classsysy_1_1ir_1_1Memory2Reg.html#a6548ffce57ba27c403378a8e2d531033" title=" " alt="" coords="536,195,728,222"/>
+<area shape="rect" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#aec3eb4fc816d226921d5885959c7c789" title=" " alt="" coords="555,253,709,295"/>
+<area shape="rect" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#aee3a0e1625a7f3f75fde8ce2d24fa603" title=" " alt="" coords="304,261,488,287"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae9b2a92a444f0581a009b8dd6681e73d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9b2a92a444f0581a009b8dd6681e73d">&#9670;&nbsp;</a></span>isFloatTy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sysy::ir::Type::isFloatTy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#ace0e547eba970d4b983ecdded75dd6b7abd3f8f80eb3942c3a7f7134a5c680fc4">FloatTyID</a>, and <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a598caaaf9c6a7a7e9de2d890dd2d1413">getTypeId()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dd/dd8/classsysy_1_1mc_1_1Function.html#acfb838cc2742698229fdc9675a0ed1e5">sysy::mc::Function::analyseFunc()</a>, <a class="el" href="../../dd/dd8/classsysy_1_1mc_1_1Function.html#af063979e92ada5243b92cfbe493d9497">sysy::mc::Function::get_reg()</a>, <a class="el" href="../../da/dab/classsysy_1_1ir_1_1Constant.html#a5121ef1ecdbb46dd04765323f7a07323">sysy::ir::Constant::getZero()</a>, <a class="el" href="../../df/d73/classsysy_1_1mc_1_1Block.html#a051e1845d20e7fe7a5ed307e27d099b9">sysy::mc::Block::instSelection()</a>, <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#aaec8c7184501d4e20af33427d670f987">sysy::ir::irEmit()</a>, <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a88ebe6f2ad1d0543760ab0bb8cc54215">sysy::ir::isSameType()</a>, and <a class="el" href="../../d4/d68/classsysy_1_1ir_1_1CleanExitBasicBlock.html#a1b9ee981c7f8f645bd342ba528a725c2">sysy::ir::CleanExitBasicBlock::run()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d1e/classsysy_1_1ir_1_1Type_ae9b2a92a444f0581a009b8dd6681e73d_cgraph.png" border="0" usemap="#d7/d1e/classsysy_1_1ir_1_1Type_ae9b2a92a444f0581a009b8dd6681e73d_cgraph" alt=""/></div>
+<map name="d7/d1e/classsysy_1_1ir_1_1Type_ae9b2a92a444f0581a009b8dd6681e73d_cgraph" id="d7/d1e/classsysy_1_1ir_1_1Type_ae9b2a92a444f0581a009b8dd6681e73d_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,177,32"/>
+<area shape="rect" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a598caaaf9c6a7a7e9de2d890dd2d1413" title=" " alt="" coords="225,5,403,32"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d1e/classsysy_1_1ir_1_1Type_ae9b2a92a444f0581a009b8dd6681e73d_icgraph.png" border="0" usemap="#d7/d1e/classsysy_1_1ir_1_1Type_ae9b2a92a444f0581a009b8dd6681e73d_icgraph" alt=""/></div>
+<map name="d7/d1e/classsysy_1_1ir_1_1Type_ae9b2a92a444f0581a009b8dd6681e73d_icgraph" id="d7/d1e/classsysy_1_1ir_1_1Type_ae9b2a92a444f0581a009b8dd6681e73d_icgraph">
+<area shape="rect" title=" " alt="" coords="1001,202,1173,229"/>
+<area shape="rect" href="../../dd/dd8/classsysy_1_1mc_1_1Function.html#acfb838cc2742698229fdc9675a0ed1e5" title=" " alt="" coords="775,5,917,47"/>
+<area shape="rect" href="../../dd/dd8/classsysy_1_1mc_1_1Function.html#af063979e92ada5243b92cfbe493d9497" title=" " alt="" coords="775,71,917,112"/>
+<area shape="rect" href="../../da/dab/classsysy_1_1ir_1_1Constant.html#a5121ef1ecdbb46dd04765323f7a07323" title=" " alt="" coords="779,136,913,177"/>
+<area shape="rect" href="../../df/d73/classsysy_1_1mc_1_1Block.html#a051e1845d20e7fe7a5ed307e27d099b9" title=" " alt="" coords="739,202,953,229"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#aaec8c7184501d4e20af33427d670f987" title=" " alt="" coords="789,253,903,279"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a88ebe6f2ad1d0543760ab0bb8cc54215" title=" " alt="" coords="769,303,923,330"/>
+<area shape="rect" href="../../d4/d68/classsysy_1_1ir_1_1CleanExitBasicBlock.html#a1b9ee981c7f8f645bd342ba528a725c2" title=" " alt="" coords="759,355,933,396"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a7baf50c896de58efd71818fac032b175" title=" " alt="" coords="532,118,691,145"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#ab63668891b7eacabf6efc01b7d974de1" title=" " alt="" coords="554,169,669,195"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a184ee04952268fc07f958c23abf71c59" title=" " alt="" coords="335,118,453,145"/>
+<area shape="rect" href="../../dd/d20/namespacesysy.html#ac031d4fc7b9f45e50ecee68a68a33f9d" title=" " alt="" coords="108,118,256,145"/>
+<area shape="rect" href="../../d4/d0b/compiler_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,118,60,145"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a44dca136c94fedd0ccf38e58ced4a320" title=" " alt="" coords="304,253,484,279"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a4c670a65f972ffe8ee7a9b0f1cba18c1" title=" " alt="" coords="540,303,683,330"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a801d2a81bd84408c9fe767b7822d1d95" title=" " alt="" coords="554,354,669,381"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#ad24fe40af018617c3a8f1326577f66e2" title=" " alt="" coords="337,303,451,330"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af8d43d5eb2bbd183d86824b50d3dacec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8d43d5eb2bbd183d86824b50d3dacec">&#9670;&nbsp;</a></span>isFunctionTy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sysy::ir::Type::isFunctionTy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#ace0e547eba970d4b983ecdded75dd6b7a0e56b7a0e05a94fe67611ea20802e812">FunctionTyID</a>, and <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a598caaaf9c6a7a7e9de2d890dd2d1413">getTypeId()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d1e/classsysy_1_1ir_1_1Type_af8d43d5eb2bbd183d86824b50d3dacec_cgraph.png" border="0" usemap="#d7/d1e/classsysy_1_1ir_1_1Type_af8d43d5eb2bbd183d86824b50d3dacec_cgraph" alt=""/></div>
+<map name="d7/d1e/classsysy_1_1ir_1_1Type_af8d43d5eb2bbd183d86824b50d3dacec_cgraph" id="d7/d1e/classsysy_1_1ir_1_1Type_af8d43d5eb2bbd183d86824b50d3dacec_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,200,32"/>
+<area shape="rect" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a598caaaf9c6a7a7e9de2d890dd2d1413" title=" " alt="" coords="248,5,425,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab51ef9921f2598908a291b4146dc047a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab51ef9921f2598908a291b4146dc047a">&#9670;&nbsp;</a></span>isIntegerTy() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sysy::ir::Type::isIntegerTy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a598caaaf9c6a7a7e9de2d890dd2d1413">getTypeId()</a>, and <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#ace0e547eba970d4b983ecdded75dd6b7aa0bd206e917a92b0da4f68926646e1c5">IntegerTyID</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a44dca136c94fedd0ccf38e58ced4a320">sysy::ir::createGlobalInit()</a>, <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a4c670a65f972ffe8ee7a9b0f1cba18c1">sysy::ir::emitInitial()</a>, <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a3d316493e67a5ec132409969c28c15c2">sysy::ir::getConstantArray()</a>, <a class="el" href="../../da/dab/classsysy_1_1ir_1_1Constant.html#a5121ef1ecdbb46dd04765323f7a07323">sysy::ir::Constant::getZero()</a>, <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#aaec8c7184501d4e20af33427d670f987">sysy::ir::irEmit()</a>, <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a88ebe6f2ad1d0543760ab0bb8cc54215">sysy::ir::isSameType()</a>, and <a class="el" href="../../d4/d68/classsysy_1_1ir_1_1CleanExitBasicBlock.html#a1b9ee981c7f8f645bd342ba528a725c2">sysy::ir::CleanExitBasicBlock::run()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d1e/classsysy_1_1ir_1_1Type_ab51ef9921f2598908a291b4146dc047a_cgraph.png" border="0" usemap="#d7/d1e/classsysy_1_1ir_1_1Type_ab51ef9921f2598908a291b4146dc047a_cgraph" alt=""/></div>
+<map name="d7/d1e/classsysy_1_1ir_1_1Type_ab51ef9921f2598908a291b4146dc047a_cgraph" id="d7/d1e/classsysy_1_1ir_1_1Type_ab51ef9921f2598908a291b4146dc047a_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,191,32"/>
+<area shape="rect" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a598caaaf9c6a7a7e9de2d890dd2d1413" title=" " alt="" coords="239,5,416,32"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d1e/classsysy_1_1ir_1_1Type_ab51ef9921f2598908a291b4146dc047a_icgraph.png" border="0" usemap="#d7/d1e/classsysy_1_1ir_1_1Type_ab51ef9921f2598908a291b4146dc047a_icgraph" alt=""/></div>
+<map name="d7/d1e/classsysy_1_1ir_1_1Type_ab51ef9921f2598908a291b4146dc047a_icgraph" id="d7/d1e/classsysy_1_1ir_1_1Type_ab51ef9921f2598908a291b4146dc047a_icgraph">
+<area shape="rect" title=" " alt="" coords="977,157,1163,184"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a44dca136c94fedd0ccf38e58ced4a320" title=" " alt="" coords="304,56,484,83"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a4c670a65f972ffe8ee7a9b0f1cba18c1" title=" " alt="" coords="540,5,683,32"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a3d316493e67a5ec132409969c28c15c2" title=" " alt="" coords="739,107,929,133"/>
+<area shape="rect" href="../../da/dab/classsysy_1_1ir_1_1Constant.html#a5121ef1ecdbb46dd04765323f7a07323" title=" " alt="" coords="767,209,901,250"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#aaec8c7184501d4e20af33427d670f987" title=" " alt="" coords="777,275,891,301"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a88ebe6f2ad1d0543760ab0bb8cc54215" title=" " alt="" coords="757,56,911,83"/>
+<area shape="rect" href="../../d4/d68/classsysy_1_1ir_1_1CleanExitBasicBlock.html#a1b9ee981c7f8f645bd342ba528a725c2" title=" " alt="" coords="747,326,921,367"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#ad24fe40af018617c3a8f1326577f66e2" title=" " alt="" coords="337,5,451,32"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a7baf50c896de58efd71818fac032b175" title=" " alt="" coords="532,208,691,235"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a801d2a81bd84408c9fe767b7822d1d95" title=" " alt="" coords="554,107,669,133"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a184ee04952268fc07f958c23abf71c59" title=" " alt="" coords="335,208,453,235"/>
+<area shape="rect" href="../../dd/d20/namespacesysy.html#ac031d4fc7b9f45e50ecee68a68a33f9d" title=" " alt="" coords="108,208,256,235"/>
+<area shape="rect" href="../../d4/d0b/compiler_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,208,60,235"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#ab63668891b7eacabf6efc01b7d974de1" title=" " alt="" coords="554,259,669,285"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4e362c366228a229910840f5e949dc15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e362c366228a229910840f5e949dc15">&#9670;&nbsp;</a></span>isIntegerTy() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sysy::ir::Type::isIntegerTy </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>width</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4c9a3b89d02629f7c3e2bd3558d290a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c9a3b89d02629f7c3e2bd3558d290a8">&#9670;&nbsp;</a></span>isLabelTy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sysy::ir::Type::isLabelTy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a598caaaf9c6a7a7e9de2d890dd2d1413">getTypeId()</a>, and <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#ace0e547eba970d4b983ecdded75dd6b7aa144773d94e5f84785c2e3c28c68659c">LabelTyID</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d1e/classsysy_1_1ir_1_1Type_a4c9a3b89d02629f7c3e2bd3558d290a8_cgraph.png" border="0" usemap="#d7/d1e/classsysy_1_1ir_1_1Type_a4c9a3b89d02629f7c3e2bd3558d290a8_cgraph" alt=""/></div>
+<map name="d7/d1e/classsysy_1_1ir_1_1Type_a4c9a3b89d02629f7c3e2bd3558d290a8_cgraph" id="d7/d1e/classsysy_1_1ir_1_1Type_a4c9a3b89d02629f7c3e2bd3558d290a8_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,180,32"/>
+<area shape="rect" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a598caaaf9c6a7a7e9de2d890dd2d1413" title=" " alt="" coords="228,5,405,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3fc1d4d960ff2cb1bc3513d5a532f7ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fc1d4d960ff2cb1bc3513d5a532f7ae">&#9670;&nbsp;</a></span>isPointerTy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sysy::ir::Type::isPointerTy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a598caaaf9c6a7a7e9de2d890dd2d1413">getTypeId()</a>, and <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#ace0e547eba970d4b983ecdded75dd6b7a4b3b3eca336ac3edadf2fca25b74ae34">PointerTyID</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#aab11ddad3999d65d482588cf0d8d7ba0">sysy::ir::IRBuilder::CreateInBoundsGEP()</a>, <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a21005402fe4966ec147ce27d1fb42b11">sysy::ir::irEmit()</a>, and <a class="el" href="../../db/df2/classsysy_1_1ir_1_1Memory2Reg.html#ae15036ff9c5b5c601b7bca172932d5af">sysy::ir::Memory2Reg::isAllocaPromotable()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d1e/classsysy_1_1ir_1_1Type_a3fc1d4d960ff2cb1bc3513d5a532f7ae_cgraph.png" border="0" usemap="#d7/d1e/classsysy_1_1ir_1_1Type_a3fc1d4d960ff2cb1bc3513d5a532f7ae_cgraph" alt=""/></div>
+<map name="d7/d1e/classsysy_1_1ir_1_1Type_a3fc1d4d960ff2cb1bc3513d5a532f7ae_cgraph" id="d7/d1e/classsysy_1_1ir_1_1Type_a3fc1d4d960ff2cb1bc3513d5a532f7ae_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,191,32"/>
+<area shape="rect" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a598caaaf9c6a7a7e9de2d890dd2d1413" title=" " alt="" coords="239,5,416,32"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d1e/classsysy_1_1ir_1_1Type_a3fc1d4d960ff2cb1bc3513d5a532f7ae_icgraph.png" border="0" usemap="#d7/d1e/classsysy_1_1ir_1_1Type_a3fc1d4d960ff2cb1bc3513d5a532f7ae_icgraph" alt=""/></div>
+<map name="d7/d1e/classsysy_1_1ir_1_1Type_a3fc1d4d960ff2cb1bc3513d5a532f7ae_icgraph" id="d7/d1e/classsysy_1_1ir_1_1Type_a3fc1d4d960ff2cb1bc3513d5a532f7ae_icgraph">
+<area shape="rect" title=" " alt="" coords="684,259,869,285"/>
+<area shape="rect" href="../../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#aab11ddad3999d65d482588cf0d8d7ba0" title=" " alt="" coords="475,125,634,166"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a21005402fe4966ec147ce27d1fb42b11" title=" " alt="" coords="38,157,153,184"/>
+<area shape="rect" href="../../db/df2/classsysy_1_1ir_1_1Memory2Reg.html#ae15036ff9c5b5c601b7bca172932d5af" title=" " alt="" coords="473,310,636,351"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a44dca136c94fedd0ccf38e58ced4a320" title=" " alt="" coords="5,5,185,32"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a4c670a65f972ffe8ee7a9b0f1cba18c1" title=" " alt="" coords="258,56,401,83"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a683261df6a2eb4316a6e571f4c0992b0" title=" " alt="" coords="245,107,414,133"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a2bd57623cce01abf1c12a0a8a8b2fdc1" title=" " alt="" coords="263,157,396,184"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#ae4bb2b7737684719c10b99eb736fa71d" title=" " alt="" coords="272,208,387,235"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#ad24fe40af018617c3a8f1326577f66e2" title=" " alt="" coords="38,56,153,83"/>
+<area shape="rect" href="../../db/df2/classsysy_1_1ir_1_1Memory2Reg.html#a6548ffce57ba27c403378a8e2d531033" title=" " alt="" coords="233,317,425,344"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af33154f7e1a2e1ef272bbcec14de1714"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af33154f7e1a2e1ef272bbcec14de1714">&#9670;&nbsp;</a></span>isUndefTy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sysy::ir::Type::isUndefTy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a598caaaf9c6a7a7e9de2d890dd2d1413">getTypeId()</a>, and <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#ace0e547eba970d4b983ecdded75dd6b7a57af24e69c6bdaa6882f317b953b46de">UndefTyID</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d1e/classsysy_1_1ir_1_1Type_af33154f7e1a2e1ef272bbcec14de1714_cgraph.png" border="0" usemap="#d7/d1e/classsysy_1_1ir_1_1Type_af33154f7e1a2e1ef272bbcec14de1714_cgraph" alt=""/></div>
+<map name="d7/d1e/classsysy_1_1ir_1_1Type_af33154f7e1a2e1ef272bbcec14de1714_cgraph" id="d7/d1e/classsysy_1_1ir_1_1Type_af33154f7e1a2e1ef272bbcec14de1714_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,184,32"/>
+<area shape="rect" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a598caaaf9c6a7a7e9de2d890dd2d1413" title=" " alt="" coords="232,5,409,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9436a5a3c5cd89ce29aa1f3ff6bd0347"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9436a5a3c5cd89ce29aa1f3ff6bd0347">&#9670;&nbsp;</a></span>isVectorTy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sysy::ir::Type::isVectorTy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#ace0e547eba970d4b983ecdded75dd6b7a4bf0f1572b7f9f1413b4c74b23ea6e53">FixedVectorTyID</a>, <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a598caaaf9c6a7a7e9de2d890dd2d1413">getTypeId()</a>, and <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#ace0e547eba970d4b983ecdded75dd6b7a7a45cf15022058aa3217ab957482e656">ScalableVectorTyID</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d1e/classsysy_1_1ir_1_1Type_a9436a5a3c5cd89ce29aa1f3ff6bd0347_cgraph.png" border="0" usemap="#d7/d1e/classsysy_1_1ir_1_1Type_a9436a5a3c5cd89ce29aa1f3ff6bd0347_cgraph" alt=""/></div>
+<map name="d7/d1e/classsysy_1_1ir_1_1Type_a9436a5a3c5cd89ce29aa1f3ff6bd0347_cgraph" id="d7/d1e/classsysy_1_1ir_1_1Type_a9436a5a3c5cd89ce29aa1f3ff6bd0347_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,185,32"/>
+<area shape="rect" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a598caaaf9c6a7a7e9de2d890dd2d1413" title=" " alt="" coords="233,5,411,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a677bb7ab1967579b7924cee6087d28fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a677bb7ab1967579b7924cee6087d28fd">&#9670;&nbsp;</a></span>isVoidTy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sysy::ir::Type::isVoidTy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a598caaaf9c6a7a7e9de2d890dd2d1413">getTypeId()</a>, and <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#ace0e547eba970d4b983ecdded75dd6b7a7fe7e1019c61004e7e038ba37303e4ce">VoidTyID</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d8/d42/classsysy_1_1ir_1_1RetInstruction.html#aafc0b8e867ec62d7e8104bf1fb006e96">sysy::ir::RetInstruction::isVoidRet()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d1e/classsysy_1_1ir_1_1Type_a677bb7ab1967579b7924cee6087d28fd_cgraph.png" border="0" usemap="#d7/d1e/classsysy_1_1ir_1_1Type_a677bb7ab1967579b7924cee6087d28fd_cgraph" alt=""/></div>
+<map name="d7/d1e/classsysy_1_1ir_1_1Type_a677bb7ab1967579b7924cee6087d28fd_cgraph" id="d7/d1e/classsysy_1_1ir_1_1Type_a677bb7ab1967579b7924cee6087d28fd_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,172,32"/>
+<area shape="rect" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a598caaaf9c6a7a7e9de2d890dd2d1413" title=" " alt="" coords="220,5,397,32"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d1e/classsysy_1_1ir_1_1Type_a677bb7ab1967579b7924cee6087d28fd_icgraph.png" border="0" usemap="#d7/d1e/classsysy_1_1ir_1_1Type_a677bb7ab1967579b7924cee6087d28fd_icgraph" alt=""/></div>
+<map name="d7/d1e/classsysy_1_1ir_1_1Type_a677bb7ab1967579b7924cee6087d28fd_icgraph" id="d7/d1e/classsysy_1_1ir_1_1Type_a677bb7ab1967579b7924cee6087d28fd_icgraph">
+<area shape="rect" title=" " alt="" coords="220,13,387,39"/>
+<area shape="rect" href="../../d8/d42/classsysy_1_1ir_1_1RetInstruction.html#aafc0b8e867ec62d7e8104bf1fb006e96" title=" " alt="" coords="5,5,172,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="a084682039fedc6e3d2c55bb9ce3a5679"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a084682039fedc6e3d2c55bb9ce3a5679">&#9670;&nbsp;</a></span>sameType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sameType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a22fb6f473846c0ed508831760ae0e5d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22fb6f473846c0ed508831760ae0e5d1">&#9670;&nbsp;</a></span>ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#ace0e547eba970d4b983ecdded75dd6b7">TypeID</a> sysy::ir::Type::ID</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#a598caaaf9c6a7a7e9de2d890dd2d1413">getTypeId()</a>.</p>
+
+</div>
+</div>
+<a id="a38548719c3299721f566508d86c708d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38548719c3299721f566508d86c708d0">&#9670;&nbsp;</a></span>size</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned sysy::ir::Type::size</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#add8fb88bff73c5c2d7c481fd57b71ee8">getArrayTy()</a>, and <a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html#af65346818c97b15296438311e9a25ad8">getSize()</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>include/sysy/IR/<a class="el" href="../../d7/db7/Type_8h_source.html">Type.h</a></li>
-<li>lib/IR/Type.cpp</li>
+<li>lib/IR/<a class="el" href="../../d0/d85/Type_8cpp.html">Type.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>sysy</b></li><li class="navelem"><b>ir</b></li><li class="navelem"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a></li>
+    <li class="navelem"><a class="el" href="../../dd/d20/namespacesysy.html">sysy</a></li><li class="navelem"><a class="el" href="../../d7/d19/namespacesysy_1_1ir.html">ir</a></li><li class="navelem"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

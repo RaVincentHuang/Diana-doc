@@ -86,11 +86,11 @@ $(document).ready(function(){initNavTree('db/d32/ADCE_8h_source.html','../../');
 <div class="title">ADCE.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SYSY_TRANSFORM_ADCE_H</span></div>
+<a href="../../db/d32/ADCE_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SYSY_TRANSFORM_ADCE_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define SYSY_TRANSFORM_ADCE_H</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;sysy/IR/PassManager.h&quot;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;sysy/IR/Instructions.h&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span>sysy</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d8/d4e/PassManager_8h.html">sysy/IR/PassManager.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d9/dd5/Instructions_8h.html">sysy/IR/Instructions.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../dd/d20/namespacesysy.html">sysy</a></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>ir</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
@@ -98,13 +98,13 @@ $(document).ready(function(){initNavTree('db/d32/ADCE_8h_source.html','../../');
 <div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="../../df/db7/classsysy_1_1ir_1_1ADCE.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../df/db7/classsysy_1_1ir_1_1ADCE.html">ADCE</a> : <span class="keyword">public</span> <a class="code" href="../../d5/d01/classsysy_1_1Pass.html">FunctionPass</a></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">void</span> removeUselessStore(<a class="code" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a>* bb);</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">bool</span> isUsefulInstr(<a class="code" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a>* instr);</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">void</span> findAliveCode(<a class="code" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a>* instr);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../df/db7/classsysy_1_1ir_1_1ADCE.html#a9e090f502e7ee1735928a168046d3ceb">removeUselessStore</a>(<a class="code" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a>* bb);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../df/db7/classsysy_1_1ir_1_1ADCE.html#ac35d94e1af90e49c1a1d86e7db64dce0">isUsefulInstr</a>(<a class="code" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a>* instr);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../df/db7/classsysy_1_1ir_1_1ADCE.html#a822553bcb958688b457d47bfc9a4447c">findAliveCode</a>(<a class="code" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a>* instr);</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="../../df/db7/classsysy_1_1ir_1_1ADCE.html">ADCE</a>();</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">void</span> run(<a class="code" href="../../d4/d36/classsysy_1_1ir_1_1Function.html">Function</a>* func) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    std::string getName()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;ADCE&quot;</span>; }</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="../../df/db7/classsysy_1_1ir_1_1ADCE.html#a6fe31896b9c0abbc569a4643efd8a349">ADCE</a>();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../df/db7/classsysy_1_1ir_1_1ADCE.html#a5b661ced7298521e6791690ccafad153">run</a>(<a class="code" href="../../d4/d36/classsysy_1_1ir_1_1Function.html">Function</a>* func) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="../../df/db7/classsysy_1_1ir_1_1ADCE.html#ac383a1e2662cf1c6ea556eb16999ae2b">   19</a></span>&#160;    std::string <a class="code" href="../../df/db7/classsysy_1_1ir_1_1ADCE.html#ac383a1e2662cf1c6ea556eb16999ae2b">getName</a>()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;ADCE&quot;</span>; }</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;};</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;} <span class="comment">// namespace ir</span></div>
@@ -116,15 +116,24 @@ $(document).ready(function(){initNavTree('db/d32/ADCE_8h_source.html','../../');
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclasssysy_1_1ir_1_1ADCE_html_a5b661ced7298521e6791690ccafad153"><div class="ttname"><a href="../../df/db7/classsysy_1_1ir_1_1ADCE.html#a5b661ced7298521e6791690ccafad153">sysy::ir::ADCE::run</a></div><div class="ttdeci">void run(Function *func) override</div><div class="ttdef"><b>Definition:</b> ADCE.cpp:70</div></div>
+<div class="ttc" id="aclasssysy_1_1ir_1_1ADCE_html_ac35d94e1af90e49c1a1d86e7db64dce0"><div class="ttname"><a href="../../df/db7/classsysy_1_1ir_1_1ADCE.html#ac35d94e1af90e49c1a1d86e7db64dce0">sysy::ir::ADCE::isUsefulInstr</a></div><div class="ttdeci">bool isUsefulInstr(Instruction *instr)</div><div class="ttdef"><b>Definition:</b> ADCE.cpp:27</div></div>
+<div class="ttc" id="aclasssysy_1_1ir_1_1ADCE_html_a9e090f502e7ee1735928a168046d3ceb"><div class="ttname"><a href="../../df/db7/classsysy_1_1ir_1_1ADCE.html#a9e090f502e7ee1735928a168046d3ceb">sysy::ir::ADCE::removeUselessStore</a></div><div class="ttdeci">void removeUselessStore(BasicBlock *bb)</div></div>
+<div class="ttc" id="aclasssysy_1_1ir_1_1ADCE_html_ac383a1e2662cf1c6ea556eb16999ae2b"><div class="ttname"><a href="../../df/db7/classsysy_1_1ir_1_1ADCE.html#ac383a1e2662cf1c6ea556eb16999ae2b">sysy::ir::ADCE::getName</a></div><div class="ttdeci">std::string getName() override</div><div class="ttdef"><b>Definition:</b> ADCE.h:19</div></div>
+<div class="ttc" id="aclasssysy_1_1ir_1_1ADCE_html_a822553bcb958688b457d47bfc9a4447c"><div class="ttname"><a href="../../df/db7/classsysy_1_1ir_1_1ADCE.html#a822553bcb958688b457d47bfc9a4447c">sysy::ir::ADCE::findAliveCode</a></div><div class="ttdeci">void findAliveCode(Instruction *instr)</div><div class="ttdef"><b>Definition:</b> ADCE.cpp:45</div></div>
 <div class="ttc" id="aclasssysy_1_1ir_1_1Function_html"><div class="ttname"><a href="../../d4/d36/classsysy_1_1ir_1_1Function.html">sysy::ir::Function</a></div><div class="ttdef"><b>Definition:</b> Function.h:19</div></div>
 <div class="ttc" id="aclasssysy_1_1Pass_html"><div class="ttname"><a href="../../d5/d01/classsysy_1_1Pass.html">sysy::Pass</a></div><div class="ttdef"><b>Definition:</b> PassManager.h:14</div></div>
 <div class="ttc" id="aclasssysy_1_1ir_1_1Instruction_html"><div class="ttname"><a href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">sysy::ir::Instruction</a></div><div class="ttdef"><b>Definition:</b> Instruction.h:13</div></div>
+<div class="ttc" id="anamespacesysy_html"><div class="ttname"><a href="../../dd/d20/namespacesysy.html">sysy</a></div><div class="ttdef"><b>Definition:</b> AliasAnalysis.h:6</div></div>
+<div class="ttc" id="aPassManager_8h_html"><div class="ttname"><a href="../../d8/d4e/PassManager_8h.html">PassManager.h</a></div></div>
+<div class="ttc" id="aInstructions_8h_html"><div class="ttname"><a href="../../d9/dd5/Instructions_8h.html">Instructions.h</a></div></div>
+<div class="ttc" id="aclasssysy_1_1ir_1_1ADCE_html_a6fe31896b9c0abbc569a4643efd8a349"><div class="ttname"><a href="../../df/db7/classsysy_1_1ir_1_1ADCE.html#a6fe31896b9c0abbc569a4643efd8a349">sysy::ir::ADCE::ADCE</a></div><div class="ttdeci">ADCE()</div><div class="ttdef"><b>Definition:</b> ADCE.cpp:16</div></div>
 <div class="ttc" id="aclasssysy_1_1ir_1_1ADCE_html"><div class="ttname"><a href="../../df/db7/classsysy_1_1ir_1_1ADCE.html">sysy::ir::ADCE</a></div><div class="ttdef"><b>Definition:</b> ADCE.h:10</div></div>
 <div class="ttc" id="aclasssysy_1_1ir_1_1BasicBlock_html"><div class="ttname"><a href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">sysy::ir::BasicBlock</a></div><div class="ttdef"><b>Definition:</b> BasicBlock.h:15</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_b87821115ea3cf61d61e0bb4a6051ac5.html">sysy</a></li><li class="navelem"><a class="el" href="../../dir_c57c09d2f988700d800e6ebfe7229c98.html">Transform</a></li><li class="navelem"><a class="el" href="../../dir_08ceb79ffcecc986de7a4df31a9019ce.html">Scalar</a></li><li class="navelem"><b>ADCE.h</b></li>
+    <li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_b87821115ea3cf61d61e0bb4a6051ac5.html">sysy</a></li><li class="navelem"><a class="el" href="../../dir_c57c09d2f988700d800e6ebfe7229c98.html">Transform</a></li><li class="navelem"><a class="el" href="../../dir_08ceb79ffcecc986de7a4df31a9019ce.html">Scalar</a></li><li class="navelem"><a class="el" href="../../db/d32/ADCE_8h.html">ADCE.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

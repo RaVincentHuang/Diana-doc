@@ -84,78 +84,671 @@ $(document).ready(function(){initNavTree('d8/d7d/classsysy_1_1ir_1_1SCEV.html','
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="../../d2/d77/classsysy_1_1ir_1_1SCEV-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">sysy::ir::SCEV Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="../../db/d9e/Loop_8h_source.html">Loop.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:abedf677829ae56712cff295db48df265"><td class="memItemLeft" align="right" valign="top"><a id="abedf677829ae56712cff295db48df265"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SCEV</b> (<a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *initial, <a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *step)</td></tr>
+<tr class="memitem:ac22b94e323d7b7e90639b84c02ff9a20"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html#ac22b94e323d7b7e90639b84c02ff9a20">SCEV</a> ()</td></tr>
+<tr class="separator:ac22b94e323d7b7e90639b84c02ff9a20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abedf677829ae56712cff295db48df265"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html#abedf677829ae56712cff295db48df265">SCEV</a> (<a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *initial, <a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *step)</td></tr>
 <tr class="separator:abedf677829ae56712cff295db48df265"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a866a59a70aecf6670e895b9d0b16f2ca"><td class="memItemLeft" align="right" valign="top"><a id="a866a59a70aecf6670e895b9d0b16f2ca"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SCEV</b> (<a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *initial, const <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html">SCEV</a> &amp;innerSCEV)</td></tr>
+<tr class="memitem:a866a59a70aecf6670e895b9d0b16f2ca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html#a866a59a70aecf6670e895b9d0b16f2ca">SCEV</a> (<a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *initial, const <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html">SCEV</a> &amp;innerSCEV)</td></tr>
 <tr class="separator:a866a59a70aecf6670e895b9d0b16f2ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00f6c6dc158b3511e3bdd4d21c09bc2d"><td class="memItemLeft" align="right" valign="top"><a id="a00f6c6dc158b3511e3bdd4d21c09bc2d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SCEV</b> (const std::vector&lt; <a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> * &gt; &amp;vec)</td></tr>
+<tr class="memitem:a00f6c6dc158b3511e3bdd4d21c09bc2d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html#a00f6c6dc158b3511e3bdd4d21c09bc2d">SCEV</a> (const std::vector&lt; <a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> * &gt; &amp;vec)</td></tr>
 <tr class="separator:a00f6c6dc158b3511e3bdd4d21c09bc2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1c1f8491fef1b6dfa1bac9726b73b8c"><td class="memItemLeft" align="right" valign="top"><a id="ab1c1f8491fef1b6dfa1bac9726b73b8c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SCEV</b> (<a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *initial, <a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *step, std::set&lt; <a class="el" href="../../d9/dcc/classsysy_1_1ir_1_1BinaryInstrcution.html">BinaryInst</a> * &gt; &amp;&amp;binarys)</td></tr>
+<tr class="memitem:ab1c1f8491fef1b6dfa1bac9726b73b8c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html#ab1c1f8491fef1b6dfa1bac9726b73b8c">SCEV</a> (<a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *initial, <a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *step, std::set&lt; <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a9c902d222fd4458b67cf4a823f280d3f">BinaryInst</a> * &gt; &amp;&amp;binarys)</td></tr>
 <tr class="separator:ab1c1f8491fef1b6dfa1bac9726b73b8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a94375263bda82d29bc737c9a7cfc9d"><td class="memItemLeft" align="right" valign="top"><a id="a1a94375263bda82d29bc737c9a7cfc9d"></a>
-<a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *&amp;&#160;</td><td class="memItemRight" valign="bottom"><b>at</b> (unsigned i)</td></tr>
+<tr class="memitem:a1a94375263bda82d29bc737c9a7cfc9d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *&amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html#a1a94375263bda82d29bc737c9a7cfc9d">at</a> (unsigned i)</td></tr>
 <tr class="separator:a1a94375263bda82d29bc737c9a7cfc9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11b4896c264ec24924bc7bc249d40a42"><td class="memItemLeft" align="right" valign="top"><a id="a11b4896c264ec24924bc7bc249d40a42"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> ()</td></tr>
+<tr class="memitem:a11b4896c264ec24924bc7bc249d40a42"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html#a11b4896c264ec24924bc7bc249d40a42">size</a> ()</td></tr>
 <tr class="separator:a11b4896c264ec24924bc7bc249d40a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83bef19be4ec4c033d7f391e12e1fad6"><td class="memItemLeft" align="right" valign="top"><a id="a83bef19be4ec4c033d7f391e12e1fad6"></a>
-<a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>at</b> (unsigned i) const</td></tr>
+<tr class="memitem:a83bef19be4ec4c033d7f391e12e1fad6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html#a83bef19be4ec4c033d7f391e12e1fad6">at</a> (unsigned i) const</td></tr>
 <tr class="separator:a83bef19be4ec4c033d7f391e12e1fad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a688e628f3e63769f95095c03a05376e0"><td class="memItemLeft" align="right" valign="top"><a id="a688e628f3e63769f95095c03a05376e0"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () const</td></tr>
+<tr class="memitem:a688e628f3e63769f95095c03a05376e0"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html#a688e628f3e63769f95095c03a05376e0">size</a> () const</td></tr>
 <tr class="separator:a688e628f3e63769f95095c03a05376e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4ee003c50f8ef8ac2740bb7f7bb6501"><td class="memItemLeft" align="right" valign="top"><a id="af4ee003c50f8ef8ac2740bb7f7bb6501"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>getItemChains</b> (unsigned i, std::vector&lt; <a class="el" href="../../d9/dcc/classsysy_1_1ir_1_1BinaryInstrcution.html">BinaryInst</a> * &gt; &amp;instrChain)</td></tr>
+<tr class="memitem:af4ee003c50f8ef8ac2740bb7f7bb6501"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html#af4ee003c50f8ef8ac2740bb7f7bb6501">getItemChains</a> (unsigned i, std::vector&lt; <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a9c902d222fd4458b67cf4a823f280d3f">BinaryInst</a> * &gt; &amp;instrChain)</td></tr>
 <tr class="separator:af4ee003c50f8ef8ac2740bb7f7bb6501"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4360fe42d92df8acaeb2f3908affc5d6"><td class="memItemLeft" align="right" valign="top"><a id="a4360fe42d92df8acaeb2f3908affc5d6"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getSignature</b> ()</td></tr>
+<tr class="memitem:a4360fe42d92df8acaeb2f3908affc5d6"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html#a4360fe42d92df8acaeb2f3908affc5d6">getSignature</a> ()</td></tr>
 <tr class="separator:a4360fe42d92df8acaeb2f3908affc5d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba4469999ecac67d74a8ee47ebcc26cb"><td class="memItemLeft" align="right" valign="top"><a id="aba4469999ecac67d74a8ee47ebcc26cb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> ()</td></tr>
+<tr class="memitem:aba4469999ecac67d74a8ee47ebcc26cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html#aba4469999ecac67d74a8ee47ebcc26cb">clear</a> ()</td></tr>
 <tr class="separator:aba4469999ecac67d74a8ee47ebcc26cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ad2bafbfa5f368c3d3c1a39390c9cc493"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html#ad2bafbfa5f368c3d3c1a39390c9cc493">scevBody</a></td></tr>
+<tr class="separator:ad2bafbfa5f368c3d3c1a39390c9cc493"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab56d223148456897c50493cc43904455"><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a9c902d222fd4458b67cf4a823f280d3f">BinaryInst</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html#ab56d223148456897c50493cc43904455">instructionsHasBeenCaculated</a></td></tr>
+<tr class="separator:ab56d223148456897c50493cc43904455"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a42f42e37c1cef1064c97ca28814d1c24"><td class="memItemLeft" align="right" valign="top"><a id="a42f42e37c1cef1064c97ca28814d1c24"></a>
-<a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html">SCEV</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator+</b> (<a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *lhs, const <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html">SCEV</a> &amp;rhs)</td></tr>
+<tr class="memitem:a42f42e37c1cef1064c97ca28814d1c24"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html">SCEV</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html#a42f42e37c1cef1064c97ca28814d1c24">operator+</a> (<a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *lhs, const <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html">SCEV</a> &amp;rhs)</td></tr>
 <tr class="separator:a42f42e37c1cef1064c97ca28814d1c24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1629efebfd362631976135848c9c74ed"><td class="memItemLeft" align="right" valign="top"><a id="a1629efebfd362631976135848c9c74ed"></a>
-<a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html">SCEV</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator+</b> (const <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html">SCEV</a> &amp;lhs, const <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html">SCEV</a> &amp;rhs)</td></tr>
+<tr class="memitem:a1629efebfd362631976135848c9c74ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html">SCEV</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html#a1629efebfd362631976135848c9c74ed">operator+</a> (const <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html">SCEV</a> &amp;lhs, const <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html">SCEV</a> &amp;rhs)</td></tr>
 <tr class="separator:a1629efebfd362631976135848c9c74ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff7d7376d0feb140c3dff092b0b4cd6d"><td class="memItemLeft" align="right" valign="top"><a id="aff7d7376d0feb140c3dff092b0b4cd6d"></a>
-<a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html">SCEV</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator-</b> (const <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html">SCEV</a> &amp;lhs, <a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *rhs)</td></tr>
+<tr class="memitem:aff7d7376d0feb140c3dff092b0b4cd6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html">SCEV</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html#aff7d7376d0feb140c3dff092b0b4cd6d">operator-</a> (const <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html">SCEV</a> &amp;lhs, <a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *rhs)</td></tr>
 <tr class="separator:aff7d7376d0feb140c3dff092b0b4cd6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34c5e4ddb32015b0ce22e7aa2f4df904"><td class="memItemLeft" align="right" valign="top"><a id="a34c5e4ddb32015b0ce22e7aa2f4df904"></a>
-<a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html">SCEV</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator-</b> (const <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html">SCEV</a> &amp;lhs, const <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html">SCEV</a> &amp;rhs)</td></tr>
+<tr class="memitem:a34c5e4ddb32015b0ce22e7aa2f4df904"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html">SCEV</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html#a34c5e4ddb32015b0ce22e7aa2f4df904">operator-</a> (const <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html">SCEV</a> &amp;lhs, const <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html">SCEV</a> &amp;rhs)</td></tr>
 <tr class="separator:a34c5e4ddb32015b0ce22e7aa2f4df904"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3eaedd5557faa8ca4cca2110821a51ef"><td class="memItemLeft" align="right" valign="top"><a id="a3eaedd5557faa8ca4cca2110821a51ef"></a>
-<a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html">SCEV</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (<a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *lhs, const <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html">SCEV</a> &amp;rhs)</td></tr>
+<tr class="memitem:a3eaedd5557faa8ca4cca2110821a51ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html">SCEV</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html#a3eaedd5557faa8ca4cca2110821a51ef">operator*</a> (<a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *lhs, const <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html">SCEV</a> &amp;rhs)</td></tr>
 <tr class="separator:a3eaedd5557faa8ca4cca2110821a51ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ac22b94e323d7b7e90639b84c02ff9a20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac22b94e323d7b7e90639b84c02ff9a20">&#9670;&nbsp;</a></span>SCEV() <span class="overload">[1/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sysy::ir::SCEV::SCEV </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abedf677829ae56712cff295db48df265"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abedf677829ae56712cff295db48df265">&#9670;&nbsp;</a></span>SCEV() <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sysy::ir::SCEV::SCEV </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *&#160;</td>
+          <td class="paramname"><em>initial</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *&#160;</td>
+          <td class="paramname"><em>step</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html#ad2bafbfa5f368c3d3c1a39390c9cc493">scevBody</a>.</p>
+
+</div>
+</div>
+<a id="a866a59a70aecf6670e895b9d0b16f2ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a866a59a70aecf6670e895b9d0b16f2ca">&#9670;&nbsp;</a></span>SCEV() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sysy::ir::SCEV::SCEV </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *&#160;</td>
+          <td class="paramname"><em>initial</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html">SCEV</a> &amp;&#160;</td>
+          <td class="paramname"><em>innerSCEV</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html#ab56d223148456897c50493cc43904455">instructionsHasBeenCaculated</a>, and <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html#ad2bafbfa5f368c3d3c1a39390c9cc493">scevBody</a>.</p>
+
+</div>
+</div>
+<a id="a00f6c6dc158b3511e3bdd4d21c09bc2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00f6c6dc158b3511e3bdd4d21c09bc2d">&#9670;&nbsp;</a></span>SCEV() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sysy::ir::SCEV::SCEV </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vec</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html#ad2bafbfa5f368c3d3c1a39390c9cc493">scevBody</a>.</p>
+
+</div>
+</div>
+<a id="ab1c1f8491fef1b6dfa1bac9726b73b8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1c1f8491fef1b6dfa1bac9726b73b8c">&#9670;&nbsp;</a></span>SCEV() <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sysy::ir::SCEV::SCEV </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *&#160;</td>
+          <td class="paramname"><em>initial</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *&#160;</td>
+          <td class="paramname"><em>step</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::set&lt; <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a9c902d222fd4458b67cf4a823f280d3f">BinaryInst</a> * &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>binarys</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html#ad2bafbfa5f368c3d3c1a39390c9cc493">scevBody</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a1a94375263bda82d29bc737c9a7cfc9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a94375263bda82d29bc737c9a7cfc9d">&#9670;&nbsp;</a></span>at() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a>*&amp; sysy::ir::SCEV::at </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html#ad2bafbfa5f368c3d3c1a39390c9cc493">scevBody</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../db/d19/classsysy_1_1ir_1_1LSR.html#ae6969b06d0dd559112fc725842d5b370">sysy::ir::LSR::eraseSingleMul()</a>, <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html#a4360fe42d92df8acaeb2f3908affc5d6">getSignature()</a>, <a class="el" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#a7e8596f47e5439f678ac43d46e853a24">sysy::ir::LoopParallel::isParallelizable()</a>, <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#ac20f40bdd2bf7662c0907bd7c72b1868">sysy::ir::operator+()</a>, and <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a5c0c3b35bd701b6500862ad4c3c0a6bf">sysy::ir::operator-()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/d7d/classsysy_1_1ir_1_1SCEV_a1a94375263bda82d29bc737c9a7cfc9d_icgraph.png" border="0" usemap="#d8/d7d/classsysy_1_1ir_1_1SCEV_a1a94375263bda82d29bc737c9a7cfc9d_icgraph" alt=""/></div>
+<map name="d8/d7d/classsysy_1_1ir_1_1SCEV_a1a94375263bda82d29bc737c9a7cfc9d_icgraph" id="d8/d7d/classsysy_1_1ir_1_1SCEV_a1a94375263bda82d29bc737c9a7cfc9d_icgraph">
+<area shape="rect" title=" " alt="" coords="720,115,851,141"/>
+<area shape="rect" href="../../db/d19/classsysy_1_1ir_1_1LSR.html#ae6969b06d0dd559112fc725842d5b370" title=" " alt="" coords="464,5,672,32"/>
+<area shape="rect" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html#a4360fe42d92df8acaeb2f3908affc5d6" title=" " alt="" coords="468,56,668,83"/>
+<area shape="rect" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#a7e8596f47e5439f678ac43d46e853a24" title=" " alt="" coords="491,107,645,149"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#ac20f40bdd2bf7662c0907bd7c72b1868" title=" " alt="" coords="497,173,639,200"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a5c0c3b35bd701b6500862ad4c3c0a6bf" title=" " alt="" coords="500,224,636,251"/>
+<area shape="rect" href="../../db/d19/classsysy_1_1ir_1_1LSR.html#a81e424a516f27acd1c75fd22c1b9b4ca" title=" " alt="" coords="237,5,416,32"/>
+<area shape="rect" href="../../db/d19/classsysy_1_1ir_1_1LSR.html#a01589b57af10a7b0e6362613a50d7a5b" title=" " alt="" coords="33,5,162,32"/>
+<area shape="rect" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#aec3eb4fc816d226921d5885959c7c789" title=" " alt="" coords="249,107,404,149"/>
+<area shape="rect" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#aee3a0e1625a7f3f75fde8ce2d24fa603" title=" " alt="" coords="5,115,189,141"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a83bef19be4ec4c033d7f391e12e1fad6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83bef19be4ec4c033d7f391e12e1fad6">&#9670;&nbsp;</a></span>at() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a>* sysy::ir::SCEV::at </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html#ad2bafbfa5f368c3d3c1a39390c9cc493">scevBody</a>.</p>
+
+</div>
+</div>
+<a id="aba4469999ecac67d74a8ee47ebcc26cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba4469999ecac67d74a8ee47ebcc26cb">&#9670;&nbsp;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sysy::ir::SCEV::clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html#ab56d223148456897c50493cc43904455">instructionsHasBeenCaculated</a>, and <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html#ad2bafbfa5f368c3d3c1a39390c9cc493">scevBody</a>.</p>
+
+</div>
+</div>
+<a id="af4ee003c50f8ef8ac2740bb7f7bb6501"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4ee003c50f8ef8ac2740bb7f7bb6501">&#9670;&nbsp;</a></span>getItemChains()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sysy::ir::SCEV::getItemChains </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a9c902d222fd4458b67cf4a823f280d3f">BinaryInst</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>instrChain</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html#ab56d223148456897c50493cc43904455">instructionsHasBeenCaculated</a>, and <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html#ad2bafbfa5f368c3d3c1a39390c9cc493">scevBody</a>.</p>
+
+</div>
+</div>
+<a id="a4360fe42d92df8acaeb2f3908affc5d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4360fe42d92df8acaeb2f3908affc5d6">&#9670;&nbsp;</a></span>getSignature()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string sysy::ir::SCEV::getSignature </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html#a1a94375263bda82d29bc737c9a7cfc9d">at()</a>, <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html#ab56d223148456897c50493cc43904455">instructionsHasBeenCaculated</a>, <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a9201e3a60582fc79e0ef52a9aa14a4aa">sysy::ir::nameIs()</a>, and <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html#a11b4896c264ec24924bc7bc249d40a42">size()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/d7d/classsysy_1_1ir_1_1SCEV_a4360fe42d92df8acaeb2f3908affc5d6_cgraph.png" border="0" usemap="#d8/d7d/classsysy_1_1ir_1_1SCEV_a4360fe42d92df8acaeb2f3908affc5d6_cgraph" alt=""/></div>
+<map name="d8/d7d/classsysy_1_1ir_1_1SCEV_a4360fe42d92df8acaeb2f3908affc5d6_cgraph" id="d8/d7d/classsysy_1_1ir_1_1SCEV_a4360fe42d92df8acaeb2f3908affc5d6_cgraph">
+<area shape="rect" title=" " alt="" coords="5,56,205,83"/>
+<area shape="rect" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html#a1a94375263bda82d29bc737c9a7cfc9d" title=" " alt="" coords="259,5,390,32"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a9201e3a60582fc79e0ef52a9aa14a4aa" title=" " alt="" coords="263,56,387,83"/>
+<area shape="rect" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html#a11b4896c264ec24924bc7bc249d40a42" title=" " alt="" coords="253,107,396,133"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a7893aeff5d5c8c082cd82aa78df2a791" title=" " alt="" coords="444,56,595,83"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a98a08e69a56684d28a1304f59f2ce4c1" title=" " alt="" coords="649,31,816,57"/>
+<area shape="rect" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html#ae464b729ace674387c5cc76af167f09f" title=" " alt="" coords="643,81,823,108"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a11b4896c264ec24924bc7bc249d40a42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11b4896c264ec24924bc7bc249d40a42">&#9670;&nbsp;</a></span>size() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t sysy::ir::SCEV::size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html#ad2bafbfa5f368c3d3c1a39390c9cc493">scevBody</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html#a4360fe42d92df8acaeb2f3908affc5d6">getSignature()</a>, <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#ac20f40bdd2bf7662c0907bd7c72b1868">sysy::ir::operator+()</a>, and <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a5c0c3b35bd701b6500862ad4c3c0a6bf">sysy::ir::operator-()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/d7d/classsysy_1_1ir_1_1SCEV_a11b4896c264ec24924bc7bc249d40a42_icgraph.png" border="0" usemap="#d8/d7d/classsysy_1_1ir_1_1SCEV_a11b4896c264ec24924bc7bc249d40a42_icgraph" alt=""/></div>
+<map name="d8/d7d/classsysy_1_1ir_1_1SCEV_a11b4896c264ec24924bc7bc249d40a42_icgraph" id="d8/d7d/classsysy_1_1ir_1_1SCEV_a11b4896c264ec24924bc7bc249d40a42_icgraph">
+<area shape="rect" title=" " alt="" coords="253,56,396,83"/>
+<area shape="rect" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html#a4360fe42d92df8acaeb2f3908affc5d6" title=" " alt="" coords="5,5,205,32"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#ac20f40bdd2bf7662c0907bd7c72b1868" title=" " alt="" coords="34,56,177,83"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a5c0c3b35bd701b6500862ad4c3c0a6bf" title=" " alt="" coords="37,107,173,133"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a688e628f3e63769f95095c03a05376e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a688e628f3e63769f95095c03a05376e0">&#9670;&nbsp;</a></span>size() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t sysy::ir::SCEV::size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html#ad2bafbfa5f368c3d3c1a39390c9cc493">scevBody</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="a3eaedd5557faa8ca4cca2110821a51ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3eaedd5557faa8ca4cca2110821a51ef">&#9670;&nbsp;</a></span>operator*</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html">SCEV</a> operator* </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html">SCEV</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1629efebfd362631976135848c9c74ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1629efebfd362631976135848c9c74ed">&#9670;&nbsp;</a></span>operator+ <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html">SCEV</a> operator+ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html">SCEV</a> &amp;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html">SCEV</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a42f42e37c1cef1064c97ca28814d1c24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42f42e37c1cef1064c97ca28814d1c24">&#9670;&nbsp;</a></span>operator+ <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html">SCEV</a> operator+ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html">SCEV</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a34c5e4ddb32015b0ce22e7aa2f4df904"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34c5e4ddb32015b0ce22e7aa2f4df904">&#9670;&nbsp;</a></span>operator- <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html">SCEV</a> operator- </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html">SCEV</a> &amp;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html">SCEV</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aff7d7376d0feb140c3dff092b0b4cd6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff7d7376d0feb140c3dff092b0b4cd6d">&#9670;&nbsp;</a></span>operator- <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html">SCEV</a> operator- </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html">SCEV</a> &amp;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ab56d223148456897c50493cc43904455"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab56d223148456897c50493cc43904455">&#9670;&nbsp;</a></span>instructionsHasBeenCaculated</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::set&lt;<a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a9c902d222fd4458b67cf4a823f280d3f">BinaryInst</a>*&gt; sysy::ir::SCEV::instructionsHasBeenCaculated</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html#aba4469999ecac67d74a8ee47ebcc26cb">clear()</a>, <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html#af4ee003c50f8ef8ac2740bb7f7bb6501">getItemChains()</a>, <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html#a4360fe42d92df8acaeb2f3908affc5d6">getSignature()</a>, <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#af7a2c4a69f026cdd23529482e048ea33">sysy::ir::operator*()</a>, <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#ac20f40bdd2bf7662c0907bd7c72b1868">sysy::ir::operator+()</a>, <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a5c0c3b35bd701b6500862ad4c3c0a6bf">sysy::ir::operator-()</a>, and <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html#a866a59a70aecf6670e895b9d0b16f2ca">SCEV()</a>.</p>
+
+</div>
+</div>
+<a id="ad2bafbfa5f368c3d3c1a39390c9cc493"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2bafbfa5f368c3d3c1a39390c9cc493">&#9670;&nbsp;</a></span>scevBody</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a>*&gt; sysy::ir::SCEV::scevBody</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html#a1a94375263bda82d29bc737c9a7cfc9d">at()</a>, <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html#aba4469999ecac67d74a8ee47ebcc26cb">clear()</a>, <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html#af4ee003c50f8ef8ac2740bb7f7bb6501">getItemChains()</a>, <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#af7a2c4a69f026cdd23529482e048ea33">sysy::ir::operator*()</a>, <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html#abedf677829ae56712cff295db48df265">SCEV()</a>, and <a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html#a11b4896c264ec24924bc7bc249d40a42">size()</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>include/sysy/IR/<a class="el" href="../../db/d9e/Loop_8h_source.html">Loop.h</a></li>
-<li>lib/IR/IRDump.cpp</li>
-<li>lib/IR/Loop.cpp</li>
+<li>lib/IR/<a class="el" href="../../d4/d85/IRDump_8cpp.html">IRDump.cpp</a></li>
+<li>lib/IR/<a class="el" href="../../da/d4c/Loop_8cpp.html">Loop.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>sysy</b></li><li class="navelem"><b>ir</b></li><li class="navelem"><a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html">SCEV</a></li>
+    <li class="navelem"><a class="el" href="../../dd/d20/namespacesysy.html">sysy</a></li><li class="navelem"><a class="el" href="../../d7/d19/namespacesysy_1_1ir.html">ir</a></li><li class="navelem"><a class="el" href="../../d8/d7d/classsysy_1_1ir_1_1SCEV.html">SCEV</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

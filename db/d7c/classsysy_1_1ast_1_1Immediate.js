@@ -15,5 +15,6 @@ var classsysy_1_1ast_1_1Immediate =
     [ "typeCast", "db/d7c/classsysy_1_1ast_1_1Immediate.html#acd240d6380e650be4107250abb64b966", null ],
     [ "DoubleFloat", "db/d7c/classsysy_1_1ast_1_1Immediate.html#a2f6c2d542eac2d8647344c622d7f57b9", null ],
     [ "Float", "db/d7c/classsysy_1_1ast_1_1Immediate.html#ac1690bb6e28a401e00d78a174659c484", null ],
-    [ "Integer", "db/d7c/classsysy_1_1ast_1_1Immediate.html#a51209ad8cc31718a73d3d841c211801c", null ]
+    [ "Integer", "db/d7c/classsysy_1_1ast_1_1Immediate.html#a51209ad8cc31718a73d3d841c211801c", null ],
+    [ "type", "db/d7c/classsysy_1_1ast_1_1Immediate.html#aaa7bb80df8bb8b148ce1375c990e8b3f", null ]
 ];

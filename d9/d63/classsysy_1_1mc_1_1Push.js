@@ -7,5 +7,6 @@ var classsysy_1_1mc_1_1Push =
     [ "Push", "d9/d63/classsysy_1_1mc_1_1Push.html#a34cfb180a5ce1d7edef4e6b436ade832", null ],
     [ "gen_asm", "d9/d63/classsysy_1_1mc_1_1Push.html#a35392e3636ca06707e079442e3f0e8fb", null ],
     [ "regs", "d9/d63/classsysy_1_1mc_1_1Push.html#a2503516a7728872027b46b623053e47f", null ],
-    [ "type", "d9/d63/classsysy_1_1mc_1_1Push.html#a7ee41009c33e42e5442608f57112c520", null ]
+    [ "type", "d9/d63/classsysy_1_1mc_1_1Push.html#a7ee41009c33e42e5442608f57112c520", null ],
+    [ "type_map", "d9/d63/classsysy_1_1mc_1_1Push.html#a150dd149f712d26cf34c71430ad3609c", null ]
 ];

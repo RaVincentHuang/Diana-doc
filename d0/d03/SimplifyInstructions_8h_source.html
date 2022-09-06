@@ -86,27 +86,27 @@ $(document).ready(function(){initNavTree('d0/d03/SimplifyInstructions_8h_source.
 <div class="title">SimplifyInstructions.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SYSY_TRANSFORM_SIMPLIFYINSTR_H</span></div>
+<a href="../../d0/d03/SimplifyInstructions_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SYSY_TRANSFORM_SIMPLIFYINSTR_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define SYSY_TRANSFORM_SIMPLIFYINSTR_H</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;sysy/IR/Instruction.h&quot;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;sysy/IR/Instructions.h&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span>sysy</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d1/d50/IR_2Instruction_8h.html">sysy/IR/Instruction.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d9/dd5/Instructions_8h.html">sysy/IR/Instructions.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../dd/d20/namespacesysy.html">sysy</a></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>ir</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;Value* simplifyInstruction(Instruction* instr);</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;Value* <a class="code" href="../../d7/d19/namespacesysy_1_1ir.html#a09fe9a3330a5cfba8768a9d40fee6b65">simplifyInstruction</a>(Instruction* instr);</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;Value* simplifyInstruction(BinaryInst* bin);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;Value* <a class="code" href="../../d7/d19/namespacesysy_1_1ir.html#a09fe9a3330a5cfba8768a9d40fee6b65">simplifyInstruction</a>(<a class="code" href="../../d7/d19/namespacesysy_1_1ir.html#a9c902d222fd4458b67cf4a823f280d3f">BinaryInst</a>* bin);</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;Value* simplifyInstruction(UnaryInst* unary);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;Value* <a class="code" href="../../d7/d19/namespacesysy_1_1ir.html#a09fe9a3330a5cfba8768a9d40fee6b65">simplifyInstruction</a>(<a class="code" href="../../d7/d19/namespacesysy_1_1ir.html#a719ff57baca80e9eeb82a6c8ea0737ad">UnaryInst</a>* unary);</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;Value* constantFold(BinaryInst* bin);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;Value* constantFold(UnaryInst* unary);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;Value* <a class="code" href="../../d7/d19/namespacesysy_1_1ir.html#a329ba6e5fa96077cae72c190a181a5dd">constantFold</a>(<a class="code" href="../../d7/d19/namespacesysy_1_1ir.html#a9c902d222fd4458b67cf4a823f280d3f">BinaryInst</a>* bin);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;Value* <a class="code" href="../../d7/d19/namespacesysy_1_1ir.html#a329ba6e5fa96077cae72c190a181a5dd">constantFold</a>(<a class="code" href="../../d7/d19/namespacesysy_1_1ir.html#a719ff57baca80e9eeb82a6c8ea0737ad">UnaryInst</a>* unary);</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">// Value* simplifyInstruction(AllocaInst* alloca);</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// Value* simplifyInstruction(GEPInst* gep);</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;Value* simplifyInstruction(PhiInst* phi);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;Value* <a class="code" href="../../d7/d19/namespacesysy_1_1ir.html#a09fe9a3330a5cfba8768a9d40fee6b65">simplifyInstruction</a>(<a class="code" href="../../d7/d19/namespacesysy_1_1ir.html#a54b15b0f11f28826cb9853c7491747da">PhiInst</a>* phi);</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">// Value* simplifyInstruction(LoadInst* load);</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">// Value* simplifyInstruction(CallInst* call);</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
@@ -119,10 +119,18 @@ $(document).ready(function(){initNavTree('d0/d03/SimplifyInstructions_8h_source.
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="anamespacesysy_1_1ir_html_a9c902d222fd4458b67cf4a823f280d3f"><div class="ttname"><a href="../../d7/d19/namespacesysy_1_1ir.html#a9c902d222fd4458b67cf4a823f280d3f">sysy::ir::BinaryInst</a></div><div class="ttdeci">BinaryInstrcution BinaryInst</div><div class="ttdef"><b>Definition:</b> Instructions.h:29</div></div>
+<div class="ttc" id="aIR_2Instruction_8h_html"><div class="ttname"><a href="../../d1/d50/IR_2Instruction_8h.html">Instruction.h</a></div></div>
+<div class="ttc" id="anamespacesysy_1_1ir_html_a09fe9a3330a5cfba8768a9d40fee6b65"><div class="ttname"><a href="../../d7/d19/namespacesysy_1_1ir.html#a09fe9a3330a5cfba8768a9d40fee6b65">sysy::ir::simplifyInstruction</a></div><div class="ttdeci">Value * simplifyInstruction(Instruction *instr)</div><div class="ttdef"><b>Definition:</b> SimplifyInstructions.cpp:7</div></div>
+<div class="ttc" id="anamespacesysy_1_1ir_html_a719ff57baca80e9eeb82a6c8ea0737ad"><div class="ttname"><a href="../../d7/d19/namespacesysy_1_1ir.html#a719ff57baca80e9eeb82a6c8ea0737ad">sysy::ir::UnaryInst</a></div><div class="ttdeci">UnaryInstruction UnaryInst</div><div class="ttdef"><b>Definition:</b> Instructions.h:44</div></div>
+<div class="ttc" id="anamespacesysy_1_1ir_html_a54b15b0f11f28826cb9853c7491747da"><div class="ttname"><a href="../../d7/d19/namespacesysy_1_1ir.html#a54b15b0f11f28826cb9853c7491747da">sysy::ir::PhiInst</a></div><div class="ttdeci">PhiInstruction PhiInst</div><div class="ttdef"><b>Definition:</b> Instructions.h:266</div></div>
+<div class="ttc" id="anamespacesysy_1_1ir_html_a329ba6e5fa96077cae72c190a181a5dd"><div class="ttname"><a href="../../d7/d19/namespacesysy_1_1ir.html#a329ba6e5fa96077cae72c190a181a5dd">sysy::ir::constantFold</a></div><div class="ttdeci">Value * constantFold(BinaryInst *bin)</div><div class="ttdef"><b>Definition:</b> SimplifyInstructions.cpp:171</div></div>
+<div class="ttc" id="anamespacesysy_html"><div class="ttname"><a href="../../dd/d20/namespacesysy.html">sysy</a></div><div class="ttdef"><b>Definition:</b> AliasAnalysis.h:6</div></div>
+<div class="ttc" id="aInstructions_8h_html"><div class="ttname"><a href="../../d9/dd5/Instructions_8h.html">Instructions.h</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_b87821115ea3cf61d61e0bb4a6051ac5.html">sysy</a></li><li class="navelem"><a class="el" href="../../dir_c57c09d2f988700d800e6ebfe7229c98.html">Transform</a></li><li class="navelem"><a class="el" href="../../dir_08ceb79ffcecc986de7a4df31a9019ce.html">Scalar</a></li><li class="navelem"><b>SimplifyInstructions.h</b></li>
+    <li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_b87821115ea3cf61d61e0bb4a6051ac5.html">sysy</a></li><li class="navelem"><a class="el" href="../../dir_c57c09d2f988700d800e6ebfe7229c98.html">Transform</a></li><li class="navelem"><a class="el" href="../../dir_08ceb79ffcecc986de7a4df31a9019ce.html">Scalar</a></li><li class="navelem"><a class="el" href="../../d0/d03/SimplifyInstructions_8h.html">SimplifyInstructions.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

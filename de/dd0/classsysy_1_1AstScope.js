@@ -3,6 +3,8 @@ var classsysy_1_1AstScope =
     [ "AstScope", "de/dd0/classsysy_1_1AstScope.html#ab02e728480336202e9b3befd67f767d0", null ],
     [ "AstScope", "de/dd0/classsysy_1_1AstScope.html#a023b09f90bb042cb7af0906737ca6733", null ],
     [ "createChild", "de/dd0/classsysy_1_1AstScope.html#a36fd70fce37e6dd9e56015b6994f984c", null ],
+    [ "exitBlock", "de/dd0/classsysy_1_1AstScope.html#a4608620a437f7df7d015699f78f1b163", null ],
+    [ "getCurrentPtr", "de/dd0/classsysy_1_1AstScope.html#aaf3b1951b303e8239566bbd2bb32bb2b", null ],
     [ "getDim", "de/dd0/classsysy_1_1AstScope.html#aead61a1c2381631049cc5795be214380", null ],
     [ "getFather", "de/dd0/classsysy_1_1AstScope.html#aef3336d8665f161d704e717785030a0b", null ],
     [ "getInitial", "de/dd0/classsysy_1_1AstScope.html#a1734558ea8c638da4628aa01dd95f5da", null ],

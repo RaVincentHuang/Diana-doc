@@ -86,11 +86,11 @@ $(document).ready(function(){initNavTree('d9/d6b/LoopParallel_8h_source.html','.
 <div class="title">LoopParallel.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SYSY_TRANSFORM_LOOPPARALLEL_H</span></div>
+<a href="../../d9/d6b/LoopParallel_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SYSY_TRANSFORM_LOOPPARALLEL_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define SYSY_TRANSFORM_LOOPPARALLEL_H</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;sysy/IR/PassManager.h&quot;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;sysy/IR/Loop.h&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span>sysy</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d8/d4e/PassManager_8h.html">sysy/IR/PassManager.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../db/d9e/Loop_8h.html">sysy/IR/Loop.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../dd/d20/namespacesysy.html">sysy</a></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>ir</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
@@ -98,12 +98,12 @@ $(document).ready(function(){initNavTree('d9/d6b/LoopParallel_8h_source.html','.
 <div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html">LoopParallel</a> : <span class="keyword">public</span> <a class="code" href="../../d5/d01/classsysy_1_1Pass.html">FunctionPass</a></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">bool</span> isParallelizable(<a class="code" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html">Loop</a>* loop);</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">void</span> runOnLoop(<a class="code" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html">Loop</a>* loop);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#a7e8596f47e5439f678ac43d46e853a24">isParallelizable</a>(<a class="code" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html">Loop</a>* loop);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#aec3eb4fc816d226921d5885959c7c789">runOnLoop</a>(<a class="code" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html">Loop</a>* loop);</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html">LoopParallel</a>();</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">void</span> run(<a class="code" href="../../d4/d36/classsysy_1_1ir_1_1Function.html">Function</a>* func) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    std::string getName()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;LoopParallel&quot;</span>; }</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#ab97486a1482d60a53a893a3e877d5a38">LoopParallel</a>();</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#aee3a0e1625a7f3f75fde8ce2d24fa603">run</a>(<a class="code" href="../../d4/d36/classsysy_1_1ir_1_1Function.html">Function</a>* func) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#aac51f3b07e2370a85d70c62171fa47fe">   18</a></span>&#160;    std::string <a class="code" href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#aac51f3b07e2370a85d70c62171fa47fe">getName</a>()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;LoopParallel&quot;</span>; }</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;};</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;} <span class="comment">// namespace ir</span></div>
@@ -116,12 +116,20 @@ $(document).ready(function(){initNavTree('d9/d6b/LoopParallel_8h_source.html','.
 </div><!-- doc-content -->
 <div class="ttc" id="aclasssysy_1_1ir_1_1LoopParallel_html"><div class="ttname"><a href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html">sysy::ir::LoopParallel</a></div><div class="ttdef"><b>Definition:</b> LoopParallel.h:10</div></div>
 <div class="ttc" id="aclasssysy_1_1ir_1_1Loop_html"><div class="ttname"><a href="../../d2/d57/classsysy_1_1ir_1_1Loop.html">sysy::ir::Loop</a></div><div class="ttdef"><b>Definition:</b> Loop.h:51</div></div>
+<div class="ttc" id="aclasssysy_1_1ir_1_1LoopParallel_html_aee3a0e1625a7f3f75fde8ce2d24fa603"><div class="ttname"><a href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#aee3a0e1625a7f3f75fde8ce2d24fa603">sysy::ir::LoopParallel::run</a></div><div class="ttdeci">void run(Function *func) override</div><div class="ttdef"><b>Definition:</b> LoopParallel.cpp:195</div></div>
+<div class="ttc" id="aclasssysy_1_1ir_1_1LoopParallel_html_ab97486a1482d60a53a893a3e877d5a38"><div class="ttname"><a href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#ab97486a1482d60a53a893a3e877d5a38">sysy::ir::LoopParallel::LoopParallel</a></div><div class="ttdeci">LoopParallel()</div><div class="ttdef"><b>Definition:</b> LoopParallel.cpp:18</div></div>
 <div class="ttc" id="aclasssysy_1_1ir_1_1Function_html"><div class="ttname"><a href="../../d4/d36/classsysy_1_1ir_1_1Function.html">sysy::ir::Function</a></div><div class="ttdef"><b>Definition:</b> Function.h:19</div></div>
 <div class="ttc" id="aclasssysy_1_1Pass_html"><div class="ttname"><a href="../../d5/d01/classsysy_1_1Pass.html">sysy::Pass</a></div><div class="ttdef"><b>Definition:</b> PassManager.h:14</div></div>
+<div class="ttc" id="aclasssysy_1_1ir_1_1LoopParallel_html_a7e8596f47e5439f678ac43d46e853a24"><div class="ttname"><a href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#a7e8596f47e5439f678ac43d46e853a24">sysy::ir::LoopParallel::isParallelizable</a></div><div class="ttdeci">bool isParallelizable(Loop *loop)</div><div class="ttdef"><b>Definition:</b> LoopParallel.cpp:27</div></div>
+<div class="ttc" id="anamespacesysy_html"><div class="ttname"><a href="../../dd/d20/namespacesysy.html">sysy</a></div><div class="ttdef"><b>Definition:</b> AliasAnalysis.h:6</div></div>
+<div class="ttc" id="aPassManager_8h_html"><div class="ttname"><a href="../../d8/d4e/PassManager_8h.html">PassManager.h</a></div></div>
+<div class="ttc" id="aclasssysy_1_1ir_1_1LoopParallel_html_aec3eb4fc816d226921d5885959c7c789"><div class="ttname"><a href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#aec3eb4fc816d226921d5885959c7c789">sysy::ir::LoopParallel::runOnLoop</a></div><div class="ttdeci">void runOnLoop(Loop *loop)</div><div class="ttdef"><b>Definition:</b> LoopParallel.cpp:129</div></div>
+<div class="ttc" id="aLoop_8h_html"><div class="ttname"><a href="../../db/d9e/Loop_8h.html">Loop.h</a></div></div>
+<div class="ttc" id="aclasssysy_1_1ir_1_1LoopParallel_html_aac51f3b07e2370a85d70c62171fa47fe"><div class="ttname"><a href="../../d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#aac51f3b07e2370a85d70c62171fa47fe">sysy::ir::LoopParallel::getName</a></div><div class="ttdeci">std::string getName() override</div><div class="ttdef"><b>Definition:</b> LoopParallel.h:18</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_b87821115ea3cf61d61e0bb4a6051ac5.html">sysy</a></li><li class="navelem"><a class="el" href="../../dir_c57c09d2f988700d800e6ebfe7229c98.html">Transform</a></li><li class="navelem"><a class="el" href="../../dir_3efbccf99c3caf8e0efef43603c0154c.html">Loop</a></li><li class="navelem"><b>LoopParallel.h</b></li>
+    <li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_b87821115ea3cf61d61e0bb4a6051ac5.html">sysy</a></li><li class="navelem"><a class="el" href="../../dir_c57c09d2f988700d800e6ebfe7229c98.html">Transform</a></li><li class="navelem"><a class="el" href="../../dir_3efbccf99c3caf8e0efef43603c0154c.html">Loop</a></li><li class="navelem"><a class="el" href="../../d9/d6b/LoopParallel_8h.html">LoopParallel.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

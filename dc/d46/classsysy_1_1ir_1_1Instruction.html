@@ -86,11 +86,14 @@ $(document).ready(function(){initNavTree('dc/d46/classsysy_1_1ir_1_1Instruction.
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="../../d0/d52/classsysy_1_1ir_1_1Instruction-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">sysy::ir::Instruction Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="../../d1/d50/IR_2Instruction_8h_source.html">Instruction.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for sysy::ir::Instruction:</div>
 <div class="dyncontent">
@@ -121,214 +124,890 @@ Collaboration diagram for sysy::ir::Instruction:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d7/db6/classsysy_1_1ir_1_1Instruction__coll__graph.png" border="0" usemap="#sysy_1_1ir_1_1Instruction_coll__map" alt="Collaboration graph"/></div>
 <map name="sysy_1_1ir_1_1Instruction_coll__map" id="sysy_1_1ir_1_1Instruction_coll__map">
-<area shape="rect" title=" " alt="" coords="5,247,151,273"/>
-<area shape="rect" href="../../d9/d1a/classsysy_1_1ir_1_1User.html" title=" " alt="" coords="25,171,131,197"/>
-<area shape="rect" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html" title=" " alt="" coords="22,95,134,121"/>
-<area shape="rect" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html" title=" " alt="" coords="25,5,131,32"/>
+<area shape="rect" title=" " alt="" coords="38,276,183,303"/>
+<area shape="rect" href="../../d9/d1a/classsysy_1_1ir_1_1User.html" title=" " alt="" coords="5,185,112,212"/>
+<area shape="rect" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html" title=" " alt="" coords="259,95,371,121"/>
+<area shape="rect" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html" title=" " alt="" coords="136,185,283,212"/>
+<area shape="rect" href="../../d4/d36/classsysy_1_1ir_1_1Function.html" title=" " alt="" coords="292,276,423,303"/>
+<area shape="rect" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html" title=" " alt="" coords="340,5,447,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:acacb149c6d40059ab71e7fbf58fc7fa0"><td class="memItemLeft" align="right" valign="top"><a id="acacb149c6d40059ab71e7fbf58fc7fa0"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>InstrKind</b> { <br />
-&#160;&#160;<b>Add</b> = 0, 
-<b>Sub</b>, 
-<b>Mul</b>, 
-<b>SDiv</b>, 
+<tr class="memitem:acacb149c6d40059ab71e7fbf58fc7fa0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0">InstrKind</a> { <br />
+&#160;&#160;<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a44bf629ce6339af49db8a4f2dc2f9a96">Add</a> = 0, 
+<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a1bb6de13620c89ae8dcdfbf4ffc9cb1c">Sub</a>, 
+<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0aa83a2680eee535bb872b405744a63983">Mul</a>, 
+<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0ac1a912762a2e43c4d352572109847a62">SDiv</a>, 
 <br />
-&#160;&#160;<b>SRem</b>, 
-<b>ICmpEQ</b>, 
-<b>ICmpNE</b>, 
-<b>ICmpSLT</b>, 
+&#160;&#160;<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a4aa020c46dcf5cd825d17b13b103d619">SRem</a>, 
+<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a214dc531d2a00117a6a816d67a21625e">ICmpEQ</a>, 
+<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a0552545b50731bc5529e210b935a61ce">ICmpNE</a>, 
+<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0af7b22bb69472ab74104cb83f8454d5a4">ICmpSLT</a>, 
 <br />
-&#160;&#160;<b>ICmpSGT</b>, 
-<b>ICmpSLE</b>, 
-<b>ICmpSGE</b>, 
-<b>AShr</b>, 
+&#160;&#160;<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a6764c4df7d00191c409a029df0843e2c">ICmpSGT</a>, 
+<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a694ce9503db5e19562241770310dbed7">ICmpSLE</a>, 
+<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a2dfdf3549286ddb15f7feb743a87b483">ICmpSGE</a>, 
+<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a29c64a9be2cdf98b07d16677d49c6fa3">AShr</a>, 
 <br />
-&#160;&#160;<b>LShr</b>, 
-<b>Shl</b>, 
-<b>FAdd</b>, 
-<b>FSub</b>, 
+&#160;&#160;<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0acf1c4df830d7d4412457a3a322efce15">LShr</a>, 
+<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0af70bd0aa482c25c5f2a9fbdd4c237fae">Shl</a>, 
+<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a25e6f39ac57b4ec1f85dcf1a48f1530c">FAdd</a>, 
+<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a9891d44d43f23025d8556e3235a693a7">FSub</a>, 
 <br />
-&#160;&#160;<b>FMul</b>, 
-<b>FDiv</b>, 
-<b>FRem</b>, 
-<b>FCmpUEQ</b>, 
+&#160;&#160;<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0ad9d869a5e98fba484775fddc077d2076">FMul</a>, 
+<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0ab4a40dc2be043835049003d851f9a112">FDiv</a>, 
+<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a7c184d6d081dee1aec80964a72fa5d11">FRem</a>, 
+<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0ad2ecfdacdf74d6b13ed4ab9025295334">FCmpUEQ</a>, 
 <br />
-&#160;&#160;<b>FCmpUNE</b>, 
-<b>FCmpULT</b>, 
-<b>FCmpUGT</b>, 
-<b>FCmpULE</b>, 
+&#160;&#160;<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a6d07cabc28996c176712656d84413cdf">FCmpUNE</a>, 
+<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a93a0d7826c777410596508db4bba4e2f">FCmpULT</a>, 
+<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a46dafa25e0638b56f5bd84d36c12d41f">FCmpUGT</a>, 
+<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a0132f8dbfa9e73311770c6e53005371e">FCmpULE</a>, 
 <br />
-&#160;&#160;<b>FCmpUGE</b>, 
-<b>Neg</b>, 
-<b>Not</b>, 
-<b>FNeg</b>, 
+&#160;&#160;<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a9d52d6c3a0dcbaae4e983dd31465e0ac">FCmpUGE</a>, 
+<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a6ff39b82629c9bd745f3a7759aa73d44">Neg</a>, 
+<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a3d358342df3a0035ca7083672702df6a">Not</a>, 
+<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a5b06c07f081a975150ee5fab07ff6f4e">FNeg</a>, 
 <br />
-&#160;&#160;<b>FPToSI</b>, 
-<b>SIToFP</b>, 
-<b>BitCast</b>, 
-<b>CondBr</b>, 
+&#160;&#160;<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a02b18b4fc169603c9c1b73d4206ea85c">FPToSI</a>, 
+<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a1963457c513e5032d9291fc817fff856">SIToFP</a>, 
+<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a8d55929969ec096d76e8fa85c12f74f3">BitCast</a>, 
+<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a950e6635d7c806518866e3a6b776e28a">CondBr</a>, 
 <br />
-&#160;&#160;<b>Br</b>, 
-<b>Call</b>, 
-<b>Ret</b>, 
-<b>Alloca</b>, 
+&#160;&#160;<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a6c7bd91281cebcc1498779334ca727db">Br</a>, 
+<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0ad2f3486db6361a6ece83530f477caea0">Call</a>, 
+<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0ab541dc52ee342e1c18834e802818c5d2">Ret</a>, 
+<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0ac6a60a608456dff6f2c28cb5cd6011b4">Alloca</a>, 
 <br />
-&#160;&#160;<b>Load</b>, 
-<b>Store</b>, 
-<b>InboundGEP</b>, 
-<b>Zext</b>, 
+&#160;&#160;<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a812a2ca38c36154395a69b0726a04d73">Load</a>, 
+<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0af9f30fc1388af1fd66bc03f9737f9da7">Store</a>, 
+<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a02e7a68b75a57d587abcb8e7d5c9cd6b">InboundGEP</a>, 
+<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a36dc4aa5a65b761879f84448d25bca40">Zext</a>, 
 <br />
-&#160;&#160;<b>Phi</b>, 
-<b>MemPhi</b>, 
-<b>LoadDep</b>, 
-<b>MemCopy</b>, 
+&#160;&#160;<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a86c3dcc108832d5032cb2166190ee0a9">Phi</a>, 
+<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a7c2ba12590f61387c1270455c7a17b39">MemPhi</a>, 
+<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0aea6e9832716bbea6287625afddcb6de4">LoadDep</a>, 
+<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a244e4e91bdd434e22f4ea1bd12c53e51">MemCopy</a>, 
 <br />
-&#160;&#160;<b>InsertEle</b>, 
-<b>ExtractEle</b>, 
-<b>Move</b>, 
-<b>Dead</b>
+&#160;&#160;<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0afd41e67733a0b397a1776902a00d0699">InsertEle</a>, 
+<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0aea60d0ab92e6ead28eaea225faf1a183">ExtractEle</a>, 
+<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a9f1862b8076f309fd516a47ed8053c9e">Move</a>, 
+<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0adb91bdc59a4ff493bcc6631098935cae">Dead</a>
 <br />
  }</td></tr>
 <tr class="separator:acacb149c6d40059ab71e7fbf58fc7fa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a041c6109d378189216940a961bf45bb5"><td class="memItemLeft" align="right" valign="top"><a id="a041c6109d378189216940a961bf45bb5"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Instruction</b> (<a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *_type, InstrKind _kind, <a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *_father, std::vector&lt; <a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> * &gt; _oprands, std::string _name=&quot;&quot;)</td></tr>
+<tr class="memitem:a041c6109d378189216940a961bf45bb5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#a041c6109d378189216940a961bf45bb5">Instruction</a> (<a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *_type, <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0">InstrKind</a> _kind, <a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *_father, std::vector&lt; <a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> * &gt; _oprands, std::string _name=&quot;&quot;)</td></tr>
 <tr class="separator:a041c6109d378189216940a961bf45bb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a683a4aae4244f50b6e1083701b652539"><td class="memItemLeft" align="right" valign="top"><a id="a683a4aae4244f50b6e1083701b652539"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Instruction</b> (<a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *_type, InstrKind _kind, <a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *_father, std::string _name=&quot;&quot;)</td></tr>
+<tr class="memitem:a683a4aae4244f50b6e1083701b652539"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#a683a4aae4244f50b6e1083701b652539">Instruction</a> (<a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *_type, <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0">InstrKind</a> _kind, <a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *_father, std::string _name=&quot;&quot;)</td></tr>
 <tr class="separator:a683a4aae4244f50b6e1083701b652539"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b75bf99f7751b0c76f15d94652ca176"><td class="memItemLeft" align="right" valign="top"><a id="a1b75bf99f7751b0c76f15d94652ca176"></a>
-InstrKind&#160;</td><td class="memItemRight" valign="bottom"><b>getKind</b> ()</td></tr>
+<tr class="memitem:a1b75bf99f7751b0c76f15d94652ca176"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0">InstrKind</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#a1b75bf99f7751b0c76f15d94652ca176">getKind</a> ()</td></tr>
 <tr class="separator:a1b75bf99f7751b0c76f15d94652ca176"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08aa12d42fea429cbd94f8ca0a4afe79"><td class="memItemLeft" align="right" valign="top"><a id="a08aa12d42fea429cbd94f8ca0a4afe79"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isInteger</b> ()</td></tr>
+<tr class="memitem:a08aa12d42fea429cbd94f8ca0a4afe79"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#a08aa12d42fea429cbd94f8ca0a4afe79">isInteger</a> ()</td></tr>
 <tr class="separator:a08aa12d42fea429cbd94f8ca0a4afe79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1956d1838dfda8d21fec2c6405d9856f"><td class="memItemLeft" align="right" valign="top"><a id="a1956d1838dfda8d21fec2c6405d9856f"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isCmp</b> ()</td></tr>
+<tr class="memitem:a1956d1838dfda8d21fec2c6405d9856f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#a1956d1838dfda8d21fec2c6405d9856f">isCmp</a> ()</td></tr>
 <tr class="separator:a1956d1838dfda8d21fec2c6405d9856f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58339878755cc7edf5041fca90f9bd9b"><td class="memItemLeft" align="right" valign="top"><a id="a58339878755cc7edf5041fca90f9bd9b"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isTerminator</b> ()</td></tr>
+<tr class="memitem:a58339878755cc7edf5041fca90f9bd9b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#a58339878755cc7edf5041fca90f9bd9b">isTerminator</a> ()</td></tr>
 <tr class="separator:a58339878755cc7edf5041fca90f9bd9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3bc12d35df517c98fc48ef9c040a007e"><td class="memItemLeft" align="right" valign="top"><a id="a3bc12d35df517c98fc48ef9c040a007e"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isCommutative</b> ()</td></tr>
+<tr class="memitem:a3bc12d35df517c98fc48ef9c040a007e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#a3bc12d35df517c98fc48ef9c040a007e">isCommutative</a> ()</td></tr>
 <tr class="separator:a3bc12d35df517c98fc48ef9c040a007e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aade5575316fb35822e3785e543ecba69"><td class="memItemLeft" align="right" valign="top"><a id="aade5575316fb35822e3785e543ecba69"></a>
-<a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getBasicBlock</b> ()</td></tr>
+<tr class="memitem:aade5575316fb35822e3785e543ecba69"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#aade5575316fb35822e3785e543ecba69">getBasicBlock</a> ()</td></tr>
 <tr class="separator:aade5575316fb35822e3785e543ecba69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add97e4e3cfba3f720ba5d892135ea7b8"><td class="memItemLeft" align="right" valign="top"><a id="add97e4e3cfba3f720ba5d892135ea7b8"></a>
-<a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getBasicBlock</b> () const</td></tr>
+<tr class="memitem:add97e4e3cfba3f720ba5d892135ea7b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#add97e4e3cfba3f720ba5d892135ea7b8">getBasicBlock</a> () const</td></tr>
 <tr class="separator:add97e4e3cfba3f720ba5d892135ea7b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03508386f88a1697e942901f76300195"><td class="memItemLeft" align="right" valign="top"><a id="a03508386f88a1697e942901f76300195"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>reSetBasicBlock</b> (<a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *bb)</td></tr>
+<tr class="memitem:a03508386f88a1697e942901f76300195"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#a03508386f88a1697e942901f76300195">reSetBasicBlock</a> (<a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *bb)</td></tr>
 <tr class="separator:a03508386f88a1697e942901f76300195"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a493f782da20b01120dd1a2fd8d370f7c"><td class="memItemLeft" align="right" valign="top"><a id="a493f782da20b01120dd1a2fd8d370f7c"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>getRank</b> ()</td></tr>
+<tr class="memitem:a493f782da20b01120dd1a2fd8d370f7c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#a493f782da20b01120dd1a2fd8d370f7c">getRank</a> ()</td></tr>
 <tr class="separator:a493f782da20b01120dd1a2fd8d370f7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb68d63ec14b3d731300d57a824c2f05"><td class="memItemLeft" align="right" valign="top"><a id="abb68d63ec14b3d731300d57a824c2f05"></a>
-virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getSignature</b> ()=0</td></tr>
+<tr class="memitem:abb68d63ec14b3d731300d57a824c2f05"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#abb68d63ec14b3d731300d57a824c2f05">getSignature</a> ()=0</td></tr>
 <tr class="separator:abb68d63ec14b3d731300d57a824c2f05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classsysy_1_1ir_1_1User"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classsysy_1_1ir_1_1User')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d9/d1a/classsysy_1_1ir_1_1User.html">sysy::ir::User</a></td></tr>
-<tr class="memitem:aaf91d0f3a369acf7182a0afd9cd4e553 inherit pub_methods_classsysy_1_1ir_1_1User"><td class="memItemLeft" align="right" valign="top"><a id="aaf91d0f3a369acf7182a0afd9cd4e553"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>User</b> (<a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *_type, std::vector&lt; <a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> * &gt; _operands, std::string _name=&quot;&quot;)</td></tr>
+<tr class="memitem:aaf91d0f3a369acf7182a0afd9cd4e553 inherit pub_methods_classsysy_1_1ir_1_1User"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1a/classsysy_1_1ir_1_1User.html#aaf91d0f3a369acf7182a0afd9cd4e553">User</a> (<a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *_type, std::vector&lt; <a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> * &gt; _operands, std::string _name=&quot;&quot;)</td></tr>
 <tr class="separator:aaf91d0f3a369acf7182a0afd9cd4e553 inherit pub_methods_classsysy_1_1ir_1_1User"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a353cc68faea69800100ee34153924293 inherit pub_methods_classsysy_1_1ir_1_1User"><td class="memItemLeft" align="right" valign="top"><a id="a353cc68faea69800100ee34153924293"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>User</b> (<a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *_type, std::string _name=&quot;&quot;)</td></tr>
+<tr class="memitem:a353cc68faea69800100ee34153924293 inherit pub_methods_classsysy_1_1ir_1_1User"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1a/classsysy_1_1ir_1_1User.html#a353cc68faea69800100ee34153924293">User</a> (<a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *_type, std::string _name=&quot;&quot;)</td></tr>
 <tr class="separator:a353cc68faea69800100ee34153924293 inherit pub_methods_classsysy_1_1ir_1_1User"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a9b2f2bcf74a19cd37296908761b878 inherit pub_methods_classsysy_1_1ir_1_1User"><td class="memItemLeft" align="right" valign="top"><a id="a1a9b2f2bcf74a19cd37296908761b878"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>addOperand</b> (<a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *_value)</td></tr>
+<tr class="memitem:a1a9b2f2bcf74a19cd37296908761b878 inherit pub_methods_classsysy_1_1ir_1_1User"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1a/classsysy_1_1ir_1_1User.html#a1a9b2f2bcf74a19cd37296908761b878">addOperand</a> (<a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *_value)</td></tr>
 <tr class="separator:a1a9b2f2bcf74a19cd37296908761b878 inherit pub_methods_classsysy_1_1ir_1_1User"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4bac99e1a13ee4965fa68a4ec0de74d5 inherit pub_methods_classsysy_1_1ir_1_1User"><td class="memItemLeft" align="right" valign="top"><a id="a4bac99e1a13ee4965fa68a4ec0de74d5"></a>
-OprandList &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getOprands</b> ()</td></tr>
+<tr class="memitem:a4bac99e1a13ee4965fa68a4ec0de74d5 inherit pub_methods_classsysy_1_1ir_1_1User"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d1a/classsysy_1_1ir_1_1User.html#a51d0b1f8abbed35d944bcb4a20aff935">OprandList</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1a/classsysy_1_1ir_1_1User.html#a4bac99e1a13ee4965fa68a4ec0de74d5">getOprands</a> ()</td></tr>
 <tr class="separator:a4bac99e1a13ee4965fa68a4ec0de74d5 inherit pub_methods_classsysy_1_1ir_1_1User"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a687a6d0b1c67b13f0f7bda3514ae2bbb inherit pub_methods_classsysy_1_1ir_1_1User"><td class="memItemLeft" align="right" valign="top"><a id="a687a6d0b1c67b13f0f7bda3514ae2bbb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>replaceOperand</b> (unsigned index, <a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *_value)</td></tr>
+<tr class="memitem:a687a6d0b1c67b13f0f7bda3514ae2bbb inherit pub_methods_classsysy_1_1ir_1_1User"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1a/classsysy_1_1ir_1_1User.html#a687a6d0b1c67b13f0f7bda3514ae2bbb">replaceOperand</a> (unsigned index, <a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *_value)</td></tr>
 <tr class="separator:a687a6d0b1c67b13f0f7bda3514ae2bbb inherit pub_methods_classsysy_1_1ir_1_1User"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b7f6069b2b69b64774288cf43281da9 inherit pub_methods_classsysy_1_1ir_1_1User"><td class="memItemLeft" align="right" valign="top"><a id="a5b7f6069b2b69b64774288cf43281da9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>replaceOperandWith</b> (unsigned index, <a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *_value)</td></tr>
+<tr class="memitem:a5b7f6069b2b69b64774288cf43281da9 inherit pub_methods_classsysy_1_1ir_1_1User"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1a/classsysy_1_1ir_1_1User.html#a5b7f6069b2b69b64774288cf43281da9">replaceOperandWith</a> (unsigned index, <a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *_value)</td></tr>
 <tr class="separator:a5b7f6069b2b69b64774288cf43281da9 inherit pub_methods_classsysy_1_1ir_1_1User"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17e3cac42be4dfb114da0881171076de inherit pub_methods_classsysy_1_1ir_1_1User"><td class="memItemLeft" align="right" valign="top"><a id="a17e3cac42be4dfb114da0881171076de"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>removeOperand</b> (const std::shared_ptr&lt; <a class="el" href="../../df/deb/classsysy_1_1ir_1_1Use.html">Use</a> &gt; &amp;use)</td></tr>
+<tr class="memitem:a17e3cac42be4dfb114da0881171076de inherit pub_methods_classsysy_1_1ir_1_1User"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1a/classsysy_1_1ir_1_1User.html#a17e3cac42be4dfb114da0881171076de">removeOperand</a> (const std::shared_ptr&lt; <a class="el" href="../../df/deb/classsysy_1_1ir_1_1Use.html">Use</a> &gt; &amp;use)</td></tr>
 <tr class="separator:a17e3cac42be4dfb114da0881171076de inherit pub_methods_classsysy_1_1ir_1_1User"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8158c3fdc550db46fe421da7dcb7245d inherit pub_methods_classsysy_1_1ir_1_1User"><td class="memItemLeft" align="right" valign="top"><a id="a8158c3fdc550db46fe421da7dcb7245d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>UnUseAll</b> ()</td></tr>
+<tr class="memitem:a8158c3fdc550db46fe421da7dcb7245d inherit pub_methods_classsysy_1_1ir_1_1User"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1a/classsysy_1_1ir_1_1User.html#a8158c3fdc550db46fe421da7dcb7245d">UnUseAll</a> ()</td></tr>
 <tr class="separator:a8158c3fdc550db46fe421da7dcb7245d inherit pub_methods_classsysy_1_1ir_1_1User"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classsysy_1_1ir_1_1Value"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classsysy_1_1ir_1_1Value')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">sysy::ir::Value</a></td></tr>
-<tr class="memitem:a268b33c81036278b4991451034c83bd5 inherit pub_methods_classsysy_1_1ir_1_1Value"><td class="memItemLeft" align="right" valign="top"><a id="a268b33c81036278b4991451034c83bd5"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Value</b> (<a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *_type, std::string _name=&quot;&quot;)</td></tr>
+<tr class="memitem:a268b33c81036278b4991451034c83bd5 inherit pub_methods_classsysy_1_1ir_1_1Value"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html#a268b33c81036278b4991451034c83bd5">Value</a> (<a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *_type, std::string _name=&quot;&quot;)</td></tr>
 <tr class="separator:a268b33c81036278b4991451034c83bd5 inherit pub_methods_classsysy_1_1ir_1_1Value"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77ccc84b71f29b3dbee04f97f8056088 inherit pub_methods_classsysy_1_1ir_1_1Value"><td class="memItemLeft" align="right" valign="top"><a id="a77ccc84b71f29b3dbee04f97f8056088"></a>
-std::list&lt; std::shared_ptr&lt; <a class="el" href="../../df/deb/classsysy_1_1ir_1_1Use.html">Use</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getUses</b> ()</td></tr>
+<tr class="memitem:a77ccc84b71f29b3dbee04f97f8056088 inherit pub_methods_classsysy_1_1ir_1_1Value"><td class="memItemLeft" align="right" valign="top">std::list&lt; std::shared_ptr&lt; <a class="el" href="../../df/deb/classsysy_1_1ir_1_1Use.html">Use</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html#a77ccc84b71f29b3dbee04f97f8056088">getUses</a> ()</td></tr>
 <tr class="separator:a77ccc84b71f29b3dbee04f97f8056088 inherit pub_methods_classsysy_1_1ir_1_1Value"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e94d785800627bfc7868c46dbe5070d inherit pub_methods_classsysy_1_1ir_1_1Value"><td class="memItemLeft" align="right" valign="top"><a id="a0e94d785800627bfc7868c46dbe5070d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>addUse</b> (std::shared_ptr&lt; <a class="el" href="../../df/deb/classsysy_1_1ir_1_1Use.html">Use</a> &gt; use)</td></tr>
+<tr class="memitem:a0e94d785800627bfc7868c46dbe5070d inherit pub_methods_classsysy_1_1ir_1_1Value"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html#a0e94d785800627bfc7868c46dbe5070d">addUse</a> (std::shared_ptr&lt; <a class="el" href="../../df/deb/classsysy_1_1ir_1_1Use.html">Use</a> &gt; use)</td></tr>
 <tr class="separator:a0e94d785800627bfc7868c46dbe5070d inherit pub_methods_classsysy_1_1ir_1_1Value"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0272d466d486d3153e0bba783b765045 inherit pub_methods_classsysy_1_1ir_1_1Value"><td class="memItemLeft" align="right" valign="top"><a id="a0272d466d486d3153e0bba783b765045"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>removeUse</b> (const std::shared_ptr&lt; <a class="el" href="../../df/deb/classsysy_1_1ir_1_1Use.html">Use</a> &gt; &amp;use)</td></tr>
+<tr class="memitem:a0272d466d486d3153e0bba783b765045 inherit pub_methods_classsysy_1_1ir_1_1Value"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html#a0272d466d486d3153e0bba783b765045">removeUse</a> (const std::shared_ptr&lt; <a class="el" href="../../df/deb/classsysy_1_1ir_1_1Use.html">Use</a> &gt; &amp;use)</td></tr>
 <tr class="separator:a0272d466d486d3153e0bba783b765045 inherit pub_methods_classsysy_1_1ir_1_1Value"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a202baae41e65220ba364f0c080c30200 inherit pub_methods_classsysy_1_1ir_1_1Value"><td class="memItemLeft" align="right" valign="top"><a id="a202baae41e65220ba364f0c080c30200"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>removeUseIf</b> (std::function&lt; bool(std::shared_ptr&lt; <a class="el" href="../../df/deb/classsysy_1_1ir_1_1Use.html">Use</a> &gt;)&gt; func)</td></tr>
+<tr class="memitem:a202baae41e65220ba364f0c080c30200 inherit pub_methods_classsysy_1_1ir_1_1Value"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html#a202baae41e65220ba364f0c080c30200">removeUseIf</a> (std::function&lt; bool(std::shared_ptr&lt; <a class="el" href="../../df/deb/classsysy_1_1ir_1_1Use.html">Use</a> &gt;)&gt; func)</td></tr>
 <tr class="separator:a202baae41e65220ba364f0c080c30200 inherit pub_methods_classsysy_1_1ir_1_1Value"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb1a0e39e1ca02b7e3b231886f871d9a inherit pub_methods_classsysy_1_1ir_1_1Value"><td class="memItemLeft" align="right" valign="top"><a id="aeb1a0e39e1ca02b7e3b231886f871d9a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>replaceAllUseWith</b> (<a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *value)</td></tr>
+<tr class="memitem:aeb1a0e39e1ca02b7e3b231886f871d9a inherit pub_methods_classsysy_1_1ir_1_1Value"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html#aeb1a0e39e1ca02b7e3b231886f871d9a">replaceAllUseWith</a> (<a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> *value)</td></tr>
 <tr class="separator:aeb1a0e39e1ca02b7e3b231886f871d9a inherit pub_methods_classsysy_1_1ir_1_1Value"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82fa1f220690c520ff31407e946c6c74 inherit pub_methods_classsysy_1_1ir_1_1Value"><td class="memItemLeft" align="right" valign="top"><a id="a82fa1f220690c520ff31407e946c6c74"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>removeAllUseWith</b> ()</td></tr>
+<tr class="memitem:a82fa1f220690c520ff31407e946c6c74 inherit pub_methods_classsysy_1_1ir_1_1Value"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html#a82fa1f220690c520ff31407e946c6c74">removeAllUseWith</a> ()</td></tr>
 <tr class="separator:a82fa1f220690c520ff31407e946c6c74 inherit pub_methods_classsysy_1_1ir_1_1Value"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae464b729ace674387c5cc76af167f09f inherit pub_methods_classsysy_1_1ir_1_1Value"><td class="memItemLeft" align="right" valign="top"><a id="ae464b729ace674387c5cc76af167f09f"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getName</b> ()</td></tr>
+<tr class="memitem:ae464b729ace674387c5cc76af167f09f inherit pub_methods_classsysy_1_1ir_1_1Value"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html#ae464b729ace674387c5cc76af167f09f">getName</a> ()</td></tr>
 <tr class="separator:ae464b729ace674387c5cc76af167f09f inherit pub_methods_classsysy_1_1ir_1_1Value"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fca9b5dbd9d23231b0b555c5d30eb71 inherit pub_methods_classsysy_1_1ir_1_1Value"><td class="memItemLeft" align="right" valign="top"><a id="a2fca9b5dbd9d23231b0b555c5d30eb71"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setName</b> (std::string _name)</td></tr>
+<tr class="memitem:a2fca9b5dbd9d23231b0b555c5d30eb71 inherit pub_methods_classsysy_1_1ir_1_1Value"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html#a2fca9b5dbd9d23231b0b555c5d30eb71">setName</a> (std::string _name)</td></tr>
 <tr class="separator:a2fca9b5dbd9d23231b0b555c5d30eb71 inherit pub_methods_classsysy_1_1ir_1_1Value"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4402152f2e0134f8bcfb4153fdf3a64 inherit pub_methods_classsysy_1_1ir_1_1Value"><td class="memItemLeft" align="right" valign="top"><a id="af4402152f2e0134f8bcfb4153fdf3a64"></a>
-<a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getType</b> ()</td></tr>
+<tr class="memitem:af4402152f2e0134f8bcfb4153fdf3a64 inherit pub_methods_classsysy_1_1ir_1_1Value"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html#af4402152f2e0134f8bcfb4153fdf3a64">getType</a> ()</td></tr>
 <tr class="separator:af4402152f2e0134f8bcfb4153fdf3a64 inherit pub_methods_classsysy_1_1ir_1_1Value"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07a923821ca76fbd08b8688b3e78ad7c inherit pub_methods_classsysy_1_1ir_1_1Value"><td class="memItemLeft" align="right" valign="top"><a id="a07a923821ca76fbd08b8688b3e78ad7c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setType</b> (<a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *_type)</td></tr>
+<tr class="memitem:a07a923821ca76fbd08b8688b3e78ad7c inherit pub_methods_classsysy_1_1ir_1_1Value"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html#a07a923821ca76fbd08b8688b3e78ad7c">setType</a> (<a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *_type)</td></tr>
 <tr class="separator:a07a923821ca76fbd08b8688b3e78ad7c inherit pub_methods_classsysy_1_1ir_1_1Value"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a5166425ad6cbe9bdf20f203efe3ebd06"><td class="memItemLeft" align="right" valign="top"><a id="a5166425ad6cbe9bdf20f203efe3ebd06"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isReverse</b> (<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a> *x, <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a> *y)</td></tr>
+<tr class="memitem:a5166425ad6cbe9bdf20f203efe3ebd06"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#a5166425ad6cbe9bdf20f203efe3ebd06">isReverse</a> (<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a> *x, <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a> *y)</td></tr>
 <tr class="separator:a5166425ad6cbe9bdf20f203efe3ebd06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a2b63e88332c653f9d626022471379d99"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0">InstrKind</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#a2b63e88332c653f9d626022471379d99">kind</a></td></tr>
+<tr class="separator:a2b63e88332c653f9d626022471379d99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec920ff5f556331f5d29b52f21012b49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#aec920ff5f556331f5d29b52f21012b49">father</a></td></tr>
+<tr class="separator:aec920ff5f556331f5d29b52f21012b49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_types_classsysy_1_1ir_1_1User"><td colspan="2" onclick="javascript:toggleInherit('pro_types_classsysy_1_1ir_1_1User')"><img src="../../closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="../../d9/d1a/classsysy_1_1ir_1_1User.html">sysy::ir::User</a></td></tr>
-<tr class="memitem:a51d0b1f8abbed35d944bcb4a20aff935 inherit pro_types_classsysy_1_1ir_1_1User"><td class="memItemLeft" align="right" valign="top"><a id="a51d0b1f8abbed35d944bcb4a20aff935"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>OprandList</b> = std::vector&lt; std::shared_ptr&lt; <a class="el" href="../../df/deb/classsysy_1_1ir_1_1Use.html">Use</a> &gt; &gt;</td></tr>
+<tr class="memitem:a51d0b1f8abbed35d944bcb4a20aff935 inherit pro_types_classsysy_1_1ir_1_1User"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1a/classsysy_1_1ir_1_1User.html#a51d0b1f8abbed35d944bcb4a20aff935">OprandList</a> = std::vector&lt; std::shared_ptr&lt; <a class="el" href="../../df/deb/classsysy_1_1ir_1_1Use.html">Use</a> &gt; &gt;</td></tr>
 <tr class="separator:a51d0b1f8abbed35d944bcb4a20aff935 inherit pro_types_classsysy_1_1ir_1_1User"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classsysy_1_1ir_1_1User"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classsysy_1_1ir_1_1User')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../d9/d1a/classsysy_1_1ir_1_1User.html">sysy::ir::User</a></td></tr>
-<tr class="memitem:a25fc6059a35655c39a8a52b1219f65e2 inherit pro_attribs_classsysy_1_1ir_1_1User"><td class="memItemLeft" align="right" valign="top"><a id="a25fc6059a35655c39a8a52b1219f65e2"></a>
-OprandList&#160;</td><td class="memItemRight" valign="bottom"><b>operands</b></td></tr>
+<tr class="memitem:a25fc6059a35655c39a8a52b1219f65e2 inherit pro_attribs_classsysy_1_1ir_1_1User"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d1a/classsysy_1_1ir_1_1User.html#a51d0b1f8abbed35d944bcb4a20aff935">OprandList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1a/classsysy_1_1ir_1_1User.html#a25fc6059a35655c39a8a52b1219f65e2">operands</a></td></tr>
 <tr class="separator:a25fc6059a35655c39a8a52b1219f65e2 inherit pro_attribs_classsysy_1_1ir_1_1User"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classsysy_1_1ir_1_1Value"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classsysy_1_1ir_1_1Value')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">sysy::ir::Value</a></td></tr>
-<tr class="memitem:aec1636d1ca439a20fa4f35aee9faec09 inherit pro_attribs_classsysy_1_1ir_1_1Value"><td class="memItemLeft" align="right" valign="top"><a id="aec1636d1ca439a20fa4f35aee9faec09"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td></tr>
+<tr class="memitem:aec1636d1ca439a20fa4f35aee9faec09 inherit pro_attribs_classsysy_1_1ir_1_1Value"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html#aec1636d1ca439a20fa4f35aee9faec09">name</a></td></tr>
 <tr class="separator:aec1636d1ca439a20fa4f35aee9faec09 inherit pro_attribs_classsysy_1_1ir_1_1Value"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa19c9412ba88ee33199901941e8cef55 inherit pro_attribs_classsysy_1_1ir_1_1Value"><td class="memItemLeft" align="right" valign="top"><a id="aa19c9412ba88ee33199901941e8cef55"></a>
-<a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>type</b></td></tr>
+<tr class="memitem:aa19c9412ba88ee33199901941e8cef55 inherit pro_attribs_classsysy_1_1ir_1_1Value"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html#aa19c9412ba88ee33199901941e8cef55">type</a></td></tr>
 <tr class="separator:aa19c9412ba88ee33199901941e8cef55 inherit pro_attribs_classsysy_1_1ir_1_1Value"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5021218772fc6792588443bba41e7a02 inherit pro_attribs_classsysy_1_1ir_1_1Value"><td class="memItemLeft" align="right" valign="top"><a id="a5021218772fc6792588443bba41e7a02"></a>
-std::list&lt; std::shared_ptr&lt; <a class="el" href="../../df/deb/classsysy_1_1ir_1_1Use.html">Use</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>uses</b></td></tr>
+<tr class="memitem:a5021218772fc6792588443bba41e7a02 inherit pro_attribs_classsysy_1_1ir_1_1Value"><td class="memItemLeft" align="right" valign="top">std::list&lt; std::shared_ptr&lt; <a class="el" href="../../df/deb/classsysy_1_1ir_1_1Use.html">Use</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html#a5021218772fc6792588443bba41e7a02">uses</a></td></tr>
 <tr class="separator:a5021218772fc6792588443bba41e7a02 inherit pro_attribs_classsysy_1_1ir_1_1Value"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="acacb149c6d40059ab71e7fbf58fc7fa0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acacb149c6d40059ab71e7fbf58fc7fa0">&#9670;&nbsp;</a></span>InstrKind</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0">sysy::ir::Instruction::InstrKind</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="acacb149c6d40059ab71e7fbf58fc7fa0a44bf629ce6339af49db8a4f2dc2f9a96"></a>Add&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acacb149c6d40059ab71e7fbf58fc7fa0a1bb6de13620c89ae8dcdfbf4ffc9cb1c"></a>Sub&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acacb149c6d40059ab71e7fbf58fc7fa0aa83a2680eee535bb872b405744a63983"></a>Mul&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acacb149c6d40059ab71e7fbf58fc7fa0ac1a912762a2e43c4d352572109847a62"></a>SDiv&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acacb149c6d40059ab71e7fbf58fc7fa0a4aa020c46dcf5cd825d17b13b103d619"></a>SRem&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acacb149c6d40059ab71e7fbf58fc7fa0a214dc531d2a00117a6a816d67a21625e"></a>ICmpEQ&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acacb149c6d40059ab71e7fbf58fc7fa0a0552545b50731bc5529e210b935a61ce"></a>ICmpNE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acacb149c6d40059ab71e7fbf58fc7fa0af7b22bb69472ab74104cb83f8454d5a4"></a>ICmpSLT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acacb149c6d40059ab71e7fbf58fc7fa0a6764c4df7d00191c409a029df0843e2c"></a>ICmpSGT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acacb149c6d40059ab71e7fbf58fc7fa0a694ce9503db5e19562241770310dbed7"></a>ICmpSLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acacb149c6d40059ab71e7fbf58fc7fa0a2dfdf3549286ddb15f7feb743a87b483"></a>ICmpSGE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acacb149c6d40059ab71e7fbf58fc7fa0a29c64a9be2cdf98b07d16677d49c6fa3"></a>AShr&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acacb149c6d40059ab71e7fbf58fc7fa0acf1c4df830d7d4412457a3a322efce15"></a>LShr&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acacb149c6d40059ab71e7fbf58fc7fa0af70bd0aa482c25c5f2a9fbdd4c237fae"></a>Shl&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acacb149c6d40059ab71e7fbf58fc7fa0a25e6f39ac57b4ec1f85dcf1a48f1530c"></a>FAdd&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acacb149c6d40059ab71e7fbf58fc7fa0a9891d44d43f23025d8556e3235a693a7"></a>FSub&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acacb149c6d40059ab71e7fbf58fc7fa0ad9d869a5e98fba484775fddc077d2076"></a>FMul&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acacb149c6d40059ab71e7fbf58fc7fa0ab4a40dc2be043835049003d851f9a112"></a>FDiv&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acacb149c6d40059ab71e7fbf58fc7fa0a7c184d6d081dee1aec80964a72fa5d11"></a>FRem&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acacb149c6d40059ab71e7fbf58fc7fa0ad2ecfdacdf74d6b13ed4ab9025295334"></a>FCmpUEQ&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acacb149c6d40059ab71e7fbf58fc7fa0a6d07cabc28996c176712656d84413cdf"></a>FCmpUNE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acacb149c6d40059ab71e7fbf58fc7fa0a93a0d7826c777410596508db4bba4e2f"></a>FCmpULT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acacb149c6d40059ab71e7fbf58fc7fa0a46dafa25e0638b56f5bd84d36c12d41f"></a>FCmpUGT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acacb149c6d40059ab71e7fbf58fc7fa0a0132f8dbfa9e73311770c6e53005371e"></a>FCmpULE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acacb149c6d40059ab71e7fbf58fc7fa0a9d52d6c3a0dcbaae4e983dd31465e0ac"></a>FCmpUGE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acacb149c6d40059ab71e7fbf58fc7fa0a6ff39b82629c9bd745f3a7759aa73d44"></a>Neg&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acacb149c6d40059ab71e7fbf58fc7fa0a3d358342df3a0035ca7083672702df6a"></a>Not&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acacb149c6d40059ab71e7fbf58fc7fa0a5b06c07f081a975150ee5fab07ff6f4e"></a>FNeg&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acacb149c6d40059ab71e7fbf58fc7fa0a02b18b4fc169603c9c1b73d4206ea85c"></a>FPToSI&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acacb149c6d40059ab71e7fbf58fc7fa0a1963457c513e5032d9291fc817fff856"></a>SIToFP&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acacb149c6d40059ab71e7fbf58fc7fa0a8d55929969ec096d76e8fa85c12f74f3"></a>BitCast&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acacb149c6d40059ab71e7fbf58fc7fa0a950e6635d7c806518866e3a6b776e28a"></a>CondBr&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acacb149c6d40059ab71e7fbf58fc7fa0a6c7bd91281cebcc1498779334ca727db"></a>Br&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acacb149c6d40059ab71e7fbf58fc7fa0ad2f3486db6361a6ece83530f477caea0"></a>Call&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acacb149c6d40059ab71e7fbf58fc7fa0ab541dc52ee342e1c18834e802818c5d2"></a>Ret&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acacb149c6d40059ab71e7fbf58fc7fa0ac6a60a608456dff6f2c28cb5cd6011b4"></a>Alloca&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acacb149c6d40059ab71e7fbf58fc7fa0a812a2ca38c36154395a69b0726a04d73"></a>Load&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acacb149c6d40059ab71e7fbf58fc7fa0af9f30fc1388af1fd66bc03f9737f9da7"></a>Store&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acacb149c6d40059ab71e7fbf58fc7fa0a02e7a68b75a57d587abcb8e7d5c9cd6b"></a>InboundGEP&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acacb149c6d40059ab71e7fbf58fc7fa0a36dc4aa5a65b761879f84448d25bca40"></a>Zext&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acacb149c6d40059ab71e7fbf58fc7fa0a86c3dcc108832d5032cb2166190ee0a9"></a>Phi&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acacb149c6d40059ab71e7fbf58fc7fa0a7c2ba12590f61387c1270455c7a17b39"></a>MemPhi&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acacb149c6d40059ab71e7fbf58fc7fa0aea6e9832716bbea6287625afddcb6de4"></a>LoadDep&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acacb149c6d40059ab71e7fbf58fc7fa0a244e4e91bdd434e22f4ea1bd12c53e51"></a>MemCopy&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acacb149c6d40059ab71e7fbf58fc7fa0afd41e67733a0b397a1776902a00d0699"></a>InsertEle&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acacb149c6d40059ab71e7fbf58fc7fa0aea60d0ab92e6ead28eaea225faf1a183"></a>ExtractEle&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acacb149c6d40059ab71e7fbf58fc7fa0a9f1862b8076f309fd516a47ed8053c9e"></a>Move&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acacb149c6d40059ab71e7fbf58fc7fa0adb91bdc59a4ff493bcc6631098935cae"></a>Dead&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a041c6109d378189216940a961bf45bb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a041c6109d378189216940a961bf45bb5">&#9670;&nbsp;</a></span>Instruction() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sysy::ir::Instruction::Instruction </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *&#160;</td>
+          <td class="paramname"><em>_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0">InstrKind</a>&#160;</td>
+          <td class="paramname"><em>_kind</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *&#160;</td>
+          <td class="paramname"><em>_father</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a> * &gt;&#160;</td>
+          <td class="paramname"><em>_oprands</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>_name</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a683a4aae4244f50b6e1083701b652539"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a683a4aae4244f50b6e1083701b652539">&#9670;&nbsp;</a></span>Instruction() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sysy::ir::Instruction::Instruction </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html">Type</a> *&#160;</td>
+          <td class="paramname"><em>_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0">InstrKind</a>&#160;</td>
+          <td class="paramname"><em>_kind</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *&#160;</td>
+          <td class="paramname"><em>_father</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>_name</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aade5575316fb35822e3785e543ecba69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aade5575316fb35822e3785e543ecba69">&#9670;&nbsp;</a></span>getBasicBlock() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a>* sysy::ir::Instruction::getBasicBlock </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#aec920ff5f556331f5d29b52f21012b49">father</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../de/d41/classsysy_1_1ir_1_1CollectOccurrences.html#ad637d5460318e0978a26bcfa92c5ee1b">sysy::ir::CollectOccurrences::addExpr()</a>, <a class="el" href="../../df/db7/classsysy_1_1ir_1_1ADCE.html#a822553bcb958688b457d47bfc9a4447c">sysy::ir::ADCE::findAliveCode()</a>, <a class="el" href="../../df/d2d/classsysy_1_1ir_1_1GVN.html#a57faab03a6b6cac13c3daae8210522a8">sysy::ir::GVN::getValueNumber()</a>, <a class="el" href="../../da/d2e/classsysy_1_1ir_1_1FunctionInline.html#aa3e68f1f7d996f449663bd362882a0ca">sysy::ir::FunctionInline::inlineAtCall()</a>, <a class="el" href="../../d9/d47/classsysy_1_1ir_1_1LCSSA.html#a17ff93e8a806fe1e10766b5b26c4431f">sysy::ir::LCSSA::insertLoopClosedPhi()</a>, <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#ad24fe40af018617c3a8f1326577f66e2">sysy::ir::irEmit()</a>, <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a6048ac961862511a63015d039cd202bf">sysy::ir::less()</a>, <a class="el" href="../../d7/da2/structsysy_1_1ir_1_1ArrayInfo_1_1cmps.html#ae542856925ba7496415c9dd6dd6aed07">sysy::ir::ArrayInfo::cmps::operator()()</a>, <a class="el" href="../../df/d1e/structsysy_1_1ir_1_1ArrayInfo_1_1cmpl.html#a8e196b9f1c96c0ee66b411bda8ddd2aa">sysy::ir::ArrayInfo::cmpl::operator()()</a>, <a class="el" href="../../df/da1/structsysy_1_1ir_1_1cmps.html#a52090f8f6e36af66a722f7250ed5c633">sysy::ir::cmps::operator()()</a>, <a class="el" href="../../dc/d94/structsysy_1_1ir_1_1cmpl.html#a739418a196c2317ad9dffc176a40da10">sysy::ir::cmpl::operator()()</a>, <a class="el" href="../../d7/d78/structsysy_1_1ir_1_1GVInfo_1_1cmps.html#a9d92aa3c0eb467d8f73720825be8cea6">sysy::ir::GVInfo::cmps::operator()()</a>, <a class="el" href="../../d0/db2/structsysy_1_1ir_1_1GVInfo_1_1cmpl.html#a7b7d69a5ba3683ca3e2ad0422fe0acaf">sysy::ir::GVInfo::cmpl::operator()()</a>, <a class="el" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#a30d85b7e712b856858226e7c3fbf23dd">sysy::ir::ScalarEvolution::registerBIV()</a>, <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a4f27828412a810ef0722a31d44fff010">sysy::ir::replace()</a>, <a class="el" href="../../dd/d74/classsysy_1_1ir_1_1GCM.html#a38a78945ed7ca2d333a0135ef3d332a6">sysy::ir::GCM::schduleEarly()</a>, <a class="el" href="../../dd/d74/classsysy_1_1ir_1_1GCM.html#a5009c0764376392be5212a6364cae86a">sysy::ir::GCM::schduleLate()</a>, <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a52bcaffc38f186b60acca74573bfa32c">sysy::ir::simplifyInstruction()</a>, <a class="el" href="../../d6/d6f/classsysy_1_1ir_1_1InstructionCombine.html#ad6ba6f7f3df7be9c0380d2343cb65784">sysy::ir::InstructionCombine::visitAdd()</a>, and <a class="el" href="../../d6/d6f/classsysy_1_1ir_1_1InstructionCombine.html#ab878fcc588eb24cf1c8947b6911ebd57">sysy::ir::InstructionCombine::visitSub()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d46/classsysy_1_1ir_1_1Instruction_aade5575316fb35822e3785e543ecba69_icgraph.png" border="0" usemap="#dc/d46/classsysy_1_1ir_1_1Instruction_aade5575316fb35822e3785e543ecba69_icgraph" alt=""/></div>
+<map name="dc/d46/classsysy_1_1ir_1_1Instruction_aade5575316fb35822e3785e543ecba69_icgraph" id="dc/d46/classsysy_1_1ir_1_1Instruction_aade5575316fb35822e3785e543ecba69_icgraph">
+<area shape="rect" title=" " alt="" coords="1061,556,1207,597"/>
+<area shape="rect" href="../../de/d41/classsysy_1_1ir_1_1CollectOccurrences.html#ad637d5460318e0978a26bcfa92c5ee1b" title=" " alt="" coords="801,5,1003,47"/>
+<area shape="rect" href="../../df/db7/classsysy_1_1ir_1_1ADCE.html#a822553bcb958688b457d47bfc9a4447c" title=" " alt="" coords="797,71,1007,98"/>
+<area shape="rect" href="../../df/d2d/classsysy_1_1ir_1_1GVN.html#a57faab03a6b6cac13c3daae8210522a8" title=" " alt="" coords="791,122,1013,149"/>
+<area shape="rect" href="../../da/d2e/classsysy_1_1ir_1_1FunctionInline.html#aa3e68f1f7d996f449663bd362882a0ca" title=" " alt="" coords="819,173,985,215"/>
+<area shape="rect" href="../../d9/d47/classsysy_1_1ir_1_1LCSSA.html#a17ff93e8a806fe1e10766b5b26c4431f" title=" " alt="" coords="805,239,999,280"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#ad24fe40af018617c3a8f1326577f66e2" title=" " alt="" coords="845,305,959,331"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a6048ac961862511a63015d039cd202bf" title=" " alt="" coords="851,355,953,382"/>
+<area shape="rect" href="../../d7/da2/structsysy_1_1ir_1_1ArrayInfo_1_1cmps.html#ae542856925ba7496415c9dd6dd6aed07" title=" " alt="" coords="833,407,971,448"/>
+<area shape="rect" href="../../df/d1e/structsysy_1_1ir_1_1ArrayInfo_1_1cmpl.html#a8e196b9f1c96c0ee66b411bda8ddd2aa" title=" " alt="" coords="834,472,970,513"/>
+<area shape="rect" href="../../df/da1/structsysy_1_1ir_1_1cmps.html#a52090f8f6e36af66a722f7250ed5c633" title=" " alt="" coords="810,538,994,565"/>
+<area shape="rect" href="../../dc/d94/structsysy_1_1ir_1_1cmpl.html#a739418a196c2317ad9dffc176a40da10" title=" " alt="" coords="811,589,993,615"/>
+<area shape="rect" href="../../d7/d78/structsysy_1_1ir_1_1GVInfo_1_1cmps.html#a9d92aa3c0eb467d8f73720825be8cea6" title=" " alt="" coords="821,640,983,681"/>
+<area shape="rect" href="../../d0/db2/structsysy_1_1ir_1_1GVInfo_1_1cmpl.html#a7b7d69a5ba3683ca3e2ad0422fe0acaf" title=" " alt="" coords="822,705,982,747"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#a30d85b7e712b856858226e7c3fbf23dd" title=" " alt="" coords="813,771,991,812"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a4f27828412a810ef0722a31d44fff010" title=" " alt="" coords="840,837,964,863"/>
+<area shape="rect" href="../../dd/d74/classsysy_1_1ir_1_1GCM.html#a38a78945ed7ca2d333a0135ef3d332a6" title=" " alt="" coords="803,887,1001,914"/>
+<area shape="rect" href="../../dd/d74/classsysy_1_1ir_1_1GCM.html#a5009c0764376392be5212a6364cae86a" title=" " alt="" coords="805,938,999,965"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a52bcaffc38f186b60acca74573bfa32c" title=" " alt="" coords="803,989,1001,1015"/>
+<area shape="rect" href="../../d6/d6f/classsysy_1_1ir_1_1InstructionCombine.html#ad6ba6f7f3df7be9c0380d2343cb65784" title=" " alt="" coords="801,1040,1003,1081"/>
+<area shape="rect" href="../../d6/d6f/classsysy_1_1ir_1_1InstructionCombine.html#ab878fcc588eb24cf1c8947b6911ebd57" title=" " alt="" coords="801,1105,1003,1147"/>
+<area shape="rect" href="../../d9/d47/classsysy_1_1ir_1_1LCSSA.html#a20c40ac8737dacfa7c8bface59ce1059" title=" " alt="" coords="543,239,739,266"/>
+<area shape="rect" href="../../d9/d47/classsysy_1_1ir_1_1LCSSA.html#a89dae4966f458bfe2aeca6c0cf20cb99" title=" " alt="" coords="303,239,449,266"/>
+<area shape="rect" href="../../db/df2/classsysy_1_1ir_1_1Memory2Reg.html#a3f1af2ab2dca5a8dff938ee1feb25fe1" title=" " alt="" coords="560,291,723,332"/>
+<area shape="rect" href="../../d3/d8e/classsysy_1_1ir_1_1MemorySSA.html#a0e02fe94c6bf662ac97ede08118352d3" title=" " alt="" coords="563,356,719,397"/>
+<area shape="rect" href="../../d3/d8e/classsysy_1_1ir_1_1MemorySSA.html#a4ab08df052068f0f27f0a189c81801f9" title=" " alt="" coords="563,421,719,463"/>
+<area shape="rect" href="../../db/df2/classsysy_1_1ir_1_1Memory2Reg.html#ac72baf06faf610ff98f38128906bea1c" title=" " alt="" coords="295,291,457,332"/>
+<area shape="rect" href="../../db/df2/classsysy_1_1ir_1_1Memory2Reg.html#a6548ffce57ba27c403378a8e2d531033" title=" " alt="" coords="13,298,205,325"/>
+<area shape="rect" href="../../d3/d8e/classsysy_1_1ir_1_1MemorySSA.html#a557917d070f1a1ab140e716b582939b3" title=" " alt="" coords="283,397,469,423"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#ac26333925ef1ce0092c71c23719e0533" title=" " alt="" coords="553,771,730,812"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#a0f98946c99fd079aa59c712a3212b5d0" title=" " alt="" coords="287,771,465,812"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#aa77c21818a83d9b475e3d967662190bc" title=" " alt="" coords="5,778,212,805"/>
+<area shape="rect" href="../../df/d2d/classsysy_1_1ir_1_1GVN.html#a032ed310fbd7c64132ac1ff72f83bb85" title=" " alt="" coords="552,837,731,863"/>
+<area shape="rect" href="../../df/d2d/classsysy_1_1ir_1_1GVN.html#a7c2e41acdc174f23128c9b32d43ba9ae" title=" " alt="" coords="309,837,443,863"/>
+<area shape="rect" href="../../dd/d74/classsysy_1_1ir_1_1GCM.html#a2bc03ee75381be3f30c2f62ffd40d1d2" title=" " alt="" coords="573,913,709,939"/>
+<area shape="rect" href="../../d6/d6f/classsysy_1_1ir_1_1InstructionCombine.html#a2c9a84f59c447d2917fd50dd1119f994" title=" " alt="" coords="540,1072,743,1113"/>
+<area shape="rect" href="../../d6/d6f/classsysy_1_1ir_1_1InstructionCombine.html#a58d84f4b78981a1b242691da6a5b326b" title=" " alt="" coords="260,1079,492,1106"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="add97e4e3cfba3f720ba5d892135ea7b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add97e4e3cfba3f720ba5d892135ea7b8">&#9670;&nbsp;</a></span>getBasicBlock() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a>* sysy::ir::Instruction::getBasicBlock </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#aec920ff5f556331f5d29b52f21012b49">father</a>.</p>
+
+</div>
+</div>
+<a id="a1b75bf99f7751b0c76f15d94652ca176"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b75bf99f7751b0c76f15d94652ca176">&#9670;&nbsp;</a></span>getKind()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0">InstrKind</a> sysy::ir::Instruction::getKind </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#a2b63e88332c653f9d626022471379d99">kind</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a329ba6e5fa96077cae72c190a181a5dd">sysy::ir::constantFold()</a>, <a class="el" href="../../d9/dcc/classsysy_1_1ir_1_1BinaryInstrcution.html#a6d4585ea07231d50b119bf33b14901a3">sysy::ir::BinaryInstrcution::getSignature()</a>, <a class="el" href="../../d1/d1e/classsysy_1_1ir_1_1UnaryInstruction.html#a081f5941c82549eda203ba72e2d16199">sysy::ir::UnaryInstruction::getSignature()</a>, <a class="el" href="../../df/d2d/classsysy_1_1ir_1_1GVN.html#a487b89cc1fb2d15fff33657194db20a2">sysy::ir::GVN::getValueNumber()</a>, <a class="el" href="../../db/d19/classsysy_1_1ir_1_1LSR.html#a5b0485e4df4289f82373fcafd9535930">sysy::ir::LSR::identifyAllInductiveMultiplication()</a>, <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#a5166425ad6cbe9bdf20f203efe3ebd06">isReverse()</a>, <a class="el" href="../../de/d41/classsysy_1_1ir_1_1CollectOccurrences.html#a0db54493aa3aa940b6a233a62d24fc6b">sysy::ir::CollectOccurrences::isSameExpr()</a>, <a class="el" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#add6ba9c6e01df421bda290132596a2d1">sysy::ir::ScalarEvolution::linkInstructionToSCEV()</a>, <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a9c9783cd10d7f6d83f255f7a1a1b918a">sysy::ir::simplifyInstruction()</a>, <a class="el" href="../../d6/d6f/classsysy_1_1ir_1_1InstructionCombine.html#ad6ba6f7f3df7be9c0380d2343cb65784">sysy::ir::InstructionCombine::visitAdd()</a>, <a class="el" href="../../d6/d6f/classsysy_1_1ir_1_1InstructionCombine.html#a2c9a84f59c447d2917fd50dd1119f994">sysy::ir::InstructionCombine::visitBinary()</a>, and <a class="el" href="../../d6/d6f/classsysy_1_1ir_1_1InstructionCombine.html#ab878fcc588eb24cf1c8947b6911ebd57">sysy::ir::InstructionCombine::visitSub()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d46/classsysy_1_1ir_1_1Instruction_a1b75bf99f7751b0c76f15d94652ca176_icgraph.png" border="0" usemap="#dc/d46/classsysy_1_1ir_1_1Instruction_a1b75bf99f7751b0c76f15d94652ca176_icgraph" alt=""/></div>
+<map name="dc/d46/classsysy_1_1ir_1_1Instruction_a1b75bf99f7751b0c76f15d94652ca176_icgraph" id="dc/d46/classsysy_1_1ir_1_1Instruction_a1b75bf99f7751b0c76f15d94652ca176_icgraph">
+<area shape="rect" title=" " alt="" coords="807,323,952,365"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a329ba6e5fa96077cae72c190a181a5dd" title=" " alt="" coords="578,5,737,32"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a9c9783cd10d7f6d83f255f7a1a1b918a" title=" " alt="" coords="298,31,495,57"/>
+<area shape="rect" href="../../d9/dcc/classsysy_1_1ir_1_1BinaryInstrcution.html#a6d4585ea07231d50b119bf33b14901a3" title=" " alt="" coords="564,107,751,149"/>
+<area shape="rect" href="../../d1/d1e/classsysy_1_1ir_1_1UnaryInstruction.html#a081f5941c82549eda203ba72e2d16199" title=" " alt="" coords="565,173,749,214"/>
+<area shape="rect" href="../../df/d2d/classsysy_1_1ir_1_1GVN.html#a487b89cc1fb2d15fff33657194db20a2" title=" " alt="" coords="285,268,508,295"/>
+<area shape="rect" href="../../db/d19/classsysy_1_1ir_1_1LSR.html#a5b0485e4df4289f82373fcafd9535930" title=" " alt="" coords="570,355,745,397"/>
+<area shape="rect" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#a5166425ad6cbe9bdf20f203efe3ebd06" title=" " alt="" coords="585,290,730,331"/>
+<area shape="rect" href="../../de/d41/classsysy_1_1ir_1_1CollectOccurrences.html#a0db54493aa3aa940b6a233a62d24fc6b" title=" " alt="" coords="557,421,758,462"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#add6ba9c6e01df421bda290132596a2d1" title=" " alt="" coords="569,486,746,527"/>
+<area shape="rect" href="../../d6/d6f/classsysy_1_1ir_1_1InstructionCombine.html#ad6ba6f7f3df7be9c0380d2343cb65784" title=" " alt="" coords="556,551,759,593"/>
+<area shape="rect" href="../../d6/d6f/classsysy_1_1ir_1_1InstructionCombine.html#a2c9a84f59c447d2917fd50dd1119f994" title=" " alt="" coords="295,610,498,651"/>
+<area shape="rect" href="../../d6/d6f/classsysy_1_1ir_1_1InstructionCombine.html#ab878fcc588eb24cf1c8947b6911ebd57" title=" " alt="" coords="556,669,759,710"/>
+<area shape="rect" href="../../db/d19/classsysy_1_1ir_1_1LSR.html#a81e424a516f27acd1c75fd22c1b9b4ca" title=" " alt="" coords="307,363,486,389"/>
+<area shape="rect" href="../../db/d19/classsysy_1_1ir_1_1LSR.html#a01589b57af10a7b0e6362613a50d7a5b" title=" " alt="" coords="57,363,186,389"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#a0f98946c99fd079aa59c712a3212b5d0" title=" " alt="" coords="308,486,485,527"/>
+<area shape="rect" href="../../d5/d84/classsysy_1_1ir_1_1ScalarEvolution.html#aa77c21818a83d9b475e3d967662190bc" title=" " alt="" coords="18,493,225,520"/>
+<area shape="rect" href="../../d6/d6f/classsysy_1_1ir_1_1InstructionCombine.html#a58d84f4b78981a1b242691da6a5b326b" title=" " alt="" coords="5,617,237,644"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a493f782da20b01120dd1a2fd8d370f7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a493f782da20b01120dd1a2fd8d370f7c">&#9670;&nbsp;</a></span>getRank()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sysy::ir::Instruction::getRank </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#aec920ff5f556331f5d29b52f21012b49">father</a>, and <a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html#a5ad4d87dbcad45e44aedfd0c24009e9b">sysy::ir::BasicBlock::getRank()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d3/d8e/classsysy_1_1ir_1_1MemorySSA.html#a0e02fe94c6bf662ac97ede08118352d3">sysy::ir::MemorySSA::analysisArray()</a>, <a class="el" href="../../d3/d8e/classsysy_1_1ir_1_1MemorySSA.html#a4ab08df052068f0f27f0a189c81801f9">sysy::ir::MemorySSA::analysisScalarGV()</a>, <a class="el" href="../../da/d2e/classsysy_1_1ir_1_1FunctionInline.html#aa3e68f1f7d996f449663bd362882a0ca">sysy::ir::FunctionInline::inlineAtCall()</a>, and <a class="el" href="../../dd/d74/classsysy_1_1ir_1_1GCM.html#a5009c0764376392be5212a6364cae86a">sysy::ir::GCM::schduleLate()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d46/classsysy_1_1ir_1_1Instruction_a493f782da20b01120dd1a2fd8d370f7c_cgraph.png" border="0" usemap="#dc/d46/classsysy_1_1ir_1_1Instruction_a493f782da20b01120dd1a2fd8d370f7c_cgraph" alt=""/></div>
+<map name="dc/d46/classsysy_1_1ir_1_1Instruction_a493f782da20b01120dd1a2fd8d370f7c_cgraph" id="dc/d46/classsysy_1_1ir_1_1Instruction_a493f782da20b01120dd1a2fd8d370f7c_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,151,47"/>
+<area shape="rect" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html#a5ad4d87dbcad45e44aedfd0c24009e9b" title=" " alt="" coords="199,5,345,47"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d46/classsysy_1_1ir_1_1Instruction_a493f782da20b01120dd1a2fd8d370f7c_icgraph.png" border="0" usemap="#dc/d46/classsysy_1_1ir_1_1Instruction_a493f782da20b01120dd1a2fd8d370f7c_icgraph" alt=""/></div>
+<map name="dc/d46/classsysy_1_1ir_1_1Instruction_a493f782da20b01120dd1a2fd8d370f7c_icgraph" id="dc/d46/classsysy_1_1ir_1_1Instruction_a493f782da20b01120dd1a2fd8d370f7c_icgraph">
+<area shape="rect" title=" " alt="" coords="480,104,625,145"/>
+<area shape="rect" href="../../d3/d8e/classsysy_1_1ir_1_1MemorySSA.html#a0e02fe94c6bf662ac97ede08118352d3" title=" " alt="" coords="257,5,413,47"/>
+<area shape="rect" href="../../d3/d8e/classsysy_1_1ir_1_1MemorySSA.html#a4ab08df052068f0f27f0a189c81801f9" title=" " alt="" coords="257,71,413,112"/>
+<area shape="rect" href="../../da/d2e/classsysy_1_1ir_1_1FunctionInline.html#aa3e68f1f7d996f449663bd362882a0ca" title=" " alt="" coords="252,136,419,177"/>
+<area shape="rect" href="../../dd/d74/classsysy_1_1ir_1_1GCM.html#a5009c0764376392be5212a6364cae86a" title=" " alt="" coords="239,202,432,229"/>
+<area shape="rect" href="../../d3/d8e/classsysy_1_1ir_1_1MemorySSA.html#a557917d070f1a1ab140e716b582939b3" title=" " alt="" coords="5,46,191,73"/>
+<area shape="rect" href="../../dd/d74/classsysy_1_1ir_1_1GCM.html#a2bc03ee75381be3f30c2f62ffd40d1d2" title=" " alt="" coords="30,202,166,229"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abb68d63ec14b3d731300d57a824c2f05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb68d63ec14b3d731300d57a824c2f05">&#9670;&nbsp;</a></span>getSignature()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string sysy::ir::Instruction::getSignature </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html#aa1a92c359f0c115da6db3afdd54d5d2d">sysy::ir::Value</a>.</p>
+
+<p>Implemented in <a class="el" href="../../dd/df3/classsysy_1_1ir_1_1MoveInstruction.html#ac23f1f8554941fdaa392c394884c61fe">sysy::ir::MoveInstruction</a>, <a class="el" href="../../d9/db4/classsysy_1_1ir_1_1DeadInstruction.html#a7fbe31eb38aaafea58fe066c787a0aa5">sysy::ir::DeadInstruction</a>, <a class="el" href="../../d9/d8a/classsysy_1_1ir_1_1MemPhiInstruction.html#ae035a82c6eefdc50e1cb8b668832a0d1">sysy::ir::MemPhiInstruction</a>, <a class="el" href="../../da/dd0/classsysy_1_1ir_1_1PhiInstruction.html#a778cda3de869ec10b5c1fa390139cc84">sysy::ir::PhiInstruction</a>, <a class="el" href="../../dc/de9/classsysy_1_1ir_1_1AllocaInstruction.html#ab4ea6ea50928585b20794c55b45fe840">sysy::ir::AllocaInstruction</a>, <a class="el" href="../../dc/d65/classsysy_1_1ir_1_1GEPInstruction.html#adc291a7825f8f3fd20c3d8d307a3dc6f">sysy::ir::GEPInstruction</a>, <a class="el" href="../../db/d0c/classsysy_1_1ir_1_1LoadInstruction.html#a92bb5ad2219acb4c09e39287c81089e8">sysy::ir::LoadInstruction</a>, <a class="el" href="../../df/da0/classsysy_1_1ir_1_1StoreInstruction.html#a393c3cbc8acc5889393601fa329905d5">sysy::ir::StoreInstruction</a>, <a class="el" href="../../d8/d42/classsysy_1_1ir_1_1RetInstruction.html#a42468d21d9d7da8f1e31e82866c8d7b2">sysy::ir::RetInstruction</a>, <a class="el" href="../../db/d8f/classsysy_1_1ir_1_1BrInstruction.html#af8b2ed338b29fb480feee60c8ea0557a">sysy::ir::BrInstruction</a>, <a class="el" href="../../d5/d35/classsysy_1_1ir_1_1CallInstruction.html#aa77efd2588ee52b4ac0d53f5245c3f4d">sysy::ir::CallInstruction</a>, <a class="el" href="../../d1/d1e/classsysy_1_1ir_1_1UnaryInstruction.html#a081f5941c82549eda203ba72e2d16199">sysy::ir::UnaryInstruction</a>, and <a class="el" href="../../d9/dcc/classsysy_1_1ir_1_1BinaryInstrcution.html#a6d4585ea07231d50b119bf33b14901a3">sysy::ir::BinaryInstrcution</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d0/d1b/classsysy_1_1ir_1_1RealOccurrence.html#a086f0bd7aeff07bbd07e9844a3d9b31d">sysy::ir::RealOccurrence::getSignature()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d46/classsysy_1_1ir_1_1Instruction_abb68d63ec14b3d731300d57a824c2f05_icgraph.png" border="0" usemap="#dc/d46/classsysy_1_1ir_1_1Instruction_abb68d63ec14b3d731300d57a824c2f05_icgraph" alt=""/></div>
+<map name="dc/d46/classsysy_1_1ir_1_1Instruction_abb68d63ec14b3d731300d57a824c2f05_icgraph" id="dc/d46/classsysy_1_1ir_1_1Instruction_abb68d63ec14b3d731300d57a824c2f05_icgraph">
+<area shape="rect" title=" " alt="" coords="232,5,377,47"/>
+<area shape="rect" href="../../d0/d1b/classsysy_1_1ir_1_1RealOccurrence.html#a086f0bd7aeff07bbd07e9844a3d9b31d" title=" " alt="" coords="5,5,184,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1956d1838dfda8d21fec2c6405d9856f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1956d1838dfda8d21fec2c6405d9856f">&#9670;&nbsp;</a></span>isCmp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sysy::ir::Instruction::isCmp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0ad2ecfdacdf74d6b13ed4ab9025295334">FCmpUEQ</a>, <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a9d52d6c3a0dcbaae4e983dd31465e0ac">FCmpUGE</a>, <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a214dc531d2a00117a6a816d67a21625e">ICmpEQ</a>, <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a2dfdf3549286ddb15f7feb743a87b483">ICmpSGE</a>, <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#a2b63e88332c653f9d626022471379d99">kind</a>, and <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a3d358342df3a0035ca7083672702df6a">Not</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a9c9783cd10d7f6d83f255f7a1a1b918a">sysy::ir::simplifyInstruction()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d46/classsysy_1_1ir_1_1Instruction_a1956d1838dfda8d21fec2c6405d9856f_icgraph.png" border="0" usemap="#dc/d46/classsysy_1_1ir_1_1Instruction_a1956d1838dfda8d21fec2c6405d9856f_icgraph" alt=""/></div>
+<map name="dc/d46/classsysy_1_1ir_1_1Instruction_a1956d1838dfda8d21fec2c6405d9856f_icgraph" id="dc/d46/classsysy_1_1ir_1_1Instruction_a1956d1838dfda8d21fec2c6405d9856f_icgraph">
+<area shape="rect" title=" " alt="" coords="251,5,396,47"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a9c9783cd10d7f6d83f255f7a1a1b918a" title=" " alt="" coords="5,13,203,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3bc12d35df517c98fc48ef9c040a007e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bc12d35df517c98fc48ef9c040a007e">&#9670;&nbsp;</a></span>isCommutative()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sysy::ir::Instruction::isCommutative </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a44bf629ce6339af49db8a4f2dc2f9a96">Add</a>, <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a25e6f39ac57b4ec1f85dcf1a48f1530c">FAdd</a>, <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0ad2ecfdacdf74d6b13ed4ab9025295334">FCmpUEQ</a>, <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a6d07cabc28996c176712656d84413cdf">FCmpUNE</a>, <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0ad9d869a5e98fba484775fddc077d2076">FMul</a>, <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a214dc531d2a00117a6a816d67a21625e">ICmpEQ</a>, <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a0552545b50731bc5529e210b935a61ce">ICmpNE</a>, <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#a2b63e88332c653f9d626022471379d99">kind</a>, and <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0aa83a2680eee535bb872b405744a63983">Mul</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../df/d2d/classsysy_1_1ir_1_1GVN.html#a487b89cc1fb2d15fff33657194db20a2">sysy::ir::GVN::getValueNumber()</a>, <a class="el" href="../../de/d41/classsysy_1_1ir_1_1CollectOccurrences.html#a0db54493aa3aa940b6a233a62d24fc6b">sysy::ir::CollectOccurrences::isSameExpr()</a>, and <a class="el" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#a99f6d2727732e5d3ec5de3dbd6e857da">sysy::ir::PRE::rename1()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d46/classsysy_1_1ir_1_1Instruction_a3bc12d35df517c98fc48ef9c040a007e_icgraph.png" border="0" usemap="#dc/d46/classsysy_1_1ir_1_1Instruction_a3bc12d35df517c98fc48ef9c040a007e_icgraph" alt=""/></div>
+<map name="dc/d46/classsysy_1_1ir_1_1Instruction_a3bc12d35df517c98fc48ef9c040a007e_icgraph" id="dc/d46/classsysy_1_1ir_1_1Instruction_a3bc12d35df517c98fc48ef9c040a007e_icgraph">
+<area shape="rect" title=" " alt="" coords="673,57,819,98"/>
+<area shape="rect" href="../../df/d2d/classsysy_1_1ir_1_1GVN.html#a487b89cc1fb2d15fff33657194db20a2" title=" " alt="" coords="403,5,625,32"/>
+<area shape="rect" href="../../de/d41/classsysy_1_1ir_1_1CollectOccurrences.html#a0db54493aa3aa940b6a233a62d24fc6b" title=" " alt="" coords="413,57,615,98"/>
+<area shape="rect" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#a99f6d2727732e5d3ec5de3dbd6e857da" title=" " alt="" coords="431,123,597,149"/>
+<area shape="rect" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#a8394fa8dfeb78a96555aa0072a259790" title=" " alt="" coords="184,123,355,149"/>
+<area shape="rect" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#a51a274c5f4ca00788df798979e548847" title=" " alt="" coords="5,123,136,149"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a08aa12d42fea429cbd94f8ca0a4afe79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08aa12d42fea429cbd94f8ca0a4afe79">&#9670;&nbsp;</a></span>isInteger()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sysy::ir::Instruction::isInteger </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a44bf629ce6339af49db8a4f2dc2f9a96">Add</a>, <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#a2b63e88332c653f9d626022471379d99">kind</a>, <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a6ff39b82629c9bd745f3a7759aa73d44">Neg</a>, <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a3d358342df3a0035ca7083672702df6a">Not</a>, <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0af70bd0aa482c25c5f2a9fbdd4c237fae">Shl</a>, and <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a1963457c513e5032d9291fc817fff856">SIToFP</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/d19/namespacesysy_1_1ir.html#a329ba6e5fa96077cae72c190a181a5dd">sysy::ir::constantFold()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d46/classsysy_1_1ir_1_1Instruction_a08aa12d42fea429cbd94f8ca0a4afe79_icgraph.png" border="0" usemap="#dc/d46/classsysy_1_1ir_1_1Instruction_a08aa12d42fea429cbd94f8ca0a4afe79_icgraph" alt=""/></div>
+<map name="dc/d46/classsysy_1_1ir_1_1Instruction_a08aa12d42fea429cbd94f8ca0a4afe79_icgraph" id="dc/d46/classsysy_1_1ir_1_1Instruction_a08aa12d42fea429cbd94f8ca0a4afe79_icgraph">
+<area shape="rect" title=" " alt="" coords="457,5,603,47"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a329ba6e5fa96077cae72c190a181a5dd" title=" " alt="" coords="251,13,409,39"/>
+<area shape="rect" href="../../d7/d19/namespacesysy_1_1ir.html#a9c9783cd10d7f6d83f255f7a1a1b918a" title=" " alt="" coords="5,13,203,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5166425ad6cbe9bdf20f203efe3ebd06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5166425ad6cbe9bdf20f203efe3ebd06">&#9670;&nbsp;</a></span>isReverse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sysy::ir::Instruction::isReverse </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a> *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a> *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a9d52d6c3a0dcbaae4e983dd31465e0ac">FCmpUGE</a>, <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a46dafa25e0638b56f5bd84d36c12d41f">FCmpUGT</a>, <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a0132f8dbfa9e73311770c6e53005371e">FCmpULE</a>, <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a93a0d7826c777410596508db4bba4e2f">FCmpULT</a>, <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#a1b75bf99f7751b0c76f15d94652ca176">getKind()</a>, <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a2dfdf3549286ddb15f7feb743a87b483">ICmpSGE</a>, <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a6764c4df7d00191c409a029df0843e2c">ICmpSGT</a>, <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a694ce9503db5e19562241770310dbed7">ICmpSLE</a>, and <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0af7b22bb69472ab74104cb83f8454d5a4">ICmpSLT</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../df/d2d/classsysy_1_1ir_1_1GVN.html#a487b89cc1fb2d15fff33657194db20a2">sysy::ir::GVN::getValueNumber()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d46/classsysy_1_1ir_1_1Instruction_a5166425ad6cbe9bdf20f203efe3ebd06_cgraph.png" border="0" usemap="#dc/d46/classsysy_1_1ir_1_1Instruction_a5166425ad6cbe9bdf20f203efe3ebd06_cgraph" alt=""/></div>
+<map name="dc/d46/classsysy_1_1ir_1_1Instruction_a5166425ad6cbe9bdf20f203efe3ebd06_cgraph" id="dc/d46/classsysy_1_1ir_1_1Instruction_a5166425ad6cbe9bdf20f203efe3ebd06_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,151,47"/>
+<area shape="rect" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#a1b75bf99f7751b0c76f15d94652ca176" title=" " alt="" coords="199,5,344,47"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d46/classsysy_1_1ir_1_1Instruction_a5166425ad6cbe9bdf20f203efe3ebd06_icgraph.png" border="0" usemap="#dc/d46/classsysy_1_1ir_1_1Instruction_a5166425ad6cbe9bdf20f203efe3ebd06_icgraph" alt=""/></div>
+<map name="dc/d46/classsysy_1_1ir_1_1Instruction_a5166425ad6cbe9bdf20f203efe3ebd06_icgraph" id="dc/d46/classsysy_1_1ir_1_1Instruction_a5166425ad6cbe9bdf20f203efe3ebd06_icgraph">
+<area shape="rect" title=" " alt="" coords="276,5,421,47"/>
+<area shape="rect" href="../../df/d2d/classsysy_1_1ir_1_1GVN.html#a487b89cc1fb2d15fff33657194db20a2" title=" " alt="" coords="5,13,228,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a58339878755cc7edf5041fca90f9bd9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58339878755cc7edf5041fca90f9bd9b">&#9670;&nbsp;</a></span>isTerminator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sysy::ir::Instruction::isTerminator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0a950e6635d7c806518866e3a6b776e28a">CondBr</a>, <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#a2b63e88332c653f9d626022471379d99">kind</a>, and <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0ab541dc52ee342e1c18834e802818c5d2">Ret</a>.</p>
+
+</div>
+</div>
+<a id="a03508386f88a1697e942901f76300195"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03508386f88a1697e942901f76300195">&#9670;&nbsp;</a></span>reSetBasicBlock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sysy::ir::Instruction::reSetBasicBlock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *&#160;</td>
+          <td class="paramname"><em>bb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#aec920ff5f556331f5d29b52f21012b49">father</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html#a3a77266ab2691af1473d43935de595e6">sysy::ir::BasicBlock::insertBeforeTerminal()</a>, and <a class="el" href="../../dd/d74/classsysy_1_1ir_1_1GCM.html#a5009c0764376392be5212a6364cae86a">sysy::ir::GCM::schduleLate()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d46/classsysy_1_1ir_1_1Instruction_a03508386f88a1697e942901f76300195_icgraph.png" border="0" usemap="#dc/d46/classsysy_1_1ir_1_1Instruction_a03508386f88a1697e942901f76300195_icgraph" alt=""/></div>
+<map name="dc/d46/classsysy_1_1ir_1_1Instruction_a03508386f88a1697e942901f76300195_icgraph" id="dc/d46/classsysy_1_1ir_1_1Instruction_a03508386f88a1697e942901f76300195_icgraph">
+<area shape="rect" title=" " alt="" coords="907,35,1052,76"/>
+<area shape="rect" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html#a3a77266ab2691af1473d43935de595e6" title=" " alt="" coords="679,5,845,47"/>
+<area shape="rect" href="../../dd/d74/classsysy_1_1ir_1_1GCM.html#a5009c0764376392be5212a6364cae86a" title=" " alt="" coords="665,71,859,98"/>
+<area shape="rect" href="../../db/d19/classsysy_1_1ir_1_1LSR.html#ae6969b06d0dd559112fc725842d5b370" title=" " alt="" coords="409,13,617,39"/>
+<area shape="rect" href="../../db/d19/classsysy_1_1ir_1_1LSR.html#a81e424a516f27acd1c75fd22c1b9b4ca" title=" " alt="" coords="183,13,361,39"/>
+<area shape="rect" href="../../db/d19/classsysy_1_1ir_1_1LSR.html#a01589b57af10a7b0e6362613a50d7a5b" title=" " alt="" coords="5,13,135,39"/>
+<area shape="rect" href="../../dd/d74/classsysy_1_1ir_1_1GCM.html#a2bc03ee75381be3f30c2f62ffd40d1d2" title=" " alt="" coords="445,71,581,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="aec920ff5f556331f5d29b52f21012b49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec920ff5f556331f5d29b52f21012b49">&#9670;&nbsp;</a></span>father</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a>* sysy::ir::Instruction::father</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#aade5575316fb35822e3785e543ecba69">getBasicBlock()</a>, <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#a493f782da20b01120dd1a2fd8d370f7c">getRank()</a>, and <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#a03508386f88a1697e942901f76300195">reSetBasicBlock()</a>.</p>
+
+</div>
+</div>
+<a id="a2b63e88332c653f9d626022471379d99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b63e88332c653f9d626022471379d99">&#9670;&nbsp;</a></span>kind</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#acacb149c6d40059ab71e7fbf58fc7fa0">InstrKind</a> sysy::ir::Instruction::kind</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#a1b75bf99f7751b0c76f15d94652ca176">getKind()</a>, <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#a1956d1838dfda8d21fec2c6405d9856f">isCmp()</a>, <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#a3bc12d35df517c98fc48ef9c040a007e">isCommutative()</a>, <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#a08aa12d42fea429cbd94f8ca0a4afe79">isInteger()</a>, and <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#a58339878755cc7edf5041fca90f9bd9b">isTerminator()</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>include/sysy/IR/<a class="el" href="../../d1/d50/IR_2Instruction_8h_source.html">Instruction.h</a></li>
-<li>lib/IR/Instructions.cpp</li>
+<li>lib/IR/<a class="el" href="../../d8/d98/Instructions_8cpp.html">Instructions.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>sysy</b></li><li class="navelem"><b>ir</b></li><li class="navelem"><a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a></li>
+    <li class="navelem"><a class="el" href="../../dd/d20/namespacesysy.html">sysy</a></li><li class="navelem"><a class="el" href="../../d7/d19/namespacesysy_1_1ir.html">ir</a></li><li class="navelem"><a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

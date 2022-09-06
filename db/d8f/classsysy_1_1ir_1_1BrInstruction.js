@@ -8,5 +8,6 @@ var classsysy_1_1ir_1_1BrInstruction =
     [ "getTrueBlock", "db/d8f/classsysy_1_1ir_1_1BrInstruction.html#ad350e91c94c73f459106ed5ed7d5563f", null ],
     [ "replaceTarget", "db/d8f/classsysy_1_1ir_1_1BrInstruction.html#a00ea2217973bd5a3325344275c0fbc23", null ],
     [ "setConditional", "db/d8f/classsysy_1_1ir_1_1BrInstruction.html#a1f24aedec49b3f08e1be325c1d8f7f1d", null ],
-    [ "setUnconditional", "db/d8f/classsysy_1_1ir_1_1BrInstruction.html#a490d51f867dae04c7cc4a2f975dd4b40", null ]
+    [ "setUnconditional", "db/d8f/classsysy_1_1ir_1_1BrInstruction.html#a490d51f867dae04c7cc4a2f975dd4b40", null ],
+    [ "unconditional", "db/d8f/classsysy_1_1ir_1_1BrInstruction.html#a3a23053be9004486d15b94022ddc82ea", null ]
 ];

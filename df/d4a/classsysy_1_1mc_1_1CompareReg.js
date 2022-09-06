@@ -9,5 +9,6 @@ var classsysy_1_1mc_1_1CompareReg =
     [ "gen_asm", "df/d4a/classsysy_1_1mc_1_1CompareReg.html#a8a2bcc99ee918343776cacbc22e8f56c", null ],
     [ "lhs", "df/d4a/classsysy_1_1mc_1_1CompareReg.html#a63a039cb50baec048ad61bd277843439", null ],
     [ "rhs", "df/d4a/classsysy_1_1mc_1_1CompareReg.html#a446b39ea638854d64fc5fd623c3352c2", null ],
-    [ "type", "df/d4a/classsysy_1_1mc_1_1CompareReg.html#a566b3d308793641fcaf6fc8cace0b585", null ]
+    [ "type", "df/d4a/classsysy_1_1mc_1_1CompareReg.html#a566b3d308793641fcaf6fc8cace0b585", null ],
+    [ "type_map", "df/d4a/classsysy_1_1mc_1_1CompareReg.html#a518cffb5feb7203e21e61b1302c57aa4", null ]
 ];

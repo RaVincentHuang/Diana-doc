@@ -86,12 +86,12 @@ $(document).ready(function(){initNavTree('d9/df2/Vertify_8h_source.html','../../
 <div class="title">Vertify.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SYSY_ANALYSIS_VERTIFY_H</span></div>
+<a href="../../d9/df2/Vertify_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SYSY_ANALYSIS_VERTIFY_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define SYSY_ANALYSIS_VERTIFY_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;sysy/IR/PassManager.h&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d8/d4e/PassManager_8h.html">sysy/IR/PassManager.h</a>&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span>sysy</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../dd/d20/namespacesysy.html">sysy</a></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>ir</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
@@ -99,15 +99,15 @@ $(document).ready(function(){initNavTree('d9/df2/Vertify_8h_source.html','../../
 <div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="../../d3/d63/classsysy_1_1ir_1_1ModuleVertify.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d3/d63/classsysy_1_1ir_1_1ModuleVertify.html">ModuleVertify</a> : <span class="keyword">public</span> <a class="code" href="../../d5/d01/classsysy_1_1Pass.html">ModulePass</a></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">void</span> run(<a class="code" href="../../dd/d71/classsysy_1_1ir_1_1Module.html">Module</a>* module) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    std::string getName()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;Vertify&quot;</span>; }</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d3/d63/classsysy_1_1ir_1_1ModuleVertify.html#aef900c831a51393ac7e205711f9c7d82">run</a>(<a class="code" href="../../dd/d71/classsysy_1_1ir_1_1Module.html">Module</a>* module) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="../../d3/d63/classsysy_1_1ir_1_1ModuleVertify.html#abd95313053d10a69dd2501de522aff9c">   15</a></span>&#160;    std::string <a class="code" href="../../d3/d63/classsysy_1_1ir_1_1ModuleVertify.html#abd95313053d10a69dd2501de522aff9c">getName</a>()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;Vertify&quot;</span>; }</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;};</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="../../d6/d4d/classsysy_1_1ir_1_1FunctionVertify.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d6/d4d/classsysy_1_1ir_1_1FunctionVertify.html">FunctionVertify</a> : <span class="keyword">public</span> <a class="code" href="../../d5/d01/classsysy_1_1Pass.html">FunctionPass</a></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">void</span> run(<a class="code" href="../../d4/d36/classsysy_1_1ir_1_1Function.html">Function</a>* func) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    std::string getName()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;Vertify&quot;</span>; }</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d6/d4d/classsysy_1_1ir_1_1FunctionVertify.html#ae0196a7195d32b6f86f4a2415053cfa8">run</a>(<a class="code" href="../../d4/d36/classsysy_1_1ir_1_1Function.html">Function</a>* func) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="../../d6/d4d/classsysy_1_1ir_1_1FunctionVertify.html#a5a60c809395cce6a8e1caf4d5034d050">   22</a></span>&#160;    std::string <a class="code" href="../../d6/d4d/classsysy_1_1ir_1_1FunctionVertify.html#a5a60c809395cce6a8e1caf4d5034d050">getName</a>()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;Vertify&quot;</span>; }</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;};</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">// class BasicBlockVertify : public BasicBlockPass</span></div>
@@ -124,15 +124,21 @@ $(document).ready(function(){initNavTree('d9/df2/Vertify_8h_source.html','../../
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclasssysy_1_1ir_1_1FunctionVertify_html_a5a60c809395cce6a8e1caf4d5034d050"><div class="ttname"><a href="../../d6/d4d/classsysy_1_1ir_1_1FunctionVertify.html#a5a60c809395cce6a8e1caf4d5034d050">sysy::ir::FunctionVertify::getName</a></div><div class="ttdeci">std::string getName() override</div><div class="ttdef"><b>Definition:</b> Vertify.h:22</div></div>
 <div class="ttc" id="aclasssysy_1_1ir_1_1FunctionVertify_html"><div class="ttname"><a href="../../d6/d4d/classsysy_1_1ir_1_1FunctionVertify.html">sysy::ir::FunctionVertify</a></div><div class="ttdef"><b>Definition:</b> Vertify.h:18</div></div>
+<div class="ttc" id="aclasssysy_1_1ir_1_1ModuleVertify_html_aef900c831a51393ac7e205711f9c7d82"><div class="ttname"><a href="../../d3/d63/classsysy_1_1ir_1_1ModuleVertify.html#aef900c831a51393ac7e205711f9c7d82">sysy::ir::ModuleVertify::run</a></div><div class="ttdeci">void run(Module *module) override</div><div class="ttdef"><b>Definition:</b> Vertify.cpp:15</div></div>
+<div class="ttc" id="aclasssysy_1_1ir_1_1FunctionVertify_html_ae0196a7195d32b6f86f4a2415053cfa8"><div class="ttname"><a href="../../d6/d4d/classsysy_1_1ir_1_1FunctionVertify.html#ae0196a7195d32b6f86f4a2415053cfa8">sysy::ir::FunctionVertify::run</a></div><div class="ttdeci">void run(Function *func) override</div><div class="ttdef"><b>Definition:</b> Vertify.cpp:20</div></div>
 <div class="ttc" id="aclasssysy_1_1ir_1_1Function_html"><div class="ttname"><a href="../../d4/d36/classsysy_1_1ir_1_1Function.html">sysy::ir::Function</a></div><div class="ttdef"><b>Definition:</b> Function.h:19</div></div>
 <div class="ttc" id="aclasssysy_1_1Pass_html"><div class="ttname"><a href="../../d5/d01/classsysy_1_1Pass.html">sysy::Pass</a></div><div class="ttdef"><b>Definition:</b> PassManager.h:14</div></div>
+<div class="ttc" id="anamespacesysy_html"><div class="ttname"><a href="../../dd/d20/namespacesysy.html">sysy</a></div><div class="ttdef"><b>Definition:</b> AliasAnalysis.h:6</div></div>
+<div class="ttc" id="aPassManager_8h_html"><div class="ttname"><a href="../../d8/d4e/PassManager_8h.html">PassManager.h</a></div></div>
 <div class="ttc" id="aclasssysy_1_1ir_1_1Module_html"><div class="ttname"><a href="../../dd/d71/classsysy_1_1ir_1_1Module.html">sysy::ir::Module</a></div><div class="ttdef"><b>Definition:</b> Module.h:16</div></div>
+<div class="ttc" id="aclasssysy_1_1ir_1_1ModuleVertify_html_abd95313053d10a69dd2501de522aff9c"><div class="ttname"><a href="../../d3/d63/classsysy_1_1ir_1_1ModuleVertify.html#abd95313053d10a69dd2501de522aff9c">sysy::ir::ModuleVertify::getName</a></div><div class="ttdeci">std::string getName() override</div><div class="ttdef"><b>Definition:</b> Vertify.h:15</div></div>
 <div class="ttc" id="aclasssysy_1_1ir_1_1ModuleVertify_html"><div class="ttname"><a href="../../d3/d63/classsysy_1_1ir_1_1ModuleVertify.html">sysy::ir::ModuleVertify</a></div><div class="ttdef"><b>Definition:</b> Vertify.h:11</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_b87821115ea3cf61d61e0bb4a6051ac5.html">sysy</a></li><li class="navelem"><a class="el" href="../../dir_94113f2bbe09f8b97cd79fb8e894c77a.html">Analysis</a></li><li class="navelem"><b>Vertify.h</b></li>
+    <li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_b87821115ea3cf61d61e0bb4a6051ac5.html">sysy</a></li><li class="navelem"><a class="el" href="../../dir_94113f2bbe09f8b97cd79fb8e894c77a.html">Analysis</a></li><li class="navelem"><a class="el" href="../../d9/df2/Vertify_8h.html">Vertify.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

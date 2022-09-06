@@ -8,5 +8,6 @@ var classsysy_1_1mc_1_1CompareImm =
     [ "gen_asm", "d3/d29/classsysy_1_1mc_1_1CompareImm.html#ac7fb36e063dd5790359b15e3ff7c92ea", null ],
     [ "lhs", "d3/d29/classsysy_1_1mc_1_1CompareImm.html#aec5b28bdaeb56274dcbbd430374b8068", null ],
     [ "rhs", "d3/d29/classsysy_1_1mc_1_1CompareImm.html#a51065c94a281b215fe854f073c5321e7", null ],
-    [ "type", "d3/d29/classsysy_1_1mc_1_1CompareImm.html#a23b2532dbf161419b7361e1baaefb822", null ]
+    [ "type", "d3/d29/classsysy_1_1mc_1_1CompareImm.html#a23b2532dbf161419b7361e1baaefb822", null ],
+    [ "type_map", "d3/d29/classsysy_1_1mc_1_1CompareImm.html#a875ae2e2ad6172c8a5f49c1d048e112e", null ]
 ];

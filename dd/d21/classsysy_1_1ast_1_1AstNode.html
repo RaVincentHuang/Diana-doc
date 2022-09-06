@@ -91,6 +91,8 @@ $(document).ready(function(){initNavTree('dd/d21/classsysy_1_1ast_1_1AstNode.htm
 <div class="title">sysy::ast::AstNode Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="../../d5/d39/Ast_8h_source.html">Ast.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for sysy::ast::AstNode:</div>
 <div class="dyncontent">
@@ -136,101 +138,371 @@ Collaboration diagram for sysy::ast::AstNode:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:abe2bd2aacf7b70f7a4fb4cdd1644c663"><td class="memItemLeft" align="right" valign="top"><a id="abe2bd2aacf7b70f7a4fb4cdd1644c663"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>AstKind</b> { <br />
-&#160;&#160;<b>AST_compUnit</b>, 
-<b>AST_decl</b>, 
-<b>AST_constDecl</b>, 
-<b>AST_constDef</b>, 
+<tr class="memitem:abe2bd2aacf7b70f7a4fb4cdd1644c663"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#abe2bd2aacf7b70f7a4fb4cdd1644c663">AstKind</a> { <br />
+&#160;&#160;<a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#abe2bd2aacf7b70f7a4fb4cdd1644c663a1916cb067781b453724b31ba661fa01a">AST_compUnit</a>, 
+<a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#abe2bd2aacf7b70f7a4fb4cdd1644c663ae88d4351c1a8bb1e7df08980c3babad2">AST_decl</a>, 
+<a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#abe2bd2aacf7b70f7a4fb4cdd1644c663ad515db8a78e34b68551f14dcf4c5a1d1">AST_constDecl</a>, 
+<a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#abe2bd2aacf7b70f7a4fb4cdd1644c663a3cffe73ce81f330a31ca7f6ed979b93c">AST_constDef</a>, 
 <br />
-&#160;&#160;<b>AST_varDecl</b>, 
-<b>AST_varDef</b>, 
-<b>AST_prototype</b>, 
-<b>AST_initVal</b>, 
+&#160;&#160;<a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#abe2bd2aacf7b70f7a4fb4cdd1644c663ac2565cc7ded1711e935a6df93a462a7d">AST_varDecl</a>, 
+<a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#abe2bd2aacf7b70f7a4fb4cdd1644c663ac84e2b337354368bea803a31b23ee5d4">AST_varDef</a>, 
+<a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#abe2bd2aacf7b70f7a4fb4cdd1644c663a280c682b38f8e003741ac96ac78bd34d">AST_prototype</a>, 
+<a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#abe2bd2aacf7b70f7a4fb4cdd1644c663a5af86ba2544302b915364f2704623a3e">AST_initVal</a>, 
 <br />
-&#160;&#160;<b>AST_funcDef</b>, 
-<b>AST_funcParams</b>, 
-<b>AST_funcParam</b>, 
-<b>AST_stmt</b>, 
+&#160;&#160;<a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#abe2bd2aacf7b70f7a4fb4cdd1644c663a083380f0152b23ce908d8769a0055886">AST_funcDef</a>, 
+<a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#abe2bd2aacf7b70f7a4fb4cdd1644c663afc6d87c591ee94e01ee4c31e3c51e7bf">AST_funcParams</a>, 
+<a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#abe2bd2aacf7b70f7a4fb4cdd1644c663af70e5baff8cd0757b371bbeddc371625">AST_funcParam</a>, 
+<a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#abe2bd2aacf7b70f7a4fb4cdd1644c663ad4d25bd4cdc870a51f49434485e72810">AST_stmt</a>, 
 <br />
-&#160;&#160;<b>AST_block</b>, 
-<b>AST_assignStmt</b>, 
-<b>AST_expStmt</b>, 
-<b>AST_ifStmt</b>, 
+&#160;&#160;<a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#abe2bd2aacf7b70f7a4fb4cdd1644c663a7b88777075f22734f4be5f3eecb3d56c">AST_block</a>, 
+<a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#abe2bd2aacf7b70f7a4fb4cdd1644c663adfffa4fb608ec9d6fa45fddbd9d4e033">AST_assignStmt</a>, 
+<a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#abe2bd2aacf7b70f7a4fb4cdd1644c663af931e027a1472ce9cc1fbe730eb90de7">AST_expStmt</a>, 
+<a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#abe2bd2aacf7b70f7a4fb4cdd1644c663a3210434ae7788877c23b86bd89616354">AST_ifStmt</a>, 
 <br />
-&#160;&#160;<b>AST_forStmt</b>, 
-<b>AST_whileStmt</b>, 
-<b>AST_breakStmt</b>, 
-<b>AST_continueStmt</b>, 
+&#160;&#160;<a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#abe2bd2aacf7b70f7a4fb4cdd1644c663a2e75f2c57eccbf5849d3370f59fc9d95">AST_forStmt</a>, 
+<a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#abe2bd2aacf7b70f7a4fb4cdd1644c663a0db9b3cf58bea34597a3ad1ce70d66d8">AST_whileStmt</a>, 
+<a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#abe2bd2aacf7b70f7a4fb4cdd1644c663a50057aa42ee7095c369370b0997cfe18">AST_breakStmt</a>, 
+<a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#abe2bd2aacf7b70f7a4fb4cdd1644c663ad9e827d4be8db75f543d9ce272856170">AST_continueStmt</a>, 
 <br />
-&#160;&#160;<b>AST_returnStmt</b>, 
-<b>AST_exp</b>, 
-<b>AST_cond</b>, 
-<b>AST_mulExp</b>, 
+&#160;&#160;<a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#abe2bd2aacf7b70f7a4fb4cdd1644c663a4e13e599238ffed1becd5e025b2e9d4d">AST_returnStmt</a>, 
+<a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#abe2bd2aacf7b70f7a4fb4cdd1644c663a41a31b2b769004a847cbd6a3a69ada2d">AST_exp</a>, 
+<a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#abe2bd2aacf7b70f7a4fb4cdd1644c663a05e80e03cca8cb15a77370f8fe617c3c">AST_cond</a>, 
+<a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#abe2bd2aacf7b70f7a4fb4cdd1644c663aab99a3a3859fa739f1aa627607cd93c8">AST_mulExp</a>, 
 <br />
-&#160;&#160;<b>AST_addExp</b>, 
-<b>AST_relExp</b>, 
-<b>AST_eqExp</b>, 
-<b>AST_lAndExp</b>, 
+&#160;&#160;<a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#abe2bd2aacf7b70f7a4fb4cdd1644c663a5ab23ec3d041d7369c930bf9428495f1">AST_addExp</a>, 
+<a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#abe2bd2aacf7b70f7a4fb4cdd1644c663a3a7c63515fe4a57dce400dd45bb293ea">AST_relExp</a>, 
+<a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#abe2bd2aacf7b70f7a4fb4cdd1644c663aacb29d54f3c3e1d40464fde8db9263f7">AST_eqExp</a>, 
+<a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#abe2bd2aacf7b70f7a4fb4cdd1644c663a5816331b53d50c982d92acf4dc732816">AST_lAndExp</a>, 
 <br />
-&#160;&#160;<b>AST_lOrExp</b>, 
-<b>AST_unaryExp</b>, 
-<b>AST_binaryExp</b>, 
-<b>AST_functCallExp</b>, 
+&#160;&#160;<a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#abe2bd2aacf7b70f7a4fb4cdd1644c663ac8ea60719f6e098dc89f7e683a87573a">AST_lOrExp</a>, 
+<a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#abe2bd2aacf7b70f7a4fb4cdd1644c663a154507b24a29d3e7cc237caa4c4277d7">AST_unaryExp</a>, 
+<a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#abe2bd2aacf7b70f7a4fb4cdd1644c663a2dafb87d4b8ace5519280cbead305fd2">AST_binaryExp</a>, 
+<a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#abe2bd2aacf7b70f7a4fb4cdd1644c663ab8faac0f039fba65f79e0439ed7f4519">AST_functCallExp</a>, 
 <br />
-&#160;&#160;<b>AST_primaryExp</b>, 
-<b>AST_lVal</b>, 
-<b>AST_ConditionNumber</b>, 
-<b>AST_Number</b>, 
+&#160;&#160;<a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#abe2bd2aacf7b70f7a4fb4cdd1644c663ae67e3b08a65ca312b7f9f957f753e183">AST_primaryExp</a>, 
+<a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#abe2bd2aacf7b70f7a4fb4cdd1644c663a30513dd3c0f674ce38434a6360a5f99b">AST_lVal</a>, 
+<a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#abe2bd2aacf7b70f7a4fb4cdd1644c663a2e9471e1ac8ade9993a455f7d70fc513">AST_ConditionNumber</a>, 
+<a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#abe2bd2aacf7b70f7a4fb4cdd1644c663a38aaba6d98f978d0983af5d8df9f0c55">AST_Number</a>, 
 <br />
-&#160;&#160;<b>AST_EOF</b>, 
-<b>AST_Undefined</b>
+&#160;&#160;<a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#abe2bd2aacf7b70f7a4fb4cdd1644c663ab6e77ab04bfc09a38cd0e2ffc44d481f">AST_EOF</a>, 
+<a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#abe2bd2aacf7b70f7a4fb4cdd1644c663a4163dc6bcc820ad7d3e733b9cbc6b470">AST_Undefined</a>
 <br />
  }</td></tr>
 <tr class="separator:abe2bd2aacf7b70f7a4fb4cdd1644c663"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1b0743fe3f9bb5db48968305100a231d"><td class="memItemLeft" align="right" valign="top"><a id="a1b0743fe3f9bb5db48968305100a231d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AstNode</b> (AstKind _kind)</td></tr>
+<tr class="memitem:a1b0743fe3f9bb5db48968305100a231d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#a1b0743fe3f9bb5db48968305100a231d">AstNode</a> (<a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#abe2bd2aacf7b70f7a4fb4cdd1644c663">AstKind</a> _kind)</td></tr>
 <tr class="separator:a1b0743fe3f9bb5db48968305100a231d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af174a101bdeb27eb2a9c2b42d697415d"><td class="memItemLeft" align="right" valign="top"><a id="af174a101bdeb27eb2a9c2b42d697415d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setParent</b> (<a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html">AstNode</a> *_parent)</td></tr>
+<tr class="memitem:a6aef8ebd9eeac0e760609d4c9a80ada7"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#a6aef8ebd9eeac0e760609d4c9a80ada7">~AstNode</a> ()</td></tr>
+<tr class="separator:a6aef8ebd9eeac0e760609d4c9a80ada7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af174a101bdeb27eb2a9c2b42d697415d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#af174a101bdeb27eb2a9c2b42d697415d">setParent</a> (<a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html">AstNode</a> *_parent)</td></tr>
 <tr class="separator:af174a101bdeb27eb2a9c2b42d697415d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6fc9cfae4c2ba5f3d68d9f000a0d25f"><td class="memItemLeft" align="right" valign="top"><a id="ae6fc9cfae4c2ba5f3d68d9f000a0d25f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>addChildren</b> (<a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html">AstNode</a> *_children)</td></tr>
+<tr class="memitem:ae6fc9cfae4c2ba5f3d68d9f000a0d25f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#ae6fc9cfae4c2ba5f3d68d9f000a0d25f">addChildren</a> (<a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html">AstNode</a> *_children)</td></tr>
 <tr class="separator:ae6fc9cfae4c2ba5f3d68d9f000a0d25f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0feb429482d0199a15c3b91763ad3522"><td class="memItemLeft" align="right" valign="top"><a id="a0feb429482d0199a15c3b91763ad3522"></a>
-std::vector&lt; <a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html">AstNode</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getChildren</b> ()</td></tr>
+<tr class="memitem:a0feb429482d0199a15c3b91763ad3522"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html">AstNode</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#a0feb429482d0199a15c3b91763ad3522">getChildren</a> ()</td></tr>
 <tr class="separator:a0feb429482d0199a15c3b91763ad3522"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a250c5665cab67258c3eff226fd3b80ff"><td class="memItemLeft" align="right" valign="top"><a id="a250c5665cab67258c3eff226fd3b80ff"></a>
-const <a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html">AstNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getParent</b> () const</td></tr>
+<tr class="memitem:a250c5665cab67258c3eff226fd3b80ff"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html">AstNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#a250c5665cab67258c3eff226fd3b80ff">getParent</a> () const</td></tr>
 <tr class="separator:a250c5665cab67258c3eff226fd3b80ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9a636166be764911f2184b8df38bbbf"><td class="memItemLeft" align="right" valign="top"><a id="ac9a636166be764911f2184b8df38bbbf"></a>
-<a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html">AstNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getParent</b> ()</td></tr>
+<tr class="memitem:ac9a636166be764911f2184b8df38bbbf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html">AstNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#ac9a636166be764911f2184b8df38bbbf">getParent</a> ()</td></tr>
 <tr class="separator:ac9a636166be764911f2184b8df38bbbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4af9fb93871d8830f46fdfb74597edc"><td class="memItemLeft" align="right" valign="top"><a id="ac4af9fb93871d8830f46fdfb74597edc"></a>
-const AstKind &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getKind</b> () const</td></tr>
+<tr class="memitem:ac4af9fb93871d8830f46fdfb74597edc"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#abe2bd2aacf7b70f7a4fb4cdd1644c663">AstKind</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#ac4af9fb93871d8830f46fdfb74597edc">getKind</a> () const</td></tr>
 <tr class="separator:ac4af9fb93871d8830f46fdfb74597edc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae15b66e4c214182789b5a8273c47efbb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d91/classsysy_1_1ast_1_1FuncDefNode.html">FuncDefNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#ae15b66e4c214182789b5a8273c47efbb">getParentFuction</a> () const</td></tr>
 <tr class="memdesc:ae15b66e4c214182789b5a8273c47efbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">AAAA.  <a href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#ae15b66e4c214182789b5a8273c47efbb">More...</a><br /></td></tr>
 <tr class="separator:ae15b66e4c214182789b5a8273c47efbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a198dc689c524ef63d6311d6ba645a34d"><td class="memItemLeft" align="right" valign="top"><a id="a198dc689c524ef63d6311d6ba645a34d"></a>
-virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getSignature</b> () const =0</td></tr>
+<tr class="memitem:a198dc689c524ef63d6311d6ba645a34d"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#a198dc689c524ef63d6311d6ba645a34d">getSignature</a> () const =0</td></tr>
 <tr class="separator:a198dc689c524ef63d6311d6ba645a34d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:af15de9a273190a8a4f917a395ea4276d"><td class="memItemLeft" align="right" valign="top"><a id="af15de9a273190a8a4f917a395ea4276d"></a>
-AstKind&#160;</td><td class="memItemRight" valign="bottom"><b>kind</b></td></tr>
+<tr class="memitem:af15de9a273190a8a4f917a395ea4276d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#abe2bd2aacf7b70f7a4fb4cdd1644c663">AstKind</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#af15de9a273190a8a4f917a395ea4276d">kind</a></td></tr>
 <tr class="separator:af15de9a273190a8a4f917a395ea4276d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26223629f9f197319eafdac3db9a3b07"><td class="memItemLeft" align="right" valign="top"><a id="a26223629f9f197319eafdac3db9a3b07"></a>
-<a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html">AstNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>parent</b></td></tr>
+<tr class="memitem:a26223629f9f197319eafdac3db9a3b07"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html">AstNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#a26223629f9f197319eafdac3db9a3b07">parent</a></td></tr>
 <tr class="separator:a26223629f9f197319eafdac3db9a3b07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2bb0264b37d89e3d3cb67372e244d7b"><td class="memItemLeft" align="right" valign="top"><a id="aa2bb0264b37d89e3d3cb67372e244d7b"></a>
-std::vector&lt; <a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html">AstNode</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>children</b></td></tr>
+<tr class="memitem:aa2bb0264b37d89e3d3cb67372e244d7b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html">AstNode</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#aa2bb0264b37d89e3d3cb67372e244d7b">children</a></td></tr>
 <tr class="separator:aa2bb0264b37d89e3d3cb67372e244d7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="abe2bd2aacf7b70f7a4fb4cdd1644c663"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe2bd2aacf7b70f7a4fb4cdd1644c663">&#9670;&nbsp;</a></span>AstKind</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#abe2bd2aacf7b70f7a4fb4cdd1644c663">sysy::ast::AstNode::AstKind</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="abe2bd2aacf7b70f7a4fb4cdd1644c663a1916cb067781b453724b31ba661fa01a"></a>AST_compUnit&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abe2bd2aacf7b70f7a4fb4cdd1644c663ae88d4351c1a8bb1e7df08980c3babad2"></a>AST_decl&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abe2bd2aacf7b70f7a4fb4cdd1644c663ad515db8a78e34b68551f14dcf4c5a1d1"></a>AST_constDecl&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abe2bd2aacf7b70f7a4fb4cdd1644c663a3cffe73ce81f330a31ca7f6ed979b93c"></a>AST_constDef&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abe2bd2aacf7b70f7a4fb4cdd1644c663ac2565cc7ded1711e935a6df93a462a7d"></a>AST_varDecl&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abe2bd2aacf7b70f7a4fb4cdd1644c663ac84e2b337354368bea803a31b23ee5d4"></a>AST_varDef&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abe2bd2aacf7b70f7a4fb4cdd1644c663a280c682b38f8e003741ac96ac78bd34d"></a>AST_prototype&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abe2bd2aacf7b70f7a4fb4cdd1644c663a5af86ba2544302b915364f2704623a3e"></a>AST_initVal&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abe2bd2aacf7b70f7a4fb4cdd1644c663a083380f0152b23ce908d8769a0055886"></a>AST_funcDef&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abe2bd2aacf7b70f7a4fb4cdd1644c663afc6d87c591ee94e01ee4c31e3c51e7bf"></a>AST_funcParams&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abe2bd2aacf7b70f7a4fb4cdd1644c663af70e5baff8cd0757b371bbeddc371625"></a>AST_funcParam&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abe2bd2aacf7b70f7a4fb4cdd1644c663ad4d25bd4cdc870a51f49434485e72810"></a>AST_stmt&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abe2bd2aacf7b70f7a4fb4cdd1644c663a7b88777075f22734f4be5f3eecb3d56c"></a>AST_block&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abe2bd2aacf7b70f7a4fb4cdd1644c663adfffa4fb608ec9d6fa45fddbd9d4e033"></a>AST_assignStmt&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abe2bd2aacf7b70f7a4fb4cdd1644c663af931e027a1472ce9cc1fbe730eb90de7"></a>AST_expStmt&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abe2bd2aacf7b70f7a4fb4cdd1644c663a3210434ae7788877c23b86bd89616354"></a>AST_ifStmt&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abe2bd2aacf7b70f7a4fb4cdd1644c663a2e75f2c57eccbf5849d3370f59fc9d95"></a>AST_forStmt&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abe2bd2aacf7b70f7a4fb4cdd1644c663a0db9b3cf58bea34597a3ad1ce70d66d8"></a>AST_whileStmt&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abe2bd2aacf7b70f7a4fb4cdd1644c663a50057aa42ee7095c369370b0997cfe18"></a>AST_breakStmt&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abe2bd2aacf7b70f7a4fb4cdd1644c663ad9e827d4be8db75f543d9ce272856170"></a>AST_continueStmt&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abe2bd2aacf7b70f7a4fb4cdd1644c663a4e13e599238ffed1becd5e025b2e9d4d"></a>AST_returnStmt&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abe2bd2aacf7b70f7a4fb4cdd1644c663a41a31b2b769004a847cbd6a3a69ada2d"></a>AST_exp&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abe2bd2aacf7b70f7a4fb4cdd1644c663a05e80e03cca8cb15a77370f8fe617c3c"></a>AST_cond&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abe2bd2aacf7b70f7a4fb4cdd1644c663aab99a3a3859fa739f1aa627607cd93c8"></a>AST_mulExp&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abe2bd2aacf7b70f7a4fb4cdd1644c663a5ab23ec3d041d7369c930bf9428495f1"></a>AST_addExp&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abe2bd2aacf7b70f7a4fb4cdd1644c663a3a7c63515fe4a57dce400dd45bb293ea"></a>AST_relExp&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abe2bd2aacf7b70f7a4fb4cdd1644c663aacb29d54f3c3e1d40464fde8db9263f7"></a>AST_eqExp&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abe2bd2aacf7b70f7a4fb4cdd1644c663a5816331b53d50c982d92acf4dc732816"></a>AST_lAndExp&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abe2bd2aacf7b70f7a4fb4cdd1644c663ac8ea60719f6e098dc89f7e683a87573a"></a>AST_lOrExp&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abe2bd2aacf7b70f7a4fb4cdd1644c663a154507b24a29d3e7cc237caa4c4277d7"></a>AST_unaryExp&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abe2bd2aacf7b70f7a4fb4cdd1644c663a2dafb87d4b8ace5519280cbead305fd2"></a>AST_binaryExp&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abe2bd2aacf7b70f7a4fb4cdd1644c663ab8faac0f039fba65f79e0439ed7f4519"></a>AST_functCallExp&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abe2bd2aacf7b70f7a4fb4cdd1644c663ae67e3b08a65ca312b7f9f957f753e183"></a>AST_primaryExp&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abe2bd2aacf7b70f7a4fb4cdd1644c663a30513dd3c0f674ce38434a6360a5f99b"></a>AST_lVal&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abe2bd2aacf7b70f7a4fb4cdd1644c663a2e9471e1ac8ade9993a455f7d70fc513"></a>AST_ConditionNumber&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abe2bd2aacf7b70f7a4fb4cdd1644c663a38aaba6d98f978d0983af5d8df9f0c55"></a>AST_Number&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abe2bd2aacf7b70f7a4fb4cdd1644c663ab6e77ab04bfc09a38cd0e2ffc44d481f"></a>AST_EOF&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abe2bd2aacf7b70f7a4fb4cdd1644c663a4163dc6bcc820ad7d3e733b9cbc6b470"></a>AST_Undefined&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a1b0743fe3f9bb5db48968305100a231d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b0743fe3f9bb5db48968305100a231d">&#9670;&nbsp;</a></span>AstNode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sysy::ast::AstNode::AstNode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#abe2bd2aacf7b70f7a4fb4cdd1644c663">AstKind</a>&#160;</td>
+          <td class="paramname"><em>_kind</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6aef8ebd9eeac0e760609d4c9a80ada7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6aef8ebd9eeac0e760609d4c9a80ada7">&#9670;&nbsp;</a></span>~AstNode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual sysy::ast::AstNode::~AstNode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae6fc9cfae4c2ba5f3d68d9f000a0d25f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6fc9cfae4c2ba5f3d68d9f000a0d25f">&#9670;&nbsp;</a></span>addChildren()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sysy::ast::AstNode::addChildren </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html">AstNode</a> *&#160;</td>
+          <td class="paramname"><em>_children</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#aa2bb0264b37d89e3d3cb67372e244d7b">children</a>.</p>
+
+</div>
+</div>
+<a id="a0feb429482d0199a15c3b91763ad3522"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0feb429482d0199a15c3b91763ad3522">&#9670;&nbsp;</a></span>getChildren()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html">AstNode</a>*&gt;&amp; sysy::ast::AstNode::getChildren </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#aa2bb0264b37d89e3d3cb67372e244d7b">children</a>.</p>
+
+</div>
+</div>
+<a id="ac4af9fb93871d8830f46fdfb74597edc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4af9fb93871d8830f46fdfb74597edc">&#9670;&nbsp;</a></span>getKind()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#abe2bd2aacf7b70f7a4fb4cdd1644c663">AstKind</a>&amp; sysy::ast::AstNode::getKind </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#af15de9a273190a8a4f917a395ea4276d">kind</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../da/db4/classsysy_1_1ast_1_1CompUnitNode.html#abef83402695732aa733d443c245fe5d0">sysy::ast::CompUnitNode::classof()</a>, <a class="el" href="../../df/d91/classsysy_1_1ast_1_1FuncDefNode.html#aef2c78fb054d3e20b04338957d3bca70">sysy::ast::FuncDefNode::classof()</a>, <a class="el" href="../../dc/d29/classsysy_1_1ast_1_1FuncParamListNode.html#abafaef6b8231cfd29326807144ddb5fd">sysy::ast::FuncParamListNode::classof()</a>, <a class="el" href="../../d1/dbc/classsysy_1_1ast_1_1FuncParamNode.html#a76bb935b7e4605b19c3fe231f0d0978f">sysy::ast::FuncParamNode::classof()</a>, <a class="el" href="../../df/d9c/classsysy_1_1ast_1_1StmtNode.html#a755f4eb071a344e95dce23b56ec873f4">sysy::ast::StmtNode::classof()</a>, <a class="el" href="../../d0/dea/classsysy_1_1ast_1_1DeclNode.html#a88b69bdda7db798d03f173d26587b574">sysy::ast::DeclNode::classof()</a>, <a class="el" href="../../d0/d76/classsysy_1_1ast_1_1ConstDeclNode.html#a724f72e0d015948ad66c7a9472c08868">sysy::ast::ConstDeclNode::classof()</a>, <a class="el" href="../../d5/d6c/classsysy_1_1ast_1_1VarDeclNode.html#acb6f36c275fe4b54bdf0a8c8deb74b07">sysy::ast::VarDeclNode::classof()</a>, <a class="el" href="../../dc/d95/classsysy_1_1ast_1_1ConstDefNode.html#a3ab6e1ed8abe5c45df45a39fee5d1413">sysy::ast::ConstDefNode::classof()</a>, <a class="el" href="../../db/d1c/classsysy_1_1ast_1_1VarDefNode.html#ab71e1bf219b290317ff6b18a364da4b9">sysy::ast::VarDefNode::classof()</a>, <a class="el" href="../../d4/dff/classsysy_1_1ast_1_1InitValNode.html#ae4be946e2fb71e0d0b7e45ac9235d560">sysy::ast::InitValNode::classof()</a>, <a class="el" href="../../d0/d44/classsysy_1_1ast_1_1AssignStmtNode.html#a1515ea34b2f95dbc39111c280c074e3d">sysy::ast::AssignStmtNode::classof()</a>, <a class="el" href="../../d1/d44/classsysy_1_1ast_1_1ExprStmtNode.html#a01b68dddac64416f6d374d7c7ebc7a63">sysy::ast::ExprStmtNode::classof()</a>, <a class="el" href="../../db/daa/classsysy_1_1ast_1_1IfStmtNode.html#a993421af9c7d76a75c12c0f9ad4357f9">sysy::ast::IfStmtNode::classof()</a>, <a class="el" href="../../dc/daf/classsysy_1_1ast_1_1ForStmtNode.html#a9f052a32d8b7b5f42871bf0ee51598ba">sysy::ast::ForStmtNode::classof()</a>, <a class="el" href="../../d0/dd8/classsysy_1_1ast_1_1WhileStmtNode.html#ae3f93225695069b13a798774289c5f9f">sysy::ast::WhileStmtNode::classof()</a>, <a class="el" href="../../df/d24/classsysy_1_1ast_1_1BreakStmtNode.html#a8c00ea36cd8faccf130b8a2e2353a62c">sysy::ast::BreakStmtNode::classof()</a>, <a class="el" href="../../d4/d1c/classsysy_1_1ast_1_1ContinueStmtNode.html#a8e42bfb6d7ba5d8e378efd6737134ba3">sysy::ast::ContinueStmtNode::classof()</a>, <a class="el" href="../../db/d79/classsysy_1_1ast_1_1ReturnStmtNode.html#a6097c02c5e98cd51c9d4e3338f74a6b0">sysy::ast::ReturnStmtNode::classof()</a>, <a class="el" href="../../d6/de9/classsysy_1_1ast_1_1BlockNode.html#ad0332a96c2930aef452b9121c18b2ff9">sysy::ast::BlockNode::classof()</a>, <a class="el" href="../../db/d27/classsysy_1_1ast_1_1ExprNode.html#ad000ad777f7631b17f0cbe014e075f6a">sysy::ast::ExprNode::classof()</a>, <a class="el" href="../../d1/dd8/classsysy_1_1ast_1_1UnaryExprNode.html#a5feaedc9978ca7e037fd117b27b38459">sysy::ast::UnaryExprNode::classof()</a>, <a class="el" href="../../d5/d6c/classsysy_1_1ast_1_1BinaryExprNode.html#a35bc4d632f09ba3350bf4b524774aa2c">sysy::ast::BinaryExprNode::classof()</a>, <a class="el" href="../../de/d8a/classsysy_1_1ast_1_1FunctionCallExprNode.html#a018f68b9fa551195e63e18cc09fa42b1">sysy::ast::FunctionCallExprNode::classof()</a>, <a class="el" href="../../db/dd6/classsysy_1_1ast_1_1LvalNode.html#a0fef39e8b010fba15e7062ea658c31c3">sysy::ast::LvalNode::classof()</a>, and <a class="el" href="../../d7/dfe/classsysy_1_1ast_1_1NumberNode.html#a31b2ba520abd4cbc13f68c4a38b6b71b">sysy::ast::NumberNode::classof()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d21/classsysy_1_1ast_1_1AstNode_ac4af9fb93871d8830f46fdfb74597edc_icgraph.png" border="0" usemap="#dd/d21/classsysy_1_1ast_1_1AstNode_ac4af9fb93871d8830f46fdfb74597edc_icgraph" alt=""/></div>
+<map name="dd/d21/classsysy_1_1ast_1_1AstNode_ac4af9fb93871d8830f46fdfb74597edc_icgraph" id="dd/d21/classsysy_1_1ast_1_1AstNode_ac4af9fb93871d8830f46fdfb74597edc_icgraph">
+<area shape="rect" title=" " alt="" coords="264,823,407,864"/>
+<area shape="rect" href="../../da/db4/classsysy_1_1ast_1_1CompUnitNode.html#abef83402695732aa733d443c245fe5d0" title="LLVM style RTTI." alt="" coords="17,5,204,47"/>
+<area shape="rect" href="../../df/d91/classsysy_1_1ast_1_1FuncDefNode.html#aef2c78fb054d3e20b04338957d3bca70" title="LLVM style RTTI." alt="" coords="23,71,198,112"/>
+<area shape="rect" href="../../dc/d29/classsysy_1_1ast_1_1FuncParamListNode.html#abafaef6b8231cfd29326807144ddb5fd" title="LLVM style RTTI." alt="" coords="20,136,201,177"/>
+<area shape="rect" href="../../d1/dbc/classsysy_1_1ast_1_1FuncParamNode.html#a76bb935b7e4605b19c3fe231f0d0978f" title="LLVM style RTTI." alt="" coords="15,201,207,243"/>
+<area shape="rect" href="../../df/d9c/classsysy_1_1ast_1_1StmtNode.html#a755f4eb071a344e95dce23b56ec873f4" title="LLVM style RTTI." alt="" coords="35,267,187,308"/>
+<area shape="rect" href="../../d0/dea/classsysy_1_1ast_1_1DeclNode.html#a88b69bdda7db798d03f173d26587b574" title="LLVM style RTTI." alt="" coords="35,332,186,373"/>
+<area shape="rect" href="../../d0/d76/classsysy_1_1ast_1_1ConstDeclNode.html#a724f72e0d015948ad66c7a9472c08868" title="LLVM style RTTI." alt="" coords="17,397,204,439"/>
+<area shape="rect" href="../../d5/d6c/classsysy_1_1ast_1_1VarDeclNode.html#acb6f36c275fe4b54bdf0a8c8deb74b07" title="LLVM style RTTI." alt="" coords="25,463,196,504"/>
+<area shape="rect" href="../../dc/d95/classsysy_1_1ast_1_1ConstDefNode.html#a3ab6e1ed8abe5c45df45a39fee5d1413" title="LLVM style RTTI." alt="" coords="20,528,201,569"/>
+<area shape="rect" href="../../db/d1c/classsysy_1_1ast_1_1VarDefNode.html#ab71e1bf219b290317ff6b18a364da4b9" title="LLVM style RTTI." alt="" coords="28,593,193,635"/>
+<area shape="rect" href="../../d4/dff/classsysy_1_1ast_1_1InitValNode.html#ae4be946e2fb71e0d0b7e45ac9235d560" title="LLVM style RTTI." alt="" coords="29,659,192,700"/>
+<area shape="rect" href="../../d0/d44/classsysy_1_1ast_1_1AssignStmtNode.html#a1515ea34b2f95dbc39111c280c074e3d" title="LLVM style RTTI." alt="" coords="13,724,208,765"/>
+<area shape="rect" href="../../d1/d44/classsysy_1_1ast_1_1ExprStmtNode.html#a01b68dddac64416f6d374d7c7ebc7a63" title="LLVM style RTTI." alt="" coords="20,789,201,831"/>
+<area shape="rect" href="../../db/daa/classsysy_1_1ast_1_1IfStmtNode.html#a993421af9c7d76a75c12c0f9ad4357f9" title="LLVM style RTTI." alt="" coords="30,855,191,896"/>
+<area shape="rect" href="../../dc/daf/classsysy_1_1ast_1_1ForStmtNode.html#a9f052a32d8b7b5f42871bf0ee51598ba" title="LLVM style RTTI." alt="" coords="25,920,197,961"/>
+<area shape="rect" href="../../d0/dd8/classsysy_1_1ast_1_1WhileStmtNode.html#ae3f93225695069b13a798774289c5f9f" title="LLVM style RTTI." alt="" coords="16,985,205,1027"/>
+<area shape="rect" href="../../df/d24/classsysy_1_1ast_1_1BreakStmtNode.html#a8c00ea36cd8faccf130b8a2e2353a62c" title="LLVM style RTTI." alt="" coords="15,1051,206,1092"/>
+<area shape="rect" href="../../d4/d1c/classsysy_1_1ast_1_1ContinueStmtNode.html#a8e42bfb6d7ba5d8e378efd6737134ba3" title="LLVM style RTTI." alt="" coords="5,1116,216,1157"/>
+<area shape="rect" href="../../db/d79/classsysy_1_1ast_1_1ReturnStmtNode.html#a6097c02c5e98cd51c9d4e3338f74a6b0" title="LLVM style RTTI." alt="" coords="13,1181,208,1223"/>
+<area shape="rect" href="../../d6/de9/classsysy_1_1ast_1_1BlockNode.html#ad0332a96c2930aef452b9121c18b2ff9" title="LLVM style RTTI." alt="" coords="32,1247,189,1288"/>
+<area shape="rect" href="../../db/d27/classsysy_1_1ast_1_1ExprNode.html#ad000ad777f7631b17f0cbe014e075f6a" title="LLVM style RTTI." alt="" coords="35,1312,186,1353"/>
+<area shape="rect" href="../../d1/dd8/classsysy_1_1ast_1_1UnaryExprNode.html#a5feaedc9978ca7e037fd117b27b38459" title="LLVM style RTTI." alt="" coords="16,1377,205,1419"/>
+<area shape="rect" href="../../d5/d6c/classsysy_1_1ast_1_1BinaryExprNode.html#a35bc4d632f09ba3350bf4b524774aa2c" title="LLVM style RTTI." alt="" coords="15,1443,207,1484"/>
+<area shape="rect" href="../../de/d8a/classsysy_1_1ast_1_1FunctionCallExprNode.html#a018f68b9fa551195e63e18cc09fa42b1" title=" " alt="" coords="13,1508,209,1549"/>
+<area shape="rect" href="../../db/dd6/classsysy_1_1ast_1_1LvalNode.html#a0fef39e8b010fba15e7062ea658c31c3" title="LLVM style RTTI." alt="" coords="37,1573,185,1615"/>
+<area shape="rect" href="../../d7/dfe/classsysy_1_1ast_1_1NumberNode.html#a31b2ba520abd4cbc13f68c4a38b6b71b" title="LLVM style RTTI." alt="" coords="24,1639,197,1680"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac9a636166be764911f2184b8df38bbbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9a636166be764911f2184b8df38bbbf">&#9670;&nbsp;</a></span>getParent() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html">AstNode</a>* sysy::ast::AstNode::getParent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#a26223629f9f197319eafdac3db9a3b07">parent</a>.</p>
+
+</div>
+</div>
+<a id="a250c5665cab67258c3eff226fd3b80ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a250c5665cab67258c3eff226fd3b80ff">&#9670;&nbsp;</a></span>getParent() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html">AstNode</a>* sysy::ast::AstNode::getParent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#a26223629f9f197319eafdac3db9a3b07">parent</a>.</p>
+
+</div>
+</div>
 <a id="ae15b66e4c214182789b5a8273c47efbb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae15b66e4c214182789b5a8273c47efbb">&#9670;&nbsp;</a></span>getParentFuction()</h2>
 
@@ -252,16 +524,133 @@ std::vector&lt; <a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.htm
 
 </div>
 </div>
+<a id="a198dc689c524ef63d6311d6ba645a34d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a198dc689c524ef63d6311d6ba645a34d">&#9670;&nbsp;</a></span>getSignature()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string sysy::ast::AstNode::getSignature </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="../../d7/dfe/classsysy_1_1ast_1_1NumberNode.html#a444bb4c9570603bbb70261a244b7ecd7">sysy::ast::NumberNode</a>, <a class="el" href="../../db/dd6/classsysy_1_1ast_1_1LvalNode.html#afae5964403ac032faa82cc3775a7ae1b">sysy::ast::LvalNode</a>, <a class="el" href="../../de/d8a/classsysy_1_1ast_1_1FunctionCallExprNode.html#a36c02a344bcd0aa9840b4e3c43427e31">sysy::ast::FunctionCallExprNode</a>, <a class="el" href="../../d5/d6c/classsysy_1_1ast_1_1BinaryExprNode.html#ac8bcdd53c208e11d9c24bdf3f767e966">sysy::ast::BinaryExprNode</a>, <a class="el" href="../../d1/dd8/classsysy_1_1ast_1_1UnaryExprNode.html#a6ec31c8f4d66646b9f47e6553fca0818">sysy::ast::UnaryExprNode</a>, <a class="el" href="../../db/d27/classsysy_1_1ast_1_1ExprNode.html#ad6ff439b5eba9f62d5e51dbe472eb7f4">sysy::ast::ExprNode</a>, <a class="el" href="../../d6/de9/classsysy_1_1ast_1_1BlockNode.html#a2ceb516ae0f6b77784e2b0c501fc0e9c">sysy::ast::BlockNode</a>, <a class="el" href="../../db/d79/classsysy_1_1ast_1_1ReturnStmtNode.html#a22a43e76371f67f609d543154a5feba0">sysy::ast::ReturnStmtNode</a>, <a class="el" href="../../d4/d1c/classsysy_1_1ast_1_1ContinueStmtNode.html#a6af8249a25b79aa467f853b3de9a0d08">sysy::ast::ContinueStmtNode</a>, <a class="el" href="../../df/d24/classsysy_1_1ast_1_1BreakStmtNode.html#af95ee8bfcfa40be948d84142f9e4e2c7">sysy::ast::BreakStmtNode</a>, <a class="el" href="../../d0/dd8/classsysy_1_1ast_1_1WhileStmtNode.html#ad77b99e3ed823aa8b5cf36bdd1c9973b">sysy::ast::WhileStmtNode</a>, <a class="el" href="../../dc/daf/classsysy_1_1ast_1_1ForStmtNode.html#a18bbed26af36d67a3a38d17bdfd2210c">sysy::ast::ForStmtNode</a>, <a class="el" href="../../db/daa/classsysy_1_1ast_1_1IfStmtNode.html#a6e6afb9b55f8382cbfdf668e6459d567">sysy::ast::IfStmtNode</a>, <a class="el" href="../../d1/d44/classsysy_1_1ast_1_1ExprStmtNode.html#a29943e64a35f7ac35934f36562b6fe88">sysy::ast::ExprStmtNode</a>, <a class="el" href="../../d0/d44/classsysy_1_1ast_1_1AssignStmtNode.html#a02dad349a32f5ffce48f2a2d7b2081b9">sysy::ast::AssignStmtNode</a>, <a class="el" href="../../d4/dff/classsysy_1_1ast_1_1InitValNode.html#a9bb889f8ed9ced3710efc5590edb69be">sysy::ast::InitValNode</a>, <a class="el" href="../../db/d1c/classsysy_1_1ast_1_1VarDefNode.html#ac8a397a4bfe62063c7d26c16053625ad">sysy::ast::VarDefNode</a>, <a class="el" href="../../dc/d95/classsysy_1_1ast_1_1ConstDefNode.html#a7013fe3afce1ea2657f7d56129ea5225">sysy::ast::ConstDefNode</a>, <a class="el" href="../../d5/d6c/classsysy_1_1ast_1_1VarDeclNode.html#a15a87b0d7d12f5d5746ad50de1be7881">sysy::ast::VarDeclNode</a>, <a class="el" href="../../d0/d76/classsysy_1_1ast_1_1ConstDeclNode.html#a73bb9959d538b610daf13931a5aee654">sysy::ast::ConstDeclNode</a>, <a class="el" href="../../d0/dea/classsysy_1_1ast_1_1DeclNode.html#a4b55cfc07239867affb1bf4c3a2a5bfc">sysy::ast::DeclNode</a>, <a class="el" href="../../df/d9c/classsysy_1_1ast_1_1StmtNode.html#a28818451d1b3db004f61d426b657cbb7">sysy::ast::StmtNode</a>, <a class="el" href="../../d1/dbc/classsysy_1_1ast_1_1FuncParamNode.html#adfb89adf170d583840b6b0b577496096">sysy::ast::FuncParamNode</a>, <a class="el" href="../../dc/d29/classsysy_1_1ast_1_1FuncParamListNode.html#a92f74986c1f635fb00e41030adf8a1db">sysy::ast::FuncParamListNode</a>, <a class="el" href="../../df/d91/classsysy_1_1ast_1_1FuncDefNode.html#a29de8b1ff002eee33a98614e0245fcdc">sysy::ast::FuncDefNode</a>, and <a class="el" href="../../da/db4/classsysy_1_1ast_1_1CompUnitNode.html#a0c4351896566cc84420aa1ed00aad521">sysy::ast::CompUnitNode</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d5/de3/namespacesysy_1_1ast.html#a98199a982592d6426be494b25b16ec6f">sysy::ast::dump()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d21/classsysy_1_1ast_1_1AstNode_a198dc689c524ef63d6311d6ba645a34d_icgraph.png" border="0" usemap="#dd/d21/classsysy_1_1ast_1_1AstNode_a198dc689c524ef63d6311d6ba645a34d_icgraph" alt=""/></div>
+<map name="dd/d21/classsysy_1_1ast_1_1AstNode_a198dc689c524ef63d6311d6ba645a34d_icgraph" id="dd/d21/classsysy_1_1ast_1_1AstNode_a198dc689c524ef63d6311d6ba645a34d_icgraph">
+<area shape="rect" title=" " alt="" coords="476,5,619,47"/>
+<area shape="rect" href="../../d5/de3/namespacesysy_1_1ast.html#a98199a982592d6426be494b25b16ec6f" title=" " alt="" coords="304,13,428,39"/>
+<area shape="rect" href="../../dd/d20/namespacesysy.html#ac031d4fc7b9f45e50ecee68a68a33f9d" title=" " alt="" coords="108,13,256,39"/>
+<area shape="rect" href="../../d4/d0b/compiler_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,13,60,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af174a101bdeb27eb2a9c2b42d697415d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af174a101bdeb27eb2a9c2b42d697415d">&#9670;&nbsp;</a></span>setParent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sysy::ast::AstNode::setParent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html">AstNode</a> *&#160;</td>
+          <td class="paramname"><em>_parent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#a26223629f9f197319eafdac3db9a3b07">parent</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="aa2bb0264b37d89e3d3cb67372e244d7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2bb0264b37d89e3d3cb67372e244d7b">&#9670;&nbsp;</a></span>children</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html">AstNode</a>*&gt; sysy::ast::AstNode::children</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#ae6fc9cfae4c2ba5f3d68d9f000a0d25f">addChildren()</a>, and <a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#a0feb429482d0199a15c3b91763ad3522">getChildren()</a>.</p>
+
+</div>
+</div>
+<a id="af15de9a273190a8a4f917a395ea4276d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af15de9a273190a8a4f917a395ea4276d">&#9670;&nbsp;</a></span>kind</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#abe2bd2aacf7b70f7a4fb4cdd1644c663">AstKind</a> sysy::ast::AstNode::kind</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#ac4af9fb93871d8830f46fdfb74597edc">getKind()</a>, and <a class="el" href="../../db/d27/classsysy_1_1ast_1_1ExprNode.html#a8824e5076000dd372eb0b381d124fd57">sysy::ast::ExprNode::ready()</a>.</p>
+
+</div>
+</div>
+<a id="a26223629f9f197319eafdac3db9a3b07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26223629f9f197319eafdac3db9a3b07">&#9670;&nbsp;</a></span>parent</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html">AstNode</a>* sysy::ast::AstNode::parent</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#a250c5665cab67258c3eff226fd3b80ff">getParent()</a>, and <a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html#af174a101bdeb27eb2a9c2b42d697415d">setParent()</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>include/sysy/Frontend/<a class="el" href="../../d5/d39/Ast_8h_source.html">Ast.h</a></li>
-<li>lib/Frontend/Ast.cpp</li>
+<li>lib/Frontend/<a class="el" href="../../d1/d17/Ast_8cpp.html">Ast.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>sysy</b></li><li class="navelem"><b>ast</b></li><li class="navelem"><a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html">AstNode</a></li>
+    <li class="navelem"><a class="el" href="../../dd/d20/namespacesysy.html">sysy</a></li><li class="navelem"><a class="el" href="../../d5/de3/namespacesysy_1_1ast.html">ast</a></li><li class="navelem"><a class="el" href="../../dd/d21/classsysy_1_1ast_1_1AstNode.html">AstNode</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

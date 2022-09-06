@@ -1,5 +1,7 @@
 var classsysy_1_1ir_1_1GVInfo =
 [
+    [ "cmpl", "d0/db2/structsysy_1_1ir_1_1GVInfo_1_1cmpl.html", "d0/db2/structsysy_1_1ir_1_1GVInfo_1_1cmpl" ],
+    [ "cmps", "d7/d78/structsysy_1_1ir_1_1GVInfo_1_1cmps.html", "d7/d78/structsysy_1_1ir_1_1GVInfo_1_1cmps" ],
     [ "iterator", "db/d6d/classsysy_1_1ir_1_1GVInfo.html#ae9e59f1bc7c1bbfb1b491fd8dcc3bb12", null ],
     [ "get", "db/d6d/classsysy_1_1ir_1_1GVInfo.html#a573244d81f91593a0e3ebe17fbd4caa4", null ],
     [ "getBlock", "db/d6d/classsysy_1_1ir_1_1GVInfo.html#a32e488f79fea2fc5df559b59767acdae", null ],
@@ -13,5 +15,12 @@ var classsysy_1_1ir_1_1GVInfo =
     [ "setLoadPhi", "db/d6d/classsysy_1_1ir_1_1GVInfo.html#a2130496353fb065a0a757f5ff9fb7a51", null ],
     [ "setStorePhi", "db/d6d/classsysy_1_1ir_1_1GVInfo.html#a3f5b98d67e09238c7d6b942b47d6792b", null ],
     [ "storephiSize", "db/d6d/classsysy_1_1ir_1_1GVInfo.html#a0f9a5bda95988c589382279507dac6e1", null ],
-    [ "storeSize", "db/d6d/classsysy_1_1ir_1_1GVInfo.html#a1caaa15d300479666fc7bbd8be54d71b", null ]
+    [ "storeSize", "db/d6d/classsysy_1_1ir_1_1GVInfo.html#a1caaa15d300479666fc7bbd8be54d71b", null ],
+    [ "block", "db/d6d/classsysy_1_1ir_1_1GVInfo.html#a825283d2be00c43bb504366d19577fd6", null ],
+    [ "defBlocks", "db/d6d/classsysy_1_1ir_1_1GVInfo.html#a031aae837c8adf2cdc5aa29094921fa4", null ],
+    [ "load", "db/d6d/classsysy_1_1ir_1_1GVInfo.html#a80870b2086d71806ba97978b490acce7", null ],
+    [ "loadPhi", "db/d6d/classsysy_1_1ir_1_1GVInfo.html#aa77c4cc644ffbab34202a3bbd9b8a9cf", null ],
+    [ "store", "db/d6d/classsysy_1_1ir_1_1GVInfo.html#afd7eac68ae0f9c9bd6be29dd09d39b75", null ],
+    [ "storePhi", "db/d6d/classsysy_1_1ir_1_1GVInfo.html#a08da7d9ba115211e2188732f93a0dbc8", null ],
+    [ "useBlocks", "db/d6d/classsysy_1_1ir_1_1GVInfo.html#a7875328d0fbe9a8a0cfb2cd8fa1a798d", null ]
 ];

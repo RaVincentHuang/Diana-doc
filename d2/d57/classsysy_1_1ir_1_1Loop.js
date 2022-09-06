@@ -32,5 +32,21 @@ var classsysy_1_1ir_1_1Loop =
     [ "setParentLoop", "d2/d57/classsysy_1_1ir_1_1Loop.html#a3753161c201c78ceda2ec9524e1fa2bc", null ],
     [ "setPreHeader", "d2/d57/classsysy_1_1ir_1_1Loop.html#a343fa82d057c7e0cc746359b11b43289", null ],
     [ "setTripCount", "d2/d57/classsysy_1_1ir_1_1Loop.html#a64a403dac834e45bc1d12c4c43ae06cd", null ],
-    [ "BBSet", "d2/d57/classsysy_1_1ir_1_1Loop.html#a8310e83e0492a34505062f26499edc09", null ]
+    [ "BBSet", "d2/d57/classsysy_1_1ir_1_1Loop.html#a8310e83e0492a34505062f26499edc09", null ],
+    [ "blocks", "d2/d57/classsysy_1_1ir_1_1Loop.html#a55f69c474a025ffa599617c4bf3b2829", null ],
+    [ "exitBlocks", "d2/d57/classsysy_1_1ir_1_1Loop.html#a3e35418e49807ec3bf234040a527f7e9", null ],
+    [ "exitingBlocks", "d2/d57/classsysy_1_1ir_1_1Loop.html#ad85e03b7367a6519172edb07aed940c0", null ],
+    [ "icmpKind", "d2/d57/classsysy_1_1ir_1_1Loop.html#a063be6794435c2a94286433d3f1debf0", null ],
+    [ "indCondVar", "d2/d57/classsysy_1_1ir_1_1Loop.html#a333b612ff477443006872a432c0002f4", null ],
+    [ "indEnd", "d2/d57/classsysy_1_1ir_1_1Loop.html#ac31e4c96b871ade92e48fd0ddc90d124", null ],
+    [ "indPhi", "d2/d57/classsysy_1_1ir_1_1Loop.html#ad818c2812e5e10118f22b2026525f067", null ],
+    [ "latchBlock", "d2/d57/classsysy_1_1ir_1_1Loop.html#a9eca2286fd80e284762832ab0434962d", null ],
+    [ "loopDepth", "d2/d57/classsysy_1_1ir_1_1Loop.html#a8d3677e3c83ae973d9c80b6ec2e307c0", null ],
+    [ "loopHeader", "d2/d57/classsysy_1_1ir_1_1Loop.html#ac84616861c283569f1a456b47e9946b4", null ],
+    [ "parent", "d2/d57/classsysy_1_1ir_1_1Loop.html#a79880ddf39ef47794adebcc961ed1c66", null ],
+    [ "parentLoop", "d2/d57/classsysy_1_1ir_1_1Loop.html#a086e482545ac0e29e61596849af2f68a", null ],
+    [ "preHeader", "d2/d57/classsysy_1_1ir_1_1Loop.html#a3f170bcef0f5a2d93edacfd2cd0be29a", null ],
+    [ "SCEVCheck", "d2/d57/classsysy_1_1ir_1_1Loop.html#ac752bd9db587de7e3b75cda9ab83c703", null ],
+    [ "subLoops", "d2/d57/classsysy_1_1ir_1_1Loop.html#a38329b8e4c36921c8057c1ca6e7a5f44", null ],
+    [ "tripCount", "d2/d57/classsysy_1_1ir_1_1Loop.html#a0c1da1d1380a94d780023ec60a27858e", null ]
 ];

@@ -1,0 +1,12 @@
+<map id="sysy::ir::Loop::getLatchBlock" name="sysy::ir::Loop::getLatchBlock">
+<area shape="rect" id="node1" title=" " alt="" coords="728,86,899,127"/>
+<area shape="rect" id="node2" href="$db/d19/classsysy_1_1ir_1_1LSR.html#ae6969b06d0dd559112fc725842d5b370" title=" " alt="" coords="472,5,680,32"/>
+<area shape="rect" id="node5" href="$d4/d00/classsysy_1_1ir_1_1IRCopier.html#a419dd40c19a74d2cb6737cc845039487" title=" " alt="" coords="511,57,641,98"/>
+<area shape="rect" id="node6" href="$dd/d17/classsysy_1_1ir_1_1LoopUnrollAll.html#a9489d80bcdc9d07f8dc596a55ad5d3c0" title=" " alt="" coords="253,82,416,123"/>
+<area shape="rect" id="node8" href="$d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#a7e8596f47e5439f678ac43d46e853a24" title=" " alt="" coords="499,174,653,215"/>
+<area shape="rect" id="node3" href="$db/d19/classsysy_1_1ir_1_1LSR.html#a81e424a516f27acd1c75fd22c1b9b4ca" title=" " alt="" coords="245,5,424,32"/>
+<area shape="rect" id="node4" href="$db/d19/classsysy_1_1ir_1_1LSR.html#a01589b57af10a7b0e6362613a50d7a5b" title=" " alt="" coords="37,5,166,32"/>
+<area shape="rect" id="node7" href="$dd/d17/classsysy_1_1ir_1_1LoopUnrollAll.html#ae4c6c5cd1f56cc3264dc72649fb1809c" title=" " alt="" coords="5,89,197,116"/>
+<area shape="rect" id="node9" href="$d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#aec3eb4fc816d226921d5885959c7c789" title=" " alt="" coords="257,174,412,215"/>
+<area shape="rect" id="node10" href="$d3/d4a/classsysy_1_1ir_1_1LoopParallel.html#aee3a0e1625a7f3f75fde8ce2d24fa603" title=" " alt="" coords="9,181,193,208"/>
+</map>

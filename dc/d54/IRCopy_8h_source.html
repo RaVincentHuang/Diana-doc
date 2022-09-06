@@ -86,13 +86,13 @@ $(document).ready(function(){initNavTree('dc/d54/IRCopy_8h_source.html','../../'
 <div class="title">IRCopy.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SYSY_IR_IRCOPY_H</span></div>
+<a href="../../dc/d54/IRCopy_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SYSY_IR_IRCOPY_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define SYSY_IR_IRCOPY_H</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;sysy/IR/Instructions.h&quot;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;sysy/IR/Loop.h&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d9/dd5/Instructions_8h.html">sysy/IR/Instructions.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../db/d9e/Loop_8h.html">sysy/IR/Loop.h</a>&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;functional&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>sysy</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../dd/d20/namespacesysy.html">sysy</a></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>ir</div>
@@ -101,12 +101,12 @@ $(document).ready(function(){initNavTree('dc/d54/IRCopy_8h_source.html','../../'
 <div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="../../d4/d00/classsysy_1_1ir_1_1IRCopier.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d4/d00/classsysy_1_1ir_1_1IRCopier.html">IRCopier</a></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    std::unordered_map&lt;Value*, Value*&gt; ValueCopy;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="../../d4/d00/classsysy_1_1ir_1_1IRCopier.html#acff15e036297192d530b121f250544b9">   16</a></span>&#160;    std::unordered_map&lt;Value*, Value*&gt; <a class="code" href="../../d4/d00/classsysy_1_1ir_1_1IRCopier.html#acff15e036297192d530b121f250544b9">ValueCopy</a>;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="../../d4/d36/classsysy_1_1ir_1_1Function.html">Function</a>* getFunctionCopy(<a class="code" href="../../d4/d36/classsysy_1_1ir_1_1Function.html">Function</a>* func);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html">Loop</a>* getLoopCopy(<a class="code" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html">Loop</a>* loop, std::unordered_map&lt;Value*, Value*&gt;&amp; LoopValueCpy, </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="../../d4/d36/classsysy_1_1ir_1_1Function.html">Function</a>* <a class="code" href="../../d4/d00/classsysy_1_1ir_1_1IRCopier.html#a18af20192f2d6062d84869ac6faf1d5e">getFunctionCopy</a>(<a class="code" href="../../d4/d36/classsysy_1_1ir_1_1Function.html">Function</a>* func);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html">Loop</a>* <a class="code" href="../../d4/d00/classsysy_1_1ir_1_1IRCopier.html#a419dd40c19a74d2cb6737cc845039487">getLoopCopy</a>(<a class="code" href="../../d2/d57/classsysy_1_1ir_1_1Loop.html">Loop</a>* loop, std::unordered_map&lt;Value*, Value*&gt;&amp; LoopValueCpy, </div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                        std::unordered_map&lt;PhiInst*, Value*&gt;&amp; CurrentIncomingValue);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">static</span> <a class="code" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a>* getCopyOfInstruction(<a class="code" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a>* instr, std::function&lt;<a class="code" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a>*(<a class="code" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a>*)&gt; findValue);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">static</span> <a class="code" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a>* <a class="code" href="../../d4/d00/classsysy_1_1ir_1_1IRCopier.html#a78c9a2189587cfca19a23017b0987152">getCopyOfInstruction</a>(<a class="code" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a>* instr, std::function&lt;<a class="code" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a>*(<a class="code" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">Value</a>*)&gt; findValue);</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;};</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;} <span class="comment">// namespace ir</span></div>
@@ -119,15 +119,22 @@ $(document).ready(function(){initNavTree('dc/d54/IRCopy_8h_source.html','../../'
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclasssysy_1_1ir_1_1IRCopier_html_a419dd40c19a74d2cb6737cc845039487"><div class="ttname"><a href="../../d4/d00/classsysy_1_1ir_1_1IRCopier.html#a419dd40c19a74d2cb6737cc845039487">sysy::ir::IRCopier::getLoopCopy</a></div><div class="ttdeci">Loop * getLoopCopy(Loop *loop, std::unordered_map&lt; Value *, Value * &gt; &amp;LoopValueCpy, std::unordered_map&lt; PhiInst *, Value * &gt; &amp;CurrentIncomingValue)</div><div class="ttdef"><b>Definition:</b> IRCopy.cpp:86</div></div>
+<div class="ttc" id="aclasssysy_1_1ir_1_1IRCopier_html_acff15e036297192d530b121f250544b9"><div class="ttname"><a href="../../d4/d00/classsysy_1_1ir_1_1IRCopier.html#acff15e036297192d530b121f250544b9">sysy::ir::IRCopier::ValueCopy</a></div><div class="ttdeci">std::unordered_map&lt; Value *, Value * &gt; ValueCopy</div><div class="ttdef"><b>Definition:</b> IRCopy.h:16</div></div>
 <div class="ttc" id="aclasssysy_1_1ir_1_1Loop_html"><div class="ttname"><a href="../../d2/d57/classsysy_1_1ir_1_1Loop.html">sysy::ir::Loop</a></div><div class="ttdef"><b>Definition:</b> Loop.h:51</div></div>
 <div class="ttc" id="aclasssysy_1_1ir_1_1Function_html"><div class="ttname"><a href="../../d4/d36/classsysy_1_1ir_1_1Function.html">sysy::ir::Function</a></div><div class="ttdef"><b>Definition:</b> Function.h:19</div></div>
 <div class="ttc" id="aclasssysy_1_1ir_1_1Value_html"><div class="ttname"><a href="../../d9/d9f/classsysy_1_1ir_1_1Value.html">sysy::ir::Value</a></div><div class="ttdef"><b>Definition:</b> Value.h:17</div></div>
 <div class="ttc" id="aclasssysy_1_1ir_1_1Instruction_html"><div class="ttname"><a href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">sysy::ir::Instruction</a></div><div class="ttdef"><b>Definition:</b> Instruction.h:13</div></div>
+<div class="ttc" id="anamespacesysy_html"><div class="ttname"><a href="../../dd/d20/namespacesysy.html">sysy</a></div><div class="ttdef"><b>Definition:</b> AliasAnalysis.h:6</div></div>
 <div class="ttc" id="aclasssysy_1_1ir_1_1IRCopier_html"><div class="ttname"><a href="../../d4/d00/classsysy_1_1ir_1_1IRCopier.html">sysy::ir::IRCopier</a></div><div class="ttdef"><b>Definition:</b> IRCopy.h:13</div></div>
+<div class="ttc" id="aLoop_8h_html"><div class="ttname"><a href="../../db/d9e/Loop_8h.html">Loop.h</a></div></div>
+<div class="ttc" id="aInstructions_8h_html"><div class="ttname"><a href="../../d9/dd5/Instructions_8h.html">Instructions.h</a></div></div>
+<div class="ttc" id="aclasssysy_1_1ir_1_1IRCopier_html_a18af20192f2d6062d84869ac6faf1d5e"><div class="ttname"><a href="../../d4/d00/classsysy_1_1ir_1_1IRCopier.html#a18af20192f2d6062d84869ac6faf1d5e">sysy::ir::IRCopier::getFunctionCopy</a></div><div class="ttdeci">Function * getFunctionCopy(Function *func)</div><div class="ttdef"><b>Definition:</b> IRCopy.cpp:15</div></div>
+<div class="ttc" id="aclasssysy_1_1ir_1_1IRCopier_html_a78c9a2189587cfca19a23017b0987152"><div class="ttname"><a href="../../d4/d00/classsysy_1_1ir_1_1IRCopier.html#a78c9a2189587cfca19a23017b0987152">sysy::ir::IRCopier::getCopyOfInstruction</a></div><div class="ttdeci">static Instruction * getCopyOfInstruction(Instruction *instr, std::function&lt; Value *(Value *)&gt; findValue)</div><div class="ttdef"><b>Definition:</b> IRCopy.cpp:215</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_b87821115ea3cf61d61e0bb4a6051ac5.html">sysy</a></li><li class="navelem"><a class="el" href="../../dir_1c3366d0a44913ff706e9351dc86a081.html">IR</a></li><li class="navelem"><b>IRCopy.h</b></li>
+    <li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_b87821115ea3cf61d61e0bb4a6051ac5.html">sysy</a></li><li class="navelem"><a class="el" href="../../dir_1c3366d0a44913ff706e9351dc86a081.html">IR</a></li><li class="navelem"><a class="el" href="../../dc/d54/IRCopy_8h.html">IRCopy.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

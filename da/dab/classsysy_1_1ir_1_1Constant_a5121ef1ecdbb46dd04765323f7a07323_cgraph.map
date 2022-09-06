@@ -1,0 +1,17 @@
+<map id="sysy::ir::Constant::getZero" name="sysy::ir::Constant::getZero">
+<area shape="rect" id="node1" title=" " alt="" coords="5,165,140,207"/>
+<area shape="rect" id="node2" href="$dc/d75/classsysy_1_1ir_1_1ConstantInt.html#a1b77553261b7ac4d5e4806530385ac93" title=" " alt="" coords="205,5,356,47"/>
+<area shape="rect" id="node5" href="$d0/ddd/classsysy_1_1ir_1_1ConstantFP.html#a030df1bfc682b489cfdf43911e04ffaa" title=" " alt="" coords="205,71,356,112"/>
+<area shape="rect" id="node8" href="$d7/d34/classsysy_1_1ir_1_1ConstantArray.html#a687d4b5a585ba6bbf4f831673383bb59" title=" " alt="" coords="196,136,365,177"/>
+<area shape="rect" id="node12" href="$d7/d1e/classsysy_1_1ir_1_1Type.html#a9ea1bc2d05e0bd653c841f8d4b5c50bb" title=" " alt="" coords="193,202,368,229"/>
+<area shape="rect" id="node14" href="$d7/d1e/classsysy_1_1ir_1_1Type.html#ae9b2a92a444f0581a009b8dd6681e73d" title=" " alt="" coords="195,253,367,279"/>
+<area shape="rect" id="node15" href="$d7/d1e/classsysy_1_1ir_1_1Type.html#ab51ef9921f2598908a291b4146dc047a" title=" " alt="" coords="188,303,373,330"/>
+<area shape="rect" id="node3" href="$dc/d75/classsysy_1_1ir_1_1ConstantInt.html#ab879fa5399f2ecc1a3937f137b44e4b7" title=" " alt="" coords="430,13,610,39"/>
+<area shape="rect" id="node4" href="$dc/d75/classsysy_1_1ir_1_1ConstantInt.html#a3fc70f0b683fcaaf933de031d132e99e" title=" " alt="" coords="676,5,827,47"/>
+<area shape="rect" id="node6" href="$d0/ddd/classsysy_1_1ir_1_1ConstantFP.html#a220c527175a83958ccef9427270b17ae" title=" " alt="" coords="431,78,609,105"/>
+<area shape="rect" id="node7" href="$d0/ddd/classsysy_1_1ir_1_1ConstantFP.html#a2a7ce2c356b51597f0a4e1a9757776e9" title=" " alt="" coords="676,71,827,112"/>
+<area shape="rect" id="node9" href="$d7/d34/classsysy_1_1ir_1_1ConstantArray.html#a26efb127df21176e4ea3e77f3d00abc7" title=" " alt="" coords="421,139,619,166"/>
+<area shape="rect" id="node11" href="$da/dab/classsysy_1_1ir_1_1Constant.html#a30a23d1559d7d51239aff8b7f914a677" title=" " alt="" coords="453,191,587,232"/>
+<area shape="rect" id="node10" href="$d7/d34/classsysy_1_1ir_1_1ConstantArray.html#a88813cf88e3340df13cbc32a95bb9010" title=" " alt="" coords="667,136,836,177"/>
+<area shape="rect" id="node13" href="$d7/d1e/classsysy_1_1ir_1_1Type.html#a598caaaf9c6a7a7e9de2d890dd2d1413" title=" " alt="" coords="431,257,609,283"/>
+</map>

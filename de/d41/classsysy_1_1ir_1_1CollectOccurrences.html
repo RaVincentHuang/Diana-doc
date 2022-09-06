@@ -85,61 +85,552 @@ $(document).ready(function(){initNavTree('de/d41/classsysy_1_1ir_1_1CollectOccur
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="../../df/df4/classsysy_1_1ir_1_1CollectOccurrences-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">sysy::ir::CollectOccurrences Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="../../dd/d41/PRE_8h_source.html">PRE.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for sysy::ir::CollectOccurrences:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d19/classsysy_1_1ir_1_1CollectOccurrences__coll__graph.png" border="0" usemap="#sysy_1_1ir_1_1CollectOccurrences_coll__map" alt="Collaboration graph"/></div>
+<map name="sysy_1_1ir_1_1CollectOccurrences_coll__map" id="sysy_1_1ir_1_1CollectOccurrences_coll__map">
+<area shape="rect" title=" " alt="" coords="10,365,211,392"/>
+<area shape="rect" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html" title=" " alt="" coords="38,276,183,303"/>
+<area shape="rect" href="../../d9/d1a/classsysy_1_1ir_1_1User.html" title=" " alt="" coords="5,185,112,212"/>
+<area shape="rect" href="../../d9/d9f/classsysy_1_1ir_1_1Value.html" title=" " alt="" coords="259,95,371,121"/>
+<area shape="rect" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html" title=" " alt="" coords="136,185,283,212"/>
+<area shape="rect" href="../../d4/d36/classsysy_1_1ir_1_1Function.html" title=" " alt="" coords="292,276,423,303"/>
+<area shape="rect" href="../../d7/d1e/classsysy_1_1ir_1_1Type.html" title=" " alt="" coords="340,5,447,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1a7b1813eb77c0748da0ef09a81b0f0c"><td class="memItemLeft" align="right" valign="top"><a id="a1a7b1813eb77c0748da0ef09a81b0f0c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CollectOccurrences</b> (<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a> *key)</td></tr>
+<tr class="memitem:a1a7b1813eb77c0748da0ef09a81b0f0c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d41/classsysy_1_1ir_1_1CollectOccurrences.html#a1a7b1813eb77c0748da0ef09a81b0f0c">CollectOccurrences</a> (<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a> *key)</td></tr>
 <tr class="separator:a1a7b1813eb77c0748da0ef09a81b0f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0db54493aa3aa940b6a233a62d24fc6b"><td class="memItemLeft" align="right" valign="top"><a id="a0db54493aa3aa940b6a233a62d24fc6b"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isSameExpr</b> (<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a> *expr)</td></tr>
+<tr class="memitem:a0db54493aa3aa940b6a233a62d24fc6b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d41/classsysy_1_1ir_1_1CollectOccurrences.html#a0db54493aa3aa940b6a233a62d24fc6b">isSameExpr</a> (<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a> *expr)</td></tr>
 <tr class="separator:a0db54493aa3aa940b6a233a62d24fc6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad637d5460318e0978a26bcfa92c5ee1b"><td class="memItemLeft" align="right" valign="top"><a id="ad637d5460318e0978a26bcfa92c5ee1b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>addExpr</b> (<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a> *instr)</td></tr>
+<tr class="memitem:ad637d5460318e0978a26bcfa92c5ee1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d41/classsysy_1_1ir_1_1CollectOccurrences.html#ad637d5460318e0978a26bcfa92c5ee1b">addExpr</a> (<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a> *instr)</td></tr>
 <tr class="separator:ad637d5460318e0978a26bcfa92c5ee1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab845fb9b313defd2156e85404ad26df5"><td class="memItemLeft" align="right" valign="top"><a id="ab845fb9b313defd2156e85404ad26df5"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>phiSize</b> ()</td></tr>
+<tr class="memitem:ab845fb9b313defd2156e85404ad26df5"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d41/classsysy_1_1ir_1_1CollectOccurrences.html#ab845fb9b313defd2156e85404ad26df5">phiSize</a> ()</td></tr>
 <tr class="separator:ab845fb9b313defd2156e85404ad26df5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea54665b67444a8dc5f3d411592afb87"><td class="memItemLeft" align="right" valign="top"><a id="aea54665b67444a8dc5f3d411592afb87"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>addPhi</b> (<a class="el" href="../../db/d14/classsysy_1_1ir_1_1PhiOccurrence.html">PhiOccurrence</a> *phi, <a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *bb)</td></tr>
+<tr class="memitem:aea54665b67444a8dc5f3d411592afb87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d41/classsysy_1_1ir_1_1CollectOccurrences.html#aea54665b67444a8dc5f3d411592afb87">addPhi</a> (<a class="el" href="../../db/d14/classsysy_1_1ir_1_1PhiOccurrence.html">PhiOccurrence</a> *phi, <a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *bb)</td></tr>
 <tr class="separator:aea54665b67444a8dc5f3d411592afb87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97d166b822c007700d368aadcfd60b8a"><td class="memItemLeft" align="right" valign="top"><a id="a97d166b822c007700d368aadcfd60b8a"></a>
-<a class="el" href="../../db/d14/classsysy_1_1ir_1_1PhiOccurrence.html">PhiOccurrence</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getPhi</b> (<a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *bb)</td></tr>
+<tr class="memitem:a97d166b822c007700d368aadcfd60b8a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d14/classsysy_1_1ir_1_1PhiOccurrence.html">PhiOccurrence</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d41/classsysy_1_1ir_1_1CollectOccurrences.html#a97d166b822c007700d368aadcfd60b8a">getPhi</a> (<a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *bb)</td></tr>
 <tr class="separator:a97d166b822c007700d368aadcfd60b8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad02e32106bc2bfb04c659c2a7fc79181"><td class="memItemLeft" align="right" valign="top"><a id="ad02e32106bc2bfb04c659c2a7fc79181"></a>
-std::vector&lt; <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getExprFromBB</b> (<a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *bb)</td></tr>
+<tr class="memitem:ad02e32106bc2bfb04c659c2a7fc79181"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d41/classsysy_1_1ir_1_1CollectOccurrences.html#ad02e32106bc2bfb04c659c2a7fc79181">getExprFromBB</a> (<a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *bb)</td></tr>
 <tr class="separator:ad02e32106bc2bfb04c659c2a7fc79181"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adcdf51307859a1ac3791311e52631ec7"><td class="memItemLeft" align="right" valign="top"><a id="adcdf51307859a1ac3791311e52631ec7"></a>
-std::unordered_set&lt; <a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getRealOccurrencesBB</b> ()</td></tr>
+<tr class="memitem:adcdf51307859a1ac3791311e52631ec7"><td class="memItemLeft" align="right" valign="top">std::unordered_set&lt; <a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d41/classsysy_1_1ir_1_1CollectOccurrences.html#adcdf51307859a1ac3791311e52631ec7">getRealOccurrencesBB</a> ()</td></tr>
 <tr class="separator:adcdf51307859a1ac3791311e52631ec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f2cef9e31ed692ec4b0e16314c5f31e"><td class="memItemLeft" align="right" valign="top"><a id="a3f2cef9e31ed692ec4b0e16314c5f31e"></a>
-std::unordered_set&lt; <a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getPhiBB</b> ()</td></tr>
+<tr class="memitem:a3f2cef9e31ed692ec4b0e16314c5f31e"><td class="memItemLeft" align="right" valign="top">std::unordered_set&lt; <a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d41/classsysy_1_1ir_1_1CollectOccurrences.html#a3f2cef9e31ed692ec4b0e16314c5f31e">getPhiBB</a> ()</td></tr>
 <tr class="separator:a3f2cef9e31ed692ec4b0e16314c5f31e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a075c1351cb6f79897337bb35f6506064"><td class="memItemLeft" align="right" valign="top"><a id="a075c1351cb6f79897337bb35f6506064"></a>
-std::unordered_map&lt; <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a> *, <a class="el" href="../../d2/d98/classsysy_1_1ir_1_1Occurrence.html">Occurrence</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>occurrenceName</b></td></tr>
+<tr class="memitem:a075c1351cb6f79897337bb35f6506064"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a> *, <a class="el" href="../../d2/d98/classsysy_1_1ir_1_1Occurrence.html">Occurrence</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d41/classsysy_1_1ir_1_1CollectOccurrences.html#a075c1351cb6f79897337bb35f6506064">occurrenceName</a></td></tr>
 <tr class="separator:a075c1351cb6f79897337bb35f6506064"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab005e96e92d67703822d54b492c640c0"><td class="memItemLeft" align="right" valign="top"><a id="ab005e96e92d67703822d54b492c640c0"></a>
-std::unordered_set&lt; <a class="el" href="../../d2/d98/classsysy_1_1ir_1_1Occurrence.html">Occurrence</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>allClasses</b></td></tr>
+<tr class="memitem:ab005e96e92d67703822d54b492c640c0"><td class="memItemLeft" align="right" valign="top">std::unordered_set&lt; <a class="el" href="../../d2/d98/classsysy_1_1ir_1_1Occurrence.html">Occurrence</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d41/classsysy_1_1ir_1_1CollectOccurrences.html#ab005e96e92d67703822d54b492c640c0">allClasses</a></td></tr>
 <tr class="separator:ab005e96e92d67703822d54b492c640c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:aeb2cd0d7bdd368607c4d3338ffe968cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d41/classsysy_1_1ir_1_1CollectOccurrences.html#aeb2cd0d7bdd368607c4d3338ffe968cd">keyInstr</a></td></tr>
+<tr class="separator:aeb2cd0d7bdd368607c4d3338ffe968cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3eba130f0cadcaa1113d5e3784c2606a"><td class="memItemLeft" align="right" valign="top">std::unordered_set&lt; <a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d41/classsysy_1_1ir_1_1CollectOccurrences.html#a3eba130f0cadcaa1113d5e3784c2606a">realOccurrencesBB</a></td></tr>
+<tr class="separator:a3eba130f0cadcaa1113d5e3784c2606a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf4b5e21cb49d11516a8bc9453b6efd7"><td class="memItemLeft" align="right" valign="top">std::unordered_set&lt; <a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d41/classsysy_1_1ir_1_1CollectOccurrences.html#aaf4b5e21cb49d11516a8bc9453b6efd7">phiBB</a></td></tr>
+<tr class="separator:aaf4b5e21cb49d11516a8bc9453b6efd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a726a00b7b7a94e48a9ef260abe02e8"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; <a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *, std::vector&lt; <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a> * &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d41/classsysy_1_1ir_1_1CollectOccurrences.html#a5a726a00b7b7a94e48a9ef260abe02e8">instructions</a></td></tr>
+<tr class="separator:a5a726a00b7b7a94e48a9ef260abe02e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42f635634b538d2b9e48bec21c411b10"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; <a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *, <a class="el" href="../../db/d14/classsysy_1_1ir_1_1PhiOccurrence.html">PhiOccurrence</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d41/classsysy_1_1ir_1_1CollectOccurrences.html#a42f635634b538d2b9e48bec21c411b10">phis</a></td></tr>
+<tr class="separator:a42f635634b538d2b9e48bec21c411b10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a1a7b1813eb77c0748da0ef09a81b0f0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a7b1813eb77c0748da0ef09a81b0f0c">&#9670;&nbsp;</a></span>CollectOccurrences()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sysy::ir::CollectOccurrences::CollectOccurrences </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a> *&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad637d5460318e0978a26bcfa92c5ee1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad637d5460318e0978a26bcfa92c5ee1b">&#9670;&nbsp;</a></span>addExpr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sysy::ir::CollectOccurrences::addExpr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a> *&#160;</td>
+          <td class="paramname"><em>instr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#aade5575316fb35822e3785e543ecba69">sysy::ir::Instruction::getBasicBlock()</a>, <a class="el" href="../../de/d41/classsysy_1_1ir_1_1CollectOccurrences.html#a5a726a00b7b7a94e48a9ef260abe02e8">instructions</a>, and <a class="el" href="../../de/d41/classsysy_1_1ir_1_1CollectOccurrences.html#a3eba130f0cadcaa1113d5e3784c2606a">realOccurrencesBB</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d41/classsysy_1_1ir_1_1CollectOccurrences_ad637d5460318e0978a26bcfa92c5ee1b_cgraph.png" border="0" usemap="#de/d41/classsysy_1_1ir_1_1CollectOccurrences_ad637d5460318e0978a26bcfa92c5ee1b_cgraph" alt=""/></div>
+<map name="de/d41/classsysy_1_1ir_1_1CollectOccurrences_ad637d5460318e0978a26bcfa92c5ee1b_cgraph" id="de/d41/classsysy_1_1ir_1_1CollectOccurrences_ad637d5460318e0978a26bcfa92c5ee1b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,207,47"/>
+<area shape="rect" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#aade5575316fb35822e3785e543ecba69" title=" " alt="" coords="255,5,400,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aea54665b67444a8dc5f3d411592afb87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea54665b67444a8dc5f3d411592afb87">&#9670;&nbsp;</a></span>addPhi()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sysy::ir::CollectOccurrences::addPhi </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/d14/classsysy_1_1ir_1_1PhiOccurrence.html">PhiOccurrence</a> *&#160;</td>
+          <td class="paramname"><em>phi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *&#160;</td>
+          <td class="paramname"><em>bb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../de/d41/classsysy_1_1ir_1_1CollectOccurrences.html#aaf4b5e21cb49d11516a8bc9453b6efd7">phiBB</a>, and <a class="el" href="../../de/d41/classsysy_1_1ir_1_1CollectOccurrences.html#a42f635634b538d2b9e48bec21c411b10">phis</a>.</p>
+
+</div>
+</div>
+<a id="ad02e32106bc2bfb04c659c2a7fc79181"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad02e32106bc2bfb04c659c2a7fc79181">&#9670;&nbsp;</a></span>getExprFromBB()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a> * &gt; &amp; sysy::ir::CollectOccurrences::getExprFromBB </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *&#160;</td>
+          <td class="paramname"><em>bb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../de/d41/classsysy_1_1ir_1_1CollectOccurrences.html#a5a726a00b7b7a94e48a9ef260abe02e8">instructions</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#a99f6d2727732e5d3ec5de3dbd6e857da">sysy::ir::PRE::rename1()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d41/classsysy_1_1ir_1_1CollectOccurrences_ad02e32106bc2bfb04c659c2a7fc79181_icgraph.png" border="0" usemap="#de/d41/classsysy_1_1ir_1_1CollectOccurrences_ad02e32106bc2bfb04c659c2a7fc79181_icgraph" alt=""/></div>
+<map name="de/d41/classsysy_1_1ir_1_1CollectOccurrences_ad02e32106bc2bfb04c659c2a7fc79181_icgraph" id="de/d41/classsysy_1_1ir_1_1CollectOccurrences_ad02e32106bc2bfb04c659c2a7fc79181_icgraph">
+<area shape="rect" title=" " alt="" coords="617,5,819,47"/>
+<area shape="rect" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#a99f6d2727732e5d3ec5de3dbd6e857da" title=" " alt="" coords="403,13,569,39"/>
+<area shape="rect" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#a8394fa8dfeb78a96555aa0072a259790" title=" " alt="" coords="184,13,355,39"/>
+<area shape="rect" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#a51a274c5f4ca00788df798979e548847" title=" " alt="" coords="5,13,136,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a97d166b822c007700d368aadcfd60b8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97d166b822c007700d368aadcfd60b8a">&#9670;&nbsp;</a></span>getPhi()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d14/classsysy_1_1ir_1_1PhiOccurrence.html">PhiOccurrence</a>* sysy::ir::CollectOccurrences::getPhi </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a> *&#160;</td>
+          <td class="paramname"><em>bb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../de/d41/classsysy_1_1ir_1_1CollectOccurrences.html#a42f635634b538d2b9e48bec21c411b10">phis</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#a4d200dc50d06ed4a1e748d347758eaac">sysy::ir::PRE::computeCanBeAvail()</a>, <a class="el" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#abba26e1257a98e48da15010093ea14c9">sysy::ir::PRE::computeLater()</a>, <a class="el" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#a44df8a6981385a395ea2138b74aa7b11">sysy::ir::PRE::downSafety()</a>, <a class="el" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#a99f6d2727732e5d3ec5de3dbd6e857da">sysy::ir::PRE::rename1()</a>, <a class="el" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#a6600413177eb615906b31fbc65567eb2">sysy::ir::PRE::rename2()</a>, <a class="el" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#a69fa7d747b8b40bd134988cb395b76ce">sysy::ir::PRE::resetCanBeAvail()</a>, and <a class="el" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#a9a4139c2499862058c41498f37fd305c">sysy::ir::PRE::resetLater()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d41/classsysy_1_1ir_1_1CollectOccurrences_a97d166b822c007700d368aadcfd60b8a_icgraph.png" border="0" usemap="#de/d41/classsysy_1_1ir_1_1CollectOccurrences_a97d166b822c007700d368aadcfd60b8a_icgraph" alt=""/></div>
+<map name="de/d41/classsysy_1_1ir_1_1CollectOccurrences_a97d166b822c007700d368aadcfd60b8a_icgraph" id="de/d41/classsysy_1_1ir_1_1CollectOccurrences_a97d166b822c007700d368aadcfd60b8a_icgraph">
+<area shape="rect" title=" " alt="" coords="897,146,1099,188"/>
+<area shape="rect" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#a4d200dc50d06ed4a1e748d347758eaac" title=" " alt="" coords="423,37,613,78"/>
+<area shape="rect" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#abba26e1257a98e48da15010093ea14c9" title=" " alt="" coords="419,128,617,155"/>
+<area shape="rect" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#a44df8a6981385a395ea2138b74aa7b11" title=" " alt="" coords="184,204,371,231"/>
+<area shape="rect" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#a99f6d2727732e5d3ec5de3dbd6e857da" title=" " alt="" coords="674,255,841,282"/>
+<area shape="rect" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#a6600413177eb615906b31fbc65567eb2" title=" " alt="" coords="674,306,841,332"/>
+<area shape="rect" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#a69fa7d747b8b40bd134988cb395b76ce" title=" " alt="" coords="665,37,849,78"/>
+<area shape="rect" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#a9a4139c2499862058c41498f37fd305c" title=" " alt="" coords="670,154,845,180"/>
+<area shape="rect" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#a210a046dbfcf91810d203bc20a050a57" title=" " alt="" coords="187,128,368,155"/>
+<area shape="rect" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#a51a274c5f4ca00788df798979e548847" title=" " alt="" coords="5,204,136,231"/>
+<area shape="rect" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#a8394fa8dfeb78a96555aa0072a259790" title=" " alt="" coords="433,255,603,282"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3f2cef9e31ed692ec4b0e16314c5f31e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f2cef9e31ed692ec4b0e16314c5f31e">&#9670;&nbsp;</a></span>getPhiBB()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_set&lt;<a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a>*&gt;&amp; sysy::ir::CollectOccurrences::getPhiBB </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../de/d41/classsysy_1_1ir_1_1CollectOccurrences.html#aaf4b5e21cb49d11516a8bc9453b6efd7">phiBB</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#a4d200dc50d06ed4a1e748d347758eaac">sysy::ir::PRE::computeCanBeAvail()</a>, <a class="el" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#abba26e1257a98e48da15010093ea14c9">sysy::ir::PRE::computeLater()</a>, <a class="el" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#a44df8a6981385a395ea2138b74aa7b11">sysy::ir::PRE::downSafety()</a>, <a class="el" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#a99f6d2727732e5d3ec5de3dbd6e857da">sysy::ir::PRE::rename1()</a>, <a class="el" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#a6600413177eb615906b31fbc65567eb2">sysy::ir::PRE::rename2()</a>, <a class="el" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#a69fa7d747b8b40bd134988cb395b76ce">sysy::ir::PRE::resetCanBeAvail()</a>, and <a class="el" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#a9a4139c2499862058c41498f37fd305c">sysy::ir::PRE::resetLater()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d41/classsysy_1_1ir_1_1CollectOccurrences_a3f2cef9e31ed692ec4b0e16314c5f31e_icgraph.png" border="0" usemap="#de/d41/classsysy_1_1ir_1_1CollectOccurrences_a3f2cef9e31ed692ec4b0e16314c5f31e_icgraph" alt=""/></div>
+<map name="de/d41/classsysy_1_1ir_1_1CollectOccurrences_a3f2cef9e31ed692ec4b0e16314c5f31e_icgraph" id="de/d41/classsysy_1_1ir_1_1CollectOccurrences_a3f2cef9e31ed692ec4b0e16314c5f31e_icgraph">
+<area shape="rect" title=" " alt="" coords="897,146,1099,188"/>
+<area shape="rect" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#a4d200dc50d06ed4a1e748d347758eaac" title=" " alt="" coords="423,37,613,78"/>
+<area shape="rect" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#abba26e1257a98e48da15010093ea14c9" title=" " alt="" coords="419,128,617,155"/>
+<area shape="rect" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#a44df8a6981385a395ea2138b74aa7b11" title=" " alt="" coords="184,204,371,231"/>
+<area shape="rect" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#a99f6d2727732e5d3ec5de3dbd6e857da" title=" " alt="" coords="674,255,841,282"/>
+<area shape="rect" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#a6600413177eb615906b31fbc65567eb2" title=" " alt="" coords="674,306,841,332"/>
+<area shape="rect" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#a69fa7d747b8b40bd134988cb395b76ce" title=" " alt="" coords="665,37,849,78"/>
+<area shape="rect" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#a9a4139c2499862058c41498f37fd305c" title=" " alt="" coords="670,154,845,180"/>
+<area shape="rect" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#a210a046dbfcf91810d203bc20a050a57" title=" " alt="" coords="187,128,368,155"/>
+<area shape="rect" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#a51a274c5f4ca00788df798979e548847" title=" " alt="" coords="5,204,136,231"/>
+<area shape="rect" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#a8394fa8dfeb78a96555aa0072a259790" title=" " alt="" coords="433,255,603,282"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="adcdf51307859a1ac3791311e52631ec7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcdf51307859a1ac3791311e52631ec7">&#9670;&nbsp;</a></span>getRealOccurrencesBB()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_set&lt;<a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a>*&gt;&amp; sysy::ir::CollectOccurrences::getRealOccurrencesBB </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../de/d41/classsysy_1_1ir_1_1CollectOccurrences.html#a3eba130f0cadcaa1113d5e3784c2606a">realOccurrencesBB</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#a99f6d2727732e5d3ec5de3dbd6e857da">sysy::ir::PRE::rename1()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d41/classsysy_1_1ir_1_1CollectOccurrences_adcdf51307859a1ac3791311e52631ec7_icgraph.png" border="0" usemap="#de/d41/classsysy_1_1ir_1_1CollectOccurrences_adcdf51307859a1ac3791311e52631ec7_icgraph" alt=""/></div>
+<map name="de/d41/classsysy_1_1ir_1_1CollectOccurrences_adcdf51307859a1ac3791311e52631ec7_icgraph" id="de/d41/classsysy_1_1ir_1_1CollectOccurrences_adcdf51307859a1ac3791311e52631ec7_icgraph">
+<area shape="rect" title=" " alt="" coords="617,5,819,47"/>
+<area shape="rect" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#a99f6d2727732e5d3ec5de3dbd6e857da" title=" " alt="" coords="403,13,569,39"/>
+<area shape="rect" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#a8394fa8dfeb78a96555aa0072a259790" title=" " alt="" coords="184,13,355,39"/>
+<area shape="rect" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#a51a274c5f4ca00788df798979e548847" title=" " alt="" coords="5,13,136,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0db54493aa3aa940b6a233a62d24fc6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0db54493aa3aa940b6a233a62d24fc6b">&#9670;&nbsp;</a></span>isSameExpr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sysy::ir::CollectOccurrences::isSameExpr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a> *&#160;</td>
+          <td class="paramname"><em>expr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#a1b75bf99f7751b0c76f15d94652ca176">sysy::ir::Instruction::getKind()</a>, <a class="el" href="../../d9/d1a/classsysy_1_1ir_1_1User.html#a4bac99e1a13ee4965fa68a4ec0de74d5">sysy::ir::User::getOprands()</a>, <a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#a3bc12d35df517c98fc48ef9c040a007e">sysy::ir::Instruction::isCommutative()</a>, <a class="el" href="../../de/d41/classsysy_1_1ir_1_1CollectOccurrences.html#aeb2cd0d7bdd368607c4d3338ffe968cd">keyInstr</a>, and <a class="el" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#ab6c72b997d29f4a107cc2d75c038a482">sysy::ir::PRE::sameOriginal()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d41/classsysy_1_1ir_1_1CollectOccurrences_a0db54493aa3aa940b6a233a62d24fc6b_cgraph.png" border="0" usemap="#de/d41/classsysy_1_1ir_1_1CollectOccurrences_a0db54493aa3aa940b6a233a62d24fc6b_cgraph" alt=""/></div>
+<map name="de/d41/classsysy_1_1ir_1_1CollectOccurrences_a0db54493aa3aa940b6a233a62d24fc6b_cgraph" id="de/d41/classsysy_1_1ir_1_1CollectOccurrences_a0db54493aa3aa940b6a233a62d24fc6b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,93,207,135"/>
+<area shape="rect" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#a1b75bf99f7751b0c76f15d94652ca176" title=" " alt="" coords="280,5,425,47"/>
+<area shape="rect" href="../../d9/d1a/classsysy_1_1ir_1_1User.html#a4bac99e1a13ee4965fa68a4ec0de74d5" title=" " alt="" coords="258,71,447,98"/>
+<area shape="rect" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html#a3bc12d35df517c98fc48ef9c040a007e" title=" " alt="" coords="280,123,425,164"/>
+<area shape="rect" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#ab6c72b997d29f4a107cc2d75c038a482" title=" " alt="" coords="255,189,451,215"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab845fb9b313defd2156e85404ad26df5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab845fb9b313defd2156e85404ad26df5">&#9670;&nbsp;</a></span>phiSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t sysy::ir::CollectOccurrences::phiSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../de/d41/classsysy_1_1ir_1_1CollectOccurrences.html#a42f635634b538d2b9e48bec21c411b10">phis</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#a99f6d2727732e5d3ec5de3dbd6e857da">sysy::ir::PRE::rename1()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d41/classsysy_1_1ir_1_1CollectOccurrences_ab845fb9b313defd2156e85404ad26df5_icgraph.png" border="0" usemap="#de/d41/classsysy_1_1ir_1_1CollectOccurrences_ab845fb9b313defd2156e85404ad26df5_icgraph" alt=""/></div>
+<map name="de/d41/classsysy_1_1ir_1_1CollectOccurrences_ab845fb9b313defd2156e85404ad26df5_icgraph" id="de/d41/classsysy_1_1ir_1_1CollectOccurrences_ab845fb9b313defd2156e85404ad26df5_icgraph">
+<area shape="rect" title=" " alt="" coords="617,5,819,47"/>
+<area shape="rect" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#a99f6d2727732e5d3ec5de3dbd6e857da" title=" " alt="" coords="403,13,569,39"/>
+<area shape="rect" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#a8394fa8dfeb78a96555aa0072a259790" title=" " alt="" coords="184,13,355,39"/>
+<area shape="rect" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#a51a274c5f4ca00788df798979e548847" title=" " alt="" coords="5,13,136,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ab005e96e92d67703822d54b492c640c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab005e96e92d67703822d54b492c640c0">&#9670;&nbsp;</a></span>allClasses</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_set&lt;<a class="el" href="../../d2/d98/classsysy_1_1ir_1_1Occurrence.html">Occurrence</a>*&gt; sysy::ir::CollectOccurrences::allClasses</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#a5607cb860f6727d19dfa6411004156a6">sysy::ir::PRE::finalize1()</a>, and <a class="el" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#a99f6d2727732e5d3ec5de3dbd6e857da">sysy::ir::PRE::rename1()</a>.</p>
+
+</div>
+</div>
+<a id="a5a726a00b7b7a94e48a9ef260abe02e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a726a00b7b7a94e48a9ef260abe02e8">&#9670;&nbsp;</a></span>instructions</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt;<a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a>*, std::vector&lt;<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a>*&gt; &gt; sysy::ir::CollectOccurrences::instructions</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../de/d41/classsysy_1_1ir_1_1CollectOccurrences.html#ad637d5460318e0978a26bcfa92c5ee1b">addExpr()</a>, and <a class="el" href="../../de/d41/classsysy_1_1ir_1_1CollectOccurrences.html#ad02e32106bc2bfb04c659c2a7fc79181">getExprFromBB()</a>.</p>
+
+</div>
+</div>
+<a id="aeb2cd0d7bdd368607c4d3338ffe968cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb2cd0d7bdd368607c4d3338ffe968cd">&#9670;&nbsp;</a></span>keyInstr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a>* sysy::ir::CollectOccurrences::keyInstr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../de/d41/classsysy_1_1ir_1_1CollectOccurrences.html#a0db54493aa3aa940b6a233a62d24fc6b">isSameExpr()</a>.</p>
+
+</div>
+</div>
+<a id="a075c1351cb6f79897337bb35f6506064"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a075c1351cb6f79897337bb35f6506064">&#9670;&nbsp;</a></span>occurrenceName</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt;<a class="el" href="../../dc/d46/classsysy_1_1ir_1_1Instruction.html">Instruction</a>*, <a class="el" href="../../d2/d98/classsysy_1_1ir_1_1Occurrence.html">Occurrence</a>*&gt; sysy::ir::CollectOccurrences::occurrenceName</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../df/db4/classsysy_1_1ir_1_1PRE.html#a99f6d2727732e5d3ec5de3dbd6e857da">sysy::ir::PRE::rename1()</a>.</p>
+
+</div>
+</div>
+<a id="aaf4b5e21cb49d11516a8bc9453b6efd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf4b5e21cb49d11516a8bc9453b6efd7">&#9670;&nbsp;</a></span>phiBB</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_set&lt;<a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a>*&gt; sysy::ir::CollectOccurrences::phiBB</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../de/d41/classsysy_1_1ir_1_1CollectOccurrences.html#aea54665b67444a8dc5f3d411592afb87">addPhi()</a>, and <a class="el" href="../../de/d41/classsysy_1_1ir_1_1CollectOccurrences.html#a3f2cef9e31ed692ec4b0e16314c5f31e">getPhiBB()</a>.</p>
+
+</div>
+</div>
+<a id="a42f635634b538d2b9e48bec21c411b10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42f635634b538d2b9e48bec21c411b10">&#9670;&nbsp;</a></span>phis</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt;<a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a>*, <a class="el" href="../../db/d14/classsysy_1_1ir_1_1PhiOccurrence.html">PhiOccurrence</a>*&gt; sysy::ir::CollectOccurrences::phis</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../de/d41/classsysy_1_1ir_1_1CollectOccurrences.html#aea54665b67444a8dc5f3d411592afb87">addPhi()</a>, <a class="el" href="../../de/d41/classsysy_1_1ir_1_1CollectOccurrences.html#a97d166b822c007700d368aadcfd60b8a">getPhi()</a>, and <a class="el" href="../../de/d41/classsysy_1_1ir_1_1CollectOccurrences.html#ab845fb9b313defd2156e85404ad26df5">phiSize()</a>.</p>
+
+</div>
+</div>
+<a id="a3eba130f0cadcaa1113d5e3784c2606a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3eba130f0cadcaa1113d5e3784c2606a">&#9670;&nbsp;</a></span>realOccurrencesBB</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_set&lt;<a class="el" href="../../df/dd2/classsysy_1_1ir_1_1BasicBlock.html">BasicBlock</a>*&gt; sysy::ir::CollectOccurrences::realOccurrencesBB</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../de/d41/classsysy_1_1ir_1_1CollectOccurrences.html#ad637d5460318e0978a26bcfa92c5ee1b">addExpr()</a>, and <a class="el" href="../../de/d41/classsysy_1_1ir_1_1CollectOccurrences.html#adcdf51307859a1ac3791311e52631ec7">getRealOccurrencesBB()</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>include/sysy/Transform/Scalar/<a class="el" href="../../dd/d41/PRE_8h_source.html">PRE.h</a></li>
-<li>lib/Transform/Scalar/PRE.cpp</li>
+<li>lib/Transform/Scalar/<a class="el" href="../../d5/d2b/PRE_8cpp.html">PRE.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>sysy</b></li><li class="navelem"><b>ir</b></li><li class="navelem"><a class="el" href="../../de/d41/classsysy_1_1ir_1_1CollectOccurrences.html">CollectOccurrences</a></li>
+    <li class="navelem"><a class="el" href="../../dd/d20/namespacesysy.html">sysy</a></li><li class="navelem"><a class="el" href="../../d7/d19/namespacesysy_1_1ir.html">ir</a></li><li class="navelem"><a class="el" href="../../de/d41/classsysy_1_1ir_1_1CollectOccurrences.html">CollectOccurrences</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

@@ -1,0 +1,22 @@
+<map id="sysy::ir::createGlobalInit" name="sysy::ir::createGlobalInit">
+<area shape="rect" id="node1" title=" " alt="" coords="5,246,185,273"/>
+<area shape="rect" id="node2" href="$d4/d36/classsysy_1_1ir_1_1Function.html#a574f9fb41fb425e0a944e90303feeba6" title=" " alt="" coords="263,39,394,80"/>
+<area shape="rect" id="node6" href="$df/dd2/classsysy_1_1ir_1_1BasicBlock.html#aae96301011a76be2d6f4bc0820f16d44" title=" " alt="" coords="255,108,402,149"/>
+<area shape="rect" id="node9" href="$db/d2c/classsysy_1_1ir_1_1IRBuilder.html#a6edd8f5c8d5f2850df4a44c846aca18b" title=" " alt="" coords="261,173,396,215"/>
+<area shape="rect" id="node14" href="$db/d2c/classsysy_1_1ir_1_1IRBuilder.html#ac01742b2d58b6152843bb2520757ae0f" title=" " alt="" coords="261,239,396,280"/>
+<area shape="rect" id="node15" href="$db/d08/classsysy_1_1ir_1_1FunctionType.html#add25b78a1f09ec18d220e6f7ac5c3aa9" title=" " alt="" coords="233,305,424,331"/>
+<area shape="rect" id="node17" href="$d7/d1e/classsysy_1_1ir_1_1Type.html#a5037dd4d7aa044846a0e22e5bdc77d79" title=" " alt="" coords="240,355,417,382"/>
+<area shape="rect" id="node20" href="$db/d2c/classsysy_1_1ir_1_1IRBuilder.html#a4b75aab5745da50538a08674831ed0ba" title=" " alt="" coords="261,407,396,448"/>
+<area shape="rect" id="node3" href="$d4/d36/classsysy_1_1ir_1_1Function.html#a129fbbc93c5535af58d47900b294fc92" title=" " alt="" coords="488,35,619,76"/>
+<area shape="rect" id="node4" href="$db/d08/classsysy_1_1ir_1_1FunctionType.html#aacd5b091ed67cb0dbdd8cbf3be3d9a32" title=" " alt="" coords="706,5,867,47"/>
+<area shape="rect" id="node5" href="$dd/d71/classsysy_1_1ir_1_1Module.html#a42f6f3bc7afe95ca8b399f9e30ef194c" title=" " alt="" coords="683,71,891,98"/>
+<area shape="rect" id="node7" href="$df/dd2/classsysy_1_1ir_1_1BasicBlock.html#a8e8c608777d8776fc1308b0667ef7ef0" title=" " alt="" coords="480,100,627,141"/>
+<area shape="rect" id="node8" href="$df/dd2/classsysy_1_1ir_1_1BasicBlock.html#a370d97f20c81e41c71f2969e93e8c266" title=" " alt="" coords="480,165,627,207"/>
+<area shape="rect" id="node10" href="$db/d2c/classsysy_1_1ir_1_1IRBuilder.html#a01fff6d11a3d5e4212010270c35421ac" title=" " alt="" coords="486,231,621,272"/>
+<area shape="rect" id="node11" href="$df/dd2/classsysy_1_1ir_1_1BasicBlock.html#a57f9208a13c65ad334901ace496d726e" title=" " alt="" coords="697,178,876,205"/>
+<area shape="rect" id="node12" href="$df/dd2/classsysy_1_1ir_1_1BasicBlock.html#aae8b7dea1401559f1b6fae88d32f33f4" title=" " alt="" coords="713,229,860,271"/>
+<area shape="rect" id="node13" href="$df/dd2/classsysy_1_1ir_1_1BasicBlock.html#a2e88f8672de9f03fd9f4faf9ffac7ff9" title=" " alt="" coords="713,295,860,336"/>
+<area shape="rect" id="node16" href="$db/d08/classsysy_1_1ir_1_1FunctionType.html#a476bb30d7463460b2777fc31bd0aaa04" title=" " alt="" coords="473,297,634,339"/>
+<area shape="rect" id="node18" href="$db/d23/classsysy_1_1ir_1_1VoidType.html#a21216dc2b27fbfb8151a15d4c1ceccce" title=" " alt="" coords="472,365,635,391"/>
+<area shape="rect" id="node19" href="$dc/d02/classsysy_1_1ir_1_1Context.html#aba7555fd5267d54a604e4a5f0fdc69b2" title=" " alt="" coords="719,360,854,401"/>
+</map>

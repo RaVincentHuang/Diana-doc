@@ -86,11 +86,11 @@ $(document).ready(function(){initNavTree('d6/ded/FunctionInline_8h_source.html',
 <div class="title">FunctionInline.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SYSY_TRANSFORM_FUNCTIONINLINE_H</span></div>
+<a href="../../d6/ded/FunctionInline_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SYSY_TRANSFORM_FUNCTIONINLINE_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define SYSY_TRANSFORM_FUNCTIONINLINE_H</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;sysy/IR/PassManager.h&quot;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;sysy/IR/Instructions.h&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span>sysy</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d8/d4e/PassManager_8h.html">sysy/IR/PassManager.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d9/dd5/Instructions_8h.html">sysy/IR/Instructions.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../dd/d20/namespacesysy.html">sysy</a></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>ir</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
@@ -98,11 +98,11 @@ $(document).ready(function(){initNavTree('d6/ded/FunctionInline_8h_source.html',
 <div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="../../da/d2e/classsysy_1_1ir_1_1FunctionInline.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../da/d2e/classsysy_1_1ir_1_1FunctionInline.html">FunctionInline</a> : <span class="keyword">public</span> <a class="code" href="../../d5/d01/classsysy_1_1Pass.html">ModulePass</a></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">void</span> inlineAtCall(<a class="code" href="../../d5/d35/classsysy_1_1ir_1_1CallInstruction.html">CallInst</a>* call);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../da/d2e/classsysy_1_1ir_1_1FunctionInline.html#aa3e68f1f7d996f449663bd362882a0ca">inlineAtCall</a>(<a class="code" href="../../d5/d35/classsysy_1_1ir_1_1CallInstruction.html">CallInst</a>* call);</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="../../da/d2e/classsysy_1_1ir_1_1FunctionInline.html">FunctionInline</a>();</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">void</span> run(<a class="code" href="../../dd/d71/classsysy_1_1ir_1_1Module.html">Module</a>* moudle) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    std::string getName()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;FunctionInline&quot;</span>; }</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="../../da/d2e/classsysy_1_1ir_1_1FunctionInline.html#ae57012feaace821eaa4d659f33ccb59e">FunctionInline</a>();</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../da/d2e/classsysy_1_1ir_1_1FunctionInline.html#a7a42f6c60d40c1ff1ea27808086c9e8a">run</a>(<a class="code" href="../../dd/d71/classsysy_1_1ir_1_1Module.html">Module</a>* moudle) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="../../da/d2e/classsysy_1_1ir_1_1FunctionInline.html#a5bd724d9ba2dcb7e90a66e0e05e64e8d">   17</a></span>&#160;    std::string <a class="code" href="../../da/d2e/classsysy_1_1ir_1_1FunctionInline.html#a5bd724d9ba2dcb7e90a66e0e05e64e8d">getName</a>()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;FunctionInline&quot;</span>; }</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;};</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;} <span class="comment">// namespace ir</span></div>
@@ -113,14 +113,21 @@ $(document).ready(function(){initNavTree('d6/ded/FunctionInline_8h_source.html',
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclasssysy_1_1ir_1_1FunctionInline_html_a5bd724d9ba2dcb7e90a66e0e05e64e8d"><div class="ttname"><a href="../../da/d2e/classsysy_1_1ir_1_1FunctionInline.html#a5bd724d9ba2dcb7e90a66e0e05e64e8d">sysy::ir::FunctionInline::getName</a></div><div class="ttdeci">std::string getName() override</div><div class="ttdef"><b>Definition:</b> FunctionInline.h:17</div></div>
 <div class="ttc" id="aclasssysy_1_1Pass_html"><div class="ttname"><a href="../../d5/d01/classsysy_1_1Pass.html">sysy::Pass</a></div><div class="ttdef"><b>Definition:</b> PassManager.h:14</div></div>
+<div class="ttc" id="aclasssysy_1_1ir_1_1FunctionInline_html_aa3e68f1f7d996f449663bd362882a0ca"><div class="ttname"><a href="../../da/d2e/classsysy_1_1ir_1_1FunctionInline.html#aa3e68f1f7d996f449663bd362882a0ca">sysy::ir::FunctionInline::inlineAtCall</a></div><div class="ttdeci">void inlineAtCall(CallInst *call)</div><div class="ttdef"><b>Definition:</b> FunctionInline.cpp:21</div></div>
+<div class="ttc" id="aclasssysy_1_1ir_1_1FunctionInline_html_ae57012feaace821eaa4d659f33ccb59e"><div class="ttname"><a href="../../da/d2e/classsysy_1_1ir_1_1FunctionInline.html#ae57012feaace821eaa4d659f33ccb59e">sysy::ir::FunctionInline::FunctionInline</a></div><div class="ttdeci">FunctionInline()</div><div class="ttdef"><b>Definition:</b> FunctionInline.cpp:16</div></div>
+<div class="ttc" id="anamespacesysy_html"><div class="ttname"><a href="../../dd/d20/namespacesysy.html">sysy</a></div><div class="ttdef"><b>Definition:</b> AliasAnalysis.h:6</div></div>
+<div class="ttc" id="aPassManager_8h_html"><div class="ttname"><a href="../../d8/d4e/PassManager_8h.html">PassManager.h</a></div></div>
 <div class="ttc" id="aclasssysy_1_1ir_1_1FunctionInline_html"><div class="ttname"><a href="../../da/d2e/classsysy_1_1ir_1_1FunctionInline.html">sysy::ir::FunctionInline</a></div><div class="ttdef"><b>Definition:</b> FunctionInline.h:10</div></div>
 <div class="ttc" id="aclasssysy_1_1ir_1_1Module_html"><div class="ttname"><a href="../../dd/d71/classsysy_1_1ir_1_1Module.html">sysy::ir::Module</a></div><div class="ttdef"><b>Definition:</b> Module.h:16</div></div>
+<div class="ttc" id="aInstructions_8h_html"><div class="ttname"><a href="../../d9/dd5/Instructions_8h.html">Instructions.h</a></div></div>
+<div class="ttc" id="aclasssysy_1_1ir_1_1FunctionInline_html_a7a42f6c60d40c1ff1ea27808086c9e8a"><div class="ttname"><a href="../../da/d2e/classsysy_1_1ir_1_1FunctionInline.html#a7a42f6c60d40c1ff1ea27808086c9e8a">sysy::ir::FunctionInline::run</a></div><div class="ttdeci">void run(Module *moudle) override</div><div class="ttdef"><b>Definition:</b> FunctionInline.cpp:155</div></div>
 <div class="ttc" id="aclasssysy_1_1ir_1_1CallInstruction_html"><div class="ttname"><a href="../../d5/d35/classsysy_1_1ir_1_1CallInstruction.html">sysy::ir::CallInstruction</a></div><div class="ttdef"><b>Definition:</b> Instructions.h:55</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_b87821115ea3cf61d61e0bb4a6051ac5.html">sysy</a></li><li class="navelem"><a class="el" href="../../dir_c57c09d2f988700d800e6ebfe7229c98.html">Transform</a></li><li class="navelem"><a class="el" href="../../dir_84c48ea28894a10e1deb6127ee6818ba.html">IPO</a></li><li class="navelem"><b>FunctionInline.h</b></li>
+    <li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_b87821115ea3cf61d61e0bb4a6051ac5.html">sysy</a></li><li class="navelem"><a class="el" href="../../dir_c57c09d2f988700d800e6ebfe7229c98.html">Transform</a></li><li class="navelem"><a class="el" href="../../dir_84c48ea28894a10e1deb6127ee6818ba.html">IPO</a></li><li class="navelem"><a class="el" href="../../d6/ded/FunctionInline_8h.html">FunctionInline.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
