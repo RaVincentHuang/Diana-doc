@@ -138,7 +138,7 @@ var searchData=
   ['createfrem_349',['CreateFRem',['../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#a8f6096357cb37bf5e13cd4fc3a0627aa',1,'sysy::ir::IRBuilder']]],
   ['createfsub_350',['CreateFSub',['../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#a5cbe59b577d8df32d6d0fd37b257ae6e',1,'sysy::ir::IRBuilder']]],
   ['createglobal_351',['createGlobal',['../d7/d19/namespacesysy_1_1ir.html#a7baf50c896de58efd71818fac032b175',1,'sysy::ir::createGlobal(VarDefNode *def, AstType type)'],['../d7/d19/namespacesysy_1_1ir.html#a4c96614fe4561a772078fe5e06f2cac0',1,'sysy::ir::createGlobal(ConstDefNode *def, AstType type)']]],
-  ['createglobalinit_352',['createGlobalInit',['../d7/d19/namespacesysy_1_1ir.html#a92aa858131de7e5c89c3aeeea517bbab',1,'sysy::ir::createGlobalInit()'],['../d7/d19/namespacesysy_1_1ir.html#a44dca136c94fedd0ccf38e58ced4a320',1,'sysy::ir::createGlobalInit(GlobalValue *G, std::vector&lt; ExprNode * &gt; initial)']]],
+  ['createglobalinit_352',['createGlobalInit',['../d7/d19/namespacesysy_1_1ir.html#a92aa858131de7e5c89c3aeeea517bbab',1,'sysy::ir::createGlobalInit()'],['../d7/d19/namespacesysy_1_1ir.html#a0fb7f3abbab3897e0c86705985fcff44',1,'sysy::ir::createGlobalInit(GlobalValue *G, std::vector&lt; std::unique_ptr&lt; ExprNode &gt;&gt; &amp;initial)']]],
   ['createicmpeq_353',['CreateICmpEQ',['../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#afa08615e7a7713dae9a0dec4c31899fb',1,'sysy::ir::IRBuilder']]],
   ['createicmpne_354',['CreateICmpNE',['../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#a5683db94171be725836f7e5949ecbbba',1,'sysy::ir::IRBuilder']]],
   ['createicmpsge_355',['CreateICmpSGE',['../db/d2c/classsysy_1_1ir_1_1IRBuilder.html#a560e13f6432e80957777ac49a023ff08',1,'sysy::ir::IRBuilder']]],

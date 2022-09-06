@@ -4,7 +4,7 @@ var searchData=
   ['elementcontext_2273',['ElementContext',['../d4/d44/classSysYParser_1_1ElementContext.html#a9e0ed250d265fa9bba4bceeb52b23ded',1,'SysYParser::ElementContext']]],
   ['eliminatephi_2274',['EliminatePhi',['../dc/db7/classsysy_1_1ir_1_1EliminatePhi.html#a1b986d9489de5825c9c33e31889eed49',1,'sysy::ir::EliminatePhi']]],
   ['else_2275',['ELSE',['../db/d9d/classSysYParser_1_1StmtContext.html#af25595f8a264d691f68e157e835c6cfc',1,'SysYParser::StmtContext']]],
-  ['emitinitial_2276',['emitInitial',['../d7/d19/namespacesysy_1_1ir.html#a4c670a65f972ffe8ee7a9b0f1cba18c1',1,'sysy::ir']]],
+  ['emitinitial_2276',['emitInitial',['../d7/d19/namespacesysy_1_1ir.html#ae5bac8f08ff6770cc72c5044a2e9ba89',1,'sysy::ir']]],
   ['emitir_2277',['emitIR',['../d7/d19/namespacesysy_1_1ir.html#a184ee04952268fc07f958c23abf71c59',1,'sysy::ir']]],
   ['empty_2278',['empty',['../dd/d0a/classsysy_1_1iterator__range.html#af23ca4ae39610f8a619e212e1256502a',1,'sysy::iterator_range']]],
   ['end_2279',['end',['../df/dd2/classsysy_1_1ir_1_1BasicBlock.html#a57f9208a13c65ad334901ace496d726e',1,'sysy::ir::BasicBlock::end()'],['../dd/d0a/classsysy_1_1iterator__range.html#ab40d926e6813c60dc85e15a86dc9afc6',1,'sysy::iterator_range::end()']]],
