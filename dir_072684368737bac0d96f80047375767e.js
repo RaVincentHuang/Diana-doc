@@ -30,7 +30,7 @@ var dir_072684368737bac0d96f80047375767e =
       [ "NumberNode", "d7/dfe/classsysy_1_1ast_1_1NumberNode.html", "d7/dfe/classsysy_1_1ast_1_1NumberNode" ]
     ] ],
     [ "AstDump.h", "dd/de5/AstDump_8h.html", "dd/de5/AstDump_8h" ],
-    [ "AstTramsform.h", "db/d13/AstTramsform_8h.html", "db/d13/AstTramsform_8h" ],
+    [ "AstTransform.h", "d5/d29/AstTransform_8h.html", "d5/d29/AstTransform_8h" ],
     [ "AstType.h", "db/d60/AstType_8h.html", "db/d60/AstType_8h" ],
     [ "Frontend.h", "d0/d1b/Frontend_8h.html", "d0/d1b/Frontend_8h" ],
     [ "Semantics.h", "d7/dfe/Semantics_8h.html", "d7/dfe/Semantics_8h" ],

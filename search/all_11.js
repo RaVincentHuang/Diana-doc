@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['r_1175',['R',['../db/d16/debug_8h.html#a786e25d55bdbb9a6c5ed4ade7ec44044',1,'debug.h']]],
+  ['r_1175',['R',['../d4/deb/Debug_8h.html#a786e25d55bdbb9a6c5ed4ade7ec44044',1,'Debug.h']]],
   ['range_1176',['range',['../d4/d41/namespacecmdline.html#a254a4d230f6a0cd541273072ea2569c9',1,'cmdline']]],
   ['range_5freader_1177',['range_reader',['../d7/d4f/structcmdline_1_1range__reader.html',1,'cmdline::range_reader&lt; T &gt;'],['../d7/d4f/structcmdline_1_1range__reader.html#a7b31d754293d2f2f3df49b40a6e95a5a',1,'cmdline::range_reader::range_reader()']]],
   ['rank_1178',['rank',['../df/dd2/classsysy_1_1ir_1_1BasicBlock.html#a21f0e106e37dacac810cb94b3555d112',1,'sysy::ir::BasicBlock::rank()'],['../d7/d19/namespacesysy_1_1ir.html#a18e54e457698382275598222db0d7645',1,'sysy::ir::rank()'],['../d7/d19/namespacesysy_1_1ir.html#a18e54e457698382275598222db0d7645',1,'sysy::ir::rank()']]],
