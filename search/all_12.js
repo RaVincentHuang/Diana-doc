@@ -1,10 +1,9 @@
 var searchData=
 [
-  ['ast_1316',['ast',['../d5/de3/namespacesysy_1_1ast.html',1,'sysy']]],
-  ['ir_1317',['ir',['../d7/d19/namespacesysy_1_1ir.html',1,'sysy']]],
-  ['mc_1318',['mc',['../d7/d26/namespacesysy_1_1mc.html',1,'sysy']]],
-  ['sysy_2dcompiler_20编码规范_1319',['SysY-Compiler 编码规范',['../d7/d28/md_doc_develop_SysY-Compiler__xE7_xBC_x96_xE7_xA0_x81_xE8_xA7_x84_xE8_x8C_x83.html',1,'']]],
-  ['sysy_2dcompiler_20_2d_20diana_1320',['SysY-Compiler - Diana',['../d0/d30/md_README.html',1,'']]],
+  ['ast_1317',['ast',['../d5/de3/namespacesysy_1_1ast.html',1,'sysy']]],
+  ['ir_1318',['ir',['../d7/d19/namespacesysy_1_1ir.html',1,'sysy']]],
+  ['mc_1319',['mc',['../d7/d26/namespacesysy_1_1mc.html',1,'sysy']]],
+  ['sysy_2dcompiler_20编码规范_1320',['SysY-Compiler 编码规范',['../d7/d28/md_doc_develop_SysY-Compiler__xE7_xBC_x96_xE7_xA0_x81_xE8_xA7_x84_xE8_x8C_x83.html',1,'']]],
   ['samedom_1321',['samedom',['../d7/d19/namespacesysy_1_1ir.html#a36c19cad8771cdae4c9e7ea79039203c',1,'sysy::ir::samedom()'],['../d7/d19/namespacesysy_1_1ir.html#a36c19cad8771cdae4c9e7ea79039203c',1,'sysy::ir::samedom()']]],
   ['sameoriginal_1322',['sameOriginal',['../df/db4/classsysy_1_1ir_1_1PRE.html#ab6c72b997d29f4a107cc2d75c038a482',1,'sysy::ir::PRE']]],
   ['sametype_1323',['sameType',['../d7/d1e/classsysy_1_1ir_1_1Type.html#a084682039fedc6e3d2c55bb9ce3a5679',1,'sysy::ir::Type']]],

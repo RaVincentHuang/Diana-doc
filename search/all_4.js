@@ -56,5 +56,6 @@ var searchData=
   ['dumpfunction_431',['dumpFunction',['../d7/d19/namespacesysy_1_1ir.html#af7d53815f45d7999adc2961e81939c5e',1,'sysy::ir']]],
   ['dumpir_432',['dumpIR',['../d7/d19/namespacesysy_1_1ir.html#aae10aead3850636794bf959456c9723a',1,'sysy::ir']]],
   ['dumppass_433',['dumpPass',['../de/de9/classsysy_1_1PassManager.html#a8688bf54e8e74c9e123f676296e75a31',1,'sysy::PassManager']]],
-  ['diana_434',['Diana',['../index.html',1,'']]]
+  ['diana_434',['Diana',['../index.html',1,'']]],
+  ['diana_435',['Diana',['../d0/d30/md_README.html',1,'']]]
 ];
